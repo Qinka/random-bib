@@ -288,3 +288,189 @@ author = "Daniel Jimenez-Carretero and David Bermejo-Peláez and Pietro Nardelli
 keywords = "Artery-vein segmentation, Lung, Graph-cuts, Random forest, Arteries, Veins, Noncontrast CT, Phantoms",
 abstract = "Lung vessel segmentation has been widely explored by the biomedical image processing community; however, the differentiation of arterial from venous irrigation is still a challenge. Pulmonary artery–vein (AV) segmentation using computed tomography (CT) is growing in importance owing to its undeniable utility in multiple cardiopulmonary pathological states, especially those implying vascular remodelling, allowing the study of both flow systems separately. We present a new framework to approach the separation of tree-like structures using local information and a specifically designed graph-cut methodology that ensures connectivity as well as the spatial and directional consistency of the derived subtrees. This framework has been applied to the pulmonary AV classification using a random forest (RF) pre-classifier to exploit the local anatomical differences of arteries and veins. The evaluation of the system was performed using 192 bronchopulmonary segment phantoms, 48 anthropomorphic pulmonary CT phantoms, and 26 lungs from noncontrast CT images with precise voxel-based reference standards obtained by manually labelling the vessel trees. The experiments reveal a relevant improvement in the accuracy ( ∼ 20%) of the vessel particle classification with the proposed framework with respect to using only the pre-classification based on local information applied to the whole area of the lung under study. The results demonstrated the accurate differentiation between arteries and veins in both clinical and synthetic cases, specifically when the image quality can guarantee a good airway segmentation, which opens a huge range of possibilities in the clinical study of cardiopulmonary diseases."
 }
+@article{QAISER20191,
+title = "Fast and accurate tumor segmentation of histology images using persistent homology and deep convolutional features",
+journal = "Medical Image Analysis",
+volume = "55",
+pages = "1 - 14",
+year = "2019",
+issn = "1361-8415",
+doi = "https://doi.org/10.1016/j.media.2019.03.014",
+url = "http://www.sciencedirect.com/science/article/pii/S1361841518302688",
+author = "Talha Qaiser and Yee-Wah Tsang and Daiki Taniyama and Naoya Sakamoto and Kazuaki Nakane and David Epstein and Nasir Rajpoot",
+keywords = "Tumor segmentation, Persistent homology, Deep learning, Histology image analysis, Computational pathology, Colorectal (colon) cancer",
+abstract = "Tumor segmentation in whole-slide images of histology slides is an important step towards computer-assisted diagnosis. In this work, we propose a tumor segmentation framework based on the novel concept of persistent homology profiles (PHPs). For a given image patch, the homology profiles are derived by efficient computation of persistent homology, which is an algebraic tool from homology theory. We propose an efficient way of computing topological persistence of an image, alternative to simplicial homology. The PHPs are devised to distinguish tumor regions from their normal counterparts by modeling the atypical characteristics of tumor nuclei. We propose two variants of our method for tumor segmentation: one that targets speed without compromising accuracy and the other that targets higher accuracy. The fast version is based on a selection of exemplar image patches from a convolution neural network (CNN) and patch classification by quantifying the divergence between the PHPs of exemplars and the input image patch. Detailed comparative evaluation shows that the proposed algorithm is significantly faster than competing algorithms while achieving comparable results. The accurate version combines the PHPs and high-level CNN features and employs a multi-stage ensemble strategy for image patch labeling. Experimental results demonstrate that the combination of PHPs and CNN features outperform competing algorithms. This study is performed on two independently collected colorectal datasets containing adenoma, adenocarcinoma, signet, and healthy cases. Collectively, the accurate tumor segmentation produces the highest average patch-level F1-score, as compared with competing algorithms, on malignant and healthy cases from both the datasets. Overall the proposed framework highlights the utility of persistent homology for histopathology image analysis."
+}
+@article{SONG201940,
+title = "Multi-layer boosting sparse convolutional model for generalized nuclear segmentation from histopathology images",
+journal = "Knowledge-Based Systems",
+volume = "176",
+pages = "40 - 53",
+year = "2019",
+issn = "0950-7051",
+doi = "https://doi.org/10.1016/j.knosys.2019.03.031",
+url = "http://www.sciencedirect.com/science/article/pii/S095070511930156X",
+author = "Jie Song and Liang Xiao and Mohsen Molaei and Zhichao Lian",
+keywords = "Nucleus segmentation, Cascade classification, Multi-layer boosting sparse convolutional model, Probabilistic binary decision tree, Representation learning",
+abstract = "It is a challenging problem to achieve generalized nuclear segmentation in digital histopathology images. Existing techniques, using either handcrafted features in learning-based models or traditional image analysis-based approaches, do not effectively tackle the challenging cases, such as crowded nuclei, chromatin-sparse, and heavy background clutter. In contrast, deep networks have achieved state-of-the-art performance in modeling various nuclear appearances. However, their success is limited due to the size of the considered networks. We solve these problems by reformulating nuclear segmentation in terms of a cascade 2-class classification problem and propose a multi-layer boosting sparse convolutional (ML-BSC) model. In the proposed ML-BSC model, discriminative probabilistic binary decision trees (PBDTs) are designed as weak learners in each layer to cope with challenging cases. A sparsity-constrained cascade structure enables the ML-BSC model to improve representation learning. Comparing to the existing techniques, our method can accurately separate individual nuclei in complex histopathology images, and it is more robust against chromatin-sparse and heavy background clutter. An evaluation carried out using three disparate datasets demonstrates the superiority of our method over the state-of-the-art supervised approaches in terms of segmentation accuracy."
+}
+@ARTICLE{8626549,
+author={M. {Tofighi} and T. {Guo} and J. K. P. {Vanamala} and V. {Monga}},
+journal={IEEE Transactions on Medical Imaging},
+title={Prior Information Guided Regularized Deep Learning for Cell Nucleus Detection},
+year={2019},
+volume={38},
+number={9},
+pages={2047-2058},
+keywords={biology computing;cellular biophysics;convolutional neural nets;learning (artificial intelligence);medical image processing;nucleus shapes;learnable layers;fixed processing part;regularization terms;cell nucleus boundary;TSP-CNN;cell nucleus detection;cell nuclei detection;cellular image quality;nuclear morphology;multiple cell nuclei;deep learning methods;convolutional neural networks;training set;input images;labeled nuclei locations;spatial processing;morphological processing;canonical cell nuclei shapes;domain expert;shape priors;tunable SP-CNN;network structures;Shape;Image edge detection;Computer architecture;Microprocessors;Deep learning;Biomedical imaging;Image segmentation;Nucleus detection;deep learning;convolutional neural networks;shape priors;learnable shapes},
+doi={10.1109/TMI.2019.2895318},
+ISSN={},
+month={Sep.},}
+@ARTICLE{8438559,
+author={P. {Naylor} and M. {Laé} and F. {Reyal} and T. {Walter}},
+journal={IEEE Transactions on Medical Imaging},
+title={Segmentation of Nuclei in Histopathology Images by Deep Regression of the Distance Map},
+year={2019},
+volume={38},
+number={2},
+pages={448-459},
+keywords={biological tissues;cancer;cellular biophysics;diseases;image segmentation;medical image processing;neural nets;patient diagnosis;histopathology images;deep regression;distance map;digital pathology;diseased tissue;quantitative profiles;prognosis tasks;interpretable models;cell nuclei;histopathology data;fully convolutional networks;segmentation problem;regression task;Haematoxylin and Eosin stained histopathology data;Image segmentation;Cancer;Pathology;Task analysis;Biology;Tumors;Computer architecture;Cancer research;deep learning;digital pathology;histopathology;nuclei segmentation},
+doi={10.1109/TMI.2018.2865709},
+ISSN={},
+month={Feb},}
+@InProceedings{10.1007/978-3-319-46723-8_18,
+author="Dou, Qi
+and Chen, Hao
+and Jin, Yueming
+and Yu, Lequan
+and Qin, Jing
+and Heng, Pheng-Ann",
+editor="Ourselin, Sebastien
+and Joskowicz, Leo
+and Sabuncu, Mert R.
+and Unal, Gozde
+and Wells, William",
+title="3D Deeply Supervised Network for Automatic Liver Segmentation from CT Volumes",
+booktitle="Medical Image Computing and Computer-Assisted Intervention -- MICCAI 2016",
+year="2016",
+publisher="Springer International Publishing",
+address="Cham",
+pages="149--157",
+abstract="Automatic liver segmentation from CT volumes is a crucial prerequisite yet challenging task for computer-aided hepatic disease diagnosis and treatment. In this paper, we present a novel 3D deeply supervised network (3D DSN) to address this challenging task. The proposed 3D DSN takes advantage of a fully convolutional architecture which performs efficient end-to-end learning and inference. More importantly, we introduce a deep supervision mechanism during the learning process to combat potential optimization difficulties, and thus the model can acquire a much faster convergence rate and more powerful discrimination capability. On top of the high-quality score map produced by the 3D DSN, a conditional random field model is further employed to obtain refined segmentation results. We evaluated our framework on the public MICCAI-SLiver07 dataset. Extensive experiments demonstrated that our method achieves competitive segmentation results to state-of-the-art approaches with a much faster processing speed.",
+isbn="978-3-319-46723-8"
+}
+@Article{Lu2017,
+author="Lu, Fang
+and Wu, Fa
+and Hu, Peijun
+and Peng, Zhiyi
+and Kong, Dexing",
+title="Automatic 3D liver location and segmentation via convolutional neural network and graph cut",
+journal="International Journal of Computer Assisted Radiology and Surgery",
+year="2017",
+month="Feb",
+day="01",
+volume="12",
+number="2",
+pages="171--182",
+abstract="Segmentation of the liver from abdominal computed tomography (CT) images is an essential step in some computer-assisted clinical interventions, such as surgery planning for living donor liver transplant, radiotherapy and volume measurement. In this work, we develop a deep learning algorithm with graph cut refinement to automatically segment the liver in CT scans.",
+issn="1861-6429",
+doi="10.1007/s11548-016-1467-3",
+url="https://doi.org/10.1007/s11548-016-1467-3"
+}
+@InProceedings{10.1007/978-3-319-66182-7_79,
+author="Zhou, Yuyin
+and Xie, Lingxi
+and Shen, Wei
+and Wang, Yan
+and Fishman, Elliot K.
+and Yuille, Alan L.",
+editor="Descoteaux, Maxime
+and Maier-Hein, Lena
+and Franz, Alfred
+and Jannin, Pierre
+and Collins, D. Louis
+and Duchesne, Simon",
+title="A Fixed-Point Model for Pancreas Segmentation in Abdominal CT Scans",
+booktitle="Medical Image Computing and Computer Assisted Intervention − MICCAI 2017",
+year="2017",
+publisher="Springer International Publishing",
+address="Cham",
+pages="693--701",
+abstract="Deep neural networks have been widely adopted for automatic organ segmentation from abdominal CT scans. However, the segmentation accuracy of some small organs (e.g., the pancreas) is sometimes below satisfaction, arguably because deep networks are easily disrupted by the complex and variable background regions which occupies a large fraction of the input volume. In this paper, we formulate this problem into a fixed-point model which uses a predicted segmentation mask to shrink the input region. This is motivated by the fact that a smaller input region often leads to more accurate segmentation. In the training process, we use the ground-truth annotation to generate accurate input regions and optimize network weights. On the testing stage, we fix the network parameters and update the segmentation results in an iterative manner. We evaluate our approach on the NIH pancreas segmentation dataset, and outperform the state-of-the-art by more than {\$}{\$}4{\backslash}{\%}{\$}{\$}, measured by the average Dice-S{\o}rensen Coefficient (DSC). In addition, we report {\$}{\$}62.43{\backslash}{\%}{\$}{\$}DSC in the worst case, which guarantees the reliability of our approach in clinical applications.",
+isbn="978-3-319-66182-7"
+}
+@InProceedings{10.1007/978-3-319-66179-7_77,
+author="Cai, Jinzheng
+and Lu, Le
+and Xie, Yuanpu
+and Xing, Fuyong
+and Yang, Lin",
+editor="Descoteaux, Maxime
+and Maier-Hein, Lena
+and Franz, Alfred
+and Jannin, Pierre
+and Collins, D. Louis
+and Duchesne, Simon",
+title="Pancreas Segmentation in MRI Using Graph-Based Decision Fusion on Convolutional Neural Networks",
+booktitle="Medical Image Computing and Computer Assisted Intervention − MICCAI 2017",
+year="2017",
+publisher="Springer International Publishing",
+address="Cham",
+pages="674--682",
+abstract="Deep neural networks have demonstrated very promising performance on accurate segmentation of challenging organs (e.g., pancreas) in abdominal CT and MRI scans. The current deep learning approaches conduct pancreas segmentation by processing sequences of 2D image slices independently through deep, dense per-pixel masking for each image, without explicitly enforcing spatial consistency constraint on segmentation of successive slices. We propose a new convolutional/recurrent neural network architecture to address the contextual learning and segmentation consistency problem. A deep convolutional sub-network is first designed and pre-trained from scratch. The output layer of this network module is then connected to recurrent layers and can be fine-tuned for contextual learning, in an end-to-end manner. Our recurrent sub-network is a type of Long short-term memory (LSTM) network that performs segmentation on an image by integrating its neighboring slice segmentation predictions, in the form of a dependent sequence processing. Additionally, a novel segmentation-direct loss function (named Jaccard Loss) is proposed and deep networks are trained to optimize Jaccard Index (JI) directly. Extensive experiments are conducted to validate our proposed deep models, on quantitative pancreas segmentation using both CT and MRI scans. Our method outperforms the state-of-the-art work on CT [11] and MRI pancreas segmentation [1], respectively.",
+isbn="978-3-319-66179-7"
+}
+@inproceedings{Khagi2019,
+author = {Khagi, Bijen and Lee, Chung and Kwon, Goo-Rak},
+year = {2019},
+month = {01},
+pages = {},
+title = {Alzheimer's disease Classification from Brain MRI based on transfer learning from CNN},
+doi = {10.1109/BMEiCON.2018.8609974}
+}
+@misc{alex20183d,
+    title={3D CNN-based classification using sMRI and MD-DTI images for Alzheimer disease studies},
+    author={Alexander Khvostikov and Karim Aderghal and Jenny Benois-Pineau and Andrey Krylov and Gwenaelle Catheline},
+    year={2018},
+    eprint={1801.05968},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+}
+@inproceedings{Khvostikov2017ad,
+author = {Khvostikov, Alexander and Benois-Pineau, Jenny and Krylov, Andrey and Catheline, Gwenaelle},
+year = {2017},
+month = {09},
+pages = {},
+title = {Classification methods on different imaging modalities for Alzheimer disease studies}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@unpublished{zhang-fan-2019-ad,
+title={U-net based analysis of MRI for Alzheimer’s disease diagnosis {\Huge todo, and this paper is under publishing}},
+author={Liang {Zhang} and Zhonghao {Fan}},
+note={Unpublished},
+}
+@unpublished{zhang-zhang-2019-organ,
+title={Block Level Skip Connections across Cascaded V-Net for Multi-organ Segmentation {\Huge todo, and this paper is under publishing}},
+author={Liang Zhang and Jiaming Zhang},
+note={Unpublished},
+}
+@unpublished{zhang-kong-2019-lpdc,
+title={unknow},
+author={Liang {Zhang} and Xiangwen {Kong}},
+note={Unpublished},
+}
