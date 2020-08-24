@@ -648,6 +648,17 @@ title = {{Adversarial Attacks Against Medical Deep Learning Systems}},
 url = {http://arxiv.org/abs/1804.05296},
 year = {2018}
 }
+@article{Zhu2016,
+abstract = {Mass segmentation is an important task in mammogram analysis, providing effective morphological features and regions of interest (ROI) for mass detection and classification. Inspired by the success of using deep convolutional features for natural image analysis and conditional random fields (CRF) for structural learning, we propose an end-to-end network for mammographic mass segmentation. The network employs a fully convolutional network (FCN) to model potential function, followed by a CRF to perform structural learning. Because the mass distribution varies greatly with pixel position, the FCN is combined with position priori for the task. Due to the small size of mammogram datasets, we use adversarial training to control over-fitting. Four models with different convolutional kernels are further fused to improve the segmentation results. Experimental results on two public datasets, INbreast and DDSM-BCRP, show that our end-to-end network combined with adversarial training achieves the-state-of-the-art results.},
+archivePrefix = {arXiv},
+arxivId = {1612.05970},
+author = {Zhu, Wentao and Xiang, Xiang and Tran, Trac D. and Xie, Xiaohui},
+eprint = {1612.05970},
+month = {dec},
+title = {{Adversarial Deep Structural Networks for Mammographic Mass Segmentation}},
+url = {http://arxiv.org/abs/1612.05970},
+year = {2016}
+}
 @inproceedings{Song2017,
 abstract = {We propose a method to reconstruct, complete and semantically label a 3D scene from a single input depth image. We improve the accuracy of the regressed semantic 3D maps by a novel architecture based on adversarial learning. In particular, we suggest using multiple adversarial loss terms that not only enforce realistic outputs with respect to the ground truth, but also an effective embedding of the internal features. This is done by correlating the latent features of the encoder working on partial 2.5D data with the latent features extracted from a variational 3D auto-encoder trained to reconstruct the complete semantic scene. In addition, differently from other approaches that operate entirely through 3D convolutions, at test time we retain the original 2.5D structure of the input during downsampling to improve the effectiveness of the internal representation of our model. We test our approach on the main benchmark datasets for semantic scene completion to qualitatively and quantitatively assess the effectiveness of our proposal.},
 archivePrefix = {arXiv},
@@ -661,6 +672,24 @@ keywords = {Adversarial training,Depth image,Latent space,Scene completion},
 pages = {426--434},
 title = {{Adversarial semantic scene completion from a single depth image}},
 year = {2018}
+}
+@article{Moeskops2017,
+abstract = {Convolutional neural networks (CNNs) have been applied to various automatic image segmentation tasks in medical image analysis, including brain MRI segmentation. Generative adversarial networks have recently gained popularity because of their power in generating images that are difficult to distinguish from real images. In this study we use an adversarial training approach to improve CNN-based brain MRI segmentation. To this end, we include an additional loss function that motivates the network to generate segmentations that are difficult to distinguish from manual segmentations. During training, this loss function is optimised together with the conventional average per-voxel cross entropy loss. The results show improved segmentation performance using this adversarial training procedure for segmentation of two different sets of images and using two different network architectures, both visually and in terms of Dice coefficients.},
+archivePrefix = {arXiv},
+arxivId = {1707.03195},
+author = {Moeskops, Pim and Veta, Mitko and Lafarge, Maxime W. and Eppenhof, Koen A.J. and Pluim, Josien P.W.},
+doi = {10.1007/978-3-319-67558-9_7},
+eprint = {1707.03195},
+isbn = {9783319675572},
+issn = {16113349},
+journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+keywords = {Adversarial networks,Brain MRI,Convolutional neural networks,Deep learning,Dilated convolution,Medical image segmentation},
+month = {jul},
+pages = {56--64},
+title = {{Adversarial training and dilated convolutions for brain MRI segmentation}},
+url = {http://arxiv.org/abs/1707.03195},
+volume = {10553 LNCS},
+year = {2017}
 }
 @article{Fu2020,
 abstract = {Angle closure glaucoma (ACG) is a more aggressive disease than open-angle glaucoma, where the abnormal anatomical structures of the anterior chamber angle (ACA) may cause an elevated intraocular pressure and gradually leads to glaucomatous optic neuropathy and eventually to visual impairment and blindness. Anterior Segment Optical Coherence Tomography (AS-OCT) imaging provides a fast and contactless way to discriminate angle closure from open angle. Although many medical image analysis algorithms have been developed for glaucoma diagnosis, only a few studies have focused on AS-OCT imaging. In particular, there is no public AS-OCT dataset available for evaluating the existing methods in a uniform way, which limits the progress in the development of automated techniques for angle closure detection and assessment. To address this, we organized the Angle closure Glaucoma Evaluation challenge (AGE), held in conjunction with MICCAI 2019. The AGE challenge consisted of two tasks: scleral spur localization and angle closure classification. For this challenge, we released a large data of 4800 annotated AS-OCT images from 199 patients, and also proposed an evaluation framework to benchmark and compare different models. During the AGE challenge, over 200 teams registered online, and more than 1100 results were submitted for online evaluation. Finally, eight teams participated in the onsite challenge. In this paper, we summarize these eight onsite challenge methods and analyze their corresponding results in the two tasks. We further discuss limitations and future directions. In the AGE challenge, the top-performing approach had an average Euclidean Distance of 10 pixel in scleral spur localization, while in the task of angle closure classification, all the algorithms achieved the satisfactory performances, especially, 100{\%} accuracy rate for top-two performances.},
@@ -1853,6 +1882,17 @@ url = {http://journal.frontiersin.org/Article/10.3389/fnana.2015.00142/abstract}
 volume = {9},
 year = {2015}
 }
+@article{Rister2018a,
+abstract = {Fully-convolutional neural networks have achieved superior performance in a variety of image segmentation tasks. However, their training requires laborious manual annotation of large datasets, as well as acceleration by parallel processors with high-bandwidth memory, such as GPUs. We show that simple models can achieve competitive accuracy for organ segmentation on CT images when trained with extensive data augmentation, which leverages existing graphics hardware to quickly apply geometric and photometric transformations to 3D image data. On 3 mm{\^{}}3 CT volumes, our GPU implementation is 2.6-8X faster than a widely-used CPU version, including communication overhead. We also show how to automatically generate training labels using rudimentary morphological operations, which are efficiently computed by 3D Fourier transforms. We combined fully-automatic labels for the lungs and bone with semi-automatic ones for the liver, kidneys and bladder, to create a dataset of 130 labeled CT scans. To achieve the best results from data augmentation, our model uses the intersection-over-union (IOU) loss function, a close relative of the Dice loss. We discuss its mathematical properties and explain why it outperforms the usual weighted cross-entropy loss for unbalanced segmentation tasks. We conclude that there is no unique IOU loss function, as the naive one belongs to a broad family of functions with the same essential properties. When combining data augmentation with the IOU loss, our model achieves a Dice score of 78-92{\%} for each organ. The trained model, code and dataset will be made publicly available, to further medical imaging research.},
+archivePrefix = {arXiv},
+arxivId = {1811.11226},
+author = {Rister, Blaine and Yi, Darvin and Shivakumar, Kaushik and Nobashi, Tomomi and Rubin, Daniel L.},
+eprint = {1811.11226},
+month = {nov},
+title = {{CT organ segmentation using GPU data augmentation, unsupervised labels and IOU loss}},
+url = {http://arxiv.org/abs/1811.11226},
+year = {2018}
+}
 @article{Rister2018,
 abstract = {Fully-convolutional neural networks have achieved superior performance in a variety of image segmentation tasks. However, their training requires laborious manual annotation of large datasets, as well as acceleration by parallel processors with high-bandwidth memory, such as GPUs. We show that simple models can achieve competitive accuracy for organ segmentation on CT images when trained with extensive data augmentation, which leverages existing graphics hardware to quickly apply geometric and photometric transformations to 3D image data. On 3 mm{\^{}}3 CT volumes, our GPU implementation is 2.6-8X faster than a widely-used CPU version, including communication overhead. We also show how to automatically generate training labels using rudimentary morphological operations, which are efficiently computed by 3D Fourier transforms. We combined fully-automatic labels for the lungs and bone with semi-automatic ones for the liver, kidneys and bladder, to create a dataset of 130 labeled CT scans. To achieve the best results from data augmentation, our model uses the intersection-over-union (IOU) loss function, a close relative of the Dice loss. We discuss its mathematical properties and explain why it outperforms the usual weighted cross-entropy loss for unbalanced segmentation tasks. We conclude that there is no unique IOU loss function, as the naive one belongs to a broad family of functions with the same essential properties. When combining data augmentation with the IOU loss, our model achieves a Dice score of 78-92{\%} for each organ. The trained model, code and dataset will be made publicly available, to further medical imaging research.},
 annote = {{\_}eprint: 1811.11226},
@@ -1864,17 +1904,6 @@ journal = {CoRR},
 title = {{CT organ segmentation using GPU data augmentation, unsupervised labels and IOU loss}},
 url = {http://arxiv.org/abs/1811.11226},
 volume = {abs/1811.1},
-year = {2018}
-}
-@article{Rister2018a,
-abstract = {Fully-convolutional neural networks have achieved superior performance in a variety of image segmentation tasks. However, their training requires laborious manual annotation of large datasets, as well as acceleration by parallel processors with high-bandwidth memory, such as GPUs. We show that simple models can achieve competitive accuracy for organ segmentation on CT images when trained with extensive data augmentation, which leverages existing graphics hardware to quickly apply geometric and photometric transformations to 3D image data. On 3 mm{\^{}}3 CT volumes, our GPU implementation is 2.6-8X faster than a widely-used CPU version, including communication overhead. We also show how to automatically generate training labels using rudimentary morphological operations, which are efficiently computed by 3D Fourier transforms. We combined fully-automatic labels for the lungs and bone with semi-automatic ones for the liver, kidneys and bladder, to create a dataset of 130 labeled CT scans. To achieve the best results from data augmentation, our model uses the intersection-over-union (IOU) loss function, a close relative of the Dice loss. We discuss its mathematical properties and explain why it outperforms the usual weighted cross-entropy loss for unbalanced segmentation tasks. We conclude that there is no unique IOU loss function, as the naive one belongs to a broad family of functions with the same essential properties. When combining data augmentation with the IOU loss, our model achieves a Dice score of 78-92{\%} for each organ. The trained model, code and dataset will be made publicly available, to further medical imaging research.},
-archivePrefix = {arXiv},
-arxivId = {1811.11226},
-author = {Rister, Blaine and Yi, Darvin and Shivakumar, Kaushik and Nobashi, Tomomi and Rubin, Daniel L.},
-eprint = {1811.11226},
-month = {nov},
-title = {{CT organ segmentation using GPU data augmentation, unsupervised labels and IOU loss}},
-url = {http://arxiv.org/abs/1811.11226},
 year = {2018}
 }
 @article{Mirsky2019,
@@ -1949,7 +1978,7 @@ title = {{Data Augmentation using Random Image Cropping and Patching for Deep CN
 url = {http://dx.doi.org/10.1109/TCSVT.2019.2935128},
 year = {2019}
 }
-@article{Tschandl2018a,
+@article{Tschandl2018,
 abstract = {Training of neural networks for automated diagnosis of pigmented skin lesions is hampered by the small size and lack of diversity of available datasets of dermatoscopic images. We tackle this problem by releasing the HAM10000 (“Human Against Machine with 10000 training images”) dataset. We collected dermatoscopic images from different populations acquired and stored by different modalities. Given this diversity we had to apply different acquisition and cleaning methods and developed semi-automatic workflows utilizing specifically trained neural networks. The final dataset consists of 10015 dermatoscopic images which are released as a training set for academic machine learning purposes and are publicly available through the ISIC archive. This benchmark dataset can be used for machine learning and for comparisons with human experts. Cases include a representative collection of all important diagnostic categories in the realm of pigmented lesions. More than 50{\%} of lesions have been confirmed by pathology, while the ground truth for the rest of the cases was either follow-up, expert consensus, or confirmation by in-vivo confocal microscopy.},
 author = {Tschandl, Philipp and Rosendahl, Cliff and Kittler, Harald},
 doi = {10.1038/sdata.2018.161},
@@ -1963,7 +1992,7 @@ url = {http://www.nature.com/articles/sdata2018161},
 volume = {5},
 year = {2018}
 }
-@article{Tschandl2018,
+@article{Tschandl2018a,
 abstract = {Training of neural networks for automated diagnosis of pigmented skin lesions is hampered by the small size and lack of diversity of available datasets of dermatoscopic images. We tackle this problem by releasing the HAM10000 (“Human Against Machine with 10000 training images”) dataset. We collected dermatoscopic images from different populations acquired and stored by different modalities. Given this diversity we had to apply different acquisition and cleaning methods and developed semi-automatic workflows utilizing specifically trained neural networks. The final dataset consists of 10015 dermatoscopic images which are released as a training set for academic machine learning purposes and are publicly available through the ISIC archive. This benchmark dataset can be used for machine learning and for comparisons with human experts. Cases include a representative collection of all important diagnostic categories in the realm of pigmented lesions. More than 50{\%} of lesions have been confirmed by pathology, while the ground truth for the rest of the cases was either follow-up, expert consensus, or confirmation by in-vivo confocal microscopy.},
 author = {Tschandl, Philipp and Rosendahl, Cliff and Kittler, Harald},
 doi = {10.1038/sdata.2018.161},
@@ -2038,17 +2067,17 @@ title = {{Data from CT Phantom Scans for Head, Chest, and Controlled Protocols o
 url = {https://wiki.cancerimagingarchive.net/x/RADDAg},
 year = {2019}
 }
-@misc{Smith2015,
-author = {Smith, K and Clark, K and Bennett, W and Nolan, T and Kirby, J and Wolfsberger, M and Moulton, J and Vendt, B and Freymann, J},
-booktitle = {The Cancer Imaging Archive},
+@misc{SmithK2015,
+author = {{Smith K}, Clark K},
 doi = {10.7937/K9/TCIA.2015.NWTESAY1},
 publisher = {The Cancer Imaging Archive},
 title = {{Data From CT{\_}COLONOGRAPHY}},
 url = {https://wiki.cancerimagingarchive.net/x/DQE2},
 year = {2015}
 }
-@misc{SmithK2015,
-author = {{Smith K}, Clark K},
+@misc{Smith2015,
+author = {Smith, K and Clark, K and Bennett, W and Nolan, T and Kirby, J and Wolfsberger, M and Moulton, J and Vendt, B and Freymann, J},
+booktitle = {The Cancer Imaging Archive},
 doi = {10.7937/K9/TCIA.2015.NWTESAY1},
 publisher = {The Cancer Imaging Archive},
 title = {{Data From CT{\_}COLONOGRAPHY}},
@@ -2229,6 +2258,17 @@ title = {{Decoding functional category of source code from the brain (fMRI on Ja
 url = {https://openneuro.org/datasets/ds002411/versions/1.1.0},
 year = {2020}
 }
+@article{Aerts2014b,
+abstract = {Human cancers exhibit strong phenotypic differences that can be visualized noninvasively by medical imaging. Radiomics refers to the comprehensive quantification of tumour phenotypes by applying a large number of quantitative image features. Here we present a radiomic analysis of 440 features quantifying tumour image intensity, shape and texture, which are extracted from computed tomography data of 1,019 patients with lung or head-and-neck cancer. We find that a large number of radiomic features have prognostic power in independent data sets of lung and head-and-neck cancer patients, many of which were not identified as significant before. Radiogenomics analysis reveals that a prognostic radiomic signature, capturing intratumour heterogeneity, is associated with underlying gene-expression patterns. These data suggest that radiomics identifies a general prognostic phenotype existing in both lung and head-and-neck cancer. This may have a clinical impact as imaging is routinely used in clinical practice, providing an unprecedented opportunity to improve decision-support in cancer treatment at low cost. {\textcopyright} 2014 Macmillan Publishers Limited. All rights reserved.},
+author = {Aerts, Hugo J.W.L. and Velazquez, Emmanuel Rios and Leijenaar, Ralph T.H. and Parmar, Chintan and Grossmann, Patrick and Cavalho, Sara and Bussink, Johan and Monshouwer, Ren{\'{e}} and Haibe-Kains, Benjamin and Rietveld, Derek and Hoebers, Frank and Rietbergen, Michelle M. and Leemans, C. Ren{\'{e}} and Dekker, Andre and Quackenbush, John and Gillies, Robert J. and Lambin, Philippe},
+doi = {10.1038/ncomms5006},
+issn = {20411723},
+journal = {Nature Communications},
+pmid = {24892406},
+title = {{Decoding tumour phenotype by noninvasive imaging using a quantitative radiomics approach}},
+volume = {5},
+year = {2014}
+}
 @article{Aerts2014,
 abstract = {Human cancers exhibit strong phenotypic differences that can be visualized noninvasively by medical imaging. Radiomics refers to the comprehensive quantification of tumour phenotypes by applying a large number of quantitative image features. Here we present a radiomic analysis of 440 features quantifying tumour image intensity, shape and texture, which are extracted from computed tomography data of 1,019 patients with lung or head-and-neck cancer. We find that a large number of radiomic features have prognostic power in independent data sets of lung and head-and-neck cancer patients, many of which were not identified as significant before. Radiogenomics analysis reveals that a prognostic radiomic signature, capturing intratumour heterogeneity, is associated with underlying gene-expression patterns. These data suggest that radiomics identifies a general prognostic phenotype existing in both lung and head-and-neck cancer. This may have a clinical impact as imaging is routinely used in clinical practice, providing an unprecedented opportunity to improve decision-support in cancer treatment at low cost. {\textcopyright} 2014 Macmillan Publishers Limited. All rights reserved.},
 author = {Aerts, Hugo J.W.L. and Velazquez, Emmanuel Rios and Leijenaar, Ralph T.H. and Parmar, Chintan and Grossmann, Patrick and Cavalho, Sara and Bussink, Johan and Monshouwer, Ren{\'{e}} and Haibe-Kains, Benjamin and Rietveld, Derek and Hoebers, Frank and Rietbergen, Michelle M. and Leemans, C. Ren{\'{e}} and Dekker, Andre and Quackenbush, John and Gillies, Robert J. and Lambin, Philippe},
@@ -2240,17 +2280,6 @@ pages = {4006},
 pmid = {24892406},
 title = {{Decoding tumour phenotype by noninvasive imaging using a quantitative radiomics approach}},
 url = {https://doi.org/10.1038/ncomms5006},
-volume = {5},
-year = {2014}
-}
-@article{Aerts2014b,
-abstract = {Human cancers exhibit strong phenotypic differences that can be visualized noninvasively by medical imaging. Radiomics refers to the comprehensive quantification of tumour phenotypes by applying a large number of quantitative image features. Here we present a radiomic analysis of 440 features quantifying tumour image intensity, shape and texture, which are extracted from computed tomography data of 1,019 patients with lung or head-and-neck cancer. We find that a large number of radiomic features have prognostic power in independent data sets of lung and head-and-neck cancer patients, many of which were not identified as significant before. Radiogenomics analysis reveals that a prognostic radiomic signature, capturing intratumour heterogeneity, is associated with underlying gene-expression patterns. These data suggest that radiomics identifies a general prognostic phenotype existing in both lung and head-and-neck cancer. This may have a clinical impact as imaging is routinely used in clinical practice, providing an unprecedented opportunity to improve decision-support in cancer treatment at low cost. {\textcopyright} 2014 Macmillan Publishers Limited. All rights reserved.},
-author = {Aerts, Hugo J.W.L. and Velazquez, Emmanuel Rios and Leijenaar, Ralph T.H. and Parmar, Chintan and Grossmann, Patrick and Cavalho, Sara and Bussink, Johan and Monshouwer, Ren{\'{e}} and Haibe-Kains, Benjamin and Rietveld, Derek and Hoebers, Frank and Rietbergen, Michelle M. and Leemans, C. Ren{\'{e}} and Dekker, Andre and Quackenbush, John and Gillies, Robert J. and Lambin, Philippe},
-doi = {10.1038/ncomms5006},
-issn = {20411723},
-journal = {Nature Communications},
-pmid = {24892406},
-title = {{Decoding tumour phenotype by noninvasive imaging using a quantitative radiomics approach}},
 volume = {5},
 year = {2014}
 }
@@ -3548,6 +3577,17 @@ url = {http://www.sciencedirect.com/science/article/pii/S1361841518308430},
 volume = {58},
 year = {2019}
 }
+@article{Wang2019b,
+abstract = {Generative adversarial networks (GANs) have been extensively studied in the past few years. Arguably their most significant impact has been in the area of computer vision where great advances have been made in challenges such as plausible image generation, image-to-image translation, facial attribute manipulation and similar domains. Despite the significant successes achieved to date, applying GANs to real-world problems still poses significant challenges, three of which we focus on here. These are: (1) the generation of high quality images, (2) diversity of image generation, and (3) stable training. Focusing on the degree to which popular GAN technologies have made progress against these challenges, we provide a detailed review of the state of the art in GAN-related research in the published scientific literature. We further structure this review through a convenient taxonomy we have adopted based on variations in GAN architectures and loss functions. While several reviews for GANs have been presented to date, none have considered the status of this field based on their progress towards addressing practical challenges relevant to computer vision. Accordingly, we review and critically discuss the most popular architecture-variant, and loss-variant GANs, for tackling these challenges. Our objective is to provide an overview as well as a critical analysis of the status of GAN research in terms of relevant progress towards important computer vision application requirements. As we do this we also discuss the most compelling applications in computer vision in which GANs have demonstrated considerable success along with some suggestions for future research directions. Code related to GAN-variants studied in this work is summarized on https://github.com/sheqi/GAN{\_}Review.},
+archivePrefix = {arXiv},
+arxivId = {1906.01529},
+author = {Wang, Zhengwei and She, Qi and Ward, Tomas E.},
+eprint = {1906.01529},
+month = {jun},
+title = {{Generative Adversarial Networks in Computer Vision: A Survey and Taxonomy}},
+url = {http://arxiv.org/abs/1906.01529},
+year = {2019}
+}
 @article{Brock2016,
 abstract = {When working with three-dimensional data, choice of representation is key. We explore voxel-based models, and present evidence for the viability of voxellated representations in applications including shape modeling and object classification. Our key contributions are methods for training voxel-based variational autoencoders, a user interface for exploring the latent space learned by the autoencoder, and a deep convolutional neural network architecture for object classification. We address challenges unique to voxel-based representations, and empirically evaluate our models on the ModelNet benchmark, where we demonstrate a 51.5{\%} relative improvement in the state of the art for object classification.},
 annote = {{\_}eprint: 1608.04236},
@@ -3894,16 +3934,6 @@ title = {{How to Write a Successful Research Grant Application}},
 url = {http://link.springer.com/10.1007/978-1-4419-1454-5},
 year = {2011}
 }
-@book{Hering2019,
-address = {Berlin, Heidelberg},
-author = {Hering, Heike},
-doi = {10.1007/978-3-662-58107-0},
-isbn = {978-3-662-58105-6},
-publisher = {Springer Berlin Heidelberg},
-title = {{How to Write Technical Reports}},
-url = {http://link.springer.com/10.1007/978-3-662-58107-0},
-year = {2019}
-}
 @book{Hering2010,
 address = {Berlin, Heidelberg},
 author = {Hering, Lutz and Hering, Heike},
@@ -3913,6 +3943,16 @@ publisher = {Springer Berlin Heidelberg},
 title = {{How to Write Technical Reports}},
 url = {http://link.springer.com/10.1007/978-3-540-69929-3},
 year = {2010}
+}
+@book{Hering2019,
+address = {Berlin, Heidelberg},
+author = {Hering, Heike},
+doi = {10.1007/978-3-662-58107-0},
+isbn = {978-3-662-58105-6},
+publisher = {Springer Berlin Heidelberg},
+title = {{How to Write Technical Reports}},
+url = {http://link.springer.com/10.1007/978-3-662-58107-0},
+year = {2019}
 }
 @article{Matek2019,
 abstract = {Reliable recognition of malignant white blood cells is a key step in the diagnosis of hematologic malignancies such as Acute Myeloid Leukemia. Microscopic morphological examination of blood cells is usually performed by trained human examiners, making the process tedious, time-consuming and hard to standardise. We compile an annotated image dataset of over 18,000 white blood cells, use it to train a convolutional neural network for leukocyte classification, and evaluate the network's performance. The network classifies the most important cell types with high accuracy. It also allows us to decide two clinically relevant questions with human-level performance, namely (i) if a given cell has blast character, and (ii) if it belongs to the cell types normally present in non-pathological blood smears. Our approach holds the potential to be used as a classification aid for examining much larger numbers of cells in a smear than can usually be done by a human expert. This will allow clinicians to recognize malignant cell populations with lower prevalence at an earlier stage of the disease.},
@@ -4429,7 +4469,7 @@ title = {{Learning spatiotemporal features with 3D convolutional networks}},
 volume = {2015 Inter},
 year = {2015}
 }
-@article{Swiderska-Chadaj2019a,
+@article{Swiderska-Chadaj2019,
 abstract = {The immune system is of critical importance in the development of cancer. The evasion of destruction by the immune system is one of the emerging hallmarks of cancer. We have built a dataset of 171,166 manually annotated CD3+ and CD8+ cells, which we used to train deep learning algorithms for automatic detection of lymphocytes in histopathology images to better quantify immune response. Moreover, we investigate the effectiveness of four deep learning based methods when different subcompartments of the whole-slide image are considered: normal tissue areas, areas with immune cell clusters, and areas containing artifacts. We have compared the proposed methods in breast, colon and prostate cancer tissue slides collected from nine different medical centers. Finally, we report the results of an observer study on lymphocyte quantification, which involved four pathologists from different medical centers, and compare their performance with the automatic detection. The results give insights on the applicability of the proposed methods for clinical use. U-Net obtained the highest performance with an F1-score of 0.78 and the highest agreement with manual evaluation ($\kappa$=0.72), whereas the average pathologists agreement with reference standard was $\kappa$=0.64. The test set and the automatic evaluation procedure are publicly available at lyon19.grand-challenge.org.},
 author = {Swiderska-Chadaj, Zaneta and Pinckaers, Hans and van Rijthoven, Mart and Balkenhol, Maschenka and Melnikova, Margarita and Geessink, Oscar and Manson, Quirine and Sherman, Mark and Polonia, Antonio and Parry, Jeremy and Abubakar, Mustapha and Litjens, Geert and van der Laak, Jeroen and Ciompi, Francesco},
 doi = {10.1016/j.media.2019.101547},
@@ -5032,6 +5072,16 @@ issn = {16113349},
 title = {{Multivariate mixture model for cardiac segmentation from multi-sequence MRI}},
 year = {2016}
 }
+@article{Zhuang2019a,
+abstract = {The author proposes a method for simultaneous registration and segmentation of multi-source images, using the multivariate mixture model (MvMM) and maximum of log-likelihood (LL) framework. Specifically, the method is applied to the problem of myocardial segmentation combining the complementary information from multi-sequence (MS) cardiac magnetic resonance (CMR) images. For the image misalignment and incongruent data, the MvMM is formulated with transformations and is further generalized for dealing with the hetero-coverage multi-modality images (HC-MMIs). The segmentation of MvMM is performed in a virtual common space, to which all the images and misaligned slices are simultaneously registered. Furthermore, this common space can be divided into a number of sub-regions, each of which contains congruent data, thus the HC-MMIs can be modeled using a set of conventional MvMMs. Results show that MvMM obtained significantly better performance compared to the conventional approaches and demonstrated good potential for scar quantification as well as myocardial segmentation. The generalized MvMM has also demonstrated better robustness in the incongruent data, where some images may not fully cover the region of interest, and the full coverage can only be reconstructed combining the images from multiple sources.},
+author = {Zhuang, Xiahai},
+doi = {10.1109/TPAMI.2018.2869576},
+issn = {19393539},
+journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+keywords = {Multivariate image,cardiac MRI,medical image analysis,multi-modality,registration,segmentation},
+title = {{Multivariate Mixture Model for Myocardial Segmentation Combining Multi-Source Images}},
+year = {2019}
+}
 @article{Zhuang2019,
 abstract = {The author proposes a method for simultaneous registration and segmentation of multi-source images, using the multivariate mixture model (MvMM) and maximum of log-likelihood (LL) framework. Specifically, the method is applied to the problem of myocardial segmentation combining the complementary information from multi-sequence (MS) cardiac magnetic resonance (CMR) images. For the image misalignment and incongruent data, the MvMM is formulated with transformations and is further generalized for dealing with the hetero-coverage multi-modality images (HC-MMIs). The segmentation of MvMM is performed in a virtual common space, to which all the images and misaligned slices are simultaneously registered. Furthermore, this common space can be divided into a number of sub-regions, each of which contains congruent data, thus the HC-MMIs can be modeled using a set of conventional MvMMs. Results show that MvMM obtained significantly better performance compared to the conventional approaches and demonstrated good potential for scar quantification as well as myocardial segmentation. The generalized MvMM has also demonstrated better robustness in the incongruent data, where some images may not fully cover the region of interest, and the full coverage can only be reconstructed combining the images from multiple sources.},
 author = {Zhuang, Xiahai},
@@ -5043,16 +5093,6 @@ number = {12},
 pages = {2933--2946},
 title = {{Multivariate Mixture Model for Myocardial Segmentation Combining Multi-Source Images}},
 volume = {41},
-year = {2019}
-}
-@article{Zhuang2019a,
-abstract = {The author proposes a method for simultaneous registration and segmentation of multi-source images, using the multivariate mixture model (MvMM) and maximum of log-likelihood (LL) framework. Specifically, the method is applied to the problem of myocardial segmentation combining the complementary information from multi-sequence (MS) cardiac magnetic resonance (CMR) images. For the image misalignment and incongruent data, the MvMM is formulated with transformations and is further generalized for dealing with the hetero-coverage multi-modality images (HC-MMIs). The segmentation of MvMM is performed in a virtual common space, to which all the images and misaligned slices are simultaneously registered. Furthermore, this common space can be divided into a number of sub-regions, each of which contains congruent data, thus the HC-MMIs can be modeled using a set of conventional MvMMs. Results show that MvMM obtained significantly better performance compared to the conventional approaches and demonstrated good potential for scar quantification as well as myocardial segmentation. The generalized MvMM has also demonstrated better robustness in the incongruent data, where some images may not fully cover the region of interest, and the full coverage can only be reconstructed combining the images from multiple sources.},
-author = {Zhuang, Xiahai},
-doi = {10.1109/TPAMI.2018.2869576},
-issn = {19393539},
-journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
-keywords = {Multivariate image,cardiac MRI,medical image analysis,multi-modality,registration,segmentation},
-title = {{Multivariate Mixture Model for Myocardial Segmentation Combining Multi-Source Images}},
 year = {2019}
 }
 @inproceedings{Tatarchenko2015a,
@@ -5997,6 +6037,12 @@ year = {2020}
 title = {{Products | Neuromorphometrics, Inc.}},
 url = {http://www.neuromorphometrics.com/?page{\_}id=23}
 }
+@misc{,
+booktitle = {Stackexchange},
+title = {{programming - How to sort an alphanumeric list - TeX - LaTeX Stack Exchange}},
+url = {https://tex.stackexchange.com/questions/6988/how-to-sort-an-alphanumeric-list/7095{\#}7095},
+urldate = {2020-07-30}
+}
 @book{Skalka2005,
 address = {Cham},
 author = {Skalka, Christian},
@@ -6260,20 +6306,6 @@ title = {{Reflectance Models}},
 url = {http://link.springer.com/10.1007/978-3-030-03243-2{\_}537-1},
 year = {2020}
 }
-@misc{Orlando2020a,
-abstract = {Glaucoma is one of the leading causes of irreversible but preventable blindness in working age populations. Color fundus photography (CFP) is the most cost-effective imaging modality to screen for retinal disorders. However, its application to glaucoma has been limited to the computation of a few related biomarkers such as the vertical cup-to-disc ratio. Deep learning approaches, although widely applied for medical image analysis, have not been extensively used for glaucoma assessment due to the limited size of the available data sets. Furthermore, the lack of a standardize benchmark strategy makes difficult to compare existing methods in a uniform way. In order to overcome these issues we set up the Retinal Fundus Glaucoma Challenge, REFUGE (https://refuge.grand-challenge.org), held in conjunction with MICCAI 2018. The challenge consisted of two primary tasks, namely optic disc/cup segmentation and glaucoma classification. As part of REFUGE, we have publicly released a data set of 1200 fundus images with ground truth segmentations and clinical glaucoma labels, currently the largest existing one. We have also built an evaluation framework to ease and ensure fairness in the comparison of different models, encouraging the development of novel techniques in the field. 12 teams qualified and participated in the online challenge. This paper summarizes their methods and analyzes their corresponding results. In particular, we observed that two of the top-ranked teams outperformed two human experts in the glaucoma classification task. Furthermore, the segmentation results were in general consistent with the ground truth annotations, with complementary outcomes that can be further exploited by ensembling the results.},
-archivePrefix = {arXiv},
-arxivId = {1910.03667},
-author = {Orlando, Jos{\'{e}} Ignacio and Fu, Huazhu and {Barbossa Breda}, Jo{\~{a}}o and van Keer, Karel and Bathula, Deepti R. and Diaz-Pinto, Andr{\'{e}}s and Fang, Ruogu and Heng, Pheng Ann and Kim, Jeyoung and Lee, Joon Ho and Lee, Joonseok and Li, Xiaoxiao and Liu, Peng and Lu, Shuai and Murugesan, Balamurali and Naranjo, Valery and Phaye, Sai Samarth R. and Shankaranarayana, Sharath M. and Sikka, Apoorva and Son, Jaemin and van den Hengel, Anton and Wang, Shujun and Wu, Junyan and Wu, Zifeng and Xu, Guanghui and Xu, Yongli and Yin, Pengshuai and Li, Fei and Zhang, Xiulan and Xu, Yanwu and Bogunovi{\'{c}}, Hrvoje},
-booktitle = {Medical Image Analysis},
-doi = {10.1016/j.media.2019.101570},
-eprint = {1910.03667},
-issn = {13618423},
-keywords = {Deep learning,Fundus photography,Glaucoma,Image classification,Image segmentation},
-pmid = {31630011},
-title = {{REFUGE Challenge: A unified framework for evaluating automated methods for glaucoma assessment from fundus photographs}},
-year = {2020}
-}
 @misc{Orlando2020,
 abstract = {Glaucoma is one of the leading causes of irreversible but preventable blindness in working age populations. Color fundus photography (CFP) is the most cost-effective imaging modality to screen for retinal disorders. However, its application to glaucoma has been limited to the computation of a few related biomarkers such as the vertical cup-to-disc ratio. Deep learning approaches, although widely applied for medical image analysis, have not been extensively used for glaucoma assessment due to the limited size of the available data sets. Furthermore, the lack of a standardize benchmark strategy makes difficult to compare existing methods in a uniform way. In order to overcome these issues we set up the Retinal Fundus Glaucoma Challenge, REFUGE (https://refuge.grand-challenge.org), held in conjunction with MICCAI 2018. The challenge consisted of two primary tasks, namely optic disc/cup segmentation and glaucoma classification. As part of REFUGE, we have publicly released a data set of 1200 fundus images with ground truth segmentations and clinical glaucoma labels, currently the largest existing one. We have also built an evaluation framework to ease and ensure fairness in the comparison of different models, encouraging the development of novel techniques in the field. 12 teams qualified and participated in the online challenge. This paper summarizes their methods and analyzes their corresponding results. In particular, we observed that two of the top-ranked teams outperformed two human experts in the glaucoma classification task. Furthermore, the segmentation results were in general consistent with the ground truth annotations, with complementary outcomes that can be further exploited by ensembling the results.},
 archivePrefix = {arXiv},
@@ -6287,6 +6319,20 @@ keywords = {Deep learning,Fundus photography,Glaucoma,Image classification,Image
 pmid = {31630011},
 title = {{REFUGE Challenge: A unified framework for evaluating automated methods for glaucoma assessment from fundus photographs}},
 volume = {59},
+year = {2020}
+}
+@misc{Orlando2020a,
+abstract = {Glaucoma is one of the leading causes of irreversible but preventable blindness in working age populations. Color fundus photography (CFP) is the most cost-effective imaging modality to screen for retinal disorders. However, its application to glaucoma has been limited to the computation of a few related biomarkers such as the vertical cup-to-disc ratio. Deep learning approaches, although widely applied for medical image analysis, have not been extensively used for glaucoma assessment due to the limited size of the available data sets. Furthermore, the lack of a standardize benchmark strategy makes difficult to compare existing methods in a uniform way. In order to overcome these issues we set up the Retinal Fundus Glaucoma Challenge, REFUGE (https://refuge.grand-challenge.org), held in conjunction with MICCAI 2018. The challenge consisted of two primary tasks, namely optic disc/cup segmentation and glaucoma classification. As part of REFUGE, we have publicly released a data set of 1200 fundus images with ground truth segmentations and clinical glaucoma labels, currently the largest existing one. We have also built an evaluation framework to ease and ensure fairness in the comparison of different models, encouraging the development of novel techniques in the field. 12 teams qualified and participated in the online challenge. This paper summarizes their methods and analyzes their corresponding results. In particular, we observed that two of the top-ranked teams outperformed two human experts in the glaucoma classification task. Furthermore, the segmentation results were in general consistent with the ground truth annotations, with complementary outcomes that can be further exploited by ensembling the results.},
+archivePrefix = {arXiv},
+arxivId = {1910.03667},
+author = {Orlando, Jos{\'{e}} Ignacio and Fu, Huazhu and {Barbossa Breda}, Jo{\~{a}}o and van Keer, Karel and Bathula, Deepti R. and Diaz-Pinto, Andr{\'{e}}s and Fang, Ruogu and Heng, Pheng Ann and Kim, Jeyoung and Lee, Joon Ho and Lee, Joonseok and Li, Xiaoxiao and Liu, Peng and Lu, Shuai and Murugesan, Balamurali and Naranjo, Valery and Phaye, Sai Samarth R. and Shankaranarayana, Sharath M. and Sikka, Apoorva and Son, Jaemin and van den Hengel, Anton and Wang, Shujun and Wu, Junyan and Wu, Zifeng and Xu, Guanghui and Xu, Yongli and Yin, Pengshuai and Li, Fei and Zhang, Xiulan and Xu, Yanwu and Bogunovi{\'{c}}, Hrvoje},
+booktitle = {Medical Image Analysis},
+doi = {10.1016/j.media.2019.101570},
+eprint = {1910.03667},
+issn = {13618423},
+keywords = {Deep learning,Fundus photography,Glaucoma,Image classification,Image segmentation},
+pmid = {31630011},
+title = {{REFUGE Challenge: A unified framework for evaluating automated methods for glaucoma assessment from fundus photographs}},
 year = {2020}
 }
 @incollection{Deguchi2020,
@@ -6507,19 +6553,6 @@ url = {https://linkinghub.elsevier.com/retrieve/pii/S136184152030027X},
 volume = {61},
 year = {2020}
 }
-@article{Duggal2017,
-abstract = {Convolutional Neural Networks (CNNs) are typically trained in the RGB color space. However, in medical imaging, we believe that pixel stain quantities offer a fundamental view of the interaction between tissues and stain chemicals. Since the optical density (OD) colorspace allows to compute pixel stain quantities from pixel RGB intensities using the Beer-Lambert's law, we propose a stain deconvolutional layer, hereby named as SD-Layer, affixed at the front of CNN that performs two functions: (1) it transforms the input RGB microscopic images to Optical Density (OD) space and (2) this layer deconvolves OD image with the stain basis learned through backpropagation and provides tissue-specific stain absorption quantities as input to the following CNN layers. With the introduction of only nine additional learnable parameters in the proposed SD-Layer, we obtain a considerably improved performance on two standard CNN architectures: AlexNet and T-CNN. Using the T-CNN architecture prefixed with the proposed SD-Layer, we obtain 5-fold cross-validation accuracy of 93.2{\%} in the problem of differentiating malignant immature White Blood Cells (WBCs) from normal immature WBCs for cancer detection.},
-author = {Duggal, Rahul and Gupta, Anubha and Gupta, Ritu and Mallick, Pramit},
-doi = {10.1007/978-3-319-66179-7_50},
-isbn = {9783319661780},
-issn = {16113349},
-journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
-keywords = {Cancer imaging,Classification,Deep learning,Stain deconvolution},
-pages = {435--443},
-title = {{SD-Layer: Stain deconvolutional layer for CNNs in medical microscopic imaging}},
-volume = {10435 LNCS},
-year = {2017}
-}
 @incollection{Duggal2017a,
 abstract = {Convolutional Neural Networks (CNNs) are typically trained in the RGB color space. However, in medical imaging, we believe that pixel stain quantities offer a fundamental view of the interaction between tissues and stain chemicals. Since the optical density (OD) colorspace allows to compute pixel stain quantities from pixel RGB intensities using the Beer-Lambert's law, we propose a stain deconvolutional layer, hereby named as SD-Layer, affixed at the front of CNN that performs two functions: (1) it transforms the input RGB microscopic images to Optical Density (OD) space and (2) this layer deconvolves OD image with the stain basis learned through backpropagation and provides tissue-specific stain absorption quantities as input to the following CNN layers. With the introduction of only nine additional learnable parameters in the proposed SD-Layer, we obtain a considerably improved performance on two standard CNN architectures: AlexNet and T-CNN. Using the T-CNN architecture prefixed with the proposed SD-Layer, we obtain 5-fold cross-validation accuracy of 93.2{\%} in the problem of differentiating malignant immature White Blood Cells (WBCs) from normal immature WBCs for cancer detection.},
 author = {Duggal, Rahul and Gupta, Anubha and Gupta, Ritu and Mallick, Pramit},
@@ -6531,6 +6564,19 @@ keywords = {Cancer imaging,Classification,Deep learning,Stain deconvolution},
 pages = {435--443},
 title = {{SD-Layer: Stain deconvolutional layer for CNNs in medical microscopic imaging}},
 url = {http://link.springer.com/10.1007/978-3-319-66179-7{\_}50},
+volume = {10435 LNCS},
+year = {2017}
+}
+@article{Duggal2017,
+abstract = {Convolutional Neural Networks (CNNs) are typically trained in the RGB color space. However, in medical imaging, we believe that pixel stain quantities offer a fundamental view of the interaction between tissues and stain chemicals. Since the optical density (OD) colorspace allows to compute pixel stain quantities from pixel RGB intensities using the Beer-Lambert's law, we propose a stain deconvolutional layer, hereby named as SD-Layer, affixed at the front of CNN that performs two functions: (1) it transforms the input RGB microscopic images to Optical Density (OD) space and (2) this layer deconvolves OD image with the stain basis learned through backpropagation and provides tissue-specific stain absorption quantities as input to the following CNN layers. With the introduction of only nine additional learnable parameters in the proposed SD-Layer, we obtain a considerably improved performance on two standard CNN architectures: AlexNet and T-CNN. Using the T-CNN architecture prefixed with the proposed SD-Layer, we obtain 5-fold cross-validation accuracy of 93.2{\%} in the problem of differentiating malignant immature White Blood Cells (WBCs) from normal immature WBCs for cancer detection.},
+author = {Duggal, Rahul and Gupta, Anubha and Gupta, Ritu and Mallick, Pramit},
+doi = {10.1007/978-3-319-66179-7_50},
+isbn = {9783319661780},
+issn = {16113349},
+journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+keywords = {Cancer imaging,Classification,Deep learning,Stain deconvolution},
+pages = {435--443},
+title = {{SD-Layer: Stain deconvolutional layer for CNNs in medical microscopic imaging}},
 volume = {10435 LNCS},
 year = {2017}
 }
@@ -6587,6 +6633,17 @@ publisher = {Springer International Publishing},
 title = {{Semantic Image Segmentation: Traditional Approach}},
 url = {http://link.springer.com/10.1007/978-3-030-03243-2{\_}251-1},
 year = {2020}
+}
+@article{Luc2016,
+abstract = {Adversarial training has been shown to produce state of the art results for generative image modeling. In this paper we propose an adversarial training approach to train semantic segmentation models. We train a convolutional semantic segmentation network along with an adversarial network that discriminates segmentation maps coming either from the ground truth or from the segmentation network. The motivation for our approach is that it can detect and correct higher-order inconsistencies between ground truth segmentation maps and the ones produced by the segmentation net. Our experiments show that our adversarial training approach leads to improved accuracy on the Stanford Background and PASCAL VOC 2012 datasets.},
+archivePrefix = {arXiv},
+arxivId = {1611.08408},
+author = {Luc, Pauline and Couprie, Camille and Chintala, Soumith and Verbeek, Jakob},
+eprint = {1611.08408},
+month = {nov},
+title = {{Semantic Segmentation using Adversarial Networks}},
+url = {http://arxiv.org/abs/1611.08408},
+year = {2016}
 }
 @inproceedings{Hackel2017,
 abstract = {This paper presents a new 3D point cloud classification benchmark data set with over four billion manually labelled points, meant as input for data-hungry (deep) learning methods. We also discuss first submissions to the benchmark that use deep convolutional neural networks (CNNs) as a work horse, which already show remarkable performance improvements over state-of-the-art. CNNs have become the de-facto standard for many tasks in computer vision and machine learning like semantic segmentation or object detection in images, but have no yet led to a true breakthrough for 3D point cloud labelling tasks due to lack of training data. With the massive data set presented in this paper, we aim at closing this data gap to help unleash the full potential of deep learning methods for 3D labelling tasks. Our semantic3D.net data set consists of dense point clouds acquired with static terrestrial laser scanners. It contains 8 semantic classes and covers a wide range of urban outdoor scenes: churches, streets, railroad tracks, squares, villages, soccer fields and castles. We describe our labelling interface and show that our data set provides more dense and complete point clouds with much higher overall number of labelled points compared to those already available to the research community. We further provide baseline method descriptions and comparison between methods submitted to our online system. We hope semantic3D.net will pave the way for deep learning methods in 3D point cloud labelling to learn richer, more general 3D representations, and first submissions after only a few months indicate that this might indeed be the case.},
@@ -7367,7 +7424,7 @@ url = {http://www.itk.org/ItkSoftwareGuide.pdf},
 volume = {Second},
 year = {2005}
 }
-@misc{Trikha2013a,
+@misc{Trikha2013,
 abstract = {Femtosecond laser-assisted cataract surgery (FLACS) represents a potential paradigm shift in cataract surgery, but it is not without controversy. Advocates of the technology herald FLACS as a revolution that promises superior outcomes and an improved safety profile for patients. Conversely, detractors point to the large financial costs involved and claim that similar results are achievable with conventional small-incision phacoemulsification. This review provides a balanced and comprehensive account of the development of FLACS since its inception. It explains the physiology and mechanics underlying the technology, and critically reviews the outcomes and implications of initial studies. The benefits and limitations of using femtosecond laser accuracy to create corneal incisions, anterior capsulotomy, and lens fragmentation are explored, with reference to the main platforms, which currently offer FLACS. Economic considerations are discussed, in addition to the practicalities associated with the implementation of FLACS in a healthcare setting. The influence on surgical training and skills is considered and possible future applications of the technology introduced. While in its infancy, FLACS sets out the exciting possibility of a new level of precision in cataract surgery. However, further work in the form of large scale, phase 3 randomised controlled trials are required to demonstrate whether its theoretical benefits are significant in practice and worthy of the necessary huge financial investment and system overhaul. Whether it gains widespread acceptance is likely to be influenced by a complex interplay of scientific and socio-economic factors in years to come. {\textcopyright} 2013 Macmillan Publishers Limited All rights reserved 0950-222X/13.},
 author = {Trikha, S. and Turnbull, A. M.J. and Morris, R. J. and Anderson, D. F. and Hossain, P.},
 booktitle = {Eye (Basingstoke)},
@@ -7377,7 +7434,7 @@ keywords = {capsulorhexis,capsulotomy,cataract surgery,femtosecond,laser,phacoem
 title = {{The journey to femtosecond laser-assisted cataract surgery: New beginnings or a false dawn?}},
 year = {2013}
 }
-@misc{Trikha2013,
+@misc{Trikha2013a,
 abstract = {Femtosecond laser-assisted cataract surgery (FLACS) represents a potential paradigm shift in cataract surgery, but it is not without controversy. Advocates of the technology herald FLACS as a revolution that promises superior outcomes and an improved safety profile for patients. Conversely, detractors point to the large financial costs involved and claim that similar results are achievable with conventional small-incision phacoemulsification. This review provides a balanced and comprehensive account of the development of FLACS since its inception. It explains the physiology and mechanics underlying the technology, and critically reviews the outcomes and implications of initial studies. The benefits and limitations of using femtosecond laser accuracy to create corneal incisions, anterior capsulotomy, and lens fragmentation are explored, with reference to the main platforms, which currently offer FLACS. Economic considerations are discussed, in addition to the practicalities associated with the implementation of FLACS in a healthcare setting. The influence on surgical training and skills is considered and possible future applications of the technology introduced. While in its infancy, FLACS sets out the exciting possibility of a new level of precision in cataract surgery. However, further work in the form of large scale, phase 3 randomised controlled trials are required to demonstrate whether its theoretical benefits are significant in practice and worthy of the necessary huge financial investment and system overhaul. Whether it gains widespread acceptance is likely to be influenced by a complex interplay of scientific and socio-economic factors in years to come. {\textcopyright} 2013 Macmillan Publishers Limited All rights reserved 0950-222X/13.},
 author = {Trikha, S. and Turnbull, A. M.J. and Morris, R. J. and Anderson, D. F. and Hossain, P.},
 booktitle = {Eye (Basingstoke)},
