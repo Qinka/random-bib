@@ -1837,31 +1837,17 @@ title = {{Convolutional neural networks with low-rank regularization}},
 year = {2016}
 }
 @article{Rusu2017,
-abstract = {Objective: To develop an approach for radiology-pathology fusion of ex vivo histology of surgically excised pulmonary nodules with pre-operative CT, to radiologically map spatial extent of the invasive adenocarcinomatous component of the nodule. Methods: Six subjects (age: 75 ± 11 years) with pre-operative CT and surgically excised ground-glass nodules (size: 22.5 ± 5.1 mm) with a significant invasive adenocarcinomatous component ({\textgreater}5 mm) were included. The pathologist outlined disease extent on digitized histology specimens; two radiologists and a pulmonary critical care physician delineated the entire nodule on CT (in-plane resolution: {\textless}0.8 mm, inter-slice distance: 1–5 mm). We introduced a novel reconstruction approach to localize histology slices in 3D relative to each other while using CT scan as spatial constraint. This enabled the spatial mapping of the extent of tumour invasion from histology onto CT. Results: Good overlap of the 3D reconstructed histology and the nodule outlined on CT was observed (65.9 ± 5.2{\%}). Reduction in 3D misalignment of corresponding anatomical landmarks on histology and CT was observed (1.97 ± 0.42 mm). Moreover, the CT attenuation (HU) distributions were different when comparing invasive and in situ regions. Conclusion: This proof-of-concept study suggests that our fusion method can enable the spatial mapping of the invasive adenocarcinomatous component from 2D histology slices onto in vivo CT. Key Points: • 3D reconstructions are generated from 2D histology specimens of ground glass nodules. • The reconstruction methodology used pre-operative in vivo CT as 3D spatial constraint. • The methodology maps adenocarcinoma extent from digitized histology onto in vivo CT. • The methodology potentially facilitates the discovery of CT signature of invasive adenocarcinoma.},
-author = {Rusu, Mirabela and Rajiah, Prabhakar and Gilkeson, Robert and Yang, Michael and Donatelli, Christopher and Thawani, Rajat and Jacono, Frank J and Linden, Philip and Madabhushi, Anant},
-doi = {10.1007/s00330-017-4813-0},
-issn = {14321084},
-journal = {European Radiology},
-keywords = {Computed tomography,Computer-assisted image processing,Lung adenocarcinoma,Multimodal imaging,Pathology},
-number = {10},
-pages = {4209--4217},
-title = {{Co-registration of pre-operative CT with ex vivo surgically excised ground glass nodules to define spatial extent of invasive adenocarcinoma on in vivo imaging: a proof-of-concept study}},
-url = {https://doi.org/10.1007/s00330-017-4813-0},
-volume = {27},
-year = {2017}
-}
-@article{Rusu2017a,
 abstract = {Objective: To develop an approach for radiology-pathology fusion of ex vivo histology of surgically excised pulmonary nodules with pre-operative CT, to radiologically map spatial extent of the invasive adenocarcinomatous component of the nodule. Methods: Six subjects (age: 75 ± 11 years) with pre-operative CT and surgically excised ground-glass nodules (size: 22.5 ± 5.1 mm) with a significant invasive adenocarcinomatous component ({\textgreater}5 mm) were included. The pathologist outlined disease extent on digitized histology specimens; two radiologists and a pulmonary critical care physician delineated the entire nodule on CT (in-plane resolution: {\textless}0.8 mm, inter-slice distance: 1–5 mm). We introduced a novel reconstruction approach to localize histology slices in 3D relative to each other while using CT scan as spatial constraint. This enabled the spatial mapping of the extent of tumour invasion from histology onto CT. Results: Good overlap of the 3D reconstructed histology and the nodule outlined on CT was observed (65.9 ± 5.2{\%}). Reduction in 3D misalignment of corresponding anatomical landmarks on histology and CT was observed (1.97 ± 0.42 mm). Moreover, the CT attenuation (HU) distributions were different when comparing invasive and in situ regions. Conclusion: This proof-of-concept study suggests that our fusion method can enable the spatial mapping of the invasive adenocarcinomatous component from 2D histology slices onto in vivo CT. Key Points: • 3D reconstructions are generated from 2D histology specimens of ground glass nodules. • The reconstruction methodology used pre-operative in vivo CT as 3D spatial constraint. • The methodology maps adenocarcinoma extent from digitized histology onto in vivo CT. • The methodology potentially facilitates the discovery of CT signature of invasive adenocarcinoma.},
 author = {Rusu, Mirabela and Rajiah, Prabhakar and Gilkeson, Robert and Yang, Michael and Donatelli, Christopher and Thawani, Rajat and Jacono, Frank J. and Linden, Philip and Madabhushi, Anant},
 doi = {10.1007/s00330-017-4813-0},
 issn = {14321084},
 journal = {European Radiology},
 keywords = {Computed tomography,Computer-assisted image processing,Lung adenocarcinoma,Multimodal imaging,Pathology},
-month = {oct},
 number = {10},
 pages = {4209--4217},
+pmid = {28386717},
 title = {{Co-registration of pre-operative CT with ex vivo surgically excised ground glass nodules to define spatial extent of invasive adenocarcinoma on in vivo imaging: a proof-of-concept study}},
-url = {http://link.springer.com/10.1007/s00330-017-4813-0},
+url = {https://doi.org/10.1007/s00330-017-4813-0},
 volume = {27},
 year = {2017}
 }
@@ -1913,17 +1899,6 @@ journal = {CoRR},
 title = {{CT organ segmentation using GPU data augmentation, unsupervised labels and IOU loss}},
 url = {http://arxiv.org/abs/1811.11226},
 volume = {abs/1811.1},
-year = {2018}
-}
-@article{Rister2018a,
-abstract = {Fully-convolutional neural networks have achieved superior performance in a variety of image segmentation tasks. However, their training requires laborious manual annotation of large datasets, as well as acceleration by parallel processors with high-bandwidth memory, such as GPUs. We show that simple models can achieve competitive accuracy for organ segmentation on CT images when trained with extensive data augmentation, which leverages existing graphics hardware to quickly apply geometric and photometric transformations to 3D image data. On 3 mm{\^{}}3 CT volumes, our GPU implementation is 2.6-8X faster than a widely-used CPU version, including communication overhead. We also show how to automatically generate training labels using rudimentary morphological operations, which are efficiently computed by 3D Fourier transforms. We combined fully-automatic labels for the lungs and bone with semi-automatic ones for the liver, kidneys and bladder, to create a dataset of 130 labeled CT scans. To achieve the best results from data augmentation, our model uses the intersection-over-union (IOU) loss function, a close relative of the Dice loss. We discuss its mathematical properties and explain why it outperforms the usual weighted cross-entropy loss for unbalanced segmentation tasks. We conclude that there is no unique IOU loss function, as the naive one belongs to a broad family of functions with the same essential properties. When combining data augmentation with the IOU loss, our model achieves a Dice score of 78-92{\%} for each organ. The trained model, code and dataset will be made publicly available, to further medical imaging research.},
-archivePrefix = {arXiv},
-arxivId = {1811.11226},
-author = {Rister, Blaine and Yi, Darvin and Shivakumar, Kaushik and Nobashi, Tomomi and Rubin, Daniel L.},
-eprint = {1811.11226},
-month = {nov},
-title = {{CT organ segmentation using GPU data augmentation, unsupervised labels and IOU loss}},
-url = {http://arxiv.org/abs/1811.11226},
 year = {2018}
 }
 @article{Mirsky2019,
@@ -2007,20 +1982,7 @@ journal = {Scientific Data},
 month = {dec},
 number = {1},
 pages = {180161},
-title = {{Data descriptor: The HAM10000 dataset, a large collection of multi-source dermatoscopic images of common pigmented skin lesions}},
-url = {http://www.nature.com/articles/sdata2018161},
-volume = {5},
-year = {2018}
-}
-@article{Tschandl2018a,
-abstract = {Training of neural networks for automated diagnosis of pigmented skin lesions is hampered by the small size and lack of diversity of available datasets of dermatoscopic images. We tackle this problem by releasing the HAM10000 (“Human Against Machine with 10000 training images”) dataset. We collected dermatoscopic images from different populations acquired and stored by different modalities. Given this diversity we had to apply different acquisition and cleaning methods and developed semi-automatic workflows utilizing specifically trained neural networks. The final dataset consists of 10015 dermatoscopic images which are released as a training set for academic machine learning purposes and are publicly available through the ISIC archive. This benchmark dataset can be used for machine learning and for comparisons with human experts. Cases include a representative collection of all important diagnostic categories in the realm of pigmented lesions. More than 50{\%} of lesions have been confirmed by pathology, while the ground truth for the rest of the cases was either follow-up, expert consensus, or confirmation by in-vivo confocal microscopy.},
-author = {Tschandl, Philipp and Rosendahl, Cliff and Kittler, Harald},
-doi = {10.1038/sdata.2018.161},
-issn = {20524463},
-journal = {Scientific Data},
-month = {dec},
-number = {1},
-pages = {180161},
+pmid = {30106392},
 title = {{Data descriptor: The HAM10000 dataset, a large collection of multi-source dermatoscopic images of common pigmented skin lesions}},
 url = {http://www.nature.com/articles/sdata2018161},
 volume = {5},
@@ -2129,16 +2091,6 @@ publisher = {The Cancer Imaging Archive},
 title = {{Data From LGG-1p19qDeletion}},
 url = {https://wiki.cancerimagingarchive.net/x/coKJAQ},
 year = {2017}
-}
-@misc{ArmatoIIISamuelG.2015,
-abstract = {The Lung Image Database Consortium image collection (LIDC-IDRI) consists of diagnostic and lung cancer screening thoracic computed tomography (CT) scans with marked-up annotated lesions. It is a web-accessible international resource for development, training, and evaluation of computer-assisted diagnostic (CAD) methods for lung cancer detection and diagnosis. Initiated by the National Cancer Institute (NCI), further advanced by the Foundation for the National Institutes of Health (FNIH), and accompanied by the Food and Drug Administration (FDA) through active participation, this public-private partnership demonstrates the success of a consortium founded on a consensus-based process. Seven academic centers and eight medical imaging companies collaborated to create this data set which contains 1018 cases. Each subject includes images from a clinical thoracic CT scan and an associated XML file that records the results of a two-phase image annotation process performed by four experienced thoracic radiologists. In the initial blinded-read phase, each radiologist independently reviewed each CT scan and marked lesions belonging to one of three categories ("nodule {\textgreater} or =3 mm," "nodule {\textless}3 mm," and "non-nodule {\textgreater} or =3 mm"). In the subsequent unblinded-read phase, each radiologist independently reviewed their own marks along with the anonymized marks of the three other radiologists to render a final opinion. The goal of this process was to identify as completely as possible all lung nodules in each CT scan without requiring forced consensus.},
-author = {III, Armato and G., Samuel and McLennan and Geoffrey and Bidaut and Luc and McNitt-Gray and Michael, F. and R., Meyer and Charles and Reeves},
-booktitle = {The Cancer Imaging Archive},
-doi = {10.7937/K9/TCIA.2015.LO9QL9SX},
-publisher = {The Cancer Imaging Archive},
-title = {{Data From LIDC-IDRI}},
-url = {https://wiki.cancerimagingarchive.net/x/rgAe},
-year = {2015}
 }
 @misc{III2015,
 abstract = {The Lung Image Database Consortium image collection (LIDC-IDRI) consists of diagnostic and lung cancer screening thoracic computed tomography (CT) scans with marked-up annotated lesions. It is a web-accessible international resource for development, training, and evaluation of computer-assisted diagnostic (CAD) methods for lung cancer detection and diagnosis. Initiated by the National Cancer Institute (NCI), further advanced by the Foundation for the National Institutes of Health (FNIH), and accompanied by the Food and Drug Administration (FDA) through active participation, this public-private partnership demonstrates the success of a consortium founded on a consensus-based process. Seven academic centers and eight medical imaging companies collaborated to create this data set which contains 1018 cases. Each subject includes images from a clinical thoracic CT scan and an associated XML file that records the results of a two-phase image annotation process performed by four experienced thoracic radiologists. In the initial blinded-read phase, each radiologist independently reviewed each CT scan and marked lesions belonging to one of three categories ("nodule {\textgreater} or =3 mm," "nodule {\textless}3 mm," and "non-nodule {\textgreater} or =3 mm"). In the subsequent unblinded-read phase, each radiologist independently reviewed their own marks along with the anonymized marks of the three other radiologists to render a final opinion. The goal of this process was to identify as completely as possible all lung nodules in each CT scan without requiring forced consensus.},
@@ -2278,6 +2230,17 @@ title = {{Decoding functional category of source code from the brain (fMRI on Ja
 url = {https://openneuro.org/datasets/ds002411/versions/1.1.0},
 year = {2020}
 }
+@article{Aerts2014b,
+abstract = {Human cancers exhibit strong phenotypic differences that can be visualized noninvasively by medical imaging. Radiomics refers to the comprehensive quantification of tumour phenotypes by applying a large number of quantitative image features. Here we present a radiomic analysis of 440 features quantifying tumour image intensity, shape and texture, which are extracted from computed tomography data of 1,019 patients with lung or head-and-neck cancer. We find that a large number of radiomic features have prognostic power in independent data sets of lung and head-and-neck cancer patients, many of which were not identified as significant before. Radiogenomics analysis reveals that a prognostic radiomic signature, capturing intratumour heterogeneity, is associated with underlying gene-expression patterns. These data suggest that radiomics identifies a general prognostic phenotype existing in both lung and head-and-neck cancer. This may have a clinical impact as imaging is routinely used in clinical practice, providing an unprecedented opportunity to improve decision-support in cancer treatment at low cost. {\textcopyright} 2014 Macmillan Publishers Limited. All rights reserved.},
+author = {Aerts, Hugo J.W.L. and Velazquez, Emmanuel Rios and Leijenaar, Ralph T.H. and Parmar, Chintan and Grossmann, Patrick and Cavalho, Sara and Bussink, Johan and Monshouwer, Ren{\'{e}} and Haibe-Kains, Benjamin and Rietveld, Derek and Hoebers, Frank and Rietbergen, Michelle M. and Leemans, C. Ren{\'{e}} and Dekker, Andre and Quackenbush, John and Gillies, Robert J. and Lambin, Philippe},
+doi = {10.1038/ncomms5006},
+issn = {20411723},
+journal = {Nature Communications},
+pmid = {24892406},
+title = {{Decoding tumour phenotype by noninvasive imaging using a quantitative radiomics approach}},
+volume = {5},
+year = {2014}
+}
 @article{Aerts2014,
 abstract = {Human cancers exhibit strong phenotypic differences that can be visualized noninvasively by medical imaging. Radiomics refers to the comprehensive quantification of tumour phenotypes by applying a large number of quantitative image features. Here we present a radiomic analysis of 440 features quantifying tumour image intensity, shape and texture, which are extracted from computed tomography data of 1,019 patients with lung or head-and-neck cancer. We find that a large number of radiomic features have prognostic power in independent data sets of lung and head-and-neck cancer patients, many of which were not identified as significant before. Radiogenomics analysis reveals that a prognostic radiomic signature, capturing intratumour heterogeneity, is associated with underlying gene-expression patterns. These data suggest that radiomics identifies a general prognostic phenotype existing in both lung and head-and-neck cancer. This may have a clinical impact as imaging is routinely used in clinical practice, providing an unprecedented opportunity to improve decision-support in cancer treatment at low cost. {\textcopyright} 2014 Macmillan Publishers Limited. All rights reserved.},
 author = {Aerts, Hugo J.W.L. and Velazquez, Emmanuel Rios and Leijenaar, Ralph T.H. and Parmar, Chintan and Grossmann, Patrick and Cavalho, Sara and Bussink, Johan and Monshouwer, Ren{\'{e}} and Haibe-Kains, Benjamin and Rietveld, Derek and Hoebers, Frank and Rietbergen, Michelle M. and Leemans, C. Ren{\'{e}} and Dekker, Andre and Quackenbush, John and Gillies, Robert J. and Lambin, Philippe},
@@ -2289,17 +2252,6 @@ pages = {4006},
 pmid = {24892406},
 title = {{Decoding tumour phenotype by noninvasive imaging using a quantitative radiomics approach}},
 url = {https://doi.org/10.1038/ncomms5006},
-volume = {5},
-year = {2014}
-}
-@article{Aerts2014b,
-abstract = {Human cancers exhibit strong phenotypic differences that can be visualized noninvasively by medical imaging. Radiomics refers to the comprehensive quantification of tumour phenotypes by applying a large number of quantitative image features. Here we present a radiomic analysis of 440 features quantifying tumour image intensity, shape and texture, which are extracted from computed tomography data of 1,019 patients with lung or head-and-neck cancer. We find that a large number of radiomic features have prognostic power in independent data sets of lung and head-and-neck cancer patients, many of which were not identified as significant before. Radiogenomics analysis reveals that a prognostic radiomic signature, capturing intratumour heterogeneity, is associated with underlying gene-expression patterns. These data suggest that radiomics identifies a general prognostic phenotype existing in both lung and head-and-neck cancer. This may have a clinical impact as imaging is routinely used in clinical practice, providing an unprecedented opportunity to improve decision-support in cancer treatment at low cost. {\textcopyright} 2014 Macmillan Publishers Limited. All rights reserved.},
-author = {Aerts, Hugo J.W.L. and Velazquez, Emmanuel Rios and Leijenaar, Ralph T.H. and Parmar, Chintan and Grossmann, Patrick and Cavalho, Sara and Bussink, Johan and Monshouwer, Ren{\'{e}} and Haibe-Kains, Benjamin and Rietveld, Derek and Hoebers, Frank and Rietbergen, Michelle M. and Leemans, C. Ren{\'{e}} and Dekker, Andre and Quackenbush, John and Gillies, Robert J. and Lambin, Philippe},
-doi = {10.1038/ncomms5006},
-issn = {20411723},
-journal = {Nature Communications},
-pmid = {24892406},
-title = {{Decoding tumour phenotype by noninvasive imaging using a quantitative radiomics approach}},
 volume = {5},
 year = {2014}
 }
@@ -3156,16 +3108,6 @@ url = {https://linkinghub.elsevier.com/retrieve/pii/S1361841514001583},
 volume = {20},
 year = {2015}
 }
-@article{Litjens2014a,
-abstract = {Prostate MRI image segmentation has been an area of intense research due to the increased use of MRI as a modality for the clinical workup of prostate cancer. Segmentation is useful for various tasks, e.g. to accurately localize prostate boundaries for radiotherapy or to initialize multi-modal registration algorithms. In the past, it has been difficult for research groups to evaluate prostate segmentation algorithms on multi-center, multi-vendor and multi-protocol data. Especially because we are dealing with MR images, image appearance, resolution and the presence of artifacts are affected by differences in scanners and/or protocols, which in turn can have a large influence on algorithm accuracy. The Prostate MR Image Segmentation (PROMISE12) challenge was setup to allow a fair and meaningful comparison of segmentation methods on the basis of performance and robustness. In this work we will discuss the initial results of the online PROMISE12 challenge, and the results obtained in the live challenge workshop hosted by the MICCAI2012 conference. In the challenge, 100 prostate MR cases from 4 different centers were included, with differences in scanner manufacturer, field strength and protocol. A total of 11 teams from academic research groups and industry participated. Algorithms showed a wide variety in methods and implementation, including active appearance models, atlas registration and level sets. Evaluation was performed using boundary and volume based metrics which were combined into a single score relating the metrics to human expert performance. The winners of the challenge where the algorithms by teams Imorphics and ScrAutoProstate, with scores of 85.72 and 84.29 overall. Both algorithms where significantly better than all other algorithms in the challenge (p {\textless} 0.05) and had an efficient implementation with a run time of 8. min and 3. s per case respectively. Overall, active appearance model based approaches seemed to outperform other approaches like multi-atlas registration, both on accuracy and computation time. Although average algorithm performance was good to excellent and the Imorphics algorithm outperformed the second observer on average, we showed that algorithm combination might lead to further improvement, indicating that optimal performance for prostate segmentation is not yet obtained. All results are available online at http://promise12.grand-challenge.org/. {\textcopyright} 2013 Elsevier B.V.},
-author = {Litjens, Geert and Toth, Robert and van de Ven, Wendy and Hoeks, Caroline and Kerkstra, Sjoerd and van Ginneken, Bram and Vincent, Graham and Guillard, Gwenael and Birbeck, Neil and Zhang, Jindang and Strand, Robin and Malmberg, Filip and Ou, Yangming and Davatzikos, Christos and Kirschner, Matthias and Jung, Florian and Yuan, Jing and Qiu, Wu and Gao, Qinquan and Edwards, Philip Eddie and Maan, Bianca and van der Heijden, Ferdinand and Ghose, Soumya and Mitra, Jhimli and Dowling, Jason and Barratt, Dean and Huisman, Henkjan and Madabhushi, Anant},
-doi = {10.1016/j.media.2013.12.002},
-issn = {13618415},
-journal = {Medical Image Analysis},
-keywords = {Challenge,MRI,Prostate,Segmentation},
-title = {{Evaluation of prostate segmentation algorithms for MRI: The PROMISE12 challenge}},
-year = {2014}
-}
 @article{Litjens2014,
 abstract = {Prostate MRI image segmentation has been an area of intense research due to the increased use of MRI as a modality for the clinical workup of prostate cancer. Segmentation is useful for various tasks, e.g. to accurately localize prostate boundaries for radiotherapy or to initialize multi-modal registration algorithms. In the past, it has been difficult for research groups to evaluate prostate segmentation algorithms on multi-center, multi-vendor and multi-protocol data. Especially because we are dealing with MR images, image appearance, resolution and the presence of artifacts are affected by differences in scanners and/or protocols, which in turn can have a large influence on algorithm accuracy. The Prostate MR Image Segmentation (PROMISE12) challenge was setup to allow a fair and meaningful comparison of segmentation methods on the basis of performance and robustness. In this work we will discuss the initial results of the online PROMISE12 challenge, and the results obtained in the live challenge workshop hosted by the MICCAI2012 conference. In the challenge, 100 prostate MR cases from 4 different centers were included, with differences in scanner manufacturer, field strength and protocol. A total of 11 teams from academic research groups and industry participated. Algorithms showed a wide variety in methods and implementation, including active appearance models, atlas registration and level sets. Evaluation was performed using boundary and volume based metrics which were combined into a single score relating the metrics to human expert performance. The winners of the challenge where the algorithms by teams Imorphics and ScrAutoProstate, with scores of 85.72 and 84.29 overall. Both algorithms where significantly better than all other algorithms in the challenge (p {\textless} 0.05) and had an efficient implementation with a run time of 8. min and 3. s per case respectively. Overall, active appearance model based approaches seemed to outperform other approaches like multi-atlas registration, both on accuracy and computation time. Although average algorithm performance was good to excellent and the Imorphics algorithm outperformed the second observer on average, we showed that algorithm combination might lead to further improvement, indicating that optimal performance for prostate segmentation is not yet obtained. All results are available online at http://promise12.grand-challenge.org/. {\textcopyright} 2013 Elsevier B.V.},
 author = {Litjens, Geert and Toth, Robert and van de Ven, Wendy and Hoeks, Caroline and Kerkstra, Sjoerd and van Ginneken, Bram and Vincent, Graham and Guillard, Gwenael and Birbeck, Neil and Zhang, Jindang and Strand, Robin and Malmberg, Filip and Ou, Yangming and Davatzikos, Christos and Kirschner, Matthias and Jung, Florian and Yuan, Jing and Qiu, Wu and Gao, Qinquan and Edwards, Philip Eddie and Maan, Bianca and van der Heijden, Ferdinand and Ghose, Soumya and Mitra, Jhimli and Dowling, Jason and Barratt, Dean and Huisman, Henkjan and Madabhushi, Anant},
@@ -3375,7 +3317,7 @@ issn = {10636919},
 journal = {Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
 pages = {2554--2564},
 title = {{Fast ConvNets Using Group-Wise Brain Damage}},
-volume = {2016-December},
+volume = {2016-Decem},
 year = {2016}
 }
 @article{Ren2015,
@@ -3983,16 +3925,6 @@ title = {{How to Write a Successful Research Grant Application}},
 url = {http://link.springer.com/10.1007/978-1-4419-1454-5},
 year = {2011}
 }
-@book{Hering2019,
-address = {Berlin, Heidelberg},
-author = {Hering, Heike},
-doi = {10.1007/978-3-662-58107-0},
-isbn = {978-3-662-58105-6},
-publisher = {Springer Berlin Heidelberg},
-title = {{How to Write Technical Reports}},
-url = {http://link.springer.com/10.1007/978-3-662-58107-0},
-year = {2019}
-}
 @book{Hering2010,
 address = {Berlin, Heidelberg},
 author = {Hering, Lutz and Hering, Heike},
@@ -4002,6 +3934,16 @@ publisher = {Springer Berlin Heidelberg},
 title = {{How to Write Technical Reports}},
 url = {http://link.springer.com/10.1007/978-3-540-69929-3},
 year = {2010}
+}
+@book{Hering2019,
+address = {Berlin, Heidelberg},
+author = {Hering, Heike},
+doi = {10.1007/978-3-662-58107-0},
+isbn = {978-3-662-58105-6},
+publisher = {Springer Berlin Heidelberg},
+title = {{How to Write Technical Reports}},
+url = {http://link.springer.com/10.1007/978-3-662-58107-0},
+year = {2019}
 }
 @article{Matek2019,
 abstract = {Reliable recognition of malignant white blood cells is a key step in the diagnosis of hematologic malignancies such as Acute Myeloid Leukemia. Microscopic morphological examination of blood cells is usually performed by trained human examiners, making the process tedious, time-consuming and hard to standardise. We compile an annotated image dataset of over 18,000 white blood cells, use it to train a convolutional neural network for leukocyte classification, and evaluate the network's performance. The network classifies the most important cell types with high accuracy. It also allows us to decide two clinically relevant questions with human-level performance, namely (i) if a given cell has blast character, and (ii) if it belongs to the cell types normally present in non-pathological blood smears. Our approach holds the potential to be used as a classification aid for examining much larger numbers of cells in a smear than can usually be done by a human expert. This will allow clinicians to recognize malignant cell populations with lower prevalence at an earlier stage of the disease.},
@@ -5135,16 +5077,6 @@ title = {{Multivariate mixture model for cardiac segmentation from multi-sequenc
 volume = {9901 LNCS},
 year = {2016}
 }
-@inproceedings{Zhuang2016a,
-abstract = {Cardiac segmentation is commonly a prerequisite for functional analysis of the heart,such as to identify and quantify the infarcts and edema from the normal myocardium using the late-enhanced (LE) and T2-weighted MRI. The automatic delineation of myocardium is however challenging due to the heterogeneous intensity distributions and indistinct boundaries in the images. In this work,we present a multivariate mixture model (MvMM) for text classification,which combines the complementary information from multi-sequence (MS) cardiac MRI and perform the segmentation of them simultaneously. The expectation maximization (EM) method is adopted to estimate the segmentation and model parameters from the log-likelihood (LL) of the mixture model,where a probabilistic atlas is used for initialization. Furthermore,to correct the intra- and inter-image misalignments,we formulate the MvMM with transformations,which are embedded into the LL framework and thus can be optimized by the iterative conditional mode approach. We applied MvMM for segmentation of eighteen subjects with three sequences and obtained promising results. We compared with two conventional methods,and the improvements of segmentation performance on LE and T2 MRI were evident and statistically significant by MvMM.},
-author = {Zhuang, Xiahai},
-booktitle = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
-doi = {10.1007/978-3-319-46723-8_67},
-isbn = {9783319467221},
-issn = {16113349},
-title = {{Multivariate mixture model for cardiac segmentation from multi-sequence MRI}},
-year = {2016}
-}
 @article{Zhuang2019,
 abstract = {The author proposes a method for simultaneous registration and segmentation of multi-source images, using the multivariate mixture model (MvMM) and maximum of log-likelihood (LL) framework. Specifically, the method is applied to the problem of myocardial segmentation combining the complementary information from multi-sequence (MS) cardiac magnetic resonance (CMR) images. For the image misalignment and incongruent data, the MvMM is formulated with transformations and is further generalized for dealing with the hetero-coverage multi-modality images (HC-MMIs). The segmentation of MvMM is performed in a virtual common space, to which all the images and misaligned slices are simultaneously registered. Furthermore, this common space can be divided into a number of sub-regions, each of which contains congruent data, thus the HC-MMIs can be modeled using a set of conventional MvMMs. Results show that MvMM obtained significantly better performance compared to the conventional approaches and demonstrated good potential for scar quantification as well as myocardial segmentation. The generalized MvMM has also demonstrated better robustness in the incongruent data, where some images may not fully cover the region of interest, and the full coverage can only be reconstructed combining the images from multiple sources.},
 author = {Zhuang, Xiahai},
@@ -5156,16 +5088,6 @@ number = {12},
 pages = {2933--2946},
 title = {{Multivariate Mixture Model for Myocardial Segmentation Combining Multi-Source Images}},
 volume = {41},
-year = {2019}
-}
-@article{Zhuang2019a,
-abstract = {The author proposes a method for simultaneous registration and segmentation of multi-source images, using the multivariate mixture model (MvMM) and maximum of log-likelihood (LL) framework. Specifically, the method is applied to the problem of myocardial segmentation combining the complementary information from multi-sequence (MS) cardiac magnetic resonance (CMR) images. For the image misalignment and incongruent data, the MvMM is formulated with transformations and is further generalized for dealing with the hetero-coverage multi-modality images (HC-MMIs). The segmentation of MvMM is performed in a virtual common space, to which all the images and misaligned slices are simultaneously registered. Furthermore, this common space can be divided into a number of sub-regions, each of which contains congruent data, thus the HC-MMIs can be modeled using a set of conventional MvMMs. Results show that MvMM obtained significantly better performance compared to the conventional approaches and demonstrated good potential for scar quantification as well as myocardial segmentation. The generalized MvMM has also demonstrated better robustness in the incongruent data, where some images may not fully cover the region of interest, and the full coverage can only be reconstructed combining the images from multiple sources.},
-author = {Zhuang, Xiahai},
-doi = {10.1109/TPAMI.2018.2869576},
-issn = {19393539},
-journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
-keywords = {Multivariate image,cardiac MRI,medical image analysis,multi-modality,registration,segmentation},
-title = {{Multivariate Mixture Model for Myocardial Segmentation Combining Multi-Source Images}},
 year = {2019}
 }
 @inproceedings{Tatarchenko2015a,
@@ -5367,9 +5289,6 @@ year = {2018}
 @misc{,
 title = {{No Title}},
 url = {https://mrbrains18.isi.uu.nl/}
-}
-@misc{，,
-title = {{No Title}}
 }
 @misc{Unknown,
 doi = {10.18112/openneuro.ds001354.v1.0.0},
@@ -6394,20 +6313,6 @@ title = {{REFUGE Challenge: A unified framework for evaluating automated methods
 volume = {59},
 year = {2020}
 }
-@misc{Orlando2020a,
-abstract = {Glaucoma is one of the leading causes of irreversible but preventable blindness in working age populations. Color fundus photography (CFP) is the most cost-effective imaging modality to screen for retinal disorders. However, its application to glaucoma has been limited to the computation of a few related biomarkers such as the vertical cup-to-disc ratio. Deep learning approaches, although widely applied for medical image analysis, have not been extensively used for glaucoma assessment due to the limited size of the available data sets. Furthermore, the lack of a standardize benchmark strategy makes difficult to compare existing methods in a uniform way. In order to overcome these issues we set up the Retinal Fundus Glaucoma Challenge, REFUGE (https://refuge.grand-challenge.org), held in conjunction with MICCAI 2018. The challenge consisted of two primary tasks, namely optic disc/cup segmentation and glaucoma classification. As part of REFUGE, we have publicly released a data set of 1200 fundus images with ground truth segmentations and clinical glaucoma labels, currently the largest existing one. We have also built an evaluation framework to ease and ensure fairness in the comparison of different models, encouraging the development of novel techniques in the field. 12 teams qualified and participated in the online challenge. This paper summarizes their methods and analyzes their corresponding results. In particular, we observed that two of the top-ranked teams outperformed two human experts in the glaucoma classification task. Furthermore, the segmentation results were in general consistent with the ground truth annotations, with complementary outcomes that can be further exploited by ensembling the results.},
-archivePrefix = {arXiv},
-arxivId = {1910.03667},
-author = {Orlando, Jos{\'{e}} Ignacio and Fu, Huazhu and {Barbossa Breda}, Jo{\~{a}}o and van Keer, Karel and Bathula, Deepti R. and Diaz-Pinto, Andr{\'{e}}s and Fang, Ruogu and Heng, Pheng Ann and Kim, Jeyoung and Lee, Joon Ho and Lee, Joonseok and Li, Xiaoxiao and Liu, Peng and Lu, Shuai and Murugesan, Balamurali and Naranjo, Valery and Phaye, Sai Samarth R. and Shankaranarayana, Sharath M. and Sikka, Apoorva and Son, Jaemin and van den Hengel, Anton and Wang, Shujun and Wu, Junyan and Wu, Zifeng and Xu, Guanghui and Xu, Yongli and Yin, Pengshuai and Li, Fei and Zhang, Xiulan and Xu, Yanwu and Bogunovi{\'{c}}, Hrvoje},
-booktitle = {Medical Image Analysis},
-doi = {10.1016/j.media.2019.101570},
-eprint = {1910.03667},
-issn = {13618423},
-keywords = {Deep learning,Fundus photography,Glaucoma,Image classification,Image segmentation},
-pmid = {31630011},
-title = {{REFUGE Challenge: A unified framework for evaluating automated methods for glaucoma assessment from fundus photographs}},
-year = {2020}
-}
 @incollection{Deguchi2020,
 address = {Cham},
 author = {Deguchi, Koichiro},
@@ -6636,20 +6541,6 @@ journal = {Lecture Notes in Computer Science (including subseries Lecture Notes 
 keywords = {Cancer imaging,Classification,Deep learning,Stain deconvolution},
 pages = {435--443},
 title = {{SD-Layer: Stain deconvolutional layer for CNNs in medical microscopic imaging}},
-volume = {10435 LNCS},
-year = {2017}
-}
-@incollection{Duggal2017a,
-abstract = {Convolutional Neural Networks (CNNs) are typically trained in the RGB color space. However, in medical imaging, we believe that pixel stain quantities offer a fundamental view of the interaction between tissues and stain chemicals. Since the optical density (OD) colorspace allows to compute pixel stain quantities from pixel RGB intensities using the Beer-Lambert's law, we propose a stain deconvolutional layer, hereby named as SD-Layer, affixed at the front of CNN that performs two functions: (1) it transforms the input RGB microscopic images to Optical Density (OD) space and (2) this layer deconvolves OD image with the stain basis learned through backpropagation and provides tissue-specific stain absorption quantities as input to the following CNN layers. With the introduction of only nine additional learnable parameters in the proposed SD-Layer, we obtain a considerably improved performance on two standard CNN architectures: AlexNet and T-CNN. Using the T-CNN architecture prefixed with the proposed SD-Layer, we obtain 5-fold cross-validation accuracy of 93.2{\%} in the problem of differentiating malignant immature White Blood Cells (WBCs) from normal immature WBCs for cancer detection.},
-author = {Duggal, Rahul and Gupta, Anubha and Gupta, Ritu and Mallick, Pramit},
-booktitle = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
-doi = {10.1007/978-3-319-66179-7_50},
-isbn = {9783319661780},
-issn = {16113349},
-keywords = {Cancer imaging,Classification,Deep learning,Stain deconvolution},
-pages = {435--443},
-title = {{SD-Layer: Stain deconvolutional layer for CNNs in medical microscopic imaging}},
-url = {http://link.springer.com/10.1007/978-3-319-66179-7{\_}50},
 volume = {10435 LNCS},
 year = {2017}
 }
@@ -6929,17 +6820,6 @@ publisher = {Springer International Publishing},
 title = {{Singular Value Decomposition}},
 url = {http://link.springer.com/10.1007/978-3-030-03243-2{\_}802-1},
 year = {2016}
-}
-@article{Codella2019a,
-abstract = {This work summarizes the results of the largest skin image analysis challenge in the world, hosted by the International Skin Imaging Collaboration (ISIC), a global partnership that has organized the world's largest public repository of dermoscopic images of skin. The challenge was hosted in 2018 at the Medical Image Computing and Computer Assisted Intervention (MICCAI) conference in Granada, Spain. The dataset included over 12,500 images across 3 tasks. 900 users registered for data download, 115 submitted to the lesion segmentation task, 25 submitted to the lesion attribute detection task, and 159 submitted to the disease classification task. Novel evaluation protocols were established, including a new test for segmentation algorithm performance, and a test for algorithm ability to generalize. Results show that top segmentation algorithms still fail on over 10{\%} of images on average, and algorithms with equal performance on test data can have different abilities to generalize. This is an important consideration for agencies regulating the growing set of machine learning tools in the healthcare domain, and sets a new standard for future public challenges in healthcare.},
-archivePrefix = {arXiv},
-arxivId = {1902.03368},
-author = {Codella, Noel and Rotemberg, Veronica and Tschandl, Philipp and Celebi, M. Emre and Dusza, Stephen and Gutman, David and Helba, Brian and Kalloo, Aadi and Liopyris, Konstantinos and Marchetti, Michael and Kittler, Harald and Halpern, Allan},
-eprint = {1902.03368},
-month = {feb},
-title = {{Skin Lesion Analysis Toward Melanoma Detection 2018: A Challenge Hosted by the International Skin Imaging Collaboration (ISIC)}},
-url = {http://arxiv.org/abs/1902.03368},
-year = {2019}
 }
 @article{Codella2019,
 abstract = {This work summarizes the results of the largest skin image analysis challenge in the world, hosted by the International Skin Imaging Collaboration (ISIC), a global partnership that has organized the world's largest public repository of dermoscopic images of skin. The challenge was hosted in 2018 at the Medical Image Computing and Computer Assisted Intervention (MICCAI) conference in Granada, Spain. The dataset included over 12,500 images across 3 tasks. 900 users registered for data download, 115 submitted to the lesion segmentation task, 25 submitted to the lesion attribute detection task, and 159 submitted to the disease classification task. Novel evaluation protocols were established, including a new test for segmentation algorithm performance, and a test for algorithm ability to generalize. Results show that top segmentation algorithms still fail on over 10{\%} of images on average, and algorithms with equal performance on test data can have different abilities to generalize. This is an important consideration for agencies regulating the growing set of machine learning tools in the healthcare domain, and sets a new standard for future public challenges in healthcare.},
@@ -7508,16 +7388,6 @@ url = {http://www.itk.org/ItkSoftwareGuide.pdf},
 volume = {Second},
 year = {2005}
 }
-@misc{Trikha2013a,
-abstract = {Femtosecond laser-assisted cataract surgery (FLACS) represents a potential paradigm shift in cataract surgery, but it is not without controversy. Advocates of the technology herald FLACS as a revolution that promises superior outcomes and an improved safety profile for patients. Conversely, detractors point to the large financial costs involved and claim that similar results are achievable with conventional small-incision phacoemulsification. This review provides a balanced and comprehensive account of the development of FLACS since its inception. It explains the physiology and mechanics underlying the technology, and critically reviews the outcomes and implications of initial studies. The benefits and limitations of using femtosecond laser accuracy to create corneal incisions, anterior capsulotomy, and lens fragmentation are explored, with reference to the main platforms, which currently offer FLACS. Economic considerations are discussed, in addition to the practicalities associated with the implementation of FLACS in a healthcare setting. The influence on surgical training and skills is considered and possible future applications of the technology introduced. While in its infancy, FLACS sets out the exciting possibility of a new level of precision in cataract surgery. However, further work in the form of large scale, phase 3 randomised controlled trials are required to demonstrate whether its theoretical benefits are significant in practice and worthy of the necessary huge financial investment and system overhaul. Whether it gains widespread acceptance is likely to be influenced by a complex interplay of scientific and socio-economic factors in years to come. {\textcopyright} 2013 Macmillan Publishers Limited All rights reserved 0950-222X/13.},
-author = {Trikha, S. and Turnbull, A. M.J. and Morris, R. J. and Anderson, D. F. and Hossain, P.},
-booktitle = {Eye (Basingstoke)},
-doi = {10.1038/eye.2012.293},
-issn = {14765454},
-keywords = {capsulorhexis,capsulotomy,cataract surgery,femtosecond,laser,phacoemulsfication},
-title = {{The journey to femtosecond laser-assisted cataract surgery: New beginnings or a false dawn?}},
-year = {2013}
-}
 @misc{Trikha2013,
 abstract = {Femtosecond laser-assisted cataract surgery (FLACS) represents a potential paradigm shift in cataract surgery, but it is not without controversy. Advocates of the technology herald FLACS as a revolution that promises superior outcomes and an improved safety profile for patients. Conversely, detractors point to the large financial costs involved and claim that similar results are achievable with conventional small-incision phacoemulsification. This review provides a balanced and comprehensive account of the development of FLACS since its inception. It explains the physiology and mechanics underlying the technology, and critically reviews the outcomes and implications of initial studies. The benefits and limitations of using femtosecond laser accuracy to create corneal incisions, anterior capsulotomy, and lens fragmentation are explored, with reference to the main platforms, which currently offer FLACS. Economic considerations are discussed, in addition to the practicalities associated with the implementation of FLACS in a healthcare setting. The influence on surgical training and skills is considered and possible future applications of the technology introduced. While in its infancy, FLACS sets out the exciting possibility of a new level of precision in cataract surgery. However, further work in the form of large scale, phase 3 randomised controlled trials are required to demonstrate whether its theoretical benefits are significant in practice and worthy of the necessary huge financial investment and system overhaul. Whether it gains widespread acceptance is likely to be influenced by a complex interplay of scientific and socio-economic factors in years to come. {\textcopyright} 2013 Macmillan Publishers Limited All rights reserved 0950-222X/13.},
 author = {Trikha, S. and Turnbull, A. M.J. and Morris, R. J. and Anderson, D. F. and Hossain, P.},
@@ -7525,7 +7395,10 @@ booktitle = {Eye (Basingstoke)},
 doi = {10.1038/eye.2012.293},
 issn = {14765454},
 keywords = {capsulorhexis,capsulotomy,cataract surgery,femtosecond,laser,phacoemulsfication},
+number = {4},
+pages = {461--473},
 title = {{The journey to femtosecond laser-assisted cataract surgery: New beginnings or a false dawn?}},
+volume = {27},
 year = {2013}
 }
 @article{Heller2019,
@@ -7535,17 +7408,6 @@ archivePrefix = {arXiv},
 arxivId = {1904.00445},
 author = {Heller, Nicholas and Sathianathen, Niranjan and Kalapara, Arveen and Walczak, Edward and Moore, Keenan and Kaluzniak, Heather and Rosenberg, Joel and Blake, Paul and Rengel, Zachary and Oestreich, Makinna and Dean, Joshua and Tradewell, Michael and Shah, Aneri and Tejpaul, Resha and Edgerton, Zachary and Peterson, Matthew and Raza, Shaneabbas and Regmi, Subodh and Papanikolopoulos, Nikolaos and Weight, Christopher},
 eprint = {1904.00445},
-title = {{The KiTS19 Challenge Data: 300 Kidney Tumor Cases with Clinical Context, CT Semantic Segmentations, and Surgical Outcomes}},
-url = {http://arxiv.org/abs/1904.00445},
-year = {2019}
-}
-@article{Heller2019a,
-abstract = {The morphometry of a kidney tumor revealed by contrast-enhanced Computed Tomography (CT) imaging is an important factor in clinical decision making surrounding the lesion's diagnosis and treatment. Quantitative study of the relationship between kidney tumor morphology and clinical outcomes is difficult due to data scarcity and the laborious nature of manually quantifying imaging predictors. Automatic semantic segmentation of kidneys and kidney tumors is a promising tool towards automatically quantifying a wide array of morphometric features, but no sizeable annotated dataset is currently available to train models for this task. We present the KiTS19 challenge dataset: A collection of multi-phase CT imaging, segmentation masks, and comprehensive clinical outcomes for 300 patients who underwent nephrectomy for kidney tumors at our center between 2010 and 2018. 210 (70{\%}) of these patients were selected at random as the training set for the 2019 MICCAI KiTS Kidney Tumor Segmentation Challenge and have been released publicly. With the presence of clinical context and surgical outcomes, this data can serve not only for benchmarking semantic segmentation models, but also for developing and studying biomarkers which make use of the imaging and semantic segmentation masks.},
-archivePrefix = {arXiv},
-arxivId = {1904.00445},
-author = {Heller, Nicholas and Sathianathen, Niranjan and Kalapara, Arveen and Walczak, Edward and Moore, Keenan and Kaluzniak, Heather and Rosenberg, Joel and Blake, Paul and Rengel, Zachary and Oestreich, Makinna and Dean, Joshua and Tradewell, Michael and Shah, Aneri and Tejpaul, Resha and Edgerton, Zachary and Peterson, Matthew and Raza, Shaneabbas and Regmi, Subodh and Papanikolopoulos, Nikolaos and Weight, Christopher},
-eprint = {1904.00445},
-month = {mar},
 title = {{The KiTS19 Challenge Data: 300 Kidney Tumor Cases with Clinical Context, CT Semantic Segmentations, and Surgical Outcomes}},
 url = {http://arxiv.org/abs/1904.00445},
 year = {2019}
@@ -7602,7 +7464,7 @@ title = {{The MIMIC-CXR Database}},
 url = {https://physionet.org/content/mimic-cxr/},
 year = {2019}
 }
-@article{Menze2015b,
+@article{Menze2015,
 abstract = {In this paper we report the set-up and results of the Multimodal Brain Tumor Image Segmentation Benchmark (BRATS) organized in conjunction with the MICCAI 2012 and 2013 conferences. Twenty state-of-the-art tumor segmentation algorithms were applied to a set of 65 multi-contrast MR scans of low- and high-grade glioma patients - manually annotated by up to four raters - and to 65 comparable scans generated using tumor image simulation software. Quantitative evaluations revealed considerable disagreement between the human raters in segmenting various tumor sub-regions (Dice scores in the range 74{\%}-85{\%}), illustrating the difficulty of this task. We found that different algorithms worked best for different sub-regions (reaching performance comparable to human inter-rater variability), but that no single algorithm ranked in the top for all sub-regions simultaneously. Fusing several good algorithms using a hierarchical majority vote yielded segmentations that consistently ranked above all individual algorithms, indicating remaining opportunities for further methodological improvements. The BRATS image data and manual annotations continue to be publicly available through an online evaluation system as an ongoing benchmarking resource.},
 author = {Menze, Bjoern H. and Jakab, Andras and Bauer, Stefan and Kalpathy-Cramer, Jayashree and Farahani, Keyvan and Kirby, Justin and Burren, Yuliya and Porz, Nicole and Slotboom, Johannes and Wiest, Roland and Lanczi, Levente and Gerstner, Elizabeth and Weber, Marc Andr{\'{e}} and Arbel, Tal and Avants, Brian B. and Ayache, Nicholas and Buendia, Patricia and Collins, D. Louis and Cordier, Nicolas and Corso, Jason J. and Criminisi, Antonio and Das, Tilak and Delingette, Herv{\'{e}} and Demiralp, {\c{C}}ağatay and Durst, Christopher R. and Dojat, Michel and Doyle, Senan and Festa, Joana and Forbes, Florence and Geremia, Ezequiel and Glocker, Ben and Golland, Polina and Guo, Xiaotao and Hamamci, Andac and Iftekharuddin, Khan M. and Jena, Raj and John, Nigel M. and Konukoglu, Ender and Lashkari, Danial and Mariz, Jos{\'{e}} Ant{\'{o}}nio and Meier, Raphael and Pereira, S{\'{e}}rgio and Precup, Doina and Price, Stephen J. and Raviv, Tammy Riklin and Reza, Syed M.S. and Ryan, Michael and Sarikaya, Duygu and Schwartz, Lawrence and Shin, Hoo Chang and Shotton, Jamie and Silva, Carlos A. and Sousa, Nuno and Subbanna, Nagesh K. and Szekely, Gabor and Taylor, Thomas J. and Thomas, Owen M. and Tustison, Nicholas J. and Unal, Gozde and Vasseur, Flor and Wintermark, Max and Ye, Dong Hye and Zhao, Liang and Zhao, Binsheng and Zikic, Darko and Prastawa, Marcel and Reyes, Mauricio and {Van Leemput}, Koen},
 doi = {10.1109/TMI.2014.2377694},
