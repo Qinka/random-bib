@@ -188,6 +188,24 @@ url = {https://linkinghub.elsevier.com/retrieve/pii/S1053811918319694},
 volume = {185},
 year = {2019}
 }
+@article{Li2020,
+abstract = {In this study, we present a baseline approach for AutoImplant (https://autoimplant.grand-challenge.org/) – the cranial implant design challenge, which can be formulated as a volumetric shape learning task. In this task, the defective skull, the complete skull and the cranial implant are represented as binary voxel grids. To accomplish this task, the implant can be either reconstructed directly from the defective skull or obtained by taking the difference between a defective skull and a complete skull. In the latter case, a complete skull has to be reconstructed given a defective skull, which defines a volumetric shape completion problem. Our baseline approach for this task is based on the former formulation, i.e., a deep neural network is trained to predict the implants directly from the defective skulls. The approach generates high-quality implants in two steps: First, an encoder-decoder network learns a coarse representation of the implant from downsampled, defective skulls; The coarse implant is only used to generate the bounding box of the defected region in the original high-resolution skull. Second, another encoder-decoder network is trained to generate a fine implant from the bounded area. On the test set, the proposed approach achieves an average dice similarity score (DSC) of 0.8555 and Hausdorff distance (HD) of 5.1825 mm. The codes are available at https://github.com/Jianningli/autoimplant.},
+archivePrefix = {arXiv},
+arxivId = {2006.12449},
+author = {Li, Jianning and Pepe, Antonio and Gsaxner, Christina and Campe, Gord von and Egger, Jan},
+doi = {10.1007/978-3-030-60946-7_8},
+eprint = {2006.12449},
+isbn = {9783030609450},
+issn = {16113349},
+journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+keywords = {Cranial implant design,Cranioplasty,Deep learning,Shape learning,Skull reconstruction,Volumetric shape completion},
+month = {jun},
+pages = {75--84},
+title = {{A Baseline Approach for AutoImplant: The MICCAI 2020 Cranial Implant Design Challenge}},
+url = {http://arxiv.org/abs/2006.12449},
+volume = {12445 LNCS},
+year = {2020}
+}
 @article{Arulkumaran2017a,
 abstract = {Deep reinforcement learning is poised to revolutionise the field of AI and represents a step towards building autonomous systems with a higher level understanding of the visual world. Currently, deep learning is enabling reinforcement learning to scale to problems that were previously intractable, such as learning to play video games directly from pixels. Deep reinforcement learning algorithms are also applied to robotics, allowing control policies for robots to be learned directly from camera inputs in the real world. In this survey, we begin with an introduction to the general field of reinforcement learning, then progress to the main streams of value-based and policy-based methods. Our survey will cover central algorithms in deep reinforcement learning, including the deep {\$}Q{\$}-network, trust region policy optimisation, and asynchronous advantage actor-critic. In parallel, we highlight the unique advantages of deep neural networks, focusing on visual understanding via reinforcement learning. To conclude, we describe several current areas of research within the field.},
 archivePrefix = {arXiv},
@@ -240,6 +258,19 @@ title = {{A Computer Vision Pipeline for Automated Determination of Cardiac Stru
 url = {http://arxiv.org/abs/1706.07342},
 year = {2017}
 }
+@article{Maguolo2020,
+abstract = {In this paper, we compare and evaluate different testing protocols used for automatic COVID-19 diagnosis from X-Ray images in the recent literature. We show that similar results can be obtained using X-Ray images that do not contain most of the lungs. We are able to remove the lungs from the images by turning to black the center of the X-Ray scan and training our classifiers only on the outer part of the images. Hence, we deduce that several testing protocols for the recognition are not fair and that the neural networks are learning patterns in the dataset that are not correlated to the presence of COVID-19. Finally, we show that creating a fair testing protocol is a challenging task, and we provide a method to measure how fair a specific testing protocol is. In the future research we suggest to check the fairness of a testing protocol using our tools and we encourage researchers to look for better techniques than the ones that we propose.},
+archivePrefix = {arXiv},
+arxivId = {2004.12823},
+author = {Maguolo, Gianluca and Nanni, Loris},
+eprint = {2004.12823},
+journal = {arXiv},
+keywords = {Convolutional Neural Networks,Covid-19,Covid-19 Diagnosis,X-Ray Images},
+month = {apr},
+title = {{A Critic Evaluation of Methods for COVID-19 Automatic Detection from X-Ray Images}},
+url = {http://arxiv.org/abs/2004.12823},
+year = {2020}
+}
 @article{Kumar2017,
 abstract = {Nuclear segmentation in digital microscopic tissue images can enable extraction of high-quality features for nuclear morphometrics and other analysis in computational pathology. Conventional image processing techniques, such as Otsu thresholding and watershed segmentation, do not work effectively on challenging cases, such as chromatin-sparse and crowded nuclei. In contrast, machine learning-based segmentation can generalize across various nuclear appearances. However, training machine learning algorithms requires data sets of images, in which a vast number of nuclei have been annotated. Publicly accessible and annotated data sets, along with widely agreed upon metrics to compare techniques, have catalyzed tremendous innovation and progress on other image classification problems, particularly in object recognition. Inspired by their success, we introduce a large publicly accessible data set of hematoxylin and eosin (HE)-stained tissue images with more than 21000 painstakingly annotated nuclear boundaries, whose quality was validated by a medical doctor. Because our data set is taken from multiple hospitals and includes a diversity of nuclear appearances from several patients, disease states, and organs, techniques trained on it are likely to generalize well and work right out-of-the-box on other HE-stained images. We also propose a new metric to evaluate nuclear segmentation results that penalizes object- and pixel-level errors in a unified manner, unlike previous metrics that penalize only one type of error. We also propose a segmentation technique based on deep learning that lays a special emphasis on identifying the nuclear boundaries, including those between the touching or overlapping nuclei, and works well on a diverse set of test images.},
 author = {Kumar, Neeraj and Verma, Ruchika and Sharma, Sanuj and Bhargava, Surabhi and Vahadane, Abhishek and Sethi, Amit},
@@ -263,6 +294,19 @@ eprint = {1803.00344},
 month = {mar},
 title = {{A Deep Learning Approach for Multimodal Deception Detection}},
 url = {http://arxiv.org/abs/1803.00344},
+year = {2018}
+}
+@article{Burlutskiy2018ADL,
+abstract = {We developed a deep learning framework that helps to automatically identify and segment lung cancer areas in patients' tissue specimens. The study was based on a cohort of lung cancer patients operated at the Uppsala University Hospital. The tissues were reviewed by lung pathologists and then the cores were compiled to tissue micro-arrays (TMAs). For experiments, hematoxylin-eosin stained slides from 712 patients were scanned and then manually annotated. Then these scans and annotations were used to train segmentation models of the developed framework. The performance of the developed deep learning framework was evaluated on fully annotated TMA cores from 178 patients reaching pixel-wise precision of 0.80 and recall of 0.86. Finally, publicly available Stanford TMA cores were used to demonstrate high performance of the framework qualitatively.},
+archivePrefix = {arXiv},
+arxivId = {1807.10466},
+author = {Burlutskiy, Nikolay and Gu, Feng and Wilen, Lena Kajland and Backman, Max and Micke, Patrick},
+eprint = {1807.10466},
+journal = {arXiv},
+month = {jul},
+title = {{A Deep Learning Framework for Automatic Diagnosis in Lung Cancer}},
+url = {http://arxiv.org/abs/1807.10466},
+volume = {abs/1807.1},
 year = {2018}
 }
 @article{Zhao2018,
@@ -328,6 +372,14 @@ title = {{A large, open source dataset of stroke anatomical brain images and man
 url = {http://www.nature.com/articles/sdata201811},
 volume = {5},
 year = {2018}
+}
+@misc{LiP.WangS.LiT.LuJ.HuangFuY.&Wang2020,
+author = {{Li, P., Wang, S., Li, T., Lu, J., HuangFu, Y., {\&} Wang}, D},
+doi = {10.7937/TCIA.2020.NNC2-0461},
+publisher = {The Cancer Imaging Archive},
+title = {{A Large-Scale CT and PET/CT Dataset for Lung Cancer Diagnosis [Data set]}},
+url = {https://wiki.cancerimagingarchive.net/x/WIkvB},
+year = {2020}
 }
 @article{McCulloch1943,
 abstract = {Because of the "all-or-none" character of nervous activity, neural events and the relations among them can be treated by means of propositional logic. It is found that the behavior of every net can be described in these terms, with the addition of more complicated logical means for nets containing circles; and that for any logical expression satisfying certain conditions, one can find a net behaving in the fashion it describes. It is shown that many particular choices among possible neurophysiological assumptions are equivalent, in the sense that for every net behaving under one assumption, there exists another net which behaves under the other and gives the same results, although perhaps not in the same time. Various applications of the calculus are discussed. {\textcopyright} 1943 The University of Chicago Press.},
@@ -610,6 +662,36 @@ title = {{A Taxonomy and Survey of Intrusion Detection System Design Techniques,
 url = {http://arxiv.org/abs/1806.03517},
 year = {2018}
 }
+@article{Ali2020a,
+abstract = {The Endoscopy Computer Vision Challenge (EndoCV) is a crowd-sourcing initiative to address eminent problems in developing reliable computer aided detection and diagnosis endoscopy systems and suggest a pathway for clinical translation of technologies. Whilst endoscopy is a widely used diagnostic and treatment tool for hollow-organs, there are several core challenges often faced by endoscopists, mainly: 1) presence of multi-class artefacts that hinder their visual interpretation, and 2) difficulty in identifying subtle precancerous precursors and cancer abnormalities. Artefacts often affect the robustness of deep learning methods applied to the gastrointestinal tract organs as they can be confused with tissue of interest. EndoCV2020 challenges are designed to address research questions in these remits. In this paper, we present a summary of methods developed by the top 17 teams and provide an objective comparison of state-of-the-art methods and methods designed by the participants for two sub-challenges: i) artefact detection and segmentation (EAD2020), and ii) disease detection and segmentation (EDD2020). Multi-center, multi-organ, multi-class, and multi-modal clinical endoscopy datasets were compiled for both EAD2020 and EDD2020 sub-challenges. An out-of-sample generalisation ability of detection algorithms was also evaluated. Whilst most teams focused on accuracy improvements, only a few methods hold credibility for clinical usability. The best performing teams provided solutions to tackle class imbalance, and variabilities in size, origin, modality and occurrences by exploring data augmentation, data fusion, and optimal class thresholding techniques.},
+archivePrefix = {arXiv},
+arxivId = {2010.06034},
+author = {Ali, Sharib and Dmitrieva, Mariia and Ghatwary, Noha and Bano, Sophia and Polat, Gorkem and Temizel, Alptekin and Krenzer, Adrian and Hekalo, Amar and Guo, Yun Bo and Matuszewski, Bogdan and Gridach, Mourad and Voiculescu, Irina and Yoganand, Vishnusai and Chavan, Arnav and Raj, Aryan and Nguyen, Nhan T. and Tran, Dat Q. and Huynh, Le Duy and Boutry, Nicolas and Rezvy, Shahadate and Chen, Haijian and Choi, Yoon Ho and Subramanian, Anand and Balasubramanian, Velmurugan and Gao, Xiaohong W. and Hu, Hongyu and Liao, Yusheng and Stoyanov, Danail and Daul, Christian and Realdon, Stefano and Cannizzaro, Renato and Lamarque, Dominique and Tran-Nguyen, Terry and Bailey, Adam and Braden, Barbara and East, James and Rittscher, Jens},
+eprint = {2010.06034},
+title = {{A translational pathway of deep learning methods in GastroIntestinal Endoscopy}},
+url = {http://arxiv.org/abs/2010.06034},
+year = {2020}
+}
+@article{Loffler2020,
+abstract = {Published under a CC BY 4.0 license. Supplemental material is available for this article.},
+author = {L{\"{o}}ffler, Maximilian T. and Sekuboyina, Anjany and Jacob, Alina and Grau, Anna-Lena and Scharr, Andreas and {El Husseini}, Malek and Kallweit, Mareike and Zimmer, Claus and Baum, Thomas and Kirschke, Jan S.},
+doi = {10.1148/ryai.2020190138},
+issn = {2638-6100},
+journal = {Radiology: Artificial Intelligence},
+title = {{A Vertebral Segmentation Dataset with Fracture Grading}},
+year = {2020}
+}
+@article{Born2020,
+abstract = {Controlling the COVID-19 pandemic largely hinges upon the existence of fast, safe, and highly-available diagnostic tools. Ultrasound, in contrast to CT or X-Ray, has many practical advantages and can serve as a globally-applicable first-line examination technique. We provide the largest publicly available lung ultrasound (US) dataset for COVID-19 consisting of 106 videos from three classes (COVID-19, bacterial pneumonia, and healthy controls); curated and approved by medical experts. On this dataset, we perform an in-depth study of the value of deep learning methods for differential diagnosis of COVID-19. We propose a frame-based convolutional neural network that correctly classifies COVID-19 US videos with a sensitivity of 0.98+-0.04 and a specificity of 0.91+-08 (frame-based sensitivity 0.93+-0.05, specificity 0.87+-0.07). We further employ class activation maps for the spatio-temporal localization of pulmonary biomarkers, which we subsequently validate for human-in-the-loop scenarios in a blindfolded study with medical experts. Aiming for scalability and robustness, we perform ablation studies comparing mobile-friendly, frame- and video-based architectures and show reliability of the best model by aleatoric and epistemic uncertainty estimates. We hope to pave the road for a community effort toward an accessible, efficient and interpretable screening method and we have started to work on a clinical validation of the proposed method. Data and code are publicly available.},
+archivePrefix = {arXiv},
+arxivId = {2009.06116},
+author = {Born, Jannis and Wiedemann, Nina and Br{\"{a}}ndle, Gabriel and Buhre, Charlotte and Rieck, Bastian and Borgwardt, Karsten},
+eprint = {2009.06116},
+month = {sep},
+title = {{Accelerating COVID-19 Differential Diagnosis with Explainable Ultrasound Image Analysis}},
+url = {http://arxiv.org/abs/2009.06116},
+year = {2020}
+}
 @article{Johnson2008,
 abstract = {BACKGROUND: Computed tomographic (CT) colonography is a noninvasive option in screening for colorectal cancer. However, its accuracy as a screening tool in asymptomatic adults has not been well defined. METHODS: We recruited 2600 asymptomatic study participants, 50 years of age or older, at 15 study centers. CT colonographic images were acquired with the use of standard bowel preparation, stool and fluid tagging, mechanical insufflation, and multidetector-row CT scanners (with 16 or more rows). Radiologists trained in CT colonography reported all lesions measuring 5 mm or more in diameter. Optical colonoscopy and histologic review were performed according to established clinical protocols at each center and served as the reference standard. The primary end point was detection by CT colonography of histologically confirmed large adenomas and adenocarcinomas (10 mm in diameter or larger) that had been detected by colonoscopy; detection of smaller colorectal lesions (6 to 9 mm in diameter) was also evaluated. RESULTS: Complete data were available for 2531 participants (97{\%}). For large adenomas and cancers, the mean (±SE) per-patient estimates of the sensitivity, specificity, positive and negative predictive values, and area under the receiver-operating-characteristic curve for CT colonography were 0.90±0.03, 0.86±0.02, 0.23±0.02, 0.99±{\textless}0.01, and 0.89±0.02, respectively. The sensitivity of 0.90 (i.e., 90{\%}) indicates that CT colonography failed to detect a lesion measuring 10 mm or more in diameter in 10{\%} of patients. The per-polyp sensitivity for large adenomas or cancers was 0.84±0.04. The per-patient sensitivity for detecting adenomas that were 6 mm or more in diameter was 0.78. CONCLUSIONS: In this study of asymptomatic adults, CT colonographic screening identified 90{\%} of subjects with adenomas or cancers measuring 10 mm or more in diameter. These findings augment published data on the role of CT colonography in screening patients with an average risk of colorectal cancer. (ClinicalTrials.gov number, NCT00084929; American College of Radiology Imaging Network [ACRIN] number, 6664.) Copyright {\textcopyright} 2008 Massachusetts Medical Society. All rights reserved.},
 author = {Johnson, C. Daniel and Chen, Mei Hsiu and Toledano, Alicia Y. and Heiken, Jay P. and Dachman, Abraham and Kuo, Mark D. and Menias, Christine O. and Siewert, Betina and Cheema, Jugesh I. and Obregon, Richard G. and Fidler, Jeff L. and Zimmerman, Peter and Horton, Karen M. and Coakley, Kevin and Iyer, Revathy B. and Hara, Amy K. and Halvorsen, Robert A. and Casola, Giovanna and Yee, Judy and Herman, Benjamin A. and Burgart, Lawrence J. and Limburg, Paul J.},
@@ -869,6 +951,36 @@ url = {http://www.nature.com/articles/nmeth.4473},
 volume = {14},
 year = {2017}
 }
+@article{Ali2020,
+abstract = {We present a comprehensive analysis of the submissions to the first edition of the Endoscopy Artefact Detection challenge (EAD). Using crowd-sourcing, this initiative is a step towards understanding the limitations of existing state-of-the-art computer vision methods applied to endoscopy and promoting the development of new approaches suitable for clinical translation. Endoscopy is a routine imaging technique for the detection, diagnosis and treatment of diseases in hollow-organs; the esophagus, stomach, colon, uterus and the bladder. However the nature of these organs prevent imaged tissues to be free of imaging artefacts such as bubbles, pixel saturation, organ specularity and debris, all of which pose substantial challenges for any quantitative analysis. Consequently, the potential for improved clinical outcomes through quantitative assessment of abnormal mucosal surface observed in endoscopy videos is presently not realized accurately. The EAD challenge promotes awareness of and addresses this key bottleneck problem by investigating methods that can accurately classify, localize and segment artefacts in endoscopy frames as critical prerequisite tasks. Using a diverse curated multi-institutional, multi-modality, multi-organ dataset of video frames, the accuracy and performance of 23 algorithms were objectively ranked for artefact detection and segmentation. The ability of methods to generalize to unseen datasets was also evaluated. The best performing methods (top 15{\%}) propose deep learning strategies to reconcile variabilities in artefact appearance with respect to size, modality, occurrence and organ type. However, no single method outperformed across all tasks. Detailed analyses reveal the shortcomings of current training strategies and highlight the need for developing new optimal metrics to accurately quantify the clinical applicability of methods.},
+author = {Ali, Sharib and Zhou, Felix and Braden, Barbara and Bailey, Adam and Yang, Suhui and Cheng, Guanju and Zhang, Pengyi and Li, Xiaoqiong and Kayser, Maxime and Soberanis-Mukul, Roger D. and Albarqouni, Shadi and Wang, Xiaokang and Wang, Chunqing and Watanabe, Seiryo and Oksuz, Ilkay and Ning, Qingtian and Yang, Shufan and Khan, Mohammad Azam and Gao, Xiaohong W. and Realdon, Stefano and Loshchenov, Maxim and Schnabel, Julia A. and East, James E. and Wagnieres, Georges and Loschenov, Victor B. and Grisan, Enrico and Daul, Christian and Blondel, Walter and Rittscher, Jens},
+doi = {10.1038/s41598-020-59413-5},
+issn = {20452322},
+journal = {Scientific Reports},
+month = {dec},
+number = {1},
+pages = {2748},
+pmid = {32066744},
+title = {{An objective comparison of detection and segmentation algorithms for artefacts in clinical endoscopy}},
+url = {http://www.nature.com/articles/s41598-020-59413-5},
+volume = {10},
+year = {2020}
+}
+@article{Souza2018,
+abstract = {This paper presents an open, multi-vendor, multi-field strength magnetic resonance (MR) T1-weighted volumetric brain imaging dataset, named Calgary-Campinas-359 (CC-359). The dataset is composed of images of older healthy adults (29–80 years) acquired on scanners from three vendors (Siemens, Philips and General Electric) at both 1.5 T and 3 T. CC-359 is comprised of 359 datasets, approximately 60 subjects per vendor and magnetic field strength. The dataset is approximately age and gender balanced, subject to the constraints of the available images. It provides consensus brain extraction masks for all volumes generated using supervised classification. Manual segmentation results for twelve randomly selected subjects performed by an expert are also provided. The CC-359 dataset allows investigation of 1) the influences of both vendor and magnetic field strength on quantitative analysis of brain MR; 2) parameter optimization for automatic segmentation methods; and potentially 3) machine learning classifiers with big data, specifically those based on deep learning methods, as these approaches require a large amount of data. To illustrate the utility of this dataset, we compared to the results of a supervised classifier, the results of eight publicly available skull stripping methods and one publicly available consensus algorithm. A linear mixed effects model analysis indicated that vendor (p−value{\textless}0.001) and magnetic field strength (p−value{\textless}0.001) have statistically significant impacts on skull stripping results.},
+author = {Souza, Roberto and Lucena, Oeslle and Garrafa, Julia and Gobbi, David and Saluzzi, Marina and Appenzeller, Simone and Rittner, Let{\'{i}}cia and Frayne, Richard and Lotufo, Roberto},
+doi = {10.1016/j.neuroimage.2017.08.021},
+issn = {10959572},
+journal = {NeuroImage},
+keywords = {Brain MR image analysis,Brain extraction,Brain segmentation,MP-RAGE,Public database,Skull stripping},
+month = {apr},
+pages = {482--494},
+pmid = {28807870},
+title = {{An open, multi-vendor, multi-field-strength brain MR dataset and analysis of publicly available skull stripping methods agreement}},
+url = {https://linkinghub.elsevier.com/retrieve/pii/S1053811917306687},
+volume = {170},
+year = {2018}
+}
 @article{Ruder2016,
 abstract = {Gradient descent optimization algorithms, while increasingly popular, are often used as black-box optimizers, as practical explanations of their strengths and weaknesses are hard to come by. This article aims to provide the reader with intuitions with regard to the behaviour of different algorithms that will allow her to put them to use. In the course of this overview, we look at different variants of gradient descent, summarize challenges, introduce the most common optimization algorithms, review architectures in a parallel and distributed setting, and investigate additional strategies for optimizing gradient descent.},
 annote = {{\_}eprint: 1609.04747},
@@ -943,6 +1055,21 @@ year = {2019}
 title = {{APTOS 2019 Blindness Detection | Kaggle}},
 url = {https://www.kaggle.com/c/aptos2019-blindness-detection}
 }
+@article{Harmon2020,
+abstract = {Chest CT is emerging as a valuable diagnostic tool for clinical management of COVID-19 associated lung disease. Artificial intelligence (AI) has the potential to aid in rapid evaluation of CT scans for differentiation of COVID-19 findings from other clinical entities. Here we show that a series of deep learning algorithms, trained in a diverse multinational cohort of 1280 patients to localize parietal pleura/lung parenchyma followed by classification of COVID-19 pneumonia, can achieve up to 90.8{\%} accuracy, with 84{\%} sensitivity and 93{\%} specificity, as evaluated in an independent test set (not included in training and validation) of 1337 patients. Normal controls included chest CTs from oncology, emergency, and pneumonia-related indications. The false positive rate in 140 patients with laboratory confirmed other (non COVID-19) pneumonias was 10{\%}. AI-based algorithms can readily identify CT scans with COVID-19 associated pneumonia, as well as distinguish non-COVID related pneumonias with high specificity in diverse patient populations.},
+author = {Harmon, Stephanie A. and Sanford, Thomas H. and Xu, Sheng and Turkbey, Evrim B. and Roth, Holger and Xu, Ziyue and Yang, Dong and Myronenko, Andriy and Anderson, Victoria and Amalou, Amel and Blain, Maxime and Kassin, Michael and Long, Dilara and Varble, Nicole and Walker, Stephanie M. and Bagci, Ulas and Ierardi, Anna Maria and Stellato, Elvira and Plensich, Guido Giovanni and Franceschelli, Giuseppe and Girlando, Cristiano and Irmici, Giovanni and Labella, Dominic and Hammoud, Dima and Malayeri, Ashkan and Jones, Elizabeth and Summers, Ronald M. and Choyke, Peter L. and Xu, Daguang and Flores, Mona and Tamura, Kaku and Obinata, Hirofumi and Mori, Hitoshi and Patella, Francesca and Cariati, Maurizio and Carrafiello, Gianpaolo and An, Peng and Wood, Bradford J. and Turkbey, Baris},
+doi = {10.1038/s41467-020-17971-2},
+issn = {20411723},
+journal = {Nature Communications},
+month = {dec},
+number = {1},
+pages = {4080},
+pmid = {32796848},
+title = {{Artificial intelligence for the detection of COVID-19 pneumonia on chest CT using multinational datasets}},
+url = {http://www.nature.com/articles/s41467-020-17971-2},
+volume = {11},
+year = {2020}
+}
 @misc{Martel2019,
 abstract = {Breast cancer (BC) is the second most commonly diagnosed cancer in the U.S. with more than 250,000 new cases of invasive breast cancers reported in 2017. The majority of women with locally advanced and a subset of patients with operable breast cancer will undergo systemic therapy prior to their surgery (neoadjuvant therapy/ NAT) to reduce the size of tumor(s) and possibly further undergo breast conserving surgery. The Post-NAT-BRCA dataset is a collection of representative sections from breast resections in patients with residual invasive BC following NAT. Histologic sections were prepared and digitized to produce high resolution, microscopic images of treated BC tumors. Also included, are clinical features and expert pathology annotations of tumor cellularity and cell types. The Residual Cancer Burden Index (RCBi), is a clinically validated tool for assessment of response to NAT associated with prognosis. Tumor cellularity is one of the parameters used for calculating the RCBi. In this dataset, tumor cellularity refers to a measure of residual disease after NAT, in the form of proportion of malignant tumor inside the tumor bed region; also annotated. (See MD Anderson RCB Calculator for a detailed description of tumor cellularity.) Malignant, healthy, lymphocyte and other labels were also provided for individual cells to aid development of cell segmentation algorithms.},
 author = {Martel, Anne L. and Salama, Sherine and Nofech-Mozes, Sharon and Akbar, Shazia and Peikari, Mohammad},
@@ -951,6 +1078,19 @@ publisher = {The Cancer Imaging Archive},
 title = {{Assessment of Residual Breast Cancer Cellularity after Neoadjuvant Chemotherapy using Digital Pathology [Data set]}},
 url = {https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=52758117},
 year = {2019}
+}
+@article{attentionunet,
+abstract = {We propose a novel attention gate (AG) model for medical imaging that automatically learns to focus on target structures of varying shapes and sizes. Models trained with AGs implicitly learn to suppress irrelevant regions in an input image while highlighting salient features useful for a specific task. This enables us to eliminate the necessity of using explicit external tissue/organ localisation modules of cascaded convolutional neural networks (CNNs). AGs can be easily integrated into standard CNN architectures such as the U-Net model with minimal computational overhead while increasing the model sensitivity and prediction accuracy. The proposed Attention U-Net architecture is evaluated on two large CT abdominal datasets for multi-class image segmentation. Experimental results show that AGs consistently improve the prediction performance of U-Net across different datasets and training sizes while preserving computational efficiency. The code for the proposed architecture is publicly available.},
+archivePrefix = {arXiv},
+arxivId = {1804.03999},
+author = {Oktay, Ozan and Schlemper, Jo and Folgoc, Loic Le and Lee, Matthew and Heinrich, Mattias and Misawa, Kazunari and Mori, Kensaku and McDonagh, Steven and Hammerla, Nils Y. and Kainz, Bernhard and Glocker, Ben and Rueckert, Daniel},
+eprint = {1804.03999},
+journal = {arXiv},
+month = {apr},
+title = {{Attention U-Net: Learning Where to Look for the Pancreas}},
+url = {http://arxiv.org/abs/1804.03999},
+volume = {abs/1804.0},
+year = {2018}
 }
 @incollection{Lempitsky2020,
 address = {Cham},
@@ -1089,6 +1229,20 @@ title = {{Automatic cephalometric landmark detection using Zernike moments and t
 url = {http://link.springer.com/10.1007/s11760-013-0432-7},
 volume = {9},
 year = {2015}
+}
+@article{Quellec2020,
+abstract = {In the last decades, large datasets of fundus photographs have been collected in diabetic retinopathy (DR) screening networks. Through deep learning, these datasets were used to train automatic detectors for DR and a few other frequent pathologies, with the goal to automate screening. One challenge limits the adoption of such systems so far: automatic detectors ignore rare conditions that ophthalmologists currently detect, such as papilledema or anterior ischemic optic neuropathy. The reason is that standard deep learning requires too many examples of these conditions. However, this limitation can be addressed with few-shot learning, a machine learning paradigm where a classifier has to generalize to a new category not seen in training, given only a few examples of this category. This paper presents a new few-shot learning framework that extends convolutional neural networks (CNNs), trained for frequent conditions, with an unsupervised probabilistic model for rare condition detection. It is based on the observation that CNNs often perceive photographs containing the same anomalies as similar, even though these CNNs were trained to detect unrelated conditions. This observation was based on the t-SNE visualization tool, which we decided to incorporate in our probabilistic model. Experiments on a dataset of 164,660 screening examinations from the OPHDIAT screening network show that 37 conditions, out of 41, can be detected with an area under the ROC curve (AUC) greater than 0.8 (average AUC: 0.938). In particular, this framework significantly outperforms other frameworks for detecting rare conditions, including multitask learning, transfer learning and Siamese networks, another few-shot learning solution. We expect these richer predictions to trigger the adoption of automated eye pathology screening, which will revolutionize clinical practice in ophthalmology.},
+archivePrefix = {arXiv},
+arxivId = {1907.09449},
+author = {Quellec, Gwenol{\'{e}} and Lamard, Mathieu and Conze, Pierre Henri and Massin, Pascale and Cochener, B{\'{e}}atrice},
+doi = {10.1016/j.media.2020.101660},
+eprint = {1907.09449},
+issn = {13618423},
+journal = {Medical Image Analysis},
+keywords = {Deep learning,Diabetic retinopathy screening,Few-shot learning,Rare conditions},
+pmid = {32028213},
+title = {{Automatic detection of rare pathologies in fundus photographs using few-shot learning}},
+year = {2020}
 }
 @inproceedings{Paszke2017,
 abstract = {In this article, we describe an automatic differentiation module of PyTorch-a library designed to enable rapid research on machine learning models. It builds upon a few projects, most notably Lua Torch, Chainer, and HIPS Autograd [4], and provides a high performance environment with easy access to automatic differentiation of models executed on different devices (CPU and GPU). To make prototyping easier, PyTorch does not follow the symbolic approach used in many other deep learning frameworks, but focuses on differentiation of purely imperative programs, with a focus on extensibility and low overhead. Note that this preprint is a draft of certain sections from an upcoming paper covering all PyTorch features.},
@@ -1377,6 +1531,14 @@ year = {2018}
 title = {{BRATS13 - SICAS Medical Image Repository}},
 url = {https://www.virtualskeleton.ch/BRATS/Start2013}
 }
+@misc{Buda2020a,
+author = {Buda, Mateusz and Saha, Ashirbani and Walsh, Ruth and Ghate, Sujata and Li, Nianyi and Swiecicki, Albert and Lo, Joseph Y and Yang, Jichen and Mazurowski, Maciej},
+doi = {10.7937/E4WT-CD02},
+publisher = {The Cancer Imaging Archive},
+title = {{Breast Cancer Screening – Digital Breast Tomosynthesis (BCS-DBT)}},
+url = {https://wiki.cancerimagingarchive.net/x/DAbbAw},
+year = {2020}
+}
 @misc{Campanella2019a,
 author = {Campanella, Gabriele and Hanna, Matthew G and Brogi, Edi and Fuchs, Thomas J},
 doi = {10.7937/TCIA.2019.3XBN2JCC},
@@ -1384,6 +1546,20 @@ publisher = {The Cancer Imaging Archive},
 title = {{Breast Metastases to Axillary Lymph Nodes}},
 url = {https://wiki.cancerimagingarchive.net/x/yxolAw},
 year = {2019}
+}
+@article{ild,
+abstract = {This paper describes the methodology used to create a multimedia collection of cases with interstitial lung diseases (ILDs) at the University Hospitals of Geneva. The dataset contains high-resolution computed tomography (HRCT) image series with three-dimensional annotated regions of pathological lung tissue along with clinical parameters from patients with pathologically proven diagnoses of ILDs. The motivations for this work is to palliate the lack of publicly available collections of ILD cases to serve as a basis for the development and evaluation of image-based computerized diagnostic aid. After 38 months of data collection, the library contains 128 patients affected with one of the 13 histological diagnoses of ILDs, 108 image series with more than 41. l of annotated lung tissue patterns as well as a comprehensive set of 99 clinical parameters related to ILDs. The database is available for research on request and after signature of a license agreement. {\textcopyright} 2011 Elsevier Ltd.},
+author = {Depeursinge, Adrien and Vargas, Alejandro and Platon, Alexandra and Geissbuhler, Antoine and Poletti, Pierre Alexandre and M{\"{u}}ller, Henning},
+doi = {10.1016/j.compmedimag.2011.07.003},
+issn = {08956111},
+journal = {Computerized Medical Imaging and Graphics},
+keywords = {Case-based retrieval,Computer-aided diagnosis,Content-based image retrieval,High-resolution computed tomography,Interstitial lung diseases,Multimedia database},
+number = {3},
+pages = {227--238},
+pmid = {21803548},
+title = {{Building a reference multimedia database for interstitial lung diseases}},
+volume = {36},
+year = {2012}
 }
 @book{Rojas2020,
 address = {Berkeley, CA},
@@ -1438,6 +1614,35 @@ pages = {675--678},
 title = {{Caffe: Convolutional architecture for fast feature embedding}},
 year = {2014}
 }
+@article{Chowdhury2020,
+abstract = {Coronavirus disease (COVID-19) is a pandemic disease, which has already caused thousands of causalities and infected several millions of people worldwide. Any technological tool enabling rapid screening of the COVID-19 infection with high accuracy can be crucially helpful to the healthcare professionals. The main clinical tool currently in use for the diagnosis of COVID-19 is the Reverse transcription polymerase chain reaction (RT-PCR), which is expensive, less-sensitive and requires specialized medical personnel. X-ray imaging is an easily accessible tool that can be an excellent alternative in the COVID-19 diagnosis. This research was taken to investigate the utility of artificial intelligence (AI) in the rapid and accurate detection of COVID-19 from chest X-ray images. The aim of this paper is to propose a robust technique for automatic detection of COVID-19 pneumonia from digital chest X-ray images applying pre-trained deep-learning algorithms while maximizing the detection accuracy. A public database was created by the authors combining several public databases and also by collecting images from recently published articles. The database contains a mixture of 423 COVID-19, 1485 viral pneumonia, and 1579 normal chest X-ray images. Transfer learning technique was used with the help of image augmentation to train and validate several pre-trained deep Convolutional Neural Networks (CNNs). The networks were trained to classify two different schemes: i) normal and COVID-19 pneumonia; ii) normal, viral and COVID-19 pneumonia with and without image augmentation. The classification accuracy, precision, sensitivity, and specificity for both the schemes were 99.7{\%}, 99.7{\%}, 99.7{\%} and 99.55{\%} and 97.9{\%}, 97.95{\%}, 97.9{\%}, and 98.8{\%}, respectively. The high accuracy of this computer-aided diagnostic tool can significantly improve the speed and accuracy of COVID-19 diagnosis. This would be extremely useful in this pandemic where disease burden and need for preventive measures are at odds with available resources.},
+archivePrefix = {arXiv},
+arxivId = {2003.13145},
+author = {Chowdhury, Muhammad E.H. and Rahman, Tawsifur and Khandakar, Amith and Mazhar, Rashid and Kadir, Muhammad Abdul and Mahbub, Zaid Bin and Islam, Khandakar Reajul and Khan, Muhammad Salman and Iqbal, Atif and Emadi, Nasser Al and Reaz, Mamun Bin Ibne and Islam, Mohammad Tariqul},
+doi = {10.1109/ACCESS.2020.3010287},
+eprint = {2003.13145},
+issn = {21693536},
+journal = {IEEE Access},
+keywords = {Artificial intelligence,COVID-19 pneumonia,computer-aided diagnostic tool,machine learning,transfer learning,viral pneumonia},
+pages = {132665--132676},
+title = {{Can AI Help in Screening Viral and COVID-19 Pneumonia?}},
+url = {https://ieeexplore.ieee.org/document/9144185/},
+volume = {8},
+year = {2020}
+}
+@article{LaLonde2018CapsulesFO,
+abstract = {Convolutional neural networks (CNNs) have shown remarkable results over the last several years for a wide range of computer vision tasks. A new architecture recently introduced by Sabour et al., referred to as a capsule networks with dynamic routing, has shown great initial results for digit recognition and small image classification. The success of capsule networks lies in their ability to preserve more information about the input by replacing max-pooling layers with convolutional strides and dynamic routing, allowing for preservation of part-whole relationships in the data. This preservation of the input is demonstrated by reconstructing the input from the output capsule vectors. Our work expands the use of capsule networks to the task of object segmentation for the first time in the literature. We extend the idea of convolutional capsules with locally-connected routing and propose the concept of deconvolutional capsules. Further, we extend the masked reconstruction to reconstruct the positive input class. The proposed convolutional-deconvolutional capsule network, called SegCaps, shows strong results for the task of object segmentation with substantial decrease in parameter space. As an example application, we applied the proposed SegCaps to segment pathological lungs from low dose CT scans and compared its accuracy and efficiency with other U-Net-based architectures. SegCaps is able to handle large image sizes (512 x 512) as opposed to baseline capsules (typically less than 32 x 32). The proposed SegCaps reduced the number of parameters of U-Net architecture by 95.4{\%} while still providing a better segmentation accuracy.},
+archivePrefix = {arXiv},
+arxivId = {1804.04241},
+author = {LaLonde, Rodney and Bagci, Ulas},
+eprint = {1804.04241},
+journal = {arXiv},
+month = {apr},
+title = {{Capsules for Object Segmentation}},
+url = {http://arxiv.org/abs/1804.04241},
+volume = {abs/1804.0},
+year = {2018}
+}
 @article{AlHajj2019,
 author = {{Al Hajj}, Hassan and Lamard, Mathieu and Conze, Pierre-Henri and Roychowdhury, Soumali and Hu, Xiaowei and Mar{\v{s}}alkaitė, Gabija and Zisimopoulos, Odysseas and Dedmari, Muneer Ahmad and Zhao, Fenqiang and Prellberg, Jonas and Sahu, Manish and Galdran, Adrian and Ara{\'{u}}jo, Teresa and Vo, Duc My and Panda, Chandan and Dahiya, Navdeep and Kondo, Satoshi and Bian, Zhengbing and Vahdat, Arash and Bialopetravi{\v{c}}ius, Jonas and Flouty, Evangello and Qiu, Chenhui and Dill, Sabrina and Mukhopadhyay, Anirban and Costa, Pedro and Aresta, Guilherme and Ramamurthy, Senthil and Lee, Sang-Woong and Campilho, Aur{\'{e}}lio and Zachow, Stefan and Xia, Shunren and Conjeti, Sailesh and Stoyanov, Danail and Armaitis, Jogundas and Heng, Pheng-Ann and Macready, William G. and Cochener, B{\'{e}}atrice and Quellec, Gwenol{\'{e}}},
 doi = {10.1016/j.media.2018.11.008},
@@ -1490,6 +1695,7 @@ issn = {13618423},
 journal = {Medical Image Analysis},
 keywords = {3D Image analysis,Brain MRI segmentation,Convolutional neural networks,Weakly supervised learning},
 month = {sep},
+pmid = {32272345},
 title = {{CEREBRUM: a fast and fully-volumetric Convolutional Encoder-decodeR for weakly-supervised sEgmentation of BRain strUctures from out-of-the-scanner MRI}},
 url = {http://arxiv.org/abs/1909.05085},
 volume = {62},
@@ -1533,6 +1739,29 @@ eprint = {2001.06535},
 month = {jan},
 title = {{CHAOS Challenge -- Combined (CT-MR) Healthy Abdominal Organ Segmentation}},
 url = {http://arxiv.org/abs/2001.06535},
+year = {2020}
+}
+@article{Desai2020a,
+abstract = {As the COVID-19 pandemic unfolds, radiology imaging is playing an increasingly vital role in determining therapeutic options, patient management, and research directions. Publicly available data are essential to drive new research into disease etiology, early detection, and response to therapy. In response to the COVID-19 crisis, the National Cancer Institute (NCI) has extended the Cancer Imaging Archive (TCIA) to include COVID-19 related images. Rural populations are one population at risk for underrepresentation in such public repositories. We have published in TCIA a collection of radiographic and CT imaging studies for patients who tested positive for COVID-19 in the state of Arkansas. A set of clinical data describes each patient including demographics, comorbidities, selected lab data and key radiology findings. These data are cross-linked to SARS-COV-2 cDNA sequence data extracted from clinical isolates from the same population, uploaded to the GenBank repository. We believe this collection will help to address population imbalance in COVID-19 data by providing samples from this normally underrepresented population.},
+author = {Desai, Shivang and Baghal, Ahmad and Wongsurawat, Thidathip and Jenjaroenpun, Piroon and Powell, Thomas and Al-Shukri, Shaymaa and Gates, Kim and Farmer, Phillip and Rutherford, Michael and Blake, Geri and Nolan, Tracy and Sexton, Kevin and Bennett, William and Smith, Kirk and Syed, Shorabuddin and Prior, Fred},
+doi = {10.1038/s41597-020-00741-6},
+issn = {20524463},
+journal = {Scientific Data},
+month = {dec},
+number = {1},
+pages = {414},
+pmid = {33235265},
+title = {{Chest imaging representing a COVID-19 positive rural U.S. population}},
+url = {http://www.nature.com/articles/s41597-020-00741-6},
+volume = {7},
+year = {2020}
+}
+@misc{Desai2020,
+author = {Desai, Shivang and Baghal, Ahmad and Wongsurawat, Thidathip and Al-Shukri, Shaymaa and Gates, Kim and Farmer, Phillip and Rutherford, Michael and Blake, Geri D and Nolan, Tracy and Powell, Thomas and Sexton, Kevin and Bennett, William and Prior, Fred},
+doi = {10.7937/TCIA.2020.PY71-5978},
+publisher = {The Cancer Imaging Archive},
+title = {{Chest Imaging with Clinical and Genomic Correlates Representing a Rural COVID-19 Positive Population}},
+url = {https://wiki.cancerimagingarchive.net/x/C5IvB},
 year = {2020}
 }
 @inproceedings{Stirenko2018,
@@ -1744,6 +1973,20 @@ url = {https://www.dirjournal.org/en/comparison-of-semi-automatic-and-deep-learn
 volume = {26},
 year = {2020}
 }
+@article{Chong2020,
+abstract = {We sequenced four severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) genomes from Malaysia during the second wave of infection and found unique mutations which suggest local evolution. Circulating Malaysian strains represent introductions from different countries, particularly during the first wave of infection. Genome sequencing is important for understanding local epidemiology.We sequenced four severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) genomes from Malaysia during the second wave of infection and found unique mutations which suggest local evolution. Circulating Malaysian strains represent introductions from different countries, particularly during the first wave of infection. Genome sequencing is important for understanding local epidemiology.},
+author = {Chong, Yoong Min and Sam, I-Ching and Ponnampalavanar, Sasheela and {Syed Omar}, Sharifah Faridah and Kamarulzaman, Adeeba and Munusamy, Vijayan and Wong, Chee Kuan and Jamaluddin, Fadhil Hadi and Gan, Han Ming and Chong, Jennifer and Teh, Cindy Shuan Ju and Chan, Yoke Fun},
+doi = {10.1128/mra.00383-20},
+editor = {Roux, Simon},
+issn = {2576-098X},
+journal = {Microbiology Resource Announcements},
+month = {may},
+number = {20},
+title = {{Complete Genome Sequences of SARS-CoV-2 Strains Detected in Malaysia}},
+url = {https://mra.asm.org/content/9/20/e00383-20},
+volume = {9},
+year = {2020}
+}
 @article{Ger2018,
 abstract = {Radiomics has shown promise in improving models for predicting patient outcomes. However, to maximize the information gain of the radiomics features, especially in larger patient cohorts, the variability in radiomics features owing to differences between scanners and scanning protocols must be accounted for. To this aim, the imaging variability of radiomics feature values was evaluated on 100 computed tomography scanners at 35 clinics by imaging a radiomics phantom using a controlled protocol and the commonly used chest and head protocols of the local clinic. We used a linear mixed-effects model to determine the degree to which the manufacturer and individual scanners contribute to the overall variability. Using a controlled protocol reduced the overall variability by 57{\%} and 52{\%} compared to the local chest and head protocols respectively. The controlled protocol also reduced the relative contribution of the manufacturer to the total variability. For almost all variabilities (manufacturer, scanner, and residual with different preprocesssing), the controlled protocol scans had a significantly smaller variability than the local protocol scans did. For most radiomics features, the imaging variability was small relative to the inter-patient feature variability in non–small cell lung cancer and head and neck squamous cell carcinoma patient cohorts. From this study, we conclude that using controlled scans can reduce the variability in radiomics features, and our results demonstrate the importance of using controlled protocols in prospective radiomics studies.},
 author = {Ger, Rachel B. and Zhou, Shouhao and Chi, Pai Chun Melinda and Lee, Hannah J. and Layman, Rick R. and Jones, A. Kyle and Goff, David L. and Fuller, Clifton D. and Howell, Rebecca M. and Li, Heng and Stafford, R. Jason and Court, Laurence E. and Mackin, Dennis S.},
@@ -1815,6 +2058,37 @@ title = {{Computer-aided diagnosis of lung carcinoma using deep learning - a pil
 url = {http://arxiv.org/abs/1803.05471},
 year = {2018}
 }
+@article{Masood2018ComputerAssistedDS,
+abstract = {Pulmonary cancer is considered as one of the major causes of death worldwide. For the detection of lung cancer, computer-assisted diagnosis (CADx) systems have been designed. Internet-of-Things (IoT) has enabled ubiquitous internet access to biomedical datasets and techniques; in result, the progress in CADx is significant. Unlike the conventional CADx, deep learning techniques have the basic advantage of an automatic exploitation feature as they have the ability to learn mid and high level image representations. We proposed a Computer-Assisted Decision Support System in Pulmonary Cancer by using the novel deep learning based model and metastasis information obtained from MBAN (Medical Body Area Network). The proposed model, DFCNet, is based on the deep fully convolutional neural network (FCNN) which is used for classification of each detected pulmonary nodule into four lung cancer stages. The performance of proposed work is evaluated on different datasets with varying scan conditions. Comparison of proposed classifier is done with the existing CNN techniques. Overall accuracy of CNN and DFCNet was 77.6{\%} and 84.58{\%}, respectively. Experimental results illustrate the effectiveness of proposed method for the detection and classification of lung cancer nodules. These results demonstrate the potential for the proposed technique in helping the radiologists in improving nodule detection accuracy with efficiency.},
+author = {Masood, Anum and Sheng, Bin and Li, Ping and Hou, Xuhong and Wei, Xiaoer and Qin, Jing and Feng, Dagan},
+doi = {10.1016/j.jbi.2018.01.005},
+issn = {15320464},
+journal = {Journal of Biomedical Informatics},
+keywords = {Convolutional neural networks (CNN),Deep learning,Lung cancer stages,MBAN (Medical Body Area Network),Nodule detection,mIoT (medical Internet of Things)},
+month = {mar},
+pages = {117--128},
+pmid = {29366586},
+title = {{Computer-Assisted Decision Support System in Pulmonary Cancer detection and stage classification on CT images}},
+url = {https://linkinghub.elsevier.com/retrieve/pii/S1532046418300078},
+volume = {79},
+year = {2018}
+}
+@inproceedings{scsenet,
+abstract = {Fully convolutional neural networks (F-CNNs) have set the state-of-the-art in image segmentation for a plethora of applications. Architectural innovations within F-CNNs have mainly focused on improving spatial encoding or network connectivity to aid gradient flow. In this paper, we explore an alternate direction of recalibrating the feature maps adaptively, to boost meaningful features, while suppressing weak ones. We draw inspiration from the recently proposed squeeze {\&} excitation (SE) module for channel recalibration of feature maps for image classification. Towards this end, we introduce three variants of SE modules for image segmentation, (i) squeezing spatially and exciting channel-wise (cSE), (ii) squeezing channel-wise and exciting spatially (sSE) and (iii) concurrent spatial and channel squeeze {\&} excitation (scSE). We effectively incorporate these SE modules within three different state-of-the-art F-CNNs (DenseNet, SD-Net, U-Net) and observe consistent improvement of performance across all architectures, while minimally effecting model complexity. Evaluations are performed on two challenging applications: whole brain segmentation on MRI scans and organ segmentation on whole body contrast enhanced CT scans.},
+archivePrefix = {arXiv},
+arxivId = {1803.02579},
+author = {Roy, Abhijit Guha and Navab, Nassir and Wachinger, Christian},
+booktitle = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+doi = {10.1007/978-3-030-00928-1_48},
+eprint = {1803.02579},
+isbn = {9783030009274},
+issn = {16113349},
+pages = {421--429},
+title = {{Concurrent Spatial and Channel ‘Squeeze {\&} Excitation' in Fully Convolutional Networks}},
+url = {http://link.springer.com/10.1007/978-3-030-00928-1{\_}48},
+volume = {11070 LNCS},
+year = {2018}
+}
 @inproceedings{Lillicrap2016,
 abstract = {We adapt the ideas underlying the success of Deep Q-Learning to the continuous action domain. We present an actor-critic, model-free algorithm based on the deterministic policy gradient that can operate over continuous action spaces. Using the same learning algorithm, network architecture and hyper-parameters, our algorithm robustly solves more than 20 simulated physics tasks, including classic problems such as cartpole swing-up, dexterous manipulation, legged locomotion and car driving. Our algorithm is able to find policies whose performance is competitive with those found by a planning algorithm with full access to the dynamics of the domain and its derivatives. We further demonstrate that for many of the tasks the algorithm can learn policies “end-to-end”: directly from raw pixel inputs.},
 archivePrefix = {arXiv},
@@ -1876,6 +2150,20 @@ journal = {4th International Conference on Learning Representations, ICLR 2016 -
 title = {{Convolutional neural networks with low-rank regularization}},
 year = {2016}
 }
+@article{Wang2020b,
+abstract = {The COVID-19 Open Research Dataset (CORD-19) is a growing1 resource of scientific papers on COVID-19 and related historical coronavirus research. CORD-19 is designed to facilitate the development of text mining and information retrieval systems over its rich collection of metadata and structured full text papers. Since its release, CORD-19 has been downloaded over 75K times and has served as the basis of many COVID-19 text mining and discovery systems. In this article, we describe the mechanics of dataset construction, highlighting challenges and key design decisions, provide an overview of how CORD-19 has been used, and preview tools and upcoming shared tasks built around the dataset. We hope this resource will continue to bring together the computing community, biomedical experts, and policy makers in the search for effective treatments and management policies for COVID-19.},
+archivePrefix = {arXiv},
+arxivId = {2004.10706},
+author = {Wang, Lucy Lu and Lo, Kyle and Chandrasekhar, Yoganand and Reas, Russell and Yang, Jiangjiang and Eide, Darrin and Funk, Kathryn and Kinney, Rodney and Liu, Ziyang and Merrill, William and Mooney, Paul and Murdick, Dewey and Rishi, Devvret and Sheehan, Jerry and Shen, Zhihong and Stilson, Brandon and Wade, Alex D. and Wang, Kuansan and Wilhelm, Chris and Xie, Boya and Raymond, Douglas and Weld, Daniel S. and Etzioni, Oren and Kohlmeier, Sebastian},
+eprint = {2004.10706},
+issn = {2331-8422},
+journal = {arXiv},
+month = {apr},
+pmid = {32510522},
+title = {{CORD-19: The COVID-19 open research dataset}},
+url = {http://arxiv.org/abs/2004.10706},
+year = {2020}
+}
 @article{Rusu2017,
 abstract = {Objective: To develop an approach for radiology-pathology fusion of ex vivo histology of surgically excised pulmonary nodules with pre-operative CT, to radiologically map spatial extent of the invasive adenocarcinomatous component of the nodule. Methods: Six subjects (age: 75 ± 11 years) with pre-operative CT and surgically excised ground-glass nodules (size: 22.5 ± 5.1 mm) with a significant invasive adenocarcinomatous component ({\textgreater}5 mm) were included. The pathologist outlined disease extent on digitized histology specimens; two radiologists and a pulmonary critical care physician delineated the entire nodule on CT (in-plane resolution: {\textless}0.8 mm, inter-slice distance: 1–5 mm). We introduced a novel reconstruction approach to localize histology slices in 3D relative to each other while using CT scan as spatial constraint. This enabled the spatial mapping of the extent of tumour invasion from histology onto CT. Results: Good overlap of the 3D reconstructed histology and the nodule outlined on CT was observed (65.9 ± 5.2{\%}). Reduction in 3D misalignment of corresponding anatomical landmarks on histology and CT was observed (1.97 ± 0.42 mm). Moreover, the CT attenuation (HU) distributions were different when comparing invasive and in situ regions. Conclusion: This proof-of-concept study suggests that our fusion method can enable the spatial mapping of the invasive adenocarcinomatous component from 2D histology slices onto in vivo CT. Key Points: • 3D reconstructions are generated from 2D histology specimens of ground glass nodules. • The reconstruction methodology used pre-operative in vivo CT as 3D spatial constraint. • The methodology maps adenocarcinoma extent from digitized histology onto in vivo CT. • The methodology potentially facilitates the discovery of CT signature of invasive adenocarcinoma.},
 author = {Rusu, Mirabela and Rajiah, Prabhakar and Gilkeson, Robert and Yang, Michael and Donatelli, Christopher and Thawani, Rajat and Jacono, Frank J. and Linden, Philip and Madabhushi, Anant},
@@ -1905,6 +2193,36 @@ url = {http://link.springer.com/10.1007/978-3-030-34585-3},
 volume = {11925},
 year = {2020}
 }
+@article{Zhao2020,
+abstract = {During the outbreak time of COVID-19, computed tomography (CT) is a useful manner for diagnosing COVID-19 patients. To mitigate the lack of publicly available COVID-19 CT images for developing CT-based diagnosis deep learning models of COVID-19, we build an open-sourced dataset COVID-CT, which contains 349 COVID-19 CT images from 216 patients and 463 non-COVID-19 CTs. The utility of this dataset is confirmed by a senior radiologist and via experimental studies. Using this dataset, we develop a joint classification and segmentation method that achieves an F1 of 0.85, an AUC of 0.95, and an accuracy of 0.83. The data and code are available at https://github.com/UCSD-AI4H/COVID-CT.},
+archivePrefix = {arXiv},
+arxivId = {2003.13865},
+author = {Zhao, Jinyu and He, Xuehai and Yang, Xingyi and Zhang, Yichen and Zhang, Shanghang and Xie, Pengtao},
+eprint = {2003.13865},
+journal = {arXiv},
+month = {mar},
+title = {{COVID-CT-Dataset: A CT image dataset about COVID-19}},
+url = {http://arxiv.org/abs/2003.13865},
+year = {2020}
+}
+@article{Wang2020c,
+abstract = {The Coronavirus Disease 2019 (COVID-19) pandemic continues to have a devastating effect on the health and well-being of the global population. A critical step in the fight against COVID-19 is effective screening of infected patients, with one of the key screening approaches being radiology examination using chest radiography. It was found in early studies that patients present abnormalities in chest radiography images that are characteristic of those infected with COVID-19. Motivated by this and inspired by the open source efforts of the research community, in this study we introduce COVID-Net, a deep convolutional neural network design tailored for the detection of COVID-19 cases from chest X-ray (CXR) images that is open source and available to the general public. To the best of the authors' knowledge, COVID-Net is one of the first open source network designs for COVID-19 detection from CXR images at the time of initial release. We also introduce COVIDx, an open access benchmark dataset that we generated comprising of 13,975 CXR images across 13,870 patient patient cases, with the largest number of publicly available COVID-19 positive cases to the best of the authors' knowledge. Furthermore, we investigate how COVID-Net makes predictions using an explainability method in an attempt to not only gain deeper insights into critical factors associated with COVID cases, which can aid clinicians in improved screening, but also audit COVID-Net in a responsible and transparent manner to validate that it is making decisions based on relevant information from the CXR images. By no means a production-ready solution, the hope is that the open access COVID-Net, along with the description on constructing the open source COVIDx dataset, will be leveraged and build upon by both researchers and citizen data scientists alike to accelerate the development of highly accurate yet practical deep learning solutions for detecting COVID-19 cases and accelerate treatment of those who need it the most.},
+archivePrefix = {arXiv},
+arxivId = {2009.05383},
+author = {Wang, Linda and Lin, Zhong Qiu and Wong, Alexander},
+doi = {10.1038/s41598-020-76550-z},
+eprint = {2009.05383},
+issn = {20452322},
+journal = {Scientific Reports},
+month = {dec},
+number = {1},
+pages = {19549},
+pmid = {33177550},
+title = {{COVID-Net: a tailored deep convolutional neural network design for detection of COVID-19 cases from chest X-ray images}},
+url = {http://www.nature.com/articles/s41598-020-76550-z},
+volume = {10},
+year = {2020}
+}
 @misc{UlHassan2019,
 author = {ul Hassan, Muhammad and Zhang, Geoffrey and Latifi, Kujtim and Ullah, Ghanim and Gillies, Robert and Moros, Eduardo},
 doi = {10.7937/TCIA.2019.4L24TZ5G},
@@ -1927,6 +2245,14 @@ title = {{Crowdsourcing the creation of image segmentation algorithms for connec
 url = {http://journal.frontiersin.org/Article/10.3389/fnana.2015.00142/abstract},
 volume = {9},
 year = {2015}
+}
+@misc{An2020,
+author = {An, Peng and Xu, Sheng and Harmon, Stephanie A and Turkbey, Evrim B and Sanford, Thomas H and Amalou, Amel and Kassin, Michael and Varble, Nicole and Blain, Maxime and Anderson, Victoria and Patella, Francesca and Carrafiello, Gianpaolo and Turkbey, Baris T and Wood, Bradford J},
+doi = {10.7937/TCIA.2020.GQRY-NC81},
+publisher = {The Cancer Imaging Archive},
+title = {{CT Images in COVID-19}},
+url = {https://wiki.cancerimagingarchive.net/x/o5QvB},
+year = {2020}
 }
 @article{Rister2018,
 abstract = {Fully-convolutional neural networks have achieved superior performance in a variety of image segmentation tasks. However, their training requires laborious manual annotation of large datasets, as well as acceleration by parallel processors with high-bandwidth memory, such as GPUs. We show that simple models can achieve competitive accuracy for organ segmentation on CT images when trained with extensive data augmentation, which leverages existing graphics hardware to quickly apply geometric and photometric transformations to 3D image data. On 3 mm{\^{}}3 CT volumes, our GPU implementation is 2.6-8X faster than a widely-used CPU version, including communication overhead. We also show how to automatically generate training labels using rudimentary morphological operations, which are efficiently computed by 3D Fourier transforms. We combined fully-automatic labels for the lungs and bone with semi-automatic ones for the liver, kidneys and bladder, to create a dataset of 130 labeled CT scans. To achieve the best results from data augmentation, our model uses the intersection-over-union (IOU) loss function, a close relative of the Dice loss. We discuss its mathematical properties and explain why it outperforms the usual weighted cross-entropy loss for unbalanced segmentation tasks. We conclude that there is no unique IOU loss function, as the naive one belongs to a broad family of functions with the same essential properties. When combining data augmentation with the IOU loss, our model achieves a Dice score of 78-92{\%} for each organ. The trained model, code and dataset will be made publicly available, to further medical imaging research.},
@@ -2089,16 +2415,8 @@ title = {{Data from CT Phantom Scans for Head, Chest, and Controlled Protocols o
 url = {https://wiki.cancerimagingarchive.net/x/RADDAg},
 year = {2019}
 }
-@misc{SmithK2015,
-author = {{Smith K}, Clark K},
-doi = {10.7937/K9/TCIA.2015.NWTESAY1},
-publisher = {The Cancer Imaging Archive},
-title = {{Data From CT{\_}COLONOGRAPHY}},
-url = {https://wiki.cancerimagingarchive.net/x/DQE2},
-year = {2015}
-}
 @misc{Smith2015,
-author = {Smith, K and Clark, K and Bennett, W and Nolan, T and Kirby, J and Wolfsberger, M and Moulton, J and Vendt, B and Freymann, J},
+author = {{Smith K}, Clark K and Smith, K and Clark, K and Bennett, W and Nolan, T and Kirby, J and Wolfsberger, M and Moulton, J and Vendt, B and Freymann, J},
 booktitle = {The Cancer Imaging Archive},
 doi = {10.7937/K9/TCIA.2015.NWTESAY1},
 publisher = {The Cancer Imaging Archive},
@@ -2445,6 +2763,23 @@ url = {https://ieeexplore.ieee.org/document/8360453/},
 volume = {37},
 year = {2018}
 }
+@article{Duan2018DeepNL,
+abstract = {In this paper we introduce a novel and accurate optimisation method for segmentation of cardiac MR (CMR) images in patients with pulmonary hypertension (PH). The proposed method explicitly takes into account the image features learned from a deep neural network. To this end, we estimate simultaneous probability maps over region and edge locations in CMR images using a fully convolutional network. Due to the distinct morphology of the heart in patients with PH, these probability maps can then be incorporated in a single nested level set optimisation framework to achieve multi-region segmentation with high efficiency. The proposed method uses an automatic way for level set initialisation and thus the whole optimisation is fully automated. We demonstrate that the proposed deep nested level set (DNLS) method outperforms existing state-of-the-art methods for CMR segmentation in PH patients.},
+archivePrefix = {arXiv},
+arxivId = {1807.10760},
+author = {Duan, Jinming and Schlemper, Jo and Bai, Wenjia and Dawes, Timothy J.W. and Bello, Ghalib and Doumou, Georgia and {De Marvao}, Antonio and O'Regan, Declan P. and Rueckert, Daniel},
+doi = {10.1007/978-3-030-00937-3_68},
+eprint = {1807.10760},
+isbn = {9783030009366},
+issn = {16113349},
+journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+month = {jul},
+pages = {595--603},
+title = {{Deep Nested Level Sets: Fully Automated Segmentation of Cardiac MR Images in Patients with Pulmonary Hypertension}},
+url = {http://arxiv.org/abs/1807.10760 http://link.springer.com/10.1007/978-3-030-00937-3{\_}68},
+volume = {11073 LNCS},
+year = {2018}
+}
 @book{Singh2020,
 address = {Berkeley, CA},
 author = {Singh, Himanshu and Lone, Yunis Ahmad},
@@ -2543,6 +2878,44 @@ url = {http://arxiv.org/abs/1604.03650},
 volume = {9908 LNCS},
 year = {2016}
 }
+@inproceedings{Zhu2018DeepEMD3,
+author = {Zhu, Wentao and Vang, Yeeleng Scott and Huang, Yufang and Xie, Xiaohui},
+booktitle = {MICCAI},
+title = {{DeepEM: Deep 3D ConvNets with EM for Weakly Supervised Pulmonary Nodule Detection}},
+year = {2018}
+}
+@inproceedings{Zhu2018DeepEMD3,
+abstract = {Recently deep learning has been witnessing widespread adoption in various medical image applications. However, training complex deep neural nets requires large-scale datasets labeled with ground truth, which are often unavailable in many medical image domains. For instance, to train a deep neural net to detect pulmonary nodules in lung computed tomography (CT) images, current practice is to manually label nodule locations and sizes in many CT images to construct a sufficiently large training dataset, which is costly and difficult to scale. On the other hand, electronic medical records (EMR) contain plenty of partial information on the content of each medical image. In this work, we explore how to tap this vast, but currently unexplored data source to improve pulmonary nodule detection. We propose DeepEM, a novel deep 3D ConvNet framework augmented with expectation-maximization (EM), to mine weakly supervised labels in EMRs for pulmonary nodule detection. Experimental results show that DeepEM can lead to 1.5{\%} and 3.9{\%} average improvement in free-response receiver operating characteristic (FROC) scores on LUNA16 and Tianchi datasets, respectively, demonstrating the utility of incomplete information in EMRs for improving deep learning algorithms (https://github.com/uci-cbcl/DeepEM-for-Weakly-Supervised-Detection.git ).},
+archivePrefix = {arXiv},
+arxivId = {1805.05373},
+author = {Zhu, Wentao and Vang, Yeeleng S. and Huang, Yufang and Xie, Xiaohui},
+booktitle = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+doi = {10.1007/978-3-030-00934-2_90},
+eprint = {1805.05373},
+isbn = {9783030009335},
+issn = {16113349},
+keywords = {Deep 3D convolutional nets,DeepEM (deep 3D ConvNets with EM),Pulmonary nodule detection,Weakly supervised detection},
+pages = {812--820},
+title = {{DeepEM: Deep 3D ConvNets with EM for weakly supervised pulmonary nodule detection}},
+url = {http://link.springer.com/10.1007/978-3-030-00934-2{\_}90},
+volume = {11071 LNCS},
+year = {2018}
+}
+@article{Jin2020,
+abstract = {Background: Diagnosis of rib fractures plays an important role in identifying trauma severity. However, quickly and precisely identifying the rib fractures in a large number of CT images with increasing number of patients is a tough task, which is also subject to the qualification of radiologist. We aim at a clinically applicable automatic system for rib fracture detection and segmentation from CT scans. Methods: A total of 7,473 annotated traumatic rib fractures from 900 patients in a single center were enrolled into our dataset, named RibFrac Dataset, which were annotated with a human-in-the-loop labeling procedure. We developed a deep learning model, named FracNet, to detect and segment rib fractures. 720, 60 and 120 patients were randomly split as training cohort, tuning cohort and test cohort, respectively. Free-Response ROC (FROC) analysis was used to evaluate the sensitivity and false positives of the detection performance, and Intersection-over-Union (IoU) and Dice Coefficient (Dice) were used to evaluate the segmentation performance of predicted rib fractures. Observer studies, including independent human-only study and human-collaboration study, were used to benchmark the FracNet with human performance and evaluate its clinical applicability. A annotated subset of RibFrac Dataset, including 420 for training, 60 for tuning and 120 for test, as well as our code for model training and evaluation, was open to research community to facilitate both clinical and engineering research. Findings: Our method achieved a detection sensitivity of 92.9{\%} with 5.27 false positives per scan and a segmentation Dice of 71.5{\%}on the test cohort. Human experts achieved much lower false positives per scan, while underperforming the deep neural networks in terms of detection sensitivities with longer time in diagnosis. With human-computer collobration, human experts achieved higher detection sensitivities than human-only or computer-only diagnosis. Interpretation: The proposed FracNet provided increasing detection sensitivity of rib fractures with significantly decreased clinical time consumed, which established a clinically applicable method to assist the radiologist in clinical practice. Funding: A full list of funding bodies that contributed to this study can be found in the Acknowledgements section. The funding sources played no role in the study design; collection, analysis, and interpretation of data; writing of the report; or decision to submit the article for publication.},
+author = {Jin, Liang and Yang, Jiancheng and Kuang, Kaiming and Ni, Bingbing and Gao, Yiyi and Sun, Yingli and Gao, Pan and Ma, Weiling and Tan, Mingyu and Kang, Hui and Chen, Jiajun and Li, Ming},
+doi = {10.1016/j.ebiom.2020.103106},
+issn = {23523964},
+journal = {EBioMedicine},
+keywords = {Deep learning,Detection and segmentation,Rib fracture},
+month = {dec},
+pages = {103106},
+pmid = {33186809},
+title = {{Deep-learning-assisted detection and segmentation of rib fractures from CT scans: Development and validation of FracNet}},
+url = {https://linkinghub.elsevier.com/retrieve/pii/S2352396420304825},
+volume = {62},
+year = {2020}
+}
 @article{Bien2018,
 abstract = {Background: Magnetic resonance imaging (MRI) of the knee is the preferred method for diagnosing knee injuries. However, interpretation of knee MRI is time-intensive and subject to diagnostic error and variability. An automated system for interpreting knee MRI could prioritize high-risk patients and assist clinicians in making diagnoses. Deep learning methods, in being able to automatically learn layers of features, are well suited for modeling the complex relationships between medical images and their interpretations. In this study we developed a deep learning model for detecting general abnormalities and specific diagnoses (anterior cruciate ligament [ACL] tears and meniscal tears) on knee MRI exams. We then measured the effect of providing the model's predictions to clinical experts during interpretation. Methods and findings: Our dataset consisted of 1,370 knee MRI exams performed at Stanford University Medical Center between January 1, 2001, and December 31, 2012 (mean age 38.0 years; 569 [41.5{\%}] female patients). The majority vote of 3 musculoskeletal radiologists established reference standard labels on an internal validation set of 120 exams. We developed MRNet, a convolutional neural network for classifying MRI series and combined predictions from 3 series per exam using logistic regression. In detecting abnormalities, ACL tears, and meniscal tears, this model achieved area under the receiver operating characteristic curve (AUC) values of 0.937 (95{\%} CI 0.895, 0.980), 0.965 (95{\%} CI 0.938, 0.993), and 0.847 (95{\%} CI 0.780, 0.914), respectively, on the internal validation set. We also obtained a public dataset of 917 exams with sagittal T1-weighted series and labels for ACL injury from Clinical Hospital Centre Rijeka, Croatia. On the external validation set of 183 exams, the MRNet trained on Stanford sagittal T2-weighted series achieved an AUC of 0.824 (95{\%} CI 0.757, 0.892) in the detection of ACL injuries with no additional training, while an MRNet trained on the rest of the external data achieved an AUC of 0.911 (95{\%} CI 0.864, 0.958). We additionally measured the specificity, sensitivity, and accuracy of 9 clinical experts (7 board-certified general radiologists and 2 orthopedic surgeons) on the internal validation set both with and without model assistance. Using a 2-sided Pearson's chi-squared test with adjustment for multiple comparisons, we found no significant differences between the performance of the model and that of unassisted general radiologists in detecting abnormalities. General radiologists achieved significantly higher sensitivity in detecting ACL tears (p-value = 0.002; q-value = 0.019) and significantly higher specificity in detecting meniscal tears (p-value = 0.003; q-value = 0.019). Using a 1-tailed t test on the change in performance metrics, we found that providing model predictions significantly increased clinical experts' specificity in identifying ACL tears (p-value {\textless} 0.001; q-value = 0.006). The primary limitations of our study include lack of surgical ground truth and the small size of the panel of clinical experts. Conclusions: Our deep learning model can rapidly generate accurate clinical pathology classifications of knee MRI exams from both internal and external datasets. Moreover, our results support the assertion that deep learning models can improve the performance of clinical experts during medical imaging interpretation. Further research is needed to validate the model prospectively and to determine its utility in the clinical setting.},
 author = {Bien, Nicholas and Rajpurkar, Pranav and Ball, Robyn L. and Irvin, Jeremy and Park, Allison and Jones, Erik and Bereket, Michael and Patel, Bhavik N. and Yeom, Kristen W. and Shpanskaya, Katie and Halabi, Safwan and Zucker, Evan and Fanton, Gary and Amanatullah, Derek F. and Beaulieu, Christopher F. and Riley, Geoffrey M. and Stewart, Russell J. and Blankenberg, Francis G. and Larson, David B. and Jones, Ricky H. and Langlotz, Curtis P. and Ng, Andrew Y. and Lungren, Matthew P.},
@@ -2611,6 +2984,21 @@ url = {http://arxiv.org/abs/1506.06825},
 volume = {abs/1506.0},
 year = {2015}
 }
+@inproceedings{Eppenhof2018DeformableIR,
+abstract = {{\textcopyright} COPYRIGHT SPIE. Downloading of the abstract is permitted for personal use only. Deformable image registration can be time-consuming and often needs extensive parameterization to perform well on a specific application. We present a step towards a registration framework based on a three-dimensional convolutional neural network. The network directly learns transformations between pairs of three-dimensional images. The outputs of the network are three maps for the x, y, and z components of a thin plate spline transformation grid. The network is trained on synthetic random transformations, which are applied to a small set of representative images for the desired application. Training therefore does not require manually annotated ground truth deformation information. The methodology is demonstrated on public data sets of inspiration-expiration lung CT image pairs, which come with annotated corresponding landmarks for evaluation of the registration accuracy. Advantages of this methodology are its fast registration times and its minimal parameterization.},
+author = {Lafarge, Maxime W. and Moeskops, Pim and Veta, Mitko and Pluim, Josien P. W. and Eppenhof, Koen A.. J.},
+booktitle = {Medical Imaging 2018: Image Processing},
+doi = {10.1117/12.2292443},
+editor = {Angelini, Elsa D. and Landman, Bennett A.},
+isbn = {9781510616370},
+issn = {1605-7422},
+month = {mar},
+pages = {27},
+publisher = {SPIE},
+title = {{Deformable image registration using convolutional neural networks}},
+url = {https://www.spiedigitallibrary.org/conference-proceedings-of-spie/10574/2292443/Deformable-image-registration-using-convolutional-neural-networks/10.1117/12.2292443.full},
+year = {2018}
+}
 @inproceedings{He2015a,
 abstract = {Rectified activation units (rectifiers) are essential for state-of-the-art neural networks. In this work, we study rectifier neural networks for image classification from two aspects. First, we propose a Parametric Rectified Linear Unit (PReLU) that generalizes the traditional rectified unit. PReLU improves model fitting with nearly zero extra computational cost and little overfitting risk. Second, we derive a robust initialization method that particularly considers the rectifier nonlinearities. This method enables us to train extremely deep rectified models directly from scratch and to investigate deeper or wider network architectures. Based on the learnable activation and advanced initialization, we achieve 4.94{\%} top-5 test error on the ImageNet 2012 classification dataset. This is a 26{\%} relative improvement over the ILSVRC 2014 winner (GoogLeNet, 6.66{\%} [33]). To our knowledge, our result is the first to surpass the reported human-level performance (5.1{\%}, [26]) on this dataset.},
 annote = {{\_}eprint: 1502.01852},
@@ -2663,6 +3051,16 @@ title = {{Designing neural network architectures using reinforcement learning}},
 volume = {abs/1611.0},
 year = {2019}
 }
+@article{Buda2020,
+abstract = {Breast cancer screening is one of the most common radiological tasks with over 39 million exams performed each year. While breast cancer screening has been one of the most studied medical imaging applications of artificial intelligence, the development and evaluation of the algorithms are hindered due to the lack of well-annotated large-scale publicly available datasets. This is particularly an issue for digital breast tomosynthesis (DBT) which is a relatively new breast cancer screening modality. We have curated and made publicly available a large-scale dataset of digital breast tomosynthesis images. It contains 22,032 reconstructed DBT volumes belonging to 5,610 studies from 5,060 patients. This included four groups: (1) 5,129 normal studies, (2) 280 studies where additional imaging was needed but no biopsy was performed, (3) 112 benign biopsied studies, and (4) 89 studies with cancer. Our dataset included masses and architectural distortions which were annotated by two experienced radiologists. Additionally, we developed a single-phase deep learning detection model and tested it using our dataset to serve as a baseline for future research. Our model reached a sensitivity of 65{\%} at 2 false positives per breast. Our large, diverse, and highly-curated dataset will facilitate development and evaluation of AI algorithms for breast cancer screening through providing data for training as well as common set of cases for model validation. The performance of the model developed in our study shows that the task remains challenging and will serve as a baseline for future model development.},
+archivePrefix = {arXiv},
+arxivId = {2011.07995},
+author = {Buda, Mateusz and Saha, Ashirbani and Walsh, Ruth and Ghate, Sujata and Li, Nianyi and {\'{S}}wi{\c{e}}cicki, Albert and Lo, Joseph Y. and Mazurowski, Maciej A.},
+eprint = {2011.07995},
+title = {{Detection of masses and architectural distortions in digital breast tomosynthesis: a publicly available dataset of 5,060 patients and a deep learning model}},
+url = {http://arxiv.org/abs/2011.07995},
+year = {2020}
+}
 @article{Lepping2016a,
 abstract = {Music is a strong emotional stimulus; however, it is difficult to differentiate the effects of arousal and valence. While emotional stimuli sets have been created from words and pictures, a normed set of musical stimuli is unavailable. The goal of this project was to identify a set of ecologically valid musical stimuli for use in research studies of emotion and mood that differ on valence but are matched for arousal, and are also matched with emotionally evocative non-musical stimuli. Three rating experiments were conducted. In the first Stimulus Selection experiment, participants rated short music clips for valence and arousal, and the most evocative clips were selected. In two follow-up Stimulus Validation experiments, two additional groups of participants rated the selected musical and non-musical stimuli, with Experiment 3 confirming that these stimuli work effectively in a noisy environment (within an MRI scanner). The result of these three studies is a set of emotionally evocative, positive and negative musical stimuli, matched for valence and arousal with a subset of previously validated non-musical stimuli.},
 author = {Lepping, Rebecca J. and Atchley, Ruth Ann and Savage, Cary R.},
@@ -2677,6 +3075,18 @@ title = {{Development of a validated emotionally provocative musical stimulus se
 url = {http://journals.sagepub.com/doi/10.1177/0305735615604509},
 volume = {44},
 year = {2016}
+}
+@article{Cassidy2020,
+abstract = {Every 20 seconds, a limb is amputated somewhere in the world due to diabetes. This is a global health problem that requires a global solution. The MICCAI challenge discussed in this paper, which concerns the detection of diabetic foot ulcers, will accelerate the development of innovative healthcare technology to address this unmet medical need. In an effort to improve patient care and reduce the strain on healthcare systems, recent research has focused on the creation of cloud-based detection algorithms that can be consumed as a service by a mobile app that patients (or a carer, partner or family member) could use themselves to monitor their condition and to detect the appearance of a diabetic foot ulcer (DFU). Collaborative work between Manchester Metropolitan University, Lancashire Teaching Hospital and the Manchester University NHS Foundation Trust has created a repository of 4000 DFU images for the purpose of supporting research toward more advanced methods of DFU detection. Based on a joint effort involving the lead scientists of the UK, US, India and New Zealand, this challenge will solicit original work, and promote interactions between researchers and interdisciplinary collaborations. This paper presents a dataset description and analysis, assessment methods, benchmark algorithms and initial evaluation results. It facilitates the challenge by providing useful insights into state-of-the-art and ongoing research.},
+archivePrefix = {arXiv},
+arxivId = {2004.11853},
+author = {Cassidy, Bill and Reeves, Neil D. and Joseph, Pappachan and Gillespie, David and O'Shea, Claire and Rajbhandari, Satyan and Maiya, Arun G. and Frank, Eibe and Boulton, Andrew and Armstrong, David and Najafi, Bijan and Wu, Justina and Yap, Moi Hoon},
+eprint = {2004.11853},
+journal = {arXiv},
+month = {apr},
+title = {{DFUC 2020: Analysis towards diabetic foot ulcer detection}},
+url = {http://arxiv.org/abs/2004.11853},
+year = {2020}
 }
 @online{KaggleDiabeticRetinopathyDetection,
 abstract = {Diabetic retinopathy is becoming a more prevalent disease in diabetic patients nowadays. The surprising fact about the disease is it leaves no symptoms at the beginning stage and the patient can realize the disease only when his vision starts to fall. If the disease is not found at the earliest it leads to a stage where the probability of curing the disease is less. But if we find the disease at that stage, the patient might be in a situation of losing the vision completely. Hence, this paper aims at finding the disease at the earliest possible stage by extracting two features from the retinal image namely Microaneurysms which is found to be the starting symptom showing feature and Hemorrhage which shows symptoms of the other stages. Based on these two features we classify the stage of the disease as normal, beginning, mild and severe using convolutional neural network, a deep learning technique which reduces the burden of manual feature extraction and gives higher accuracy. We also locate the position of these features in the disease affected retinal images to help the doctors offer better medical treatment.},
@@ -2703,6 +3113,25 @@ title = {{Diagnostic assessment of deep learning algorithms for detection of lym
 url = {http://jama.jamanetwork.com/article.aspx?doi=10.1001/jama.2017.14585},
 volume = {318},
 year = {2017}
+}
+@article{Dey2018DiagnosticCO,
+abstract = {Lung cancer is the leading cause of cancer-related death worldwide. Early diagnosis of pulmonary nodules in Computed Tomography (CT) chest scans provides an opportunity for designing effective treatment and making financial and care plans. In this paper, we consider the problem of diagnostic classification between benign and malignant lung nodules in CT images, which aims to learn a direct mapping from 3D images to class labels. To achieve this goal, four two-pathway Convolutional Neural Networks (CNN) are proposed, including a basic 3D CNN, a novel multi-output network, a 3D DenseNet, and an augmented 3D DenseNet with multi-outputs. These four networks are evaluated on the public LIDC-IDRI dataset and outperform most existing methods. In particular, the 3D multi-output DenseNet (MoDenseNet) achieves the state-of-the-art classification accuracy on the task of end-to-end lung nodule diagnosis. In addition, the networks pretrained on the LIDC-IDRI dataset can be further extended to handle smaller datasets using transfer learning. This is demonstrated on our dataset with encouraging prediction accuracy in lung nodule classification.},
+archivePrefix = {arXiv},
+arxivId = {1803.07192},
+author = {Dey, Raunak and Lu, Zhongjie and Hong, Yi},
+doi = {10.1109/ISBI.2018.8363687},
+eprint = {1803.07192},
+isbn = {9781538636367},
+issn = {19458452},
+journal = {Proceedings - International Symposium on Biomedical Imaging},
+keywords = {Deep neural networks,LIDC-IDRI,Lung nodule classification,Multi-output networks},
+month = {apr},
+pages = {774--778},
+publisher = {IEEE},
+title = {{Diagnostic classification of lung nodules using 3D neural networks}},
+url = {http://arxiv.org/abs/1803.07192 http://dx.doi.org/10.1109/ISBI.2018.8363687 https://ieeexplore.ieee.org/document/8363687/},
+volume = {2018-April},
+year = {2018}
 }
 @article{Sorensen2017,
 abstract = {This paper presents a brain T1-weighted structural magnetic resonance imaging (MRI) biomarker that combines several individual MRI biomarkers (cortical thickness measurements, volumetric measurements, hippocampal shape, and hippocampal texture). The method was developed, trained, and evaluated using two publicly available reference datasets: a standardized dataset from the Alzheimer's Disease Neuroimaging Initiative (ADNI) and the imaging arm of the Australian Imaging Biomarkers and Lifestyle flagship study of ageing (AIBL). In addition, the method was evaluated by participation in the Computer-Aided Diagnosis of Dementia (CADDementia) challenge. Cross-validation using ADNI and AIBL data resulted in a multi-class classification accuracy of 62.7{\%} for the discrimination of healthy normal controls (NC), subjects with mild cognitive impairment (MCI), and patients with Alzheimer's disease (AD). This performance generalized to the CADDementia challenge where the method, trained using the ADNI and AIBL data, achieved a classification accuracy 63.0{\%}. The obtained classification accuracy resulted in a first place in the challenge, and the method was significantly better (McNemar's test) than the bottom 24 methods out of the total of 29 methods contributed by 15 different teams in the challenge. The method was further investigated with learning curve and feature selection experiments using ADNI and AIBL data. The learning curve experiments suggested that neither more training data nor a more complex classifier would have improved the obtained results. The feature selection experiment showed that both common and uncommon individual MRI biomarkers contributed to the performance; hippocampal volume, ventricular volume, hippocampal texture, and parietal lobe thickness were the most important. This study highlights the need for both subtle, localized measurements and global measurements in order to discriminate NC, MCI, and AD simultaneously based on a single structural MRI scan. It is likely that additional non-structural MRI features are needed to further improve the obtained performance, especially to improve the discrimination between NC and MCI.},
@@ -2752,6 +3181,22 @@ title = {{Discrimination of bony structures in cephalograms for automatic landma
 url = {http://link.springer.com/10.1007/978-3-540-89985-3{\_}75},
 volume = {6 CCIS},
 year = {2008}
+}
+@article{Gonzlez2018DiseaseSA,
+abstract = {Rationale: Deep learning is a powerful tool that may allow for improved outcome prediction. Objectives: To determine if deep learning, specifically convolutional neural network (CNN) analysis, could detect and stage chronic obstructive pulmonary disease (COPD) and predict acute respiratory disease (ARD) events and mortality in smokers. Methods: A CNN was trained using computed tomography scans from 7, 983 COPDGene participants and evaluated using 1,000 nonoverlapping COPDGene participants and 1, 672 ECLIPSE participants. Logistic regression (C statistic and the Hosmer-Lemeshow test) was used to assess COPD diagnosis and ARD prediction. Cox regression (C index and the Greenwood-Nam-D'Agnostino test) was used to assess mortality. Measurements and Main Results: In COPDGene, the C statistic for the detection of COPD was 0.856. A total of 51.1{\%} of participants in COPDGene were accurately staged and 74.95{\%} were within one stage. In ECLIPSE, 29.4{\%} were accurately staged and 74.6{\%} were within one stage. In COPDGene and ECLIPSE, the C statistics for ARD events were 0.64 and 0.55, respectively, and the Hosmer-Lemeshow P values were 0.502 and 0.380, respectively, suggesting no evidence of poor calibration. In COPDGene and ECLIPSE, CNN predicted mortality with fair discrimination (C indices, 0.72 and 0.60, respectively), and without evidence of poor calibration (Greenwood-Nam-D'Agnostino P values, 0.307 and 0.331, respectively). Conclusions: A deep-learning approach that uses only computed tomography imaging data can identify those smokers who have COPD and predict who are most likely to have ARD events and those with the highest mortality. At a population level CNN analysis may be a powerful tool for risk assessment.},
+author = {Gonzalez, German and Ash, Samuel Y. and Vegas-S{\'{a}}nchez-Ferrero, Gonzalo and Onieva, Jorge Onieva and Rahaghi, Farbod N. and Ross, James C. and D{\'{a}}z, Alejandro and Est{\'{e}}par, Raul San Jos{\'{e}} and Washko, George R.},
+doi = {10.1164/rccm.201705-0860OC},
+issn = {15354970},
+journal = {American Journal of Respiratory and Critical Care Medicine},
+keywords = {Artificial intelligence (computer vision systems),Chronic obstructive pulmonary disease,Neural networks,X-ray computed tomography},
+month = {jan},
+number = {2},
+pages = {193--203},
+pmid = {28892454},
+title = {{Disease staging and prognosis in smokers using deep learning in chest computed tomography}},
+url = {http://www.atsjournals.org/doi/10.1164/rccm.201705-0860OC},
+volume = {197},
+year = {2018}
 }
 @book{Srikant2020,
 abstract = {Graph Analytics is important in different domains: social networks, computer networks, and computational biology to name a few. This paper describes the challenges involved in programming the underlying graph algorithms for graph analytics for distributed systems with CPU, GPU, and multi-GPU machines and how to deal with them. It emphasizes how language abstractions and good compilation can ease programming graph analytics on such platforms without sacrificing implementation efficiency.},
@@ -3080,6 +3525,19 @@ year = {2016}
 title = {{ENIGMA Cerebellum | MICCAI 2017 Workshop {\&} Challenge}},
 url = {https://my.vanderbilt.edu/enigmacerebellum/},
 urldate = {2020-05-12}
+}
+@article{Bawa2020,
+abstract = {In this work, we take aim towards increasing the effectiveness of surgical assistant robots. We intended to make assistant robots safer by making them aware about the actions of surgeon, so it can take appropriate assisting actions. In other words, we aim to solve the problem of surgeon action detection in endoscopic videos. To this, we introduce a challenging dataset for surgeon action detection in real world endoscopic videos. Action classes are picked based on the feedback of surgeons and annotated by medical professional. Given a video frame, we draw bounding box around surgical tool which is performing action and label it with action label. Finally, we present a frame-level action detection baseline model based on recent advances in object detection. Results on our new dataset show that our presented dataset provides enough interesting challenges for future method and it can serve as strong benchmark corresponding research in surgeon action detection in endoscopic videos.},
+archivePrefix = {arXiv},
+arxivId = {2006.07164},
+author = {Bawa, Vivek Singh and Singh, Gurkirt and Kaping'a, Francis and Skarga-Bandurova, Inna and Leporini, Alice and Landolfo, Carmela and Stabile, Armando and Setti, Francesco and Muradore, Riccardo and Oleari, Elettra and Cuzzolin, Fabio},
+eprint = {2006.07164},
+journal = {arXiv},
+keywords = {Action detection,Endoscopic video,Prostatectomy,Surgeon action detection,Surgical robotics},
+month = {jun},
+title = {{ESAD: Endoscopic surgeon action detection dataset}},
+url = {http://arxiv.org/abs/2006.07164},
+year = {2020}
 }
 @inproceedings{Klokov2017,
 abstract = {We present a new deep learning architecture (called Kdnetwork) that is designed for 3D model recognition tasks and works with unstructured point clouds. The new architecture performs multiplicative transformations and shares parameters of these transformations according to the subdivisions of the point clouds imposed onto them by kdtrees. Unlike the currently dominant convolutional architectures that usually require rasterization on uniform twodimensional or three-dimensional grids, Kd-networks do not rely on such grids in any way and therefore avoid poor scaling behavior. In a series of experiments with popular shape recognition benchmarks, Kd-networks demonstrate competitive performance in a number of shape recognition tasks such as shape classification, shape retrieval and shape part segmentation.},
@@ -3411,6 +3869,22 @@ title = {{FastSurfer -- A fast and accurate deep learning based neuroimaging pip
 url = {http://arxiv.org/abs/1910.03866},
 year = {2019}
 }
+@article{Song2013FeatureBasedIP,
+abstract = {In this paper, we propose a new classification method for five categories of lung tissues in high-resolution computed tomography (HRCT) images, with feature-based image patch approximation. We design two new feature descriptors for higher feature descriptiveness, namely the rotation-invariant Gabor-local binary patterns (RGLBP) texture descriptor and multi-coordinate histogram of oriented gradients (MCHOG) gradient descriptor. Together with intensity features, each image patch is then labeled based on its feature approximation from reference image patches. And a new patch-adaptive sparse approximation (PASA) method is designed with the following main components: minimum discrepancy criteria for sparse-based classification, patch-specific adaptation for discriminative approximation, and feature-space weighting for distance computation. The patch-wise labelings are then accumulated as probabilistic estimations for region-level classification. The proposed method is evaluated on a publicly available ILD database, showing encouraging performance improvements over the state-of-the-arts. {\textcopyright} 1982-2012 IEEE.},
+author = {{Yang Song} and {Weidong Cai} and {Yun Zhou} and Feng, David Dagan},
+doi = {10.1109/TMI.2013.2241448},
+issn = {0278-0062},
+journal = {IEEE Transactions on Medical Imaging},
+keywords = {Adaptive,gradient,reference,texture},
+month = {apr},
+number = {4},
+pages = {797--808},
+pmid = {23340591},
+title = {{Feature-Based Image Patch Approximation for Lung Tissue Classification}},
+url = {http://ieeexplore.ieee.org/document/6415277/},
+volume = {32},
+year = {2013}
+}
 @article{Ramaswamy2019,
 abstract = {We show that a word-level recurrent neural network can predict emoji from text typed on a mobile keyboard. We demonstrate the usefulness of transfer learning for predicting emoji by pretraining the model using a language modeling task. We also propose mechanisms to trigger emoji and tune the diversity of candidates. The model is trained using a distributed on-device learning framework called federated learning. The federated model is shown to achieve better performance than a server-trained model. This work demonstrates the feasibility of using federated learning to train production-quality models for natural language understanding tasks while keeping users' data on their devices.},
 archivePrefix = {arXiv},
@@ -3538,6 +4012,21 @@ title = {{Formal Aspects of Component Software (FACS 2013)}},
 url = {http://link.springer.com/10.1007/978-3-030-40914-2},
 volume = {113},
 year = {2015}
+}
+@article{Edward2010FourDD,
+abstract = {A four-dimensional deformable image registration (4D DIR) algorithm, referred to as 4D local trajectory modeling (4DLTM), is presented and applied to thoracic 4D computed tomography (4DCT) image sets. The theoretical framework on which this algorithm is built exploits the incremental continuity present in 4DCT component images to calculate a dense set of parameterized voxel trajectories through space as functions of time. The spatial accuracy of the 4DLTM algorithm is compared with an alternative registration approach in which component phase to phase (CPP) DIR is utilized to determine the full displacement between maximum inhale and exhale images. A publically available DIR reference database (http://www.dir-lab.com) is utilized for the spatial accuracy assessment. The database consists of ten 4DCT image sets and corresponding manually identified landmark points between the maximum phases. A subset of points are propagated through the expiratory 4DCT component images. Cubic polynomials were found to provide sufficient flexibility and spatial accuracy for describing the point trajectories through the expiratory phases. The resulting average spatial error between the maximum phases was 1.25 mm for the 4DLTM and 1.44 mm for the CPP. The 4DLTM method captures the long-range motion between 4DCT extremes with high spatial accuracy. {\textcopyright} 2010 Institute of Physics and Engineering in Medicine.},
+author = {Castillo, Edward and Castillo, Richard and Martinez, Josue and Shenoy, Maithili and Guerrero, Thomas},
+doi = {10.1088/0031-9155/55/1/018},
+issn = {00319155},
+journal = {Physics in Medicine and Biology},
+month = {jan},
+number = {1},
+pages = {305--327},
+pmid = {20009196},
+title = {{Four-dimensional deformable image registration using trajectory modeling}},
+url = {https://iopscience.iop.org/article/10.1088/0031-9155/55/1/018},
+volume = {55},
+year = {2010}
 }
 @misc{Fischl2012,
 abstract = {FreeSurfer is a suite of tools for the analysis of neuroimaging data that provides an array of algorithms to quantify the functional, connectional and structural properties of the human brain. It has evolved from a package primarily aimed at generating surface representations of the cerebral cortex into one that automatically creates models of most macroscopically visible structures in the human brain given any reasonable T1-weighted input image. It is freely available, runs on a wide variety of hardware and software platforms, and is open source. {\textcopyright} 2012 Elsevier Inc.},
@@ -3771,6 +4260,23 @@ title = {{Globally optimal tumor segmentation in PET-CT images: A graph-based co
 volume = {6801 LNCS},
 year = {2011}
 }
+@article{Altaf2019GoingDI,
+abstract = {Medical image analysis is currently experiencing a paradigm shift due to deep learning. This technology has recently attracted so much interest of the Medical Imaging Community that it led to a specialized conference in ''Medical Imaging with Deep Learning'' in the year 2018. This paper surveys the recent developments in this direction and provides a critical review of the related major aspects. We organize the reviewed literature according to the underlying pattern recognition tasks and further sub-categorize it following a taxonomy based on human anatomy. This paper does not assume prior knowledge of deep learning and makes a significant contribution in explaining the core deep learning concepts to the non-experts in the Medical Community. This paper provides a unique computer vision/machine learning perspective taken on the advances of deep learning in medical imaging. This enables us to single out ''lack of appropriately annotated large-scale data sets" as the core challenge (among other challenges) in this research direction. We draw on the insights from the sister research fields of computer vision, pattern recognition, and machine learning, where the techniques of dealing with such challenges have already matured, to provide promising directions for the Medical Imaging Community to fully harness deep learning in the future.},
+archivePrefix = {arXiv},
+arxivId = {1902.05655},
+author = {Altaf, Fouzia and Islam, Syed M.S. and Akhtar, Naveed and Janjua, Naeem Khalid},
+doi = {10.1109/ACCESS.2019.2929365},
+eprint = {1902.05655},
+issn = {21693536},
+journal = {IEEE Access},
+keywords = {Artificial neural networks,Data sets,Deep learning,Medical imaging,Survey,Tutorial},
+month = {feb},
+pages = {99540--99572},
+title = {{Going deep in medical image analysis: Concepts, methods, challenges, and future directions}},
+url = {http://arxiv.org/abs/1902.05655 https://ieeexplore.ieee.org/document/8764525/},
+volume = {7},
+year = {2019}
+}
 @incollection{Xu2020,
 address = {Cham},
 author = {Xu, Chenyang and Prince, Jerry L.},
@@ -3990,6 +4496,21 @@ issn = {16113349},
 keywords = {Convolutional neural network,Histology image analysis,Osteosarcoma},
 title = {{Histopathological diagnosis for viable and non-viable tumor prediction for osteosarcoma using convolutional neural network}},
 year = {2017}
+}
+@article{Gao2018HolisticCO,
+abstract = {Interstitial lung diseases (ILD) involve several abnormal imaging patterns observed in computed tomography (CT) images. Accurate classification of these patterns plays a significant role in precise clinical decision making of the extent and nature of the diseases. Therefore, it is important for developing automated pulmonary computer-aided detection systems. Conventionally, this task relies on experts' manual identification of regions of interest (ROIs) as a prerequisite to diagnose potential diseases. This protocol is time consuming and inhibits fully automatic assessment. In this paper, we present a new method to classify ILD imaging patterns on CT images. The main difference is that the proposed algorithm uses the entire image as a holistic input. By circumventing the prerequisite of manual input ROIs, our problem set-up is significantly more difficult than previous work but can better address the clinical workflow. Qualitative and quantitative results using a publicly available ILD database demonstrate state-of-the-art classification accuracy under the patch-based classification and shows the potential of predicting the ILD type using holistic image.},
+author = {Gao, Mingchen and Bagci, Ulas and Lu, Le and Wu, Aaron and Buty, Mario and Shin, Hoo Chang and Roth, Holger and Papadakis, Georgios Z. and Depeursinge, Adrien and Summers, Ronald M. and Xu, Ziyue and Mollura, Daniel J.},
+doi = {10.1080/21681163.2015.1124249},
+issn = {21681171},
+journal = {Computer Methods in Biomechanics and Biomedical Engineering: Imaging and Visualization},
+keywords = {Interstitial lung disease,convolutional neural network,holistic medical image classification},
+month = {jan},
+number = {1},
+pages = {1--6},
+title = {{Holistic classification of CT attenuation patterns for interstitial lung diseases via deep convolutional neural networks}},
+url = {https://www.tandfonline.com/doi/full/10.1080/21681163.2015.1124249},
+volume = {6},
+year = {2018}
 }
 @online{GrandChallengLOLA11,
 title = {{Home - LOLA11 - Grand Challenge}},
@@ -4464,6 +4985,14 @@ url = {https://www.osapublishing.org/abstract.cfm?URI=boe-6-4-1172},
 volume = {6},
 year = {2015}
 }
+@article{Sekuboyina2020a,
+author = {Sekuboyina, Anjany and Rempfler, Markus and Valentinitsch, Alexander and Menze, Bjoern H. and Kirschke, Jan S.},
+doi = {10.1148/ryai.2020190074},
+issn = {2638-6100},
+journal = {Radiology: Artificial Intelligence},
+title = {{Labeling Vertebrae with Two-dimensional Reformations of Multidetector CT Images: An Adversarial Approach for Incorporating Prior Knowledge of Spine Anatomy}},
+year = {2020}
+}
 @article{Ghiasi2016,
 annote = {From Duplicate 1 (Laplacian Reconstruction and Refinement for Semantic Segmentation - Ghiasi, Golnaz; Fowlkes, Charless C)
 
@@ -4486,6 +5015,22 @@ title = {{Large Dataset of Labeled Optical Coherence Tomography (OCT) and Chest 
 url = {https://data.mendeley.com/datasets/rscbjbr9sj/3},
 volume = {3},
 year = {2018}
+}
+@article{Song2015LargeML,
+abstract = {Medical images usually exhibit large intra-class variation and inter-class ambiguity in the feature space, which could affect classification accuracy. To tackle this issue, we propose a new Large Margin Local Estimate (LMLE) classification model with sub-categorization based sparse representation. We first sub-categorize the reference sets of different classes into multiple clusters, to reduce feature variation within each subcategory compared to the entire reference set. Local estimates are generated for the test image using sparse representation with reference subcategories as the dictionaries. The similarity between the test image and each class is then computed by fusing the distances with the local estimates in a learning-based large margin aggregation construct to alleviate the problem of inter-class ambiguity. The derived similarities are finally used to determine the class label. We demonstrate that our LMLE model is generally applicable to different imaging modalities, and applied it to three tasks: interstitial lung disease (ILD) classification on high-resolution computed tomography (HRCT) images, phenotype binary classification and continuous regression on brain magnetic resonance (MR) imaging. Our experimental results show statistically significant performance improvements over existing popular classifiers.},
+author = {Song, Yang and Cai, Weidong and Huang, Heng and Zhou, Yun and Feng, David Dagan and Wang, Yue and Fulham, Michael J. and Chen, Mei},
+doi = {10.1109/TMI.2015.2393954},
+issn = {0278-0062},
+journal = {IEEE Transactions on Medical Imaging},
+keywords = {Large margin fusion,medical image classification,sparse representation,sub-categorization},
+month = {jun},
+number = {6},
+pages = {1362--1377},
+pmid = {25616009},
+title = {{Large Margin Local Estimate With Applications to Medical Image Classification}},
+url = {http://ieeexplore.ieee.org/document/7014242/},
+volume = {34},
+year = {2015}
 }
 @inproceedings{Real2017,
 abstract = {Neural networks have proven effective at solving difficult problems but designing their architectures can be challenging, even for image classification problems alone. Our goal is to minimize human participation, so we employ evolutionary algorithms to discover such networks automatically. Despite significant computational requirements, we show that it is now possible to evolve models with accuracies within the range of those published in the last year. Specifically, we employ simple evolutionary techniques at unprecedented scales to discover models for the CIFAR-10 and CIFAR-100 datasets, starting from trivial initial conditions and reaching accuracies of 94.6{\%} (95.6{\%} for ensemble) and 77.0{\%}, respectively. To do this, we use novel and intuitive mutation operators that navigate large search spaces; we stress that no human participation is required once evolution starts and that the output is a fully-trained model. Throughout this work, we place special emphasis on the repeatability of results, the variability in the outcomes and the computational requirements.},
@@ -4517,6 +5062,15 @@ title = {{LaTeX in 24 Hours}},
 url = {http://link.springer.com/10.1007/978-3-319-47831-9},
 year = {2017}
 }
+@misc{Dalca2020,
+author = {Dalca, Adrian and {Yipeng Hu} and Vercauteren, Tom and Heinrich, Mattias and Hansen, Lasse and Modat, Marc and Vos, Bob De and {Yiming Xiao} and Rivaz, Hassan and Chabanas, Matthieu and Reinertsen, Ingerid and Landman, Bennett and Cardoso, Jorge and Ginneken, Bram Van and {Alessa Hering} and Murphy, Keelin},
+doi = {10.5281/ZENODO.3715651},
+keywords = { Abdomen, Biomedical Challenges, Brain, Deformable, MICCAI, Multimodal, Realtime, Registration, Thorax,MICCAI Challenges},
+publisher = {Zenodo},
+title = {{Learn2Reg - The Challenge}},
+url = {https://zenodo.org/record/3715651},
+year = {2020}
+}
 @inproceedings{Vahadane2016a,
 abstract = {For better perception and analysis of images, good quality and high resolution (HR) are always preferred over degraded and low resolution (LR) images. Getting HR images can be cost and time prohibitive. Super resolution (SR) techniques can be an affordable alternative for small zoom factors. In medical imaging, specifically in the case of histological images, estimating an HR image from an LR one requires preservation of complex textures and edges defining various biological features (nuclei, cytoplasm etc.). This challenge is further aggravated by the scale variance of histological images that are taken of a flat biopsy slide instead of a 3D world. We propose an algorithm for SR of histological images that learns a mapping from zero-phase component analysis (ZCA)-whitened LR patches to ZCA-whitened HR patches at the desired scale. ZCA-whitening exploits the redundancy in data and enhances the texture and edges energies to better learn the desired LR to HR mapping, which we learn using a neural network. The qualitative and quantitative validation shows that improvements in HR estimation by proposed algorithm are statistically significant over benchmark learning-based SR algorithms.},
 author = {Vahadane, Abhishek and Kumar, Neeraj and Sethi, Amit},
@@ -4541,6 +5095,38 @@ publisher = {Springer International Publishing},
 title = {{Learning from a Neuroscience Perspective}},
 url = {http://link.springer.com/10.1007/978-3-030-03243-2{\_}823-1},
 year = {2020}
+}
+@inproceedings{lung_bm_1,
+abstract = {Due to recent progress in Convolutional Neural Networks (CNNs),developing image-based CNN models for predictive diagnosis is gaining enormous interest. However,to date,insufficient imaging samples with truly pathological-proven labels impede the evaluation of CNN models at scale. In this paper,we formulate a domain-adaptation framework that learns transferable deep features for patient-level lung cancer malignancy prediction. The presented work learns CNN-based features from a large discovery set (2272 lung nodules) with malignancy likelihood labels involving multiple radiologists' assessments,and then tests the transferable predictability of these CNN-based features on a diagnosis-definite set (115 cases) with true pathologically-proven lung cancer labels. We evaluate our approach on the Lung Image Database Consortium and Image Database Resource Initiative (LIDC-IDRI) dataset,where both human expert labeling information on cancer malignancy likelihood and a set of pathologically-proven malignancy labels were provided. Experimental results demonstrate the superior predictive performance of the transferable deep features on predicting true patient-level lung cancer malignancy (Acc=70.69 {\%},AUC=0.66),which outperforms a nodule level CNN model (Acc=65.38 {\%},AUC=0.63) and is even comparable to that of using the radiologists' knowledge (Acc=72.41 {\%},AUC=0.76). The proposed model can largely reduce the demand for pathologically proven data,holding promise to empower cancer diagnosis by leveraging multi-source CT imaging datasets.},
+address = {Cham},
+author = {Shen, Wei and Zhou, Mu and Yang, Feng and Dong, Di and Yang, Caiyun and Zang, Yali and Tian, Jie},
+booktitle = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+doi = {10.1007/978-3-319-46723-8_15},
+editor = {Ourselin, Sebastien and Joskowicz, Leo and Sabuncu, Mert R and Unal, Gozde and Wells, William},
+isbn = {9783319467221},
+issn = {16113349},
+pages = {124--131},
+publisher = {Springer International Publishing},
+title = {{Learning from Experts: Developing Transferable Deep Features for Patient-Level Lung Cancer Prediction}},
+url = {http://link.springer.com/10.1007/978-3-319-46723-8{\_}15},
+volume = {9901 LNCS},
+year = {2016}
+}
+@inproceedings{Biffi2018LearningIA,
+abstract = {Alterations in the geometry and function of the heart define well-established causes of cardiovascular disease. However, current approaches to the diagnosis of cardiovascular diseases often rely on subjective human assessment as well as manual analysis of medical images. Both factors limit the sensitivity in quantifying complex structural and functional phenotypes. Deep learning approaches have recently achieved success for tasks such as classification or segmentation of medical images, but lack interpretability in the feature extraction and decision processes, limiting their value in clinical diagnosis. In this work, we propose a 3D convolutional generative model for automatic classification of images from patients with cardiac diseases associated with structural remodeling. The model leverages interpretable task-specific anatomic patterns learned from 3D segmentations. It further allows to visualise and quantify the learned pathology-specific remodeling patterns in the original input space of the images. This approach yields high accuracy in the categorization of healthy and hypertrophic cardiomyopathy subjects when tested on unseen MR images from our own multi-centre dataset (100{\%}) as well on the ACDC MICCAI 2017 dataset (90{\%}). We believe that the proposed deep learning approach is a promising step towards the development of interpretable classifiers for the medical imaging domain, which may help clinicians to improve diagnostic accuracy and enhance patient risk-stratification.},
+archivePrefix = {arXiv},
+arxivId = {1807.06843},
+author = {Biffi, Carlo and Oktay, Ozan and Tarroni, Giacomo and Bai, Wenjia and {De Marvao}, Antonio and Doumou, Georgia and Rajchl, Martin and Bedair, Reem and Prasad, Sanjay and Cook, Stuart and O'Regan, Declan and Rueckert, Daniel},
+booktitle = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+doi = {10.1007/978-3-030-00934-2_52},
+eprint = {1807.06843},
+isbn = {9783030009335},
+issn = {16113349},
+pages = {464--471},
+title = {{Learning interpretable anatomical features through deep generative models: Application to cardiac remodeling}},
+url = {http://link.springer.com/10.1007/978-3-030-00934-2{\_}52},
+volume = {11071 LNCS},
+year = {2018}
 }
 @inproceedings{Esteves2017,
 abstract = {We address the problem of 3D rotation equivariance in convolutional neural networks. 3D rotations have been a challenging nuisance in 3D classification tasks requiring higher capacity and extended data augmentation in order to tackle it. We model 3D data with multi-valued spherical functions and we propose a novel spherical convolutional network that implements exact convolutions on the sphere by realizing them in the spherical harmonic domain. Resulting filters have local symmetry and are localized by enforcing smooth spectra. We apply a novel pooling on the spectral domain and our operations are independent of the underlying spherical resolution throughout the network. We show that networks with much lower capacity and without requiring data augmentation can exhibit performance comparable to the state of the art in standard retrieval and classification benchmarks.},
@@ -4725,6 +5311,29 @@ publisher = {Springer International Publishing},
 title = {{Lumigraph}},
 url = {http://link.springer.com/10.1007/978-3-030-03243-2{\_}8-1},
 year = {1996}
+}
+@article{han2019,
+abstract = {The annotated medical images are usually expensive to be collected. This paper proposes a deep learning method on small data to classify Common Imaging Signs of Lung diseases (CISL) in computed tomography (CT) images. We explore both the real data and the data generated by Generative Adversarial Network (GAN) to improve the reliability and the generalization of learning. First, we use GAN to generate a large number of CISLs from small annotated data, which are difficult to be distinguished from real counterparts. These generated samples are used to pre-train a Convolutional Neural Network (CNN) for classifying CISLs. Second, we fine-tune the CNN classification model with real data. Experiments were conducted on the LISS database of CISLs. We successfully convinced radiologists that our generated CISLs samples were real for 56.7{\%} of our experiments. The pre-trained CNN model achieves 88.4{\%} of mean accuracy of binary classification, and after fine-tuning, the mean accuracy is significantly increased to 95.0{\%}. For multi-classification of all types of CISLs and normal tissues, through the two stages of training, the mean accuracy, sensitivity and specificity are up to about 91.83{\%}, 92.73{\%} and 99.0{\%}, respectively. To our knowledge, this is the best result achieved on the LISS database, which demonstrates that the proposed method is effective and promising for fulfilling deep learning on small data.},
+archivePrefix = {arXiv},
+arxivId = {1903.00183},
+author = {He, Guocai},
+eprint = {1903.00183},
+journal = {arXiv},
+keywords = {Convolutional Neural Networks (CNNs),Deep learning,Generative Adversarial Network (GAN),Lung CT imaging signs classification,Small data},
+month = {mar},
+title = {{Lung CT Imaging Sign Classification through Deep Learning on Small Data}},
+url = {http://arxiv.org/abs/1903.00183},
+volume = {abs/1903.0},
+year = {2019}
+}
+@inproceedings{Nam2018LungNS,
+abstract = {Lung nodule segmentation can help radiologists' analysis of nodule risk. Recent deep learning based approaches have shown promising results in the segmentation task. However, a 3D segmentation map necessary for training the algorithms requires an expensive effort from expert radiologists. We propose a new method to train the deep neural network, only utilizing diameter information for each nodule. We validate our model with the LUNA16 dataset, showing competitive results compared to the previous state-of-the-art methods in various evaluation metrics. Our experiments also provide plausible qualitative results comparable to the ground truth segmentation.},
+author = {Kim, Jihang},
+booktitle = {Medical Imaging with Deep Learning (MIDL 2018)},
+number = {Midl},
+pages = {3--5},
+title = {{Lung nodule segmentation with convolutional neural network trained by simple diameter information}},
+year = {2018}
 }
 @article{Candemir2014,
 abstract = {The National Library of Medicine (NLM) is developing a digital chest X-ray (CXR) screening system for deployment in resource constrained communities and developing countries worldwide with a focus on early detection of tuberculosis. A critical component in the computer-aided diagnosis of digital CXRs is the automatic detection of the lung regions. In this paper, we present a nonrigid registration-driven robust lung segmentation method using image retrieval-based patient specific adaptive lung models that detects lung boundaries, surpassing state-of-the-art performance. The method consists of three main stages: 1) a content-based image retrieval approach for identifying training images (with masks) most similar to the patient CXR using a partial Radon transform and Bhattacharyya shape similarity measure, 2) creating the initial patient-specific anatomical model of lung shape using SIFT-flow for deformable registration of training masks to the patient CXR, and 3) extracting refined lung boundaries using a graph cuts optimization approach with a customized energy function. Our average accuracy of 95.4{\%} on the public JSRT database is the highest among published results. A similar degree of accuracy of 94.1{\%} and 91.7{\%} on two new CXR datasets from Montgomery County, MD, USA, and India, respectively, demonstrates the robustness of our lung segmentation approach. {\textcopyright} 2013 IEEE.},
@@ -4950,6 +5559,17 @@ eprint = {1910.09308},
 title = {{MIScnn: A Framework for Medical Image Segmentation with Convolutional Neural Networks and Deep Learning}},
 year = {2019}
 }
+@inproceedings{Wei2020,
+abstract = {Electron microscopy (EM) allows the identification of intracellular organelles such as mitochondria, providing insights for clinical and scientific studies. However, public mitochondria segmentation datasets only contain hundreds of instances with simple shapes. It is unclear if existing methods achieving human-level accuracy on these small datasets are robust in practice. To this end, we introduce the MitoEM dataset, a 3D mitochondria instance segmentation dataset with two (30 $\mu$ m)3 volumes from human and rat cortices respectively, 3,600× larger than previous benchmarks. With around 40K instances, we find a great diversity of mitochondria in terms of shape and density. For evaluation, we tailor the implementation of the average precision (AP) metric for 3D data with a 45× speedup. On MitoEM, we find existing instance segmentation methods often fail to correctly segment mitochondria with complex shapes or close contacts with other instances. Thus, our MitoEM dataset poses new challenges to the field. We release our code and data: https://donglaiw.github.io/page/mitoEM/index.html.},
+author = {Wei, Donglai and Lin, Zudi and Franco-Barranco, Daniel and Wendt, Nils and Liu, Xingyu and Yin, Wenjie and Huang, Xin and Gupta, Aarush and Jang, Won Dong and Wang, Xueying and Arganda-Carreras, Ignacio and Lichtman, Jeff W. and Pfister, Hanspeter},
+booktitle = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+doi = {10.1007/978-3-030-59722-1_7},
+isbn = {9783030597214},
+issn = {16113349},
+keywords = {3D instance segmentation,EM dataset,Mitochondria},
+title = {{MitoEM Dataset: Large-Scale 3D Mitochondria Instance Segmentation from EM Images}},
+year = {2020}
+}
 @article{Chen2016,
 abstract = {The number of mitoses per tissue area gives an important aggressiveness indication of the invasive breast carcinoma. However, automatic mitosis detection in histology images remains a challenging problem. Traditional methods either employ hand-crafted features to discriminate mitoses from other cells or construct a pixel-wise classifier to label every pixel in a sliding window way. While the former suffers from the large shape variation of mitoses and the existence of many mimics with similar appearance, the slow speed of the later prohibits its use in clinical practice. In order to overcome these shortcomings, we propose a fast and accurate method to detect mitosis by designing a novel deep cascaded convolutional neural network, which is composed of two components. First, by leveraging the fully convolutional neural network, we propose a coarse retrieval model to identify and locate the candidates of mitosis while preserving a high sensitivity. Based on these candidates, a fine discrimination model utilizing knowledge transferred from cross-domain is developed to further single out mitoses from hard mimics. Our approach outperformed other methods by a large margin in 2014 ICPR MITOS-ATYPIA challenge in terms of detection accuracy. When compared with the state-of-the-art methods on the 2012 ICPR MITOSIS data (a smaller and less challenging dataset), our method achieved comparable or better results with a roughly 60 times faster speed.},
 author = {Chen, Hao and Dou, Qi and Wang, Xi and Qin, Jing and Heng, Pheng Ann},
@@ -5103,6 +5723,12 @@ url = {http://iacl.ece.jhu.edu/index.php/MSChallenge},
 urldate = {2020-05-21},
 year = {2015}
 }
+@article{Campello2020,
+author = {Campello and V{\'{i}}ctor, M.},
+journal = {IEEE Transactions on Medical Imaging},
+title = {{Multi-Centre, Multi-Vendor and Multi-Disease Cardiac Segmentation: The M{\&}Ms Challenge}},
+year = {2020}
+}
 @incollection{Boyarski2020,
 address = {Cham},
 author = {Boyarski, Amit and Bronstein, Alex},
@@ -5162,6 +5788,14 @@ keywords = {Computer Science - Artificial Intelligence,Computer Science - Comput
 title = {{Multimodal Densenet}},
 url = {http://arxiv.org/abs/1811.07407},
 year = {2018}
+}
+@article{Verma2020,
+author = {Verma, Ruchika and Kumar, Neeraj and Patil, Abhijeet and Kurian, Nikhil Cherian and Rane, Swapnil and Sethi, Amit},
+doi = {10.13140/RG.2.2.12290.02244},
+number = {February},
+pages = {1--3},
+title = {{Multi-organ Nuclei Segmentation and Classification Challenge 2020}},
+year = {2020}
 }
 @article{Trullo2019,
 abstract = {Segmentation of organs at risk (OAR) in computed tomography (CT) is of vital importance in radiotherapy treatment. This task is time consuming and for some organs, it is very challenging due to low-intensity contrast in CT. We propose a framework to perform the automatic segmentation of multiple OAR: esophagus, heart, trachea, and aorta. Different from previous works using deep learning techniques, we make use of global localization information, based on an original distance map that yields not only the localization of each organ, but also the spatial relationship between them. Instead of segmenting directly the organs, we first generate the localization map by minimizing a reconstruction error within an adversarial framework. This map that includes localization information of all organs is then used to guide the segmentation task in a fully convolutional setting. Experimental results show encouraging performance on CT scans of 60 patients totaling 11,084 slices in comparison with other state-of-the-art methods.},
@@ -5602,6 +6236,18 @@ title = {{On the Relationship between Self-Attention and Convolutional Layers}},
 url = {http://arxiv.org/abs/1911.03584},
 year = {2019}
 }
+@article{Su2017,
+abstract = {Recent research has revealed that the output of Deep Neural Networks (DNN) can be easily altered by adding relatively small perturbations to the input vector. In this paper, we analyze an attack in an extremely limited scenario where only one pixel can be modified. For that we propose a novel method for generating one-pixel adversarial perturbations based on differential evolution (DE). It requires less adversarial information (a black-box attack) and can fool more types of networks due to the inherent features of DE. The results show that 67.97{\%} of the natural images in Kaggle CIFAR-10 test dataset and 16.04{\%} of the ImageNet (ILSVRC 2012) test images can be perturbed to at least one target class by modifying just one pixel with 74.03{\%} and 22.91{\%} confidence on average. We also show the same vulnerability on the original CIFAR-10 dataset. Thus, the proposed attack explores a different take on adversarial machine learning in an extreme limited scenario, showing that current DNNs are also vulnerable to such low dimension attacks. Besides, we also illustrate an important application of DE (or broadly speaking, evolutionary computation) in the domain of adversarial machine learning: creating tools that can effectively generate low-cost adversarial attacks against neural networks for evaluating robustness.},
+archivePrefix = {arXiv},
+arxivId = {1710.08864},
+author = {Su, Jiawei and Vargas, Danilo Vasconcellos and Kouichi, Sakurai},
+doi = {10.1109/TEVC.2019.2890858},
+eprint = {1710.08864},
+month = {oct},
+title = {{One pixel attack for fooling deep neural networks}},
+url = {http://arxiv.org/abs/1710.08864 http://dx.doi.org/10.1109/TEVC.2019.2890858},
+year = {2017}
+}
 @article{Marcus2007,
 abstract = {The Open Access Series of Imaging Studies is a series of magnetic resonance imaging data sets that is publicly available for study and analysis. The initial data set consists of a cross-sectional collection of 416 subjects aged 18 to 96 years. One hundred of the included subjects older than 60 years have been clinically diagnosed with very mild to moderate Alzheimer's disease. The subjects are all right-handed and include both men and women. For each subject, three or four individual T1-weighted magnetic resonance imaging scans obtained in single imaging sessions are included. Multiple within-session acquisitions provide extremely high contrast-to-noise ratio, making the data amenable to a wide range of analytic approaches including automated computational analysis. Additionally, a reliability data set is included containing 20 subjects without dementia imaged on a subsequent visit within 90 days of their initial session. Automated calculation of whole-brain volume and estimated total intracranial volume are presented to demonstrate use of the data for measuring differences associated with normal aging and Alzheimer's disease. {\textcopyright} 2007 Massachusetts Institute of Technology.},
 author = {Marcus, Daniel S. and Wang, Tracy H. and Parker, Jamie and Csernansky, John G. and Morris, John C. and Buckner, Randy L.},
@@ -5809,6 +6455,19 @@ title = {{Pathologist-level interpretable whole-slide cancer diagnosis with deep
 volume = {1},
 year = {2019}
 }
+@article{He2020,
+abstract = {Is it possible to develop an “AI Pathologist" to pass the board-certified examination of the American Board of Pathology? To achieve this goal, the first step is to create a visual question answering (VQA) dataset where the AI agent is presented with a pathology image together with a question and is asked to give the correct answer. Our work makes the first attempt to build such a dataset. Different from creating general-domain VQA datasets where the images are widely accessible and there are many crowdsourcing workers available and capable of generating question-answer pairs, developing a medical VQA dataset is much more challenging. First, due to privacy concerns, pathology images are usually not publicly available. Second, only well-trained pathologists can understand pathology images, but they barely have time to help create datasets for AI research. To address these challenges, we resort to pathology textbooks and online digital libraries. We develop a semi-automated pipeline to extract pathology images and captions from textbooks and generate question-answer pairs from captions using natural language processing. We collect 32,799 open-ended questions from 4,998 pathology images where each question is manually checked to ensure correctness. To our best knowledge, this is the first dataset for pathology VQA. Our dataset will be released publicly to promote research in medical VQA.},
+archivePrefix = {arXiv},
+arxivId = {2003.10286},
+author = {He, Xuehai and Zhang, Yichen and Mou, Luntian and Xing, Eric and Xie, Pengtao},
+eprint = {2003.10286},
+journal = {arXiv},
+keywords = {Dataset,Healthcare,Pathology,Visual question answering},
+month = {mar},
+title = {{PATHVQA: 30000+ questions for medical visual question answering}},
+url = {http://arxiv.org/abs/2003.10286},
+year = {2020}
+}
 @book{Evans2013,
 address = {Rotterdam},
 author = {Evans, Kate},
@@ -5904,6 +6563,18 @@ eprint = {1910.02175},
 title = {{Pi-PE: A Pipeline for Pulmonary Embolism Detection using Sparsely Annotated 3D CT Images}},
 url = {http://arxiv.org/abs/1910.02175},
 year = {2019}
+}
+@article{Born2020a,
+abstract = {With the rapid development of COVID-19 into a global pandemic, there is an ever more urgent need for cheap, fast and reliable tools that can assist physicians in diagnosing COVID-19. Medical imaging such as CT can take a key role in complementing conventional diagnostic tools from molecular biology, and, using deep learning techniques, several automatic systems were demonstrated promising performances using CT or X-ray data. Here, we advocate a more prominent role of point-of-care ultrasound imaging to guide COVID-19 detection. Ultrasound is non-invasive and ubiquitous in medical facilities around the globe. Our contribution is threefold. First, we gather a lung ultrasound (POCUS) dataset consisting of (currently) 1103 images (654 COVID-19, 277 bacterial pneumonia and 172 healthy controls), sampled from 64 videos. While this dataset was assembled from various online sources and is by no means exhaustive, it was processed specifically to feed deep learning models and is intended to serve as a starting point for an open-access initiative. Second, we train a deep convolutional neural network (POCOVID-Net) on this 3-class dataset and achieve an accuracy of 89{\%} and, by a majority vote, a video accuracy of 92{\%} . For detecting COVID-19 in particular, the model performs with a sensitivity of 0.96, a specificity of 0.79 and F1-score of 0.92 in a 5-fold cross validation. Third, we provide an open-access web service (POCOVIDScreen) that is available at: https://pocovidscreen.org. The website deploys the predictive model, allowing to perform predictions on ultrasound lung images. In addition, it grants medical staff the option to (bulk) upload their own screenings in order to contribute to the growing public database of pathological lung ultrasound images.},
+archivePrefix = {arXiv},
+arxivId = {2004.12084},
+author = {Born, Jannis and Br{\"{a}}ndle, Gabriel and Cossio, Manuel and Disdier, Marion and Goulet, Julie and Roulin, J{\'{e}}r{\'{e}}mie and Wiedemann, Nina},
+eprint = {2004.12084},
+journal = {arXiv},
+month = {apr},
+title = {{POCOVID-net: Automatic detection of COVID-19 from a new lung ultrasound imaging dataset (POCUS)}},
+url = {http://arxiv.org/abs/2004.12084},
+year = {2020}
 }
 @inproceedings{Huang2016a,
 abstract = {In this paper, we tackle the labeling problem for 3D point clouds. We introduce a 3D point cloud labeling scheme based on 3D Convolutional Neural Network. Our approach minimizes the prior knowledge of the labeling problem and does not require a segmentation step or hand-crafted features as most previous approaches did. Particularly, we present solutions for large data handling during the training and testing process. Experiments performed on the urban point cloud dataset containing 7 categories of objects show the robustness of our approach.},
@@ -6191,6 +6862,22 @@ doi = {10.7937/K9TCIA.2017.MURS5CL},
 publisher = {The Cancer Imaging Archive},
 title = {{ProstateX Challenge data}},
 url = {https://wiki.cancerimagingarchive.net/x/iIFpAQ},
+year = {2017}
+}
+@article{Nibali2017PulmonaryNC,
+abstract = {Purpose : Lung cancer has the highest death rate among all cancers in the USA. In this work we focus on improving the ability of computer-aided diagnosis (CAD) systems to predict the malignancy of nodules from cropped CT images of lung nodules. Methods: We evaluate the effectiveness of very deep convolutional neural networks at the task of expert-level lung nodule malignancy classification. Using the state-of-the-art ResNet architecture as our basis, we explore the effect of curriculum learning, transfer learning, and varying network depth on the accuracy of malignancy classification. Results: Due to a lack of public datasets with standardized problem definitions and train/test splits, studies in this area tend to not compare directly against other existing work. This makes it hard to know the relative improvement in the new solution. In contrast, we directly compare our system against two state-of-the-art deep learning systems for nodule classification on the LIDC/IDRI dataset using the same experimental setup and data set. The results show that our system achieves the highest performance in terms of all metrics measured including sensitivity, specificity, precision, AUROC, and accuracy. Conclusions: The proposed method of combining deep residual learning, curriculum learning, and transfer learning translates to high nodule classification accuracy. This reveals a promising new direction for effective pulmonary nodule CAD systems that mirrors the success of recent deep learning advances in other image-based application domains.},
+author = {Nibali, Aiden and He, Zhen and Wollersheim, Dennis},
+doi = {10.1007/s11548-017-1605-6},
+issn = {1861-6410},
+journal = {International Journal of Computer Assisted Radiology and Surgery},
+keywords = {CT images,Convolutional neural network,Lung nodule},
+month = {oct},
+number = {10},
+pages = {1799--1808},
+pmid = {28501942},
+title = {{Pulmonary nodule classification with deep residual networks}},
+url = {http://link.springer.com/10.1007/s11548-017-1605-6},
+volume = {12},
 year = {2017}
 }
 @article{Oliphant2007,
@@ -6548,6 +7235,24 @@ title = {{Riemannian Manifold}},
 url = {http://link.springer.com/10.1007/978-3-030-03243-2{\_}801-1},
 year = {2020}
 }
+@inproceedings{lung_cls_1,
+abstract = {Risk stratification of lung nodules is a task of primary importance in lung cancer diagnosis. Any improvement in robust and accurate nodule characterization can assist in identifying cancer stage, prognosis, and improving treatment planning. In this study, we propose a 3D Convolutional Neural Network (CNN) based nodule characterization strategy. With a completely 3D approach, we utilize the volumetric information from a CT scan which would be otherwise lost in the conventional 2D CNN based approaches. In order to address the need for a large amount of training data for CNN, we resort to transfer learning to obtain highly discriminative features.Moreover, we also acquire the task dependent feature representation for six high-level nodule attributes and fuse this complementary information via a Multi-task learning (MTL) framework. Finally, we propose to incorporate potential disagreement among radiologists while scoring different nodule attributes in a graph regularized sparsemulti-task learning. We evaluated our proposed approach on one of the largest publicly available lung nodule datasets comprising 1018 scans and obtained state-of-the-art results in regressing the malignancy scores.},
+archivePrefix = {arXiv},
+arxivId = {1704.08797},
+author = {Hussein, Sarfaraz and Cao, Kunlin and Song, Qi and Bagci, Ulas},
+booktitle = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+doi = {10.1007/978-3-319-59050-9_20},
+eprint = {1704.08797},
+isbn = {9783319590493},
+issn = {16113349},
+keywords = {3D convolutional neural network,Computed tomography (CT),Computer-aided diagnosis (CAD),Deep learning,Lung nodule characterization,Multi-task learning,Transfer learning},
+month = {apr},
+pages = {249--260},
+title = {{Risk stratification of lung nodules using 3D CNN-based multi-task learning}},
+url = {http://arxiv.org/abs/1704.08797 http://dx.doi.org/10.1007/978-3-319-59050-9{\_}20 http://link.springer.com/10.1007/978-3-319-59050-9{\_}20},
+volume = {10265 LNCS},
+year = {2017}
+}
 @incollection{Meer2020,
 address = {Cham},
 author = {Meer, Peter},
@@ -6775,6 +7480,19 @@ author = {Zhou, Yanning and Dou, Qi and Chen, Hao and Qin, Jing and Heng, Pheng 
 booktitle = {32nd AAAI Conference on Artificial Intelligence, AAAI 2018},
 title = {{SFCN-OPI: Detection and fine-grained classification of nuclei using sibling FCN with objectness prior interaction}},
 year = {2018}
+}
+@article{sgdr,
+abstract = {Restart techniques are common in gradient-free optimization to deal with multimodal functions. Partial warm restarts are also gaining popularity in gradient-based optimization to improve the rate of convergence in accelerated gradient schemes to deal with ill-conditioned functions. In this paper, we propose a simple warm restart technique for stochastic gradient descent to improve its anytime performance when training deep neural networks. We empirically study its performance on the CIFAR-10 and CIFAR-100 datasets, where we demonstrate new state-of-the-art results at 3.14{\%} and 16.21{\%}, respectively. We also demonstrate its advantages on a dataset of EEG recordings and on a downsampled version of the ImageNet dataset. Our source code is available at https://github.com/loshchil/SGDR},
+archivePrefix = {arXiv},
+arxivId = {1608.03983},
+author = {Loshchilov, Ilya and Hutter, Frank},
+eprint = {1608.03983},
+journal = {5th International Conference on Learning Representations, ICLR 2017 - Conference Track Proceedings},
+month = {aug},
+title = {{SGDR: Stochastic Gradient Descent with Warm Restarts}},
+url = {http://arxiv.org/abs/1608.03983},
+volume = {abs/1608.0},
+year = {2016}
 }
 @incollection{Matsushita2020,
 address = {Cham},
@@ -7087,6 +7805,20 @@ pages = {2530--2539},
 title = {{SPLATNet: Sparse Lattice Networks for Point Cloud Processing}},
 url = {http://arxiv.org/abs/1802.08275},
 volume = {abs/1802.0},
+year = {2018}
+}
+@article{senet,
+abstract = {Convolutional neural networks are built upon the convolution operation, which extracts informative features by fusing spatial and channel-wise information together within local receptive fields. In order to boost the representational power of a network, several recent approaches have shown the benefit of enhancing spatial encoding. In this work, we focus on the channel relationship and propose a novel architectural unit, which we term the 'Squeeze-and-Excitation' (SE) block, that adaptively recalibrates channel-wise feature responses by explicitly modelling interdependencies between channels. We demonstrate that by stacking these blocks together, we can construct SENet architectures that generalise extremely well across challenging datasets. Crucially, we find that SE blocks produce significant performance improvements for existing state-of-the-art deep architectures at minimal additional computational cost. SENets formed the foundation of our ILSVRC 2017 classification submission which won first place and significantly reduced the top-5 error to 2.251{\%}, achieving a {\~{}}25{\%} relative improvement over the winning entry of 2016. Code and models are available at https://github.com/hujie-frank/SENet.},
+author = {Hu, Jie and Shen, Li and Sun, Gang},
+doi = {10.1109/CVPR.2018.00745},
+isbn = {9781538664209},
+issn = {10636919},
+journal = {Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+month = {jun},
+pages = {7132--7141},
+publisher = {IEEE},
+title = {{Squeeze-and-Excitation Networks}},
+url = {https://ieeexplore.ieee.org/document/8578843/},
 year = {2018}
 }
 @article{Zhang2016a,
@@ -7413,6 +8145,15 @@ title = {{The Alzheimer's Disease Prediction Of Longitudinal Evolution (TADPOLE)
 url = {http://arxiv.org/abs/2002.03419},
 year = {2020}
 }
+@misc{Munoz-Gil2020,
+author = {Mu{\~{n}}oz-Gil, Gorka and Manzo, Carlo and Volpe, Giovanni and Garcia-March, Miguel Angel and Metzler, Ralf and Lewenstein, Maciej},
+doi = {10.5281/ZENODO.3707702},
+keywords = { ANDI challenge, physics simulations,anomalous diffusion},
+publisher = {Zenodo},
+title = {{The Anomalous Diffusion Challenge dataset}},
+url = {https://zenodo.org/record/3707702},
+year = {2020}
+}
 @book{Lantsoght2018,
 address = {Cham},
 author = {Lantsoght, Eva O. L.},
@@ -7537,6 +8278,20 @@ title = {{The KiTS19 Challenge Data: 300 Kidney Tumor Cases with Clinical Contex
 url = {http://arxiv.org/abs/1904.00445},
 year = {2019}
 }
+@article{liss,
+abstract = {Lung computed tomography (CT) imaging signs play important roles in the diagnosis of lung diseases. In this paper, we review the significance of CT imaging signs in disease diagnosis and determine the inclusion criterion of CT scans and CT imaging signs of our database. We develop the software of abnormal regions annotation and design the storage scheme of CT images and annotation data. Then, we present a publicly available database of lung CT imaging signs, called LISS for short, which contains 271 CT scans and 677 abnormal regions in them. The 677 abnormal regions are divided into nine categories of common CT imaging signs of lung disease (CISLs). The ground truth of these CISLs regions and the corresponding categories are provided. Furthermore, to make the database publicly available, all private data in CT scans are eliminated or replaced with provisioned values. The main characteristic of our LISS database is that it is developed from a new perspective of CT imaging signs of lung diseases instead of commonly considered lung nodules. Thus, it is promising to apply to computer-aided detection and diagnosis research and medical education.},
+author = {Han, Guanghui and Liu, Xiabi and Han, Feifei and Santika, I. Nyoman Tenaya and Zhao, Yanfeng and Zhao, Xinming and Zhou, Chunwu},
+doi = {10.1109/TBME.2014.2363131},
+issn = {15582531},
+journal = {IEEE Transactions on Biomedical Engineering},
+keywords = {CT imaging signs,Computer-aided diagnosis (CAD),lung lesions,medical database,medical education},
+number = {2},
+pages = {648--656},
+pmid = {25330480},
+title = {{The LISS - A public database of common imaging signs of lung diseases for computer-aided detection and diagnosis research and medical education}},
+volume = {62},
+year = {2015}
+}
 @article{Bilic2019,
 abstract = {In this work, we report the set-up and results of the Liver Tumor Segmentation Benchmark (LITS) organized in conjunction with the IEEE International Symposium on Biomedical Imaging (ISBI) 2016 and International Conference On Medical Image Computing Computer Assisted Intervention (MICCAI) 2017. Twenty four valid state-of-the-art liver and liver tumor segmentation algorithms were applied to a set of 131 computed tomography (CT) volumes with different types of tumor contrast levels (hyper-/hypo-intense), abnormalities in tissues (metastasectomie) size and varying amount of lesions. The submitted algorithms have been tested on 70 undisclosed volumes. The dataset is created in collaboration with seven hospitals and research institutions and manually reviewed by independent three radiologists. We found that not a single algorithm performed best for liver and tumors. The best liver segmentation algorithm achieved a Dice score of 0.96(MICCAI) whereas for tumor segmentation the best algorithm evaluated at 0.67(ISBI) and 0.70(MICCAI). The LITS image data and manual annotations continue to be publicly available through an online evaluation system as an ongoing benchmarking resource.},
 annote = {{\_}eprint: 1901.04056},
@@ -7548,6 +8303,18 @@ journal = {CoRR},
 title = {{The Liver Tumor Segmentation Benchmark (LiTS)}},
 url = {http://arxiv.org/abs/1901.04056},
 volume = {abs/1901.0},
+year = {2019}
+}
+@article{Leuschner2019,
+abstract = {Deep Learning approaches for solving Inverse Problems in imaging have become very effective and are demonstrated to be quite competitive in the field. Comparing these approaches is a challenging task since they highly rely on the data and the setup that is used for training. We provide a public dataset of computed tomography images and simulated low-dose measurements suitable for training this kind of methods. With the LoDoPaB-CT Dataset we aim to create a benchmark that allows for a fair comparison. It contains over 40 000 scan slices from around 800 patients selected from the LIDC/IDRI Database. In this paper we describe how we processed the original slices and how we simulated the measurements. We also include first baseline results.},
+archivePrefix = {arXiv},
+arxivId = {1910.01113},
+author = {Leuschner, Johannes and Schmidt, Maximilian and Baguer, Daniel Otero and Maa{\ss}, Peter},
+eprint = {1910.01113},
+journal = {arXiv},
+month = {oct},
+title = {{The LoDoPaB-CT dataset: A benchmark dataset for low-dose ct reconstruction methods}},
+url = {http://arxiv.org/abs/1910.01113},
 year = {2019}
 }
 @inproceedings{Berman2017,
@@ -7567,7 +8334,7 @@ year = {2018}
 }
 @article{Armato2011,
 abstract = {Purpose: The development of computer-aided diagnostic (CAD) methods for lung nodule detection, classification, and quantitative assessment can be facilitated through a well-characterized repository of computed tomography (CT) scans. The Lung Image Database Consortium (LIDC) and Image Database Resource Initiative (IDRI) completed such a database, establishing a publicly available reference for the medical imaging research community. Initiated by the National Cancer Institute (NCI), further advanced by the Foundation for the National Institutes of Health (FNIH), and accompanied by the Food and Drug Administration (FDA) through active participation, this public-private partnership demonstrates the success of a consortium founded on a consensus-based process. Methods: Seven academic centers and eight medical imaging companies collaborated to identify, address, and resolve challenging organizational, technical, and clinical issues to provide a solid foundation for a robust database. The LIDC/IDRI Database contains 1018 cases, each of which includes images from a clinical thoracic CT scan and an associated XML file that records the results of a two-phase image annotation process performed by four experienced thoracic radiologists. In the initial blinded-read phase, each radiologist independently reviewed each CT scan and marked lesions belonging to one of three categories (" nodule≥3 mm," " nodule{\textless}3 mm," and "non- nodule≥3 mm "). In the subsequent unblinded-read phase, each radiologist independently reviewed their own marks along with the anonymized marks of the three other radiologists to render a final opinion. The goal of this process was to identify as completely as possible all lung nodules in each CT scan without requiring forced consensus. Results: The Database contains 7371 lesions marked "nodule" by at least one radiologist. 2669 of these lesions were marked " nodul≥3 mm " by at least one radiologist, of which 928 (34.7{\%}) received such marks from all four radiologists. These 2669 lesions include nodule outlines and subjective nodule characteristic ratings. Conclusions: The LIDC/IDRI Database is expected to provide an essential medical imaging research resource to spur CAD development, validation, and dissemination in clinical practice. {\textcopyright} 2011 U.S. Government.},
-author = {Armato, Samuel G. and McLennan, Geoffrey and Bidaut, Luc and McNitt-Gray, Michael F. and Meyer, Charles R. and Reeves, Anthony P. and Zhao, Binsheng and Aberle, Denise R. and Henschke, Claudia I. and Hoffman, Eric A. and Kazerooni, Ella A. and MacMahon, Heber and {Van Beek}, Edwin J.R. and Yankelevitz, David and Biancardi, Alberto M. and Bland, Peyton H. and Brown, Matthew S. and Engelmann, Roger M. and Laderach, Gary E. and Max, Daniel and Pais, Richard C. and Qing, David P.Y. and Roberts, Rachael Y. and Smith, Amanda R. and Starkey, Adam and Batra, Poonam and Caligiuri, Philip and Farooqi, Ali and Gladish, Gregory W. and Jude, C. Matilda and Munden, Reginald F. and Petkovska, Iva and Quint, Leslie E. and Schwartz, Lawrence H. and Sundaram, Baskaran and Dodd, Lori E. and Fenimore, Charles and Gur, David and Petrick, Nicholas and Freymann, John and Kirby, Justin and Hughes, Brian and {Vande Casteele}, Alessi and Gupte, Sangeeta and Sallam, Maha and Heath, Michael D. and Kuhn, Michael H. and Dharaiya, Ekta and Burns, Richard and Fryd, David S. and Salganicoff, Marcos and Anand, Vikram and Shreter, Uri and Vastagh, Stephen and Croft, Barbara Y. and Clarke, Laurence P.},
+author = {Armato, Samuel G. and McLennan, Geoffrey and Bidaut, Luc and McNitt-Gray, Michael F. and Meyer, Charles R. and Reeves, Anthony P. and Zhao, Binsheng and Aberle, Denise R. and Henschke, Claudia I. and Hoffman, Eric A. and Kazerooni, Ella A. and MacMahon, Heber and van Beek, Edwin J. R. and Yankelevitz, David and Biancardi, Alberto M. and Bland, Peyton H. and Brown, Matthew S. and Engelmann, Roger M. and Laderach, Gary E. and Max, Daniel and Pais, Richard C. and Qing, David P.Y. and Roberts, Rachael Y. and Smith, Amanda R. and Starkey, Adam and Batra, Poonam and Caligiuri, Philip and Farooqi, Ali and Gladish, Gregory W. and Jude, C. Matilda and Munden, Reginald F. and Petkovska, Iva and Quint, Leslie E. and Schwartz, Lawrence H. and Sundaram, Baskaran and Dodd, Lori E. and Fenimore, Charles and Gur, David and Petrick, Nicholas and Freymann, John and Kirby, Justin and Hughes, Brian and {Vande Casteele}, Alessi and Gupte, Sangeeta and Sallam, Maha and Heath, Michael D. and Kuhn, Michael H. and Dharaiya, Ekta and Burns, Richard and Fryd, David S. and Salganicoff, Marcos and Anand, Vikram and Shreter, Uri and Vastagh, Stephen and Croft, Barbara Y. and Clarke, Laurence P.},
 doi = {10.1118/1.3528204},
 issn = {00942405},
 journal = {Medical Physics},
@@ -7576,7 +8343,7 @@ month = {jan},
 number = {2},
 pages = {915--931},
 pmid = {21452728},
-title = {{The Lung Image Database Consortium (LIDC) and Image Database Resource Initiative (IDRI): A completed reference database of lung nodules on CT scans}},
+title = {{The Lung Image Database Consortium (LIDC) and Image Database Resource Initiative (IDRI): A Completed Reference Database of Lung Nodules on CT Scans}},
 url = {http://doi.wiley.com/10.1118/1.3528204},
 volume = {38},
 year = {2011}
@@ -7651,6 +8418,32 @@ publisher = {Springer Singapore},
 title = {{Thesis Writing for Master's and Ph.D. Program}},
 url = {http://link.springer.com/10.1007/978-981-13-0890-1},
 year = {2018}
+}
+@article{Li2018ThoracicDI,
+abstract = {Accurate identification and localization of abnormalities from radiology images play an integral part in clinical diagnosis and treatment planning. Building a highly accurate prediction model for these tasks usually requires a large number of images manually annotated with labels and finding sites of abnormalities. In reality, however, such annotated data are expensive to acquire, especially the ones with location annotations. We need methods that can work well with only a small amount of location annotations. To address this challenge, we present a unified approach that simultaneously performs disease identification and localization through the same underlying model for all images. We demonstrate that our approach can effectively leverage both class information as well as limited location annotation, and significantly outperforms the comparative reference baseline in both classification and localization tasks.},
+author = {Li, Zhe and Wang, Chong and Han, Mei and Xue, Yuan and Wei, Wei and Li, Li Jia and Fei-Fei, Li},
+doi = {10.1109/CVPR.2018.00865},
+isbn = {9781538664209},
+issn = {10636919},
+journal = {Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+month = {jun},
+pages = {8290--8299},
+publisher = {IEEE},
+title = {{Thoracic Disease Identification and Localization with Limited Supervision}},
+url = {https://ieeexplore.ieee.org/document/8578963/},
+year = {2018}
+}
+@misc{M2019,
+abstract = {This paper proposes, a novel computer based approach for benign or malignant assessment of thyroid nodules in ultrasound images. Ultrasound imaging is one of the frequently used diagnosis tool to detect and classify abnormalities of the thyroid gland. The proposed approach comprises of four important stages: pre-processing, segmentation, feature extraction and classification. Rayleigh trimmed anisotropic diffusion filter is used for pre-processing. A watershed algorithm is used to segment the nodule region. An artificial neural network (ANN) and support vector machine (SVM) classifiers are employed for the classification task, utilizing feature vectors derived from gray level co-occurrence (GLCM) features. The classification results are evaluated with the use of accuracy, sensitivity and specificity. It is derived that SVM classifier provides better result than ANN for discriminating benign and malignant nodules, obtaining accuracy 92.5{\%}, sensitivity 96.66{\%} and specificity 80{\%}.},
+author = {M, Gireesha H},
+booktitle = {Article in International Journal of Engineering and Technical Research},
+doi = {10.5281/ZENODO.3715942},
+keywords = {ANN,Anisotropic Diffusion,Computer Aided Diagnosis(CAD),GLCM,SVM,Thyroid Ultrasound,Watershed Segmentation},
+pages = {1--15},
+publisher = {Zenodo},
+title = {{Thyroid Nodule Segmentation and Classification in Ultrasound Images}},
+url = {https://www.researchgate.net/publication/332013003},
+year = {2019}
 }
 @article{Zela2018,
 abstract = {While existing work on neural architecture search (NAS) tunes hyperparameters in a separate post-processing step, we demonstrate that architectural choices and other hyperparameter settings interact in a way that can render this separation suboptimal. Likewise, we demonstrate that the common practice of using very few epochs during the main NAS and much larger numbers of epochs during a post-processing step is inefficient due to little correlation in the relative rankings for these two training regimes. To combat both of these problems, we propose to use a recent combination of Bayesian optimization and Hyperband for efficient joint neural architecture and hyperparameter search.},
@@ -7813,6 +8606,25 @@ title = {{Unsupervised Learning in Space and Time}},
 url = {http://link.springer.com/10.1007/978-3-030-42128-1},
 year = {2020}
 }
+@article{Tartaglione2020,
+abstract = {The possibility to use widespread and simple chest X-ray (CXR) imaging for early screening of COVID-19 patients is attracting much interest from both the clinical and the AI community. In this study we provide insights and also raise warnings on what is reasonable to expect by applying deep learning to COVID classification of CXR images. We provide a methodological guide and critical reading of an extensive set of statistical results that can be obtained using currently available datasets. In particular, we take the challenge posed by current small size COVID data and show how significant can be the bias introduced by transfer-learning using larger public non-COVID CXR datasets. We also contribute by providing results on a medium size COVID CXR dataset, just collected by one of the major emergency hospitals in Northern Italy during the peak of the COVID pandemic. These novel data allow us to contribute to validate the generalization capacity of preliminary results circulating in the scientific community. Our conclusions shed some light into the possibility to effectively discriminate COVID using CXR.},
+archivePrefix = {arXiv},
+arxivId = {2004.05405},
+author = {Tartaglione, Enzo and Barbano, Carlo Alberto and Berzovini, Claudio and Calandri, Marco and Grangetto, Marco},
+doi = {10.3390/ijerph17186933},
+eprint = {2004.05405},
+issn = {16604601},
+journal = {International Journal of Environmental Research and Public Health},
+keywords = {COVID-19,Chest X-ray,Classification,Deep learning},
+month = {apr},
+number = {18},
+pages = {1--17},
+pmid = {32971995},
+title = {{Unveiling COVID-19 from chest x-ray with deep learning: A hurdles race with small data}},
+url = {http://arxiv.org/abs/2004.05405 http://dx.doi.org/10.3390/ijerph17186933},
+volume = {17},
+year = {2020}
+}
 @article{Setio2016,
 abstract = {Automatic detection of pulmonary nodules in thoracic computed tomography (CT) scans has been an active area of research for the last two decades. However, there have only been few studies that provide a comparative performance evaluation of different systems on a common database. We have therefore set up the LUNA16 challenge, an objective evaluation framework for automatic nodule detection algorithms using the largest publicly available reference database of chest CT scans, the LIDC-IDRI data set. In LUNA16, participants develop their algorithm and upload their predictions on 888 CT scans in one of the two tracks: 1) the complete nodule detection track where a complete CAD system should be developed, or 2) the false positive reduction track where a provided set of nodule candidates should be classified. This paper describes the setup of LUNA16 and presents the results of the challenge so far. Moreover, the impact of combining individual systems on the detection performance was also investigated. It was observed that the leading solutions employed convolutional networks and used the provided set of nodule candidates. The combination of these solutions achieved an excellent sensitivity of over 95{\%} at fewer than 1.0 false positives per scan. This highlights the potential of combining algorithms to improve the detection performance. Our observer study with four expert readers has shown that the best system detects nodules that were missed by expert readers who originally annotated the LIDC-IDRI data. We released this set of additional nodules for further development of CAD systems.},
 archivePrefix = {arXiv},
@@ -7823,9 +8635,11 @@ eprint = {1612.08012},
 issn = {13618423},
 journal = {Medical Image Analysis},
 keywords = {Computed tomography,Computer-aided detection,Convolutional networks,Deep learning,Medical image challenges,Pulmonary nodules},
+month = {dec},
 pages = {1--13},
 pmid = {28732268},
 title = {{Validation, comparison, and combination of algorithms for automatic detection of pulmonary nodules in computed tomography images: The LUNA16 challenge}},
+url = {https://linkinghub.elsevier.com/retrieve/pii/S1361841517301020},
 volume = {42},
 year = {2017}
 }
@@ -7846,6 +8660,19 @@ title = {{VConv-DAE: Deep volumetric shape learning without object labels}},
 url = {http://arxiv.org/abs/1604.03755},
 volume = {9915 LNCS},
 year = {2016}
+}
+@article{Sekuboyina2020,
+abstract = {In this paper we report the challenge set-up and results of the Large Scale Vertebrae Segmentation Challenge (VerSe) organized in conjunction with the MICCAI 2019. The challenge consisted of two tasks, vertebrae labelling and vertebrae segmentation. For this a total of 160 multidetector CT scan cohort closely resembling clinical setting was prepared and was annotated at a voxel-level by a human-machine hybrid algorithm. In this paper we also present the annotation protocol and the algorithm that aided the medical experts in the annotation process. Eleven fully automated algorithms were benchmarked on this data with the best performing algorithm achieving a vertebrae identification rate of 95{\%} and a Dice coefficient of 90{\%}. VerSe'19 is an open-call challenge at its image data along with the annotations and evaluation tools will continue to be publicly accessible through its online portal.},
+archivePrefix = {arXiv},
+arxivId = {2001.09193},
+author = {Sekuboyina, Anjany and Bayat, Amirhossein and Husseini, Malek E. and L{\"{o}}ffler, Maximilian and Rempfler, Markus and Kuka{\v{c}}ka, Jan and Tetteh, Giles and Valentinitsch, Alexander and Payer, Christian and Urschler, Martin and Chen, Maodong and Cheng, Dalong and Lessmann, Nikolas and Hu, Yujin and Wang, Tianfu and Yang, Dong and Xu, Daguang and Ambellan, Felix and Zachow, Stefan and Jiang, Tao and Ma, Xinjun and Angerman, Christoph and Wang, Xin and Wei, Qingyue and Brown, Kevin and Wolf, Matthias and Kirszenberg, Alexandre and Puybareau, {\'{E}}lodie and Menze, Bj{\"{o}}rn H. and Kirschke, S.},
+eprint = {2001.09193},
+journal = {arXiv},
+keywords = {Computed tomography,Spine segmentation,Vertebrae detection and localization,Vertebrae labelling,Vertebrae segmentation},
+month = {jan},
+title = {{VerSe: A vertebrae labelling and segmentation benchmark}},
+url = {http://arxiv.org/abs/2001.09193},
+year = {2020}
 }
 @inproceedings{Simonyan2014,
 abstract = {In this work we investigate the effect of the convolutional network depth on its accuracy in the large-scale image recognition setting. Our main contribution is a thorough evaluation of networks of increasing depth using an architecture with very small (3 × 3) convolution filters, which shows that a significant improvement on the prior-art configurations can be achieved by pushing the depth to 16–19 weight layers. These findings were the basis of our ImageNet Challenge 2014 submission, where our team secured the first and the second places in the localisation and classification tracks respectively. We also show that our representations generalise well to other datasets, where they achieve state-of-the-art results. We have made our two best-performing ConvNet models publicly available to facilitate further research on the use of deep visual representations in computer vision.},
@@ -8003,6 +8830,22 @@ title = {{VoxNet: A 3D Convolutional Neural Network for real-time object recogni
 url = {https://doi.org/10.1109/IROS.2015.7353481},
 volume = {2015-Decem},
 year = {2015}
+}
+@inproceedings{Wang2018WeaklySL,
+abstract = {Histopathology image analysis serves as the gold standard for cancer diagnosis. Efficient and precise diagnosis is quite critical for the subsequent therapeutic treatment of patients. So far, computer-aided diagnosis has not been widely applied in pathological field yet as currently well-addressed tasks are only the tip of the iceberg. Whole slide image (WSI) classification is a quite challenging problem. First, the scarcity of annotations heavily impedes the pace of developing effective approaches. Pixelwise delineated annotations on WSIs are time consuming and tedious, which poses difficulties in building a large-scale training dataset. In addition, a variety of heterogeneous patterns of tumor existing in high magnification field are actually the major obstacle. Furthermore, a gigapixel scale WSI cannot be directly analyzed due to the immeasurable computational cost. How to design the weakly supervised learning methods to maximize the use of available WSI-level labels that can be readily obtained in clinical practice is quite appealing. To overcome these challenges, we present a weakly supervised approach in this article for fast and effective classification on the whole slide lung cancer images. Our method first takes advantage of a patch-based fully convolutional network (FCN) to retrieve discriminative blocks and provides representative deep features with high efficiency. Then, different context-aware block selection and feature aggregation strategies are explored to generate globally holistic WSI descriptor which is ultimately fed into a random forest (RF) classifier for the image-level prediction. To the best of our knowledge, this is the first study to exploit the potential of image-level labels along with some coarse annotations for weakly supervised learning. A large-scale lung cancer WSI dataset is constructed in this article for evaluation, which validates the effectiveness and feasibility of the proposed method. Extensive experiments demonstrate the superior performance of our method that surpasses the state-of-the-art approaches by a significant margin with an accuracy of 97.3{\%}. In addition, our method also achieves the best performance on the public lung cancer WSIs dataset from The Cancer Genome Atlas (TCGA). We highlight that a small number of coarse annotations can contribute to further accuracy improvement. We believe that weakly supervised learning methods have great potential to assist pathologists in histology image diagnosis in the near future.},
+author = {Wang, Xi and Chen, Hao and Gan, Caixia and Lin, Huangjing and Dou, Qi and Tsougenis, Efstratios and Huang, Qitao and Cai, Muyan and Heng, Pheng Ann},
+booktitle = {IEEE Transactions on Cybernetics},
+doi = {10.1109/TCYB.2019.2935141},
+issn = {21682275},
+keywords = {Deep learning,histology image analysis,weakly supervised learning,whole slide images (WSIs)},
+month = {sep},
+number = {9},
+pages = {3950--3962},
+pmid = {31484154},
+title = {{Weakly Supervised Deep Learning for Whole Slide Lung Cancer Image Analysis}},
+url = {https://ieeexplore.ieee.org/document/8822590/},
+volume = {50},
+year = {2020}
 }
 @article{Li2019,
 abstract = {Developing new deep learning methods for medical image analysis is a prevalent research topic in machine learning. In this paper, we propose a deep learning scheme with a novel loss function for weakly supervised breast cancer diagnosis. According to the Nottingham Grading System, mitotic count plays an important role in breast cancer diagnosis and grading. To determine the cancer grade, pathologists usually need to manually count mitosis from a great deal of histopathology images, which is a very tedious and time-consuming task. This paper proposes an automatic method for detecting mitosis. We regard the mitosis detection task as a semantic segmentation problem and use a deep fully convolutional network to address it. Different from conventional training data used in semantic segmentation system, the training label of mitosis data is usually in the format of centroid pixel, rather than all the pixels belonging to a mitosis. The centroid label is a kind of weak label, which is much easier to annotate and can save the effort of pathologists a lot. However, technically this weak label is not sufficient for training a mitosis segmentation model. To tackle this problem, we expand the single-pixel label to a novel label with concentric circles, where the inside circle is a mitotic region and the ring around the inside circle is a “middle ground”. During the training stage, we do not compute the loss of the ring region because it may have the presence of both mitotic and non-mitotic pixels. This new loss termed as “concentric loss” is able to make the semantic segmentation network be trained with the weakly annotated mitosis data. On the generated segmentation map from the segmentation model, we filter out low confidence and obtain mitotic cells. On the challenging ICPR 2014 MITOSIS dataset and AMIDA13 dataset, we achieve a 0.562 F-score and 0.673 F-score respectively, outperforming all previous approaches significantly. On the latest TUPAC16 dataset, we obtain a F-score of 0.669, which is also the state-of-the-art result. The excellent results quantitatively demonstrate the effectiveness of the proposed mitosis segmentation network with the concentric loss. All of our code has been made publicly available at https://github.com/ChaoLi977/SegMitos{\_}mitosis{\_}detection.},
