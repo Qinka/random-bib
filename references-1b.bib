@@ -283,6 +283,18 @@ title = {{A Dataset and a Technique for Generalized Nuclear Segmentation for Com
 volume = {36},
 year = {2017}
 }
+@article{Li2021,
+abstract = {Lung cancer is a life-threatening disease and its diagnosis is of great significance. Data scarcity and unavailability of datasets is a major bottleneck in lung cancer research. In this paper, we introduce a dataset of pulmonary lesions for designing the computer-aided diagnosis (CAD) systems. The dataset has fine contour annotations and nine attribute annotations. We define the structure of the dataset in detail, and then discuss the relationship of the attributes and pathology, and the correlation between the nine attributes with the chi-square test. To demonstrate the contribution of our dataset to computer-aided system design, we define four tasks that can be developed using our dataset. Then, we use our dataset to model multi-attribute classification tasks. We discuss the performance in 2D, 2.5D, and 3D input modes of the classification model. To improve performance, we introduce two attention mechanisms and verify the principles of the attention mechanisms through visualization. Experimental results show the relationship between different models and different levels of attributes.},
+author = {Li, Ping and Kong, Xiangwen and Li, Johann and Zhu, Guangming and Lu, Xiaoyuan and Shen, Peiyi and Shah, Syed Afaq Ali and Bennamoun, Mohammed and Hua, Tao},
+doi = {10.3389/fdgth.2020.609349},
+issn = {2673-253X},
+journal = {Frontiers in Digital Health},
+month = {feb},
+title = {{A Dataset of Pulmonary Lesions With Multiple-Level Attributes and Fine Contours}},
+url = {https://www.frontiersin.org/articles/10.3389/fdgth.2020.609349/full},
+volume = {2},
+year = {2021}
+}
 @article{Krishnamurthy2018,
 abstract = {Automatic deception detection is an important task that has gained momentum in computational linguistics due to its potential applications. In this paper, we propose a simple yet tough to beat multi-modal neural model for deception detection. By combining features from different modalities such as video, audio, and text along with Micro-Expression features, we show that detecting deception in real life videos can be more accurate. Experimental results on a dataset of real-life deception videos show that our model outperforms existing techniques for deception detection with an accuracy of 96.14{\%} and ROC-AUC of 0.9799.},
 archivePrefix = {arXiv},
@@ -769,6 +781,20 @@ publisher = {Springer International Publishing},
 title = {{Action Research in Software Engineering}},
 url = {http://link.springer.com/10.1007/978-3-030-32610-4},
 year = {2020}
+}
+@incollection{Carse2019,
+abstract = {Methods to reduce the need for costly data annotations become increasingly important as deep learning gains popularity in medical image analysis and digital pathology. Active learning is an appealing approach that can reduce the amount of annotated data needed to train machine learning models but traditional active learning strategies do not always work well with deep learning. In patch-based machine learning systems, active learning methods typically request annotations for small individual patches which can be tedious and costly for the annotator who needs to rely on visual context for the patches. We propose an active learning framework that selects regions for annotation that are built up of several patches, which should increase annotation throughput. The framework was evaluated with several query strategies on the task of nuclei classification. Convolutional neural networks were trained on small patches, each containing a single nucleus. Traditional query strategies performed worse than random sampling. A K-centre sampling strategy showed a modest gain. Further investigation is needed in order to achieve significant performance gains using deep active learning for this task.},
+author = {Carse, Jacob and McKenna, Stephen},
+booktitle = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+doi = {10.1007/978-3-030-23937-4_3},
+isbn = {9783030239367},
+issn = {16113349},
+keywords = {Active learning,Deep learning,Image annotation,Nuclei classification},
+pages = {20--27},
+title = {{Active Learning for Patch-Based Digital Pathology Using Convolutional Neural Networks to Reduce Annotation Costs}},
+url = {http://link.springer.com/10.1007/978-3-030-23937-4{\_}3},
+volume = {11435 LNCS},
+year = {2019}
 }
 @data{GrandChallengeADAM,
 author = {Fu, Huazhu and Li, Fei and Orlando, Jos{\'{e}} Ignacio and Bogunovi{\'{c}}, Hrvoje and Sun, Xu and Liao, Jingan and Xu, Yanwu and Zhang, Shaochong and Zhang, Xiulan},
@@ -2789,6 +2815,22 @@ url = {http://www.nature.com/articles/ncomms5006},
 volume = {5},
 year = {2014}
 }
+@inproceedings{Shao2018a,
+abstract = {The systematic study of nuclei patterns in pathology images is very important for fully charactering the grade of cancerous tissues. Nowadays, with the great advance of deep neural networks (i.e., DNN), intense interest in adopting DNN to distinguish different types of pathology nuclei is widely spread. However, most of the existing methods need to annotate lots of nuclei images in the training stage, and this is not always an option for the labelling cost are high. To address this problem, we propose a novel approach called DAPC (i.e., deep active learning with pairwise constraints) to actively select the most valuable nuclei for annotation. Specifically, we firstly design a novel pairwise-constraint regularized deep convolutional neural network (i.e., CNN) that can simultaneously preserve the distribution of different subjects and optimize the objective criterion of conventional CNN. Then, through the properly designed CNN, we query the most informative nuclei in the unlabelled dataset for human annotation, and the parameters of the designed CNN is subsequently updated by incorporating the newly annotated samples to enhance the CNNs performance incrementally. We evaluate our method on a public available pathology colon dataset, the experimental results show that the proposed method could achieves to a weighted F1-score of 79.2{\%} by only annotating 60{\%} nuclei in the training set, which is better than the comparing methods.},
+author = {Shao, Wei and Sun, Liang and Zhang, Daoqiang},
+booktitle = {Proceedings - International Symposium on Biomedical Imaging},
+doi = {10.1109/ISBI.2018.8363554},
+isbn = {9781538636367},
+issn = {19458452},
+keywords = {Active Learning,Cell Nucleus Classification,Deep Learning,Pair-wise Constraints},
+month = {apr},
+pages = {199--202},
+publisher = {IEEE},
+title = {{Deep active learning for nucleus classification in pathology images}},
+url = {https://ieeexplore.ieee.org/document/8363554/},
+volume = {2018-April},
+year = {2018}
+}
 @incollection{Bansal2020,
 address = {Cham},
 author = {Bansal, Ankan and Ranjan, Rajeev and Castillo, Carlos D. and Chellappa, Rama},
@@ -4527,6 +4569,20 @@ title = {{Gradient Vector Flow}},
 url = {http://link.springer.com/10.1007/978-3-030-03243-2{\_}712-1},
 year = {2020}
 }
+@article{LeCun1998,
+abstract = {Multilayer neural networks trained with the back-propagation algorithm constitute the best example of a successful gradient-based learning technique. Given an appropriate network architecture, gradient-based learning algorithms can be used to synthesize a complex decision surface that can classify high-dimensional patterns, such as handwritten characters, with minimal preprocessing. This paper reviews various methods applied to handwritten character recognition and compares them on a standard handwritten digit recognition task. Convolutional neural networks, which are specifically designed to deal with the variability of two dimensional (2-D) shapes, are shown to outperform all other techniques. Real-life document recognition systems are composed of multiple modules including field extraction, segmentation, recognition, and language modeling. A new learning paradigm, called graph transformer networks (GTN's), allows such multimodule systems to be trained globally using gradient-based methods so as to minimize an overall performance measure. Two systems for online handwriting recognition are described. Experiments demonstrate the advantage of global training, and the flexibility of graph transformer networks. A graph transformer network for reading a bank check is also described. It uses convolutional neural network character recognizers combined with global training techniques to provide record accuracy on business and personal checks. It is deployed commercially and reads several million checks per day. {\textcopyright} 1998 IEEE.},
+author = {LeCun, Yann and Bottou, L{\'{e}}on and Bengio, Yoshua and Haffner, Patrick},
+doi = {10.1109/5.726791},
+issn = {00189219},
+journal = {Proceedings of the IEEE},
+keywords = {Convolutional neural networks,Document recognition,Finite state transducers,Gradient-based learning,Graph transformer networks,Machine learning,Neural networks,Optical character recognition (OCR)},
+number = {11},
+pages = {2278--2323},
+title = {{Gradient-based learning applied to document recognition}},
+url = {http://ieeexplore.ieee.org/document/726791/},
+volume = {86},
+year = {1998}
+}
 @article{LeCun1998a,
 abstract = {Multilayer neural networks trained with the back-propagation algorithm constitute the best example of a successful gradient-based learning technique. Given an appropriate network architecture, gradient-based learning algorithms can be used to synthesize a complex decision surface that can classify high-dimensional patterns, such as handwritten characters, with minimal preprocessing. This paper reviews various methods applied to handwritten character recognition and compares them on a standard handwritten digit recognition task. Convolutional neural networks, which are specifically designed to deal with the variability of two dimensional (2-D) shapes, are shown to outperform all other techniques. Real-life document recognition systems are composed of multiple modules including field extraction, segmentation, recognition, and language modeling. A new learning paradigm, called graph transformer networks (GTN's), allows such multimodule systems to be trained globally using gradient-based methods so as to minimize an overall performance measure. Two systems for online handwriting recognition are described. Experiments demonstrate the advantage of global training, and the flexibility of graph transformer networks. A graph transformer network for reading a bank check is also described. It uses convolutional neural network character recognizers combined with global training techniques to provide record accuracy on business and personal checks. It is deployed commercially and reads several million checks per day. {\textcopyright} 1998 IEEE.},
 author = {LeCun, Yann and Bottou, L{\'{e}}on and Bengio, Yoshua and Haffner, Patrick},
@@ -4998,6 +5054,19 @@ pages = {84--90},
 title = {{ImageNet classification with deep convolutional neural networks}},
 volume = {60},
 year = {2017}
+}
+@inproceedings{Deng2010,
+abstract = {The explosion of image data on the Internet has the potential to foster more sophisticated and robust models and algorithms to index, retrieve, organize and interact with images and multimedia data. But exactly how such data can be harnessed and organized remains a critical problem. We introduce here a new database called ldquoImageNetrdquo, a large-scale ontology of images built upon the backbone of the WordNet structure. ImageNet aims to populate the majority of the 80,000 synsets of WordNet with an average of 500-1000 clean and full resolution images. This will result in tens of millions of annotated images organized by the semantic hierarchy of WordNet. This paper offers a detailed analysis of ImageNet in its current state: 12 subtrees with 5247 synsets and 3.2 million images in total. We show that ImageNet is much larger in scale and diversity and much more accurate than the current image datasets. Constructing such a large-scale database is a challenging task. We describe the data collection scheme with Amazon Mechanical Turk. Lastly, we illustrate the usefulness of ImageNet through three simple applications in object recognition, image classification and automatic object clustering. We hope that the scale, accuracy, diversity and hierarchical structure of ImageNet can offer unparalleled opportunities to researchers in the computer vision community and beyond.},
+author = {Deng, Jia and Dong, Wei and Socher, Richard and Li, Li-Jia and {Kai Li} and {Li Fei-Fei}},
+booktitle = {2009 IEEE Conference on Computer Vision and Pattern Recognition},
+doi = {10.1109/cvpr.2009.5206848},
+isbn = {978-1-4244-3992-8},
+month = {jun},
+pages = {248--255},
+publisher = {IEEE},
+title = {{ImageNet: A large-scale hierarchical image database}},
+url = {https://ieeexplore.ieee.org/document/5206848/},
+year = {2010}
 }
 @book{Turner2020,
 address = {Cham},
@@ -5818,6 +5887,23 @@ publisher = {Springer International Publishing},
 title = {{Microservices}},
 url = {http://link.springer.com/10.1007/978-3-030-31646-4},
 year = {2020}
+}
+@article{Lin2014,
+abstract = {We present a new dataset with the goal of advancing the state-of-the-art in object recognition by placing the question of object recognition in the context of the broader question of scene understanding. This is achieved by gathering images of complex everyday scenes containing common objects in their natural context. Objects are labeled using per-instance segmentations to aid in precise object localization. Our dataset contains photos of 91 objects types that would be easily recognizable by a 4 year old. With a total of 2.5 million labeled instances in 328k images, the creation of our dataset drew upon extensive crowd worker involvement via novel user interfaces for category detection, instance spotting and instance segmentation. We present a detailed statistical analysis of the dataset in comparison to PASCAL, ImageNet, and SUN. Finally, we provide baseline performance analysis for bounding box and segmentation detection results using a Deformable Parts Model. {\textcopyright} 2014 Springer International Publishing.},
+archivePrefix = {arXiv},
+arxivId = {1405.0312},
+author = {Lin, Tsung Yi and Maire, Michael and Belongie, Serge and Hays, James and Perona, Pietro and Ramanan, Deva and Doll{\'{a}}r, Piotr and Zitnick, C. Lawrence},
+doi = {10.1007/978-3-319-10602-1_48},
+eprint = {1405.0312},
+issn = {16113349},
+journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+month = {may},
+number = {PART 5},
+pages = {740--755},
+title = {{Microsoft COCO: Common objects in context}},
+url = {http://arxiv.org/abs/1405.0312},
+volume = {8693 LNCS},
+year = {2014}
 }
 @article{Johnson2019,
 abstract = {Chest radiography is an extremely powerful imaging modality, allowing for a detailed inspection of a patient's chest, but requires specialized training for proper interpretation. With the advent of high performance general purpose computer vision algorithms, the accurate automated analysis of chest radiographs is becoming increasingly of interest to researchers. Here we describe MIMIC-CXR, a large dataset of 227,835 imaging studies for 65,379 patients presenting to the Beth Israel Deaconess Medical Center Emergency Department between 2011-2016. Each imaging study can contain one or more images, usually a frontal view and a lateral view. A total of 377,110 images are available in the dataset. Studies are made available with a semi-structured free-text radiology report that describes the radiological findings of the images, written by a practicing radiologist contemporaneously during routine clinical care. All images and reports have been de-identified to protect patient privacy. The dataset is made freely available to facilitate and encourage a wide range of research in computer vision, natural language processing, and clinical data mining.},
@@ -8721,6 +8807,20 @@ publisher = {physionet.org},
 title = {{The MIMIC-CXR Database}},
 url = {https://physionet.org/content/mimic-cxr/},
 year = {2019}
+}
+@article{Deng2012,
+abstract = {In this issue, Best of the Web presents the modified National Institute of Standards and Technology (MNIST) resources, consisting of a collection of handwritten digit images used extensively in optical character recognition and machine learning research. {\textcopyright} 2012 IEEE.},
+author = {Deng, Li},
+doi = {10.1109/MSP.2012.2211477},
+issn = {10535888},
+journal = {IEEE Signal Processing Magazine},
+month = {nov},
+number = {6},
+pages = {141--142},
+title = {{The MNIST database of handwritten digit images for machine learning research}},
+url = {http://ieeexplore.ieee.org/document/6296535/},
+volume = {29},
+year = {2012}
 }
 @article{Menze2015,
 abstract = {In this paper we report the set-up and results of the Multimodal Brain Tumor Image Segmentation Benchmark (BRATS) organized in conjunction with the MICCAI 2012 and 2013 conferences. Twenty state-of-the-art tumor segmentation algorithms were applied to a set of 65 multi-contrast MR scans of low- and high-grade glioma patients - manually annotated by up to four raters - and to 65 comparable scans generated using tumor image simulation software. Quantitative evaluations revealed considerable disagreement between the human raters in segmenting various tumor sub-regions (Dice scores in the range 74{\%}-85{\%}), illustrating the difficulty of this task. We found that different algorithms worked best for different sub-regions (reaching performance comparable to human inter-rater variability), but that no single algorithm ranked in the top for all sub-regions simultaneously. Fusing several good algorithms using a hierarchical majority vote yielded segmentations that consistently ranked above all individual algorithms, indicating remaining opportunities for further methodological improvements. The BRATS image data and manual annotations continue to be publicly available through an online evaluation system as an ongoing benchmarking resource.},
