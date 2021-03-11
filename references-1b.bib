@@ -171,6 +171,11 @@ author = {Landman, Bennett A and Anderson, Adam W and Schilling, Kurt and Alexan
 title = {{3-D Validation of Tractography with Experimental MRI (3D VoTEM)}},
 url = {https://my.vanderbilt.edu/votem/}
 }
+@misc{,
+title = {{8.NLTK之分析句子结构{\_}LK-T.O.P的博客-CSDN博客{\_}nltk 句法分析}},
+url = {https://blog.csdn.net/sinat{\_}20791575/article/details/60774360},
+urldate = {2021-03-10}
+}
 @article{Dettmers2016,
 abstract = {The creation of practical deep learning data-products often requires parallelization across processors and computers to make deep learning feasible on large data sets, but bottlenecks in communication bandwidth make it difficult to attain good speedups through parallelism. Here we develop and test 8-bit approximation algorithms which make better use of the available bandwidth by compressing 32-bit gradients and nonlinear activations to 8-bit approximations. We show that these approximations do not decrease predictive performance on MNIST, CIFAR10, and ImageNet for both model and data parallelism and provide a data transfer speedup of 2x relative to 32-bit parallelism. We build a predictive model for speedups based on our experimental data, verify its validity on known speedup data, and show that we can obtain a speedup of 50x and more on a system of 96 GPUs compared to a speedup of 23x for 32-bit. We compare our data types with other methods and show that 8-bit approximations achieve state-of-the-art speedups for model parallelism. Thus 8-bit approximation is an efficient method to parallelize convolutional networks on very large systems of GPUs.},
 archivePrefix = {arXiv},
@@ -353,6 +358,18 @@ title = {{A fixed-point model for pancreas segmentation in abdominal CT scans}},
 volume = {10433 LNCS},
 year = {2017}
 }
+@article{Xiong2021,
+author = {Xiong, Zhaohan and Xia, Qing and Hu, Zhiqiang and Huang, Ning and Bian, Cheng and Zheng, Yefeng and Vesal, Sulaiman and Ravikumar, Nishant and Maier, Andreas and Yang, Xin and Heng, Pheng-Ann and Ni, Dong and Li, Caizi and Tong, Qianqian and Si, Weixin and Puybareau, Elodie and Khoudli, Younes and G{\'{e}}raud, Thierry and Chen, Chen and Bai, Wenjia and Rueckert, Daniel and Xu, Lingchao and Zhuang, Xiahai and Luo, Xinzhe and Jia, Shuman and Sermesant, Maxime and Liu, Yashu and Wang, Kuanquan and Borra, Davide and Masci, Alessandro and Corsi, Cristiana and de Vente, Coen and Veta, Mitko and Karim, Rashed and Preetha, Chandrakanth Jayachandran and Engelhardt, Sandy and Qiao, Menyun and Wang, Yuanyuan and Tao, Qian and Nu{\~{n}}ez-Garcia, Marta and Camara, Oscar and Savioli, Nicolo and Lamata, Pablo and Zhao, Jichao},
+doi = {10.1016/j.media.2020.101832},
+issn = {13618415},
+journal = {Medical Image Analysis},
+month = {jan},
+pages = {101832},
+title = {{A global benchmark of algorithms for segmenting the left atrium from late gadolinium-enhanced cardiac magnetic resonance imaging}},
+url = {https://linkinghub.elsevier.com/retrieve/pii/S1361841520301961},
+volume = {67},
+year = {2021}
+}
 @article{Jimenez-Carretero2019,
 abstract = {Lung vessel segmentation has been widely explored by the biomedical image processing community; however, the differentiation of arterial from venous irrigation is still a challenge. Pulmonary artery–vein (AV) segmentation using computed tomography (CT) is growing in importance owing to its undeniable utility in multiple cardiopulmonary pathological states, especially those implying vascular remodelling, allowing the study of both flow systems separately. We present a new framework to approach the separation of tree-like structures using local information and a specifically designed graph-cut methodology that ensures connectivity as well as the spatial and directional consistency of the derived subtrees. This framework has been applied to the pulmonary AV classification using a random forest (RF) pre-classifier to exploit the local anatomical differences of arteries and veins. The evaluation of the system was performed using 192 bronchopulmonary segment phantoms, 48 anthropomorphic pulmonary CT phantoms, and 26 lungs from noncontrast CT images with precise voxel-based reference standards obtained by manually labelling the vessel trees. The experiments reveal a relevant improvement in the accuracy (∼ 20{\%}) of the vessel particle classification with the proposed framework with respect to using only the pre-classification based on local information applied to the whole area of the lung under study. The results demonstrated the accurate differentiation between arteries and veins in both clinical and synthetic cases, specifically when the image quality can guarantee a good airway segmentation, which opens a huge range of possibilities in the clinical study of cardiopulmonary diseases.},
 author = {Jimenez-Carretero, Daniel and Bermejo-Pel{\'{a}}ez, David and Nardelli, Pietro and Fraga, Patricia and Fraile, Eduardo and {San Jos{\'{e}} Est{\'{e}}par}, Ra{\'{u}}l and Ledesma-Carbayo, Maria J.},
@@ -379,14 +396,6 @@ title = {{A large annotated medical image dataset for the development and evalua
 url = {http://arxiv.org/abs/1902.09063},
 year = {2019}
 }
-@article{Liew2017,
-abstract = {Stroke is the leading cause of adult disability worldwide, with up to two-thirds of individuals experiencing long-term disabilities. Large-scale neuroimaging studies have shown promise in identifying robust biomarkers (e.g., measures of brain structure) of long-term stroke recovery following rehabilitation. However, analyzing large rehabilitation-related datasets is problematic due to barriers in accurate stroke lesion segmentation. Manually-traced lesions are currently the gold standard for lesion segmentation on T1-weighted MRIs, but are labor intensive and require anatomical expertise. While algorithms have been developed to automate this process, the results often lack accuracy. Newer algorithms that employ machine-learning techniques are promising, yet these require large training datasets to optimize performance. Here we present ATLAS (Anatomical Tracings of Lesions After Stroke), an open-source dataset of 304 T1-weighted MRIs with manually segmented lesions and metadata. This large, diverse dataset can be used to train and test lesion segmentation algorithms and provides a standardized dataset for comparing the performance of different segmentation methods. We hope ATLAS release 1.1 will be a useful resource to assess and improve the accuracy of current lesion segmentation methods.},
-author = {Liew, Sook Lei and Anglin, Julia M. and Banks, Nick W. and Sondag, Matt and Ito, Kaori L. and Kim, Hosung and Chan, Jennifer and Ito, Joyce and Jung, Connie and Khoshab, Nima and Lefebvre, Stephanie and Nakamura, William and Saldana, David and Schmiesing, Allie and Tran, Cathy and Vo, Danny and Ard, Tyler and Heydari, Panthea and Kim, Bokkyu and Aziz-Zadeh, Lisa and Cramer, Steven C. and Liu, Jingchun and Soekadar, Surjo and Nordvik, Jan Egil and Westlye, Lars T. and Wang, Junping and Winstein, Carolee and Yu, Chunshui and Ai, Lei and Koo, Bonhwang and Craddock, R. Cameron and Milham, Michael and Lakich, Matthew and Pienta, Amy and Stroud, Alison},
-doi = {10.1101/179614},
-journal = {bioRxiv},
-title = {{A large, open source dataset of stroke anatomical brain images and manual lesion segmentations}},
-year = {2017}
-}
 @article{Liew2018,
 abstract = {Stroke is the leading cause of adult disability worldwide, with up to two-thirds of individuals experiencing long-term disabilities. Large-scale neuroimaging studies have shown promise in identifying robust biomarkers (e.g., measures of brain structure) of long-term stroke recovery following rehabilitation. However, analyzing large rehabilitation-related datasets is problematic due to barriers in accurate stroke lesion segmentation. Manually-traced lesions are currently the gold standard for lesion segmentation on T1-weighted MRIs, but are labor intensive and require anatomical expertise. While algorithms have been developed to automate this process, the results often lack accuracy. Newer algorithms that employ machine-learning techniques are promising, yet these require large training datasets to optimize performance. Here we present ATLAS (Anatomical Tracings of Lesions After Stroke), an open-source dataset of 304 T1-weighted MRIs with manually segmented lesions and metadata. This large, diverse dataset can be used to train and test lesion segmentation algorithms and provides a standardized dataset for comparing the performance of different segmentation methods. We hope ATLAS release 1.1 will be a useful resource to assess and improve the accuracy of current lesion segmentation methods.},
 author = {Liew, Sook Lei and Anglin, Julia M. and Banks, Nick W. and Sondag, Matt and Ito, Kaori L. and Kim, Hosung and Chan, Jennifer and Ito, Joyce and Jung, Connie and Khoshab, Nima and Lefebvre, Stephanie and Nakamura, William and Saldana, David and Schmiesing, Allie and Tran, Cathy and Vo, Danny and Ard, Tyler and Heydari, Panthea and Kim, Bokkyu and Aziz-Zadeh, Lisa and Cramer, Steven C. and Liu, Jingchun and Soekadar, Surjo and Nordvik, Jan Egil and Westlye, Lars T. and Wang, Junping and Winstein, Carolee and Yu, Chunshui and Ai, Lei and Koo, Bonhwang and Craddock, R. Cameron and Milham, Michael and Lakich, Matthew and Pienta, Amy and Stroud, Alison},
@@ -401,6 +410,14 @@ title = {{A large, open source dataset of stroke anatomical brain images and man
 url = {http://www.nature.com/articles/sdata201811},
 volume = {5},
 year = {2018}
+}
+@article{Liew2017,
+abstract = {Stroke is the leading cause of adult disability worldwide, with up to two-thirds of individuals experiencing long-term disabilities. Large-scale neuroimaging studies have shown promise in identifying robust biomarkers (e.g., measures of brain structure) of long-term stroke recovery following rehabilitation. However, analyzing large rehabilitation-related datasets is problematic due to barriers in accurate stroke lesion segmentation. Manually-traced lesions are currently the gold standard for lesion segmentation on T1-weighted MRIs, but are labor intensive and require anatomical expertise. While algorithms have been developed to automate this process, the results often lack accuracy. Newer algorithms that employ machine-learning techniques are promising, yet these require large training datasets to optimize performance. Here we present ATLAS (Anatomical Tracings of Lesions After Stroke), an open-source dataset of 304 T1-weighted MRIs with manually segmented lesions and metadata. This large, diverse dataset can be used to train and test lesion segmentation algorithms and provides a standardized dataset for comparing the performance of different segmentation methods. We hope ATLAS release 1.1 will be a useful resource to assess and improve the accuracy of current lesion segmentation methods.},
+author = {Liew, Sook Lei and Anglin, Julia M. and Banks, Nick W. and Sondag, Matt and Ito, Kaori L. and Kim, Hosung and Chan, Jennifer and Ito, Joyce and Jung, Connie and Khoshab, Nima and Lefebvre, Stephanie and Nakamura, William and Saldana, David and Schmiesing, Allie and Tran, Cathy and Vo, Danny and Ard, Tyler and Heydari, Panthea and Kim, Bokkyu and Aziz-Zadeh, Lisa and Cramer, Steven C. and Liu, Jingchun and Soekadar, Surjo and Nordvik, Jan Egil and Westlye, Lars T. and Wang, Junping and Winstein, Carolee and Yu, Chunshui and Ai, Lei and Koo, Bonhwang and Craddock, R. Cameron and Milham, Michael and Lakich, Matthew and Pienta, Amy and Stroud, Alison},
+doi = {10.1101/179614},
+journal = {bioRxiv},
+title = {{A large, open source dataset of stroke anatomical brain images and manual lesion segmentations}},
+year = {2017}
 }
 @misc{TCIA-NNC2-0461,
 author = {{Li, P., Wang, S., Li, T., Lu, J., HuangFu, Y., {\&} Wang}, D},
@@ -469,6 +486,24 @@ title = {{A Multi-Organ Nucleus Segmentation Challenge}},
 url = {https://ieeexplore.ieee.org/document/8880654/},
 volume = {39},
 year = {2019}
+}
+@article{Viani2021,
+abstract = {Receiving timely and appropriate treatment is crucial for better health outcomes, and research on the contribution of specific variables is essential. In the mental health domain, an important research variable is the date of psychosis symptom onset, as longer delays in treatment are associated with worse intervention outcomes. The growing adoption of electronic health records (EHRs) within mental health services provides an invaluable opportunity to study this problem at scale retrospectively. However, disease onset information is often only available in open text fields, requiring natural language processing (NLP) techniques for automated analyses. Since this variable can be documented at different points during a patient's care, NLP methods that model clinical and temporal associations are needed. We address the identification of psychosis onset by: 1) manually annotating a corpus of mental health EHRs with disease onset mentions, 2) modelling the underlying NLP problem as a paragraph classification approach, and 3) combining multiple onset paragraphs at the patient level to generate a ranked list of likely disease onset dates. For 22/31 test patients (71{\%}) the correct onset date was found among the top-3 NLP predictions. The proposed approach was also applied at scale, allowing an onset date to be estimated for 2483 patients.},
+author = {Viani, Natalia and Botelle, Riley and Kerwin, Jack and Yin, Lucia and Patel, Rashmi and Stewart, Robert and Velupillai, Sumithra},
+doi = {10.1038/s41598-020-80457-0},
+file = {:C$\backslash$:/Users/qinka/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Viani et al. - 2021 - A natural language processing approach for identifying temporal disease onset information from mental healthcare t.pdf:pdf},
+issn = {20452322},
+journal = {Scientific Reports},
+keywords = {Data mining,Machine learning,Psychiatric disorders,Schizophrenia},
+month = {dec},
+number = {1},
+pages = {757},
+pmid = {33436814},
+publisher = {Nature Research},
+title = {{A natural language processing approach for identifying temporal disease onset information from mental healthcare text}},
+url = {https://doi.org/10.1038/s41598-020-80457-0},
+volume = {11},
+year = {2021}
 }
 @article{Chang2011,
 abstract = {Thyroid region segmentation and volume estimation is a prerequisite step to diagnosing the pathology of the thyroid gland. In this study, a progressive learning vector quantization neural network (PLVQNN) combined with a preprocessing procedure is proposed for automatic thyroid segmentation and volume estimation using computerized tomography (CT) images. The preprocessing procedure is used to extract the region of interest (ROI) of thyroid glands and exclude non-thyroid glands based on thyroid anatomy. The PLVQNN contains several learning vector quantization neural networks (LVQNNs), each responsible for segmenting one slice of a thyroid CT image. The training of the PLVQNN is conducted starting from the LVQNN of most reliable (middle) slices, where the thyroid has the largest region. The training then propagates upwards and downwards to adjacent LVQNNs using the results of the middle slice as the initialization values and constraints. Experimental results show that the proposed method can effectively segment thyroid glands and estimate thyroid volume. {\textcopyright} 2011 IEEE.},
@@ -755,6 +790,11 @@ month = {sep},
 title = {{Accelerating COVID-19 Differential Diagnosis with Explainable Ultrasound Image Analysis}},
 url = {http://arxiv.org/abs/2009.06116},
 year = {2020}
+}
+@misc{AccelMR2020,
+title = {{AccelMR 2020 Prediction Challenge – AccelMR 2020 for ISBI 2020}},
+url = {https://accelmrorg.wordpress.com/},
+urldate = {2021-03-11}
 }
 @article{Johnson2008,
 abstract = {BACKGROUND: Computed tomographic (CT) colonography is a noninvasive option in screening for colorectal cancer. However, its accuracy as a screening tool in asymptomatic adults has not been well defined. METHODS: We recruited 2600 asymptomatic study participants, 50 years of age or older, at 15 study centers. CT colonographic images were acquired with the use of standard bowel preparation, stool and fluid tagging, mechanical insufflation, and multidetector-row CT scanners (with 16 or more rows). Radiologists trained in CT colonography reported all lesions measuring 5 mm or more in diameter. Optical colonoscopy and histologic review were performed according to established clinical protocols at each center and served as the reference standard. The primary end point was detection by CT colonography of histologically confirmed large adenomas and adenocarcinomas (10 mm in diameter or larger) that had been detected by colonoscopy; detection of smaller colorectal lesions (6 to 9 mm in diameter) was also evaluated. RESULTS: Complete data were available for 2531 participants (97{\%}). For large adenomas and cancers, the mean (±SE) per-patient estimates of the sensitivity, specificity, positive and negative predictive values, and area under the receiver-operating-characteristic curve for CT colonography were 0.90±0.03, 0.86±0.02, 0.23±0.02, 0.99±{\textless}0.01, and 0.89±0.02, respectively. The sensitivity of 0.90 (i.e., 90{\%}) indicates that CT colonography failed to detect a lesion measuring 10 mm or more in diameter in 10{\%} of patients. The per-polyp sensitivity for large adenomas or cancers was 0.84±0.04. The per-patient sensitivity for detecting adenomas that were 6 mm or more in diameter was 0.78. CONCLUSIONS: In this study of asymptomatic adults, CT colonographic screening identified 90{\%} of subjects with adenomas or cancers measuring 10 mm or more in diameter. These findings augment published data on the role of CT colonography in screening patients with an average risk of colorectal cancer. (ClinicalTrials.gov number, NCT00084929; American College of Radiology Imaging Network [ACRIN] number, 6664.) Copyright {\textcopyright} 2008 Massachusetts Medical Society. All rights reserved.},
@@ -1261,6 +1301,18 @@ url = {http://www.sciencedirect.com/science/article/pii/S1361841519300970},
 volume = {58},
 year = {2019}
 }
+@article{VandenHeuvel2018,
+abstract = {In this paper we present a computer aided detection (CAD) system for automated measurement of the fetal head circumference (HC) in 2D ultrasound images for all trimesters of the pregnancy. The HC can be used to estimate the gestational age and monitor growth of the fetus. Automated HC assessment could be valuable in developing countries, where there is a severe shortage of trained sonographers. The CAD system consists of two steps: First, Haar-like features were computed from the ultrasound images to train a random forest classifier to locate the fetal skull. Secondly, the HC was extracted using Hough transform, dynamic programming and an ellipse fit. The CAD system was trained on 999 images and validated on an independent test set of 335 images from all trimesters. The test set was manually annotated by an experienced sonographer and a medical researcher. The reference gestational age (GA) was estimated using the crown-rump length measurement (CRL). The mean difference between the reference GA and the GA estimated by the experienced sonographer was 0.8 ± 2.6, −0.0 ± 4.6 and 1.9 ± 11.0 days for the first, second and third trimester, respectively. The mean difference between the reference GA and the GA estimated by the medical researcher was 1.6 ± 2.7, 2.0 ± 4.8 and 3.9 ± 13.7 days. The mean difference between the reference GA and the GA estimated by the CAD system was 0.6 ± 4.3, 0.4 ± 4.7 and 2.5 ± 12.4 days. The results show that the CAD system performs comparable to an experienced sonographer. The presented system shows similar or superior results compared to systems published in literature. This is the first automated system for HC assessment evaluated on a large test set which contained data of all trimesters of the pregnancy.},
+author = {van den Heuvel, Thomas L.A. and de Bruijn, Dagmar and de Korte, Chris L. and van Ginneken, Bram},
+doi = {10.1371/journal.pone.0200412},
+issn = {19326203},
+journal = {PLoS ONE},
+number = {8},
+pmid = {30138319},
+title = {{Automated measurement of fetal head circumference using 2D ultrasound images}},
+volume = {13},
+year = {2018}
+}
 @misc{Heuvel2018,
 abstract = {In this paper we present a computer aided detection (CAD) system for automated measurement of the fetal head circumference (HC) in 2D ultrasound images for all trimesters of the pregnancy. The HC can be used to estimate the gestational age and monitor growth of the fetus. Automated HC assessment could be valuable in developing countries, where there is a severe shortage of trained sonographers. The CAD system consists of two steps: First, Haar-like features were computed from the ultrasound images to train a random forest classifier to locate the fetal skull. Secondly, the HC was extracted using Hough transform, dynamic programming and an ellipse fit. The CAD system was trained on 999 images and validated on an independent test set of 335 images from all trimesters. The test set was manually annotated by an experienced sonographer and a medical researcher. The reference gestational age (GA) was estimated using the crown-rump length measurement (CRL). The mean difference between the reference GA and the GA estimated by the experienced sonographer was 0.8 ± 2.6, −0.0 ± 4.6 and 1.9 ± 11.0 days for the first, second and third trimester, respectively. The mean difference between the reference GA and the GA estimated by the medical researcher was 1.6 ± 2.7, 2.0 ± 4.8 and 3.9 ± 13.7 days. The mean difference between the reference GA and the GA estimated by the CAD system was 0.6 ± 4.3, 0.4 ± 4.7 and 2.5 ± 12.4 days. The results show that the CAD system performs comparable to an experienced sonographer. The presented system shows similar or superior results compared to systems published in literature. This is the first automated system for HC assessment evaluated on a large test set which contained data of all trimesters of the pregnancy.},
 author = {van den Heuvel, Thomas L.A. and de Bruijn, Dagmar and de Korte, Chris L. and van Ginneken, Bram},
@@ -1274,18 +1326,6 @@ pmid = {30138319},
 publisher = {Zenodo},
 title = {{Automated measurement of fetal head circumference using 2D ultrasound images}},
 url = {https://zenodo.org/record/1322001},
-volume = {13},
-year = {2018}
-}
-@article{VandenHeuvel2018,
-abstract = {In this paper we present a computer aided detection (CAD) system for automated measurement of the fetal head circumference (HC) in 2D ultrasound images for all trimesters of the pregnancy. The HC can be used to estimate the gestational age and monitor growth of the fetus. Automated HC assessment could be valuable in developing countries, where there is a severe shortage of trained sonographers. The CAD system consists of two steps: First, Haar-like features were computed from the ultrasound images to train a random forest classifier to locate the fetal skull. Secondly, the HC was extracted using Hough transform, dynamic programming and an ellipse fit. The CAD system was trained on 999 images and validated on an independent test set of 335 images from all trimesters. The test set was manually annotated by an experienced sonographer and a medical researcher. The reference gestational age (GA) was estimated using the crown-rump length measurement (CRL). The mean difference between the reference GA and the GA estimated by the experienced sonographer was 0.8 ± 2.6, −0.0 ± 4.6 and 1.9 ± 11.0 days for the first, second and third trimester, respectively. The mean difference between the reference GA and the GA estimated by the medical researcher was 1.6 ± 2.7, 2.0 ± 4.8 and 3.9 ± 13.7 days. The mean difference between the reference GA and the GA estimated by the CAD system was 0.6 ± 4.3, 0.4 ± 4.7 and 2.5 ± 12.4 days. The results show that the CAD system performs comparable to an experienced sonographer. The presented system shows similar or superior results compared to systems published in literature. This is the first automated system for HC assessment evaluated on a large test set which contained data of all trimesters of the pregnancy.},
-author = {van den Heuvel, Thomas L.A. and de Bruijn, Dagmar and de Korte, Chris L. and van Ginneken, Bram},
-doi = {10.1371/journal.pone.0200412},
-issn = {19326203},
-journal = {PLoS ONE},
-number = {8},
-pmid = {30138319},
-title = {{Automated measurement of fetal head circumference using 2D ultrasound images}},
 volume = {13},
 year = {2018}
 }
@@ -1879,20 +1919,6 @@ url = {http://www.sciencedirect.com/science/article/pii/S0893608014002159},
 volume = {64},
 year = {2015}
 }
-@article{Kavur2020,
-abstract = {—Segmentation of abdominal organs has been a comprehensive, yet unresolved, research field for many years. In the last decade, intensive developments in deep learning (DL) have introduced new state-of-the-art segmentation systems. Despite outperforming the overall accuracy of existing systems, the effects of DL model properties and parameters on the performance is hard to interpret. This makes comparative analysis a necessary tool to achieve explainable studies and systems. Moreover, the performance of DL for emerging learning approaches such as cross-modality and multi-modal tasks have been rarely discussed. In order to expand the knowledge in these topics, CHAOS – Combined (CT-MR) Healthy Abdominal Organ Segmentation challenge has been organized in the IEEE International Symposium on Biomedical Imaging (ISBI), 2019, in Venice, Italy. Despite a large number of the previous abdomen related challenges, the majority of which are focused on tumor/lesion detection and/or classification with a single modality, CHAOS provides
-both abdominal CT and MR data from healthy subjects. Five different and complementary tasks have been designed to analyze the capabilities of the current approaches from multiple perspectives. The results are investigated thoroughly, compared with manual annotations and interactive methods. The outcomes are reported in detail to reflect the latest advancements in the field. CHAOS challenge and data will be available online to provide a continuous benchmark resource for segmentation.},
-archivePrefix = {arXiv},
-arxivId = {2001.06535},
-author = {Kavur, A. Emre and Gezer, N. Sinem and Barış, Mustafa and Conze, Pierre Henri and Groza, Vladimir and Pham, Duc Duy and Chatterjee, Soumick and Ernst, Philipp and {\"{O}}zkan, Savaş and Baydar, Bora and Lachinov, Dmitry and Han, Shuo and Pauli, Josef and Isensee, Fabian and Perkonigg, Matthias and Sathish, Rachana and Rajan, Ronnie and Aslan, Sinem and Sheet, Debdoot and Dovletov, Gurbandurdy and Speck, Oliver and N{\"{u}}rnberger, Andreas and Maier-Hein, Klaus H. and Akar, G{\"{o}}zde Bozdagı and {\"{U}}nal, G{\"{o}}zde and Dicle, Oguz and Selver, M. Alper},
-eprint = {2001.06535},
-journal = {arXiv},
-keywords = {Abdomen,CT,Challenge,MRI,Segmentation},
-month = {jan},
-title = {{CHAOS Challenge - Combined (CT-MR) healthy abdominal organ segmentation}},
-url = {http://arxiv.org/abs/2001.06535},
-year = {2020}
-}
 @dataset{CHAOSdata2019,
 abstract = {—Segmentation of abdominal organs has been a comprehensive, yet unresolved, research field for many years. In the last decade, intensive developments in deep learning (DL) have introduced new state-of-the-art segmentation systems. Despite outperforming the overall accuracy of existing systems, the effects of DL model properties and parameters on the performance is hard to interpret. This makes comparative analysis a necessary tool to achieve explainable studies and systems. Moreover, the performance of DL for emerging learning approaches such as cross-modality and multi-modal tasks have been rarely discussed. In order to expand the knowledge in these topics, CHAOS – Combined (CT-MR) Healthy Abdominal Organ Segmentation challenge has been organized in the IEEE International Symposium on Biomedical Imaging (ISBI), 2019, in Venice, Italy. Despite a large number of the previous abdomen related challenges, the majority of which are focused on tumor/lesion detection and/or classification with a single modality, CHAOS provides
 both abdominal CT and MR data from healthy subjects. Five different and complementary tasks have been designed to analyze the capabilities of the current approaches from multiple perspectives. The results are investigated thoroughly, compared with manual annotations and interactive methods. The outcomes are reported in detail to reflect the latest advancements in the field. CHAOS challenge and data will be available online to provide a continuous benchmark resource for segmentation.},
@@ -1909,18 +1935,18 @@ title = {{CHAOS Challenge - Combined (CT-MR) healthy abdominal organ segmentatio
 url = {https://chaos.grand-challenge.org/Combined{\_}Healthy{\_}Abdominal{\_}Organ{\_}Segmentation/},
 year = {2020}
 }
-@misc{Desai2020,
-abstract = {As the COVID-19 pandemic unfolds, radiology imaging is playing an increasingly vital role in determining therapeutic options, patient management, and research directions. Publicly available data are essential to drive new research into disease etiology, early detection, and response to therapy. In response to the COVID-19 crisis, the National Cancer Institute (NCI) has extended the Cancer Imaging Archive (TCIA) to include COVID-19 related images. Rural populations are one population at risk for underrepresentation in such public repositories. We have published in TCIA a collection of radiographic and CT imaging studies for patients who tested positive for COVID-19 in the state of Arkansas. A set of clinical data describes each patient including demographics, comorbidities, selected lab data and key radiology findings. These data are cross-linked to SARS-COV-2 cDNA sequence data extracted from clinical isolates from the same population, uploaded to the GenBank repository. We believe this collection will help to address population imbalance in COVID-19 data by providing samples from this normally underrepresented population.},
-author = {Desai, Shivang and Baghal, Ahmad and Wongsurawat, Thidathip and Jenjaroenpun, Piroon and Powell, Thomas and Al-Shukri, Shaymaa and Gates, Kim and Farmer, Phillip and Rutherford, Michael and Blake, Geri and Nolan, Tracy and Sexton, Kevin and Bennett, William and Smith, Kirk and Syed, Shorabuddin and Prior, Fred},
-booktitle = {Scientific Data},
-doi = {10.1038/s41597-020-00741-6},
-issn = {20524463},
-number = {1},
-pmid = {33235265},
-publisher = {The Cancer Imaging Archive},
-title = {{Chest imaging representing a COVID-19 positive rural U.S. population}},
-url = {https://wiki.cancerimagingarchive.net/x/C5IvB},
-volume = {7},
+@article{Kavur2020,
+abstract = {—Segmentation of abdominal organs has been a comprehensive, yet unresolved, research field for many years. In the last decade, intensive developments in deep learning (DL) have introduced new state-of-the-art segmentation systems. Despite outperforming the overall accuracy of existing systems, the effects of DL model properties and parameters on the performance is hard to interpret. This makes comparative analysis a necessary tool to achieve explainable studies and systems. Moreover, the performance of DL for emerging learning approaches such as cross-modality and multi-modal tasks have been rarely discussed. In order to expand the knowledge in these topics, CHAOS – Combined (CT-MR) Healthy Abdominal Organ Segmentation challenge has been organized in the IEEE International Symposium on Biomedical Imaging (ISBI), 2019, in Venice, Italy. Despite a large number of the previous abdomen related challenges, the majority of which are focused on tumor/lesion detection and/or classification with a single modality, CHAOS provides
+both abdominal CT and MR data from healthy subjects. Five different and complementary tasks have been designed to analyze the capabilities of the current approaches from multiple perspectives. The results are investigated thoroughly, compared with manual annotations and interactive methods. The outcomes are reported in detail to reflect the latest advancements in the field. CHAOS challenge and data will be available online to provide a continuous benchmark resource for segmentation.},
+archivePrefix = {arXiv},
+arxivId = {2001.06535},
+author = {Kavur, A. Emre and Gezer, N. Sinem and Barış, Mustafa and Conze, Pierre Henri and Groza, Vladimir and Pham, Duc Duy and Chatterjee, Soumick and Ernst, Philipp and {\"{O}}zkan, Savaş and Baydar, Bora and Lachinov, Dmitry and Han, Shuo and Pauli, Josef and Isensee, Fabian and Perkonigg, Matthias and Sathish, Rachana and Rajan, Ronnie and Aslan, Sinem and Sheet, Debdoot and Dovletov, Gurbandurdy and Speck, Oliver and N{\"{u}}rnberger, Andreas and Maier-Hein, Klaus H. and Akar, G{\"{o}}zde Bozdagı and {\"{U}}nal, G{\"{o}}zde and Dicle, Oguz and Selver, M. Alper},
+eprint = {2001.06535},
+journal = {arXiv},
+keywords = {Abdomen,CT,Challenge,MRI,Segmentation},
+month = {jan},
+title = {{CHAOS Challenge - Combined (CT-MR) healthy abdominal organ segmentation}},
+url = {http://arxiv.org/abs/2001.06535},
 year = {2020}
 }
 @article{Desai2020a,
@@ -1935,6 +1961,20 @@ pages = {414},
 pmid = {33235265},
 title = {{Chest imaging representing a COVID-19 positive rural U.S. population}},
 url = {http://www.nature.com/articles/s41597-020-00741-6},
+volume = {7},
+year = {2020}
+}
+@misc{Desai2020,
+abstract = {As the COVID-19 pandemic unfolds, radiology imaging is playing an increasingly vital role in determining therapeutic options, patient management, and research directions. Publicly available data are essential to drive new research into disease etiology, early detection, and response to therapy. In response to the COVID-19 crisis, the National Cancer Institute (NCI) has extended the Cancer Imaging Archive (TCIA) to include COVID-19 related images. Rural populations are one population at risk for underrepresentation in such public repositories. We have published in TCIA a collection of radiographic and CT imaging studies for patients who tested positive for COVID-19 in the state of Arkansas. A set of clinical data describes each patient including demographics, comorbidities, selected lab data and key radiology findings. These data are cross-linked to SARS-COV-2 cDNA sequence data extracted from clinical isolates from the same population, uploaded to the GenBank repository. We believe this collection will help to address population imbalance in COVID-19 data by providing samples from this normally underrepresented population.},
+author = {Desai, Shivang and Baghal, Ahmad and Wongsurawat, Thidathip and Jenjaroenpun, Piroon and Powell, Thomas and Al-Shukri, Shaymaa and Gates, Kim and Farmer, Phillip and Rutherford, Michael and Blake, Geri and Nolan, Tracy and Sexton, Kevin and Bennett, William and Smith, Kirk and Syed, Shorabuddin and Prior, Fred},
+booktitle = {Scientific Data},
+doi = {10.1038/s41597-020-00741-6},
+issn = {20524463},
+number = {1},
+pmid = {33235265},
+publisher = {The Cancer Imaging Archive},
+title = {{Chest imaging representing a COVID-19 positive rural U.S. population}},
+url = {https://wiki.cancerimagingarchive.net/x/C5IvB},
 volume = {7},
 year = {2020}
 }
@@ -2435,20 +2475,20 @@ url = {http://journal.frontiersin.org/Article/10.3389/fnana.2015.00142/abstract}
 volume = {9},
 year = {2015}
 }
-@misc{An2020,
-author = {An, Peng and Xu, Sheng and Harmon, Stephanie A and Turkbey, Evrim B and Sanford, Thomas H and Amalou, Amel and Kassin, Michael and Varble, Nicole and Blain, Maxime and Anderson, Victoria and Patella, Francesca and Carrafiello, Gianpaolo and Turkbey, Baris T and Wood, Bradford J},
-doi = {10.7937/TCIA.2020.GQRY-NC81},
-publisher = {The Cancer Imaging Archive},
-title = {{CT Images in COVID-19}},
-url = {https://wiki.cancerimagingarchive.net/x/o5QvB},
-year = {2020}
-}
 @misc{An2020a,
 author = {An, Peng and Xu, Sheng and Harmon, Stephanie A. and Turkbey, Evrim B. and Sanford, Thomas H. and Amalou, Amel and Kassin, Michael and Varble, Nicole and Blain, Maxime and Anderson, Victoria and Patella, Francesca and Carrafiello, Gianpaolo and Turkbey, Baris T. and Wood, Bradford J.},
 booktitle = {The Cancer Imaging Archive},
 doi = {https://doi.org/10.7937/tcia.2020.gqry-nc81},
 keywords = {communication,crm,e-crm,linear sequential,planning},
 title = {{CT Images in COVID-19}},
+year = {2020}
+}
+@misc{An2020,
+author = {An, Peng and Xu, Sheng and Harmon, Stephanie A and Turkbey, Evrim B and Sanford, Thomas H and Amalou, Amel and Kassin, Michael and Varble, Nicole and Blain, Maxime and Anderson, Victoria and Patella, Francesca and Carrafiello, Gianpaolo and Turkbey, Baris T and Wood, Bradford J},
+doi = {10.7937/TCIA.2020.GQRY-NC81},
+publisher = {The Cancer Imaging Archive},
+title = {{CT Images in COVID-19}},
+url = {https://wiki.cancerimagingarchive.net/x/o5QvB},
 year = {2020}
 }
 @article{Rister2018,
@@ -3089,12 +3129,6 @@ volume = {9908 LNCS},
 year = {2016}
 }
 @inproceedings{Zhu2018DeepEMD3,
-author = {Zhu, Wentao and Vang, Yeeleng Scott and Huang, Yufang and Xie, Xiaohui},
-booktitle = {MICCAI},
-title = {{DeepEM: Deep 3D ConvNets with EM for Weakly Supervised Pulmonary Nodule Detection}},
-year = {2018}
-}
-@inproceedings{Zhu2018DeepEMD3,
 abstract = {Recently deep learning has been witnessing widespread adoption in various medical image applications. However, training complex deep neural nets requires large-scale datasets labeled with ground truth, which are often unavailable in many medical image domains. For instance, to train a deep neural net to detect pulmonary nodules in lung computed tomography (CT) images, current practice is to manually label nodule locations and sizes in many CT images to construct a sufficiently large training dataset, which is costly and difficult to scale. On the other hand, electronic medical records (EMR) contain plenty of partial information on the content of each medical image. In this work, we explore how to tap this vast, but currently unexplored data source to improve pulmonary nodule detection. We propose DeepEM, a novel deep 3D ConvNet framework augmented with expectation-maximization (EM), to mine weakly supervised labels in EMRs for pulmonary nodule detection. Experimental results show that DeepEM can lead to 1.5{\%} and 3.9{\%} average improvement in free-response receiver operating characteristic (FROC) scores on LUNA16 and Tianchi datasets, respectively, demonstrating the utility of incomplete information in EMRs for improving deep learning algorithms (https://github.com/uci-cbcl/DeepEM-for-Weakly-Supervised-Detection.git ).},
 archivePrefix = {arXiv},
 arxivId = {1805.05373},
@@ -3109,6 +3143,12 @@ pages = {812--820},
 title = {{DeepEM: Deep 3D ConvNets with EM for weakly supervised pulmonary nodule detection}},
 url = {http://link.springer.com/10.1007/978-3-030-00934-2{\_}90},
 volume = {11071 LNCS},
+year = {2018}
+}
+@inproceedings{Zhu2018DeepEMD3,
+author = {Zhu, Wentao and Vang, Yeeleng Scott and Huang, Yufang and Xie, Xiaohui},
+booktitle = {MICCAI},
+title = {{DeepEM: Deep 3D ConvNets with EM for Weakly Supervised Pulmonary Nodule Detection}},
 year = {2018}
 }
 @article{Jin2020,
@@ -3806,6 +3846,24 @@ title = {{Evaluating variability in tumor measurements from same-day repeat CT s
 url = {http://pubs.rsna.org/doi/10.1148/radiol.2522081593},
 volume = {252},
 year = {2009}
+}
+@article{Liang2019,
+abstract = {Artificial intelligence (AI)-based methods have emerged as powerful tools to transform medical care. Although machine learning classifiers (MLCs) have already demonstrated strong performance in image-based diagnoses, analysis of diverse and massive electronic health record (EHR) data remains challenging. Here, we show that MLCs can query EHRs in a manner similar to the hypothetico-deductive reasoning used by physicians and unearth associations that previous statistical methods have not found. Our model applies an automated natural language processing system using deep learning techniques to extract clinically relevant information from EHRs. In total, 101.6 million data points from 1,362,559 pediatric patient visits presenting to a major referral center were analyzed to train and validate the framework. Our model demonstrates high diagnostic accuracy across multiple organ systems and is comparable to experienced pediatricians in diagnosing common childhood diseases. Our study provides a proof of concept for implementing an AI-based system as a means to aid physicians in tackling large amounts of data, augmenting diagnostic evaluations, and to provide clinical decision support in cases of diagnostic uncertainty or complexity. Although this impact may be most evident in areas where healthcare providers are in relative shortage, the benefits of such an AI system are likely to be universal.},
+author = {Liang, Huiying and Tsui, Brian Y. and Ni, Hao and Valentim, Carolina C.S. and Baxter, Sally L. and Liu, Guangjian and Cai, Wenjia and Kermany, Daniel S. and Sun, Xin and Chen, Jiancong and He, Liya and Zhu, Jie and Tian, Pin and Shao, Hua and Zheng, Lianghong and Hou, Rui and Hewett, Sierra and Li, Gen and Liang, Ping and Zang, Xuan and Zhang, Zhiqi and Pan, Liyan and Cai, Huimin and Ling, Rujuan and Li, Shuhua and Cui, Yongwang and Tang, Shusheng and Ye, Hong and Huang, Xiaoyan and He, Waner and Liang, Wenqing and Zhang, Qing and Jiang, Jianmin and Yu, Wei and Gao, Jianqun and Ou, Wanxing and Deng, Yingmin and Hou, Qiaozhen and Wang, Bei and Yao, Cuichan and Liang, Yan and Zhang, Shu and Duan, Yaou and Zhang, Runze and Gibson, Sarah and Zhang, Charlotte L. and Li, Oulan and Zhang, Edward D. and Karin, Gabriel and Nguyen, Nathan and Wu, Xiaokang and Wen, Cindy and Xu, Jie and Xu, Wenqin and Wang, Bochu and Wang, Winston and Li, Jing and Pizzato, Bianca and Bao, Caroline and Xiang, Daoman and He, Wanting and He, Suiqin and Zhou, Yugui and Haw, Weldon and Goldbaum, Michael and Tremoulet, Adriana and Hsu, Chun Nan and Carter, Hannah and Zhu, Long and Zhang, Kang and Xia, Huimin},
+doi = {10.1038/s41591-018-0335-9},
+file = {:C$\backslash$:/Users/qinka/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Liang et al. - 2019 - Evaluation and accurate diagnoses of pediatric diseases using artificial intelligence.pdf:pdf},
+issn = {1546170X},
+journal = {Nature Medicine},
+keywords = {Computational biology and bioinformatics,Data integration,Health care,Paediatrics},
+month = {mar},
+number = {3},
+pages = {433--438},
+pmid = {30742121},
+publisher = {Nature Publishing Group},
+title = {{Evaluation and accurate diagnoses of pediatric diseases using artificial intelligence}},
+url = {https://doi.org/10.1038/s41591-018-0335-9},
+volume = {25},
+year = {2019}
 }
 @article{Rueda2014,
 abstract = {This paper presents the evaluation results of the methods submitted to Challenge US: Biometric Measurements from Fetal Ultrasound Images, a segmentation challenge held at the IEEE International Symposium on Biomedical Imaging 2012. The challenge was set to compare and evaluate current fetal ultrasound image segmentation methods. It consisted of automatically segmenting fetal anatomical structures to measure standard obstetric biometric parameters, from 2D fetal ultrasound images taken on fetuses at different gestational ages (21 weeks, 28 weeks, and 33 weeks) and with varying image quality to reflect data encountered in real clinical environments. Four independent sub-challenges were proposed, according to the objects of interest measured in clinical practice: abdomen, head, femur, and whole fetus. Five teams participated in the head sub-challenge and two teams in the femur sub-challenge, including one team who tackled both. Nobody attempted the abdomen and whole fetus sub-challenges. The challenge goals were two-fold and the participants were asked to submit the segmentation results as well as the measurements derived from the segmented objects. Extensive quantitative (region-based, distance-based, and Bland-Altman measurements) and qualitative evaluation was performed to compare the results from a representative selection of current methods submitted to the challenge. Several experts (three for the head sub-challenge and two for the femur sub-challenge), with different degrees of expertise, manually delineated the objects of interest to define the ground truth used within the evaluation framework. For the head sub-challenge, several groups produced results that could be potentially used in clinical settings, with comparable performance to manual delineations. The femur sub-challenge had inferior performance to the head sub-challenge due to the fact that it is a harder segmentation problem and that the techniques presented relied more on the femur's appearance. {\textcopyright} 1982-2012 IEEE.},
@@ -4569,6 +4627,19 @@ title = {{Gradient Vector Flow}},
 url = {http://link.springer.com/10.1007/978-3-030-03243-2{\_}712-1},
 year = {2020}
 }
+@article{LeCun1998a,
+abstract = {Multilayer neural networks trained with the back-propagation algorithm constitute the best example of a successful gradient-based learning technique. Given an appropriate network architecture, gradient-based learning algorithms can be used to synthesize a complex decision surface that can classify high-dimensional patterns, such as handwritten characters, with minimal preprocessing. This paper reviews various methods applied to handwritten character recognition and compares them on a standard handwritten digit recognition task. Convolutional neural networks, which are specifically designed to deal with the variability of two dimensional (2-D) shapes, are shown to outperform all other techniques. Real-life document recognition systems are composed of multiple modules including field extraction, segmentation, recognition, and language modeling. A new learning paradigm, called graph transformer networks (GTN's), allows such multimodule systems to be trained globally using gradient-based methods so as to minimize an overall performance measure. Two systems for online handwriting recognition are described. Experiments demonstrate the advantage of global training, and the flexibility of graph transformer networks. A graph transformer network for reading a bank check is also described. It uses convolutional neural network character recognizers combined with global training techniques to provide record accuracy on business and personal checks. It is deployed commercially and reads several million checks per day. {\textcopyright} 1998 IEEE.},
+author = {LeCun, Yann and Bottou, L{\'{e}}on and Bengio, Yoshua and Haffner, Patrick},
+doi = {10.1109/5.726791},
+issn = {00189219},
+journal = {Proceedings of the IEEE},
+keywords = {Convolutional neural networks,Document recognition,Finite state transducers,Gradient-based learning,Graph transformer networks,Machine learning,Neural networks,Optical character recognition (OCR)},
+number = {11},
+pages = {2278--2323},
+title = {{Gradient-based learning applied to document recognition}},
+volume = {86},
+year = {1998}
+}
 @article{LeCun1998,
 abstract = {Multilayer neural networks trained with the back-propagation algorithm constitute the best example of a successful gradient-based learning technique. Given an appropriate network architecture, gradient-based learning algorithms can be used to synthesize a complex decision surface that can classify high-dimensional patterns, such as handwritten characters, with minimal preprocessing. This paper reviews various methods applied to handwritten character recognition and compares them on a standard handwritten digit recognition task. Convolutional neural networks, which are specifically designed to deal with the variability of two dimensional (2-D) shapes, are shown to outperform all other techniques. Real-life document recognition systems are composed of multiple modules including field extraction, segmentation, recognition, and language modeling. A new learning paradigm, called graph transformer networks (GTN's), allows such multimodule systems to be trained globally using gradient-based methods so as to minimize an overall performance measure. Two systems for online handwriting recognition are described. Experiments demonstrate the advantage of global training, and the flexibility of graph transformer networks. A graph transformer network for reading a bank check is also described. It uses convolutional neural network character recognizers combined with global training techniques to provide record accuracy on business and personal checks. It is deployed commercially and reads several million checks per day. {\textcopyright} 1998 IEEE.},
 author = {LeCun, Yann and Bottou, L{\'{e}}on and Bengio, Yoshua and Haffner, Patrick},
@@ -4580,19 +4651,6 @@ number = {11},
 pages = {2278--2323},
 title = {{Gradient-based learning applied to document recognition}},
 url = {http://ieeexplore.ieee.org/document/726791/},
-volume = {86},
-year = {1998}
-}
-@article{LeCun1998a,
-abstract = {Multilayer neural networks trained with the back-propagation algorithm constitute the best example of a successful gradient-based learning technique. Given an appropriate network architecture, gradient-based learning algorithms can be used to synthesize a complex decision surface that can classify high-dimensional patterns, such as handwritten characters, with minimal preprocessing. This paper reviews various methods applied to handwritten character recognition and compares them on a standard handwritten digit recognition task. Convolutional neural networks, which are specifically designed to deal with the variability of two dimensional (2-D) shapes, are shown to outperform all other techniques. Real-life document recognition systems are composed of multiple modules including field extraction, segmentation, recognition, and language modeling. A new learning paradigm, called graph transformer networks (GTN's), allows such multimodule systems to be trained globally using gradient-based methods so as to minimize an overall performance measure. Two systems for online handwriting recognition are described. Experiments demonstrate the advantage of global training, and the flexibility of graph transformer networks. A graph transformer network for reading a bank check is also described. It uses convolutional neural network character recognizers combined with global training techniques to provide record accuracy on business and personal checks. It is deployed commercially and reads several million checks per day. {\textcopyright} 1998 IEEE.},
-author = {LeCun, Yann and Bottou, L{\'{e}}on and Bengio, Yoshua and Haffner, Patrick},
-doi = {10.1109/5.726791},
-issn = {00189219},
-journal = {Proceedings of the IEEE},
-keywords = {Convolutional neural networks,Document recognition,Finite state transducers,Gradient-based learning,Graph transformer networks,Machine learning,Neural networks,Optical character recognition (OCR)},
-number = {11},
-pages = {2278--2323},
-title = {{Gradient-based learning applied to document recognition}},
 volume = {86},
 year = {1998}
 }
@@ -4824,20 +4882,6 @@ year = {2018}
 title = {{Home - LOLA11 - Grand Challenge}},
 url = {https://lola11.grand-challenge.org/Home/}
 }
-@article{Graham2019,
-abstract = {Nuclear segmentation and classification within Haematoxylin {\&} Eosin stained histology images is a fundamental prerequisite in the digital pathology work-flow. The development of automated methods for nuclear segmentation and classification enables the quantitative analysis of tens of thousands of nuclei within a whole-slide pathology image, opening up possibilities of further analysis of large-scale nuclear morphometry. However, automated nuclear segmentation and classification is faced with a major challenge in that there are several different types of nuclei, some of them exhibiting large intra-class variability such as the nuclei of tumour cells. Additionally, some of the nuclei are often clustered together. To address these challenges, we present a novel convolutional neural network for simultaneous nuclear segmentation and classification that leverages the instance-rich information encoded within the vertical and horizontal distances of nuclear pixels to their centres of mass. These distances are then utilised to separate clustered nuclei, resulting in an accurate segmentation, particularly in areas with overlapping instances. Then, for each segmented instance the network predicts the type of nucleus via a devoted up-sampling branch. We demonstrate state-of-the-art performance compared to other methods on multiple independent multi-tissue histology image datasets. As part of this work, we introduce a new dataset of Haematoxylin {\&} Eosin stained colorectal adenocarcinoma image tiles, containing 24,319 exhaustively annotated nuclei with associated class labels.},
-archivePrefix = {arXiv},
-arxivId = {1812.06499},
-author = {Graham, Simon and Vu, Quoc Dang and Raza, Shan E.Ahmed and Azam, Ayesha and Tsang, Yee Wah and Kwak, Jin Tae and Rajpoot, Nasir},
-doi = {10.1016/j.media.2019.101563},
-eprint = {1812.06499},
-issn = {13618423},
-journal = {Medical Image Analysis},
-keywords = {Computational pathology,Deep learning,Nuclear classification,Nuclear segmentation},
-title = {{Hover-Net: Simultaneous segmentation and classification of nuclei in multi-tissue histology images}},
-volume = {58},
-year = {2019}
-}
 @article{Graham2018,
 abstract = {Nuclear segmentation and classification within Haematoxylin {\&} Eosin stained histology images is a fundamental prerequisite in the digital pathology work-flow. The development of automated methods for nuclear segmentation and classification enables the quantitative analysis of tens of thousands of nuclei within a whole-slide pathology image, opening up possibilities of further analysis of large-scale nuclear morphometry. However, automated nuclear segmentation and classification is faced with a major challenge in that there are several different types of nuclei, some of them exhibiting large intra-class variability such as the nuclei of tumour cells. Additionally, some of the nuclei are often clustered together. To address these challenges, we present a novel convolutional neural network for simultaneous nuclear segmentation and classification that leverages the instance-rich information encoded within the vertical and horizontal distances of nuclear pixels to their centres of mass. These distances are then utilised to separate clustered nuclei, resulting in an accurate segmentation, particularly in areas with overlapping instances. Then, for each segmented instance the network predicts the type of nucleus via a devoted up-sampling branch. We demonstrate state-of-the-art performance compared to other methods on multiple independent multi-tissue histology image datasets. As part of this work, we introduce a new dataset of Haematoxylin {\&} Eosin stained colorectal adenocarcinoma image tiles, containing 24,319 exhaustively annotated nuclei with associated class labels.},
 annote = {{\_}eprint: 1812.06499},
@@ -4853,6 +4897,20 @@ url = {http://arxiv.org/abs/1812.06499},
 volume = {abs/1812.0},
 year = {2018}
 }
+@article{Graham2019,
+abstract = {Nuclear segmentation and classification within Haematoxylin {\&} Eosin stained histology images is a fundamental prerequisite in the digital pathology work-flow. The development of automated methods for nuclear segmentation and classification enables the quantitative analysis of tens of thousands of nuclei within a whole-slide pathology image, opening up possibilities of further analysis of large-scale nuclear morphometry. However, automated nuclear segmentation and classification is faced with a major challenge in that there are several different types of nuclei, some of them exhibiting large intra-class variability such as the nuclei of tumour cells. Additionally, some of the nuclei are often clustered together. To address these challenges, we present a novel convolutional neural network for simultaneous nuclear segmentation and classification that leverages the instance-rich information encoded within the vertical and horizontal distances of nuclear pixels to their centres of mass. These distances are then utilised to separate clustered nuclei, resulting in an accurate segmentation, particularly in areas with overlapping instances. Then, for each segmented instance the network predicts the type of nucleus via a devoted up-sampling branch. We demonstrate state-of-the-art performance compared to other methods on multiple independent multi-tissue histology image datasets. As part of this work, we introduce a new dataset of Haematoxylin {\&} Eosin stained colorectal adenocarcinoma image tiles, containing 24,319 exhaustively annotated nuclei with associated class labels.},
+archivePrefix = {arXiv},
+arxivId = {1812.06499},
+author = {Graham, Simon and Vu, Quoc Dang and Raza, Shan E.Ahmed and Azam, Ayesha and Tsang, Yee Wah and Kwak, Jin Tae and Rajpoot, Nasir},
+doi = {10.1016/j.media.2019.101563},
+eprint = {1812.06499},
+issn = {13618423},
+journal = {Medical Image Analysis},
+keywords = {Computational pathology,Deep learning,Nuclear classification,Nuclear segmentation},
+title = {{Hover-Net: Simultaneous segmentation and classification of nuclei in multi-tissue histology images}},
+volume = {58},
+year = {2019}
+}
 @book{Pequegnat2011,
 address = {Boston, MA},
 doi = {10.1007/978-1-4419-1454-5},
@@ -4863,16 +4921,6 @@ title = {{How to Write a Successful Research Grant Application}},
 url = {http://link.springer.com/10.1007/978-1-4419-1454-5},
 year = {2011}
 }
-@book{Hering2010,
-address = {Berlin, Heidelberg},
-author = {Hering, Lutz and Hering, Heike},
-doi = {10.1007/978-3-540-69929-3},
-isbn = {978-3-540-69928-6},
-publisher = {Springer Berlin Heidelberg},
-title = {{How to Write Technical Reports}},
-url = {http://link.springer.com/10.1007/978-3-540-69929-3},
-year = {2010}
-}
 @book{Hering2019,
 address = {Berlin, Heidelberg},
 author = {Hering, Heike},
@@ -4882,6 +4930,16 @@ publisher = {Springer Berlin Heidelberg},
 title = {{How to Write Technical Reports}},
 url = {http://link.springer.com/10.1007/978-3-662-58107-0},
 year = {2019}
+}
+@book{Hering2010,
+address = {Berlin, Heidelberg},
+author = {Hering, Lutz and Hering, Heike},
+doi = {10.1007/978-3-540-69929-3},
+isbn = {978-3-540-69928-6},
+publisher = {Springer Berlin Heidelberg},
+title = {{How to Write Technical Reports}},
+url = {http://link.springer.com/10.1007/978-3-540-69929-3},
+year = {2010}
 }
 @article{Matek2019,
 abstract = {Reliable recognition of malignant white blood cells is a key step in the diagnosis of hematologic malignancies such as Acute Myeloid Leukemia. Microscopic morphological examination of blood cells is usually performed by trained human examiners, making the process tedious, time-consuming and hard to standardise. We compile an annotated image dataset of over 18,000 white blood cells, use it to train a convolutional neural network for leukocyte classification, and evaluate the network's performance. The network classifies the most important cell types with high accuracy. It also allows us to decide two clinically relevant questions with human-level performance, namely (i) if a given cell has blast character, and (ii) if it belongs to the cell types normally present in non-pathological blood smears. Our approach holds the potential to be used as a classification aid for examining much larger numbers of cells in a smear than can usually be done by a human expert. This will allow clinicians to recognize malignant cell populations with lower prevalence at an earlier stage of the disease.},
@@ -5196,21 +5254,6 @@ isbn = {9783319245737},
 issn = {16113349},
 title = {{Interactive whole-heart segmentation in congenital heart disease}},
 year = {2015}
-}
-@article{Hssayeni2020a,
-abstract = {Traumatic brain injuries may cause intracranial hemorrhages (ICH). ICH could lead to disability or death if it is not accurately diagnosed and treated in a time-sensitive procedure. The current clinical protocol to diagnose ICH is examining Computerized Tomography (CT) scans by radiologists to detect ICH and localize its regions. However, this process relies heavily on the availability of an experienced radiologist. In this paper, we designed a study protocol to collect a dataset of 82 CT scans of subjects with a traumatic brain injury. Next, the ICH regions were manually delineated in each slice by a consensus decision of two radiologists. The dataset is publicly available online at the PhysioNet repository for future analysis and comparisons. In addition to publishing the dataset, which is the main purpose of this manuscript, we implemented a deep Fully Convolutional Networks (FCNs), known as U-Net, to segment the ICH regions from the CT scans in a fully-automated manner. The method as a proof of concept achieved a Dice coefficient of 0.31 for the ICH segmentation based on 5-fold cross-validation.},
-author = {Hssayeni, Murtadha D. and Croock, Muayad S. and Salman, Aymen D. and Al-Khafaji, Hassan Falah and Yahya, Zakaria A. and Ghoraani, Behnaz},
-doi = {10.3390/data5010014},
-issn = {23065729},
-journal = {Data},
-keywords = {CT scans dataset,Fully convolutional network,ICH detection,Intracranial hemorrhage segmentation,U-Net},
-month = {feb},
-number = {1},
-pages = {14},
-title = {{Intracranial hemorrhage segmentation using a deep convolutional model}},
-url = {https://www.mdpi.com/2306-5729/5/1/14},
-volume = {5},
-year = {2020}
 }
 @article{Hssayeni2020,
 abstract = {Traumatic brain injuries may cause intracranial hemorrhages (ICH). ICH could lead to disability or death if it is not accurately diagnosed and treated in a time-sensitive procedure. The current clinical protocol to diagnose ICH is examining Computerized Tomography (CT) scans by radiologists to detect ICH and localize its regions. However, this process relies heavily on the availability of an experienced radiologist. In this paper, we designed a study protocol to collect a dataset of 82 CT scans of subjects with a traumatic brain injury. Next, the ICH regions were manually delineated in each slice by a consensus decision of two radiologists. The dataset is publicly available online at the PhysioNet repository for future analysis and comparisons. In addition to publishing the dataset, which is the main purpose of this manuscript, we implemented a deep Fully Convolutional Networks (FCNs), known as U-Net, to segment the ICH regions from the CT scans in a fully-automated manner. The method as a proof of concept achieved a Dice coefficient of 0.31 for the ICH segmentation based on 5-fold cross-validation.},
@@ -6075,6 +6118,11 @@ author = {Varmazyar, Hadi and Ghareaghaji, Zahra and Malekzadeh, Saber},
 title = {{MRI Hippocampus Segmentation using Deep Learning autoencoders}},
 year = {2020}
 }
+@misc{MEMENTO,
+title = {{MRI White Matter Reconstruction | ISBI 2019/2020 MEMENTO Challenge}},
+url = {https://my.vanderbilt.edu/memento/},
+urldate = {2021-03-11}
+}
 @online{MSlesion2008,
 author = {Styner, Martin and Warfield, Simon and Lee, Joohwi},
 title = {{MS lesion segmentation challenage 2008}},
@@ -6182,6 +6230,17 @@ title = {{Multiorgan segmentation using distance-aware adversarial networks}},
 volume = {6},
 year = {2019}
 }
+@article{Sun2021,
+abstract = {To better understand early brain development in health and disorder, it is critical to accurately segment infant brain magnetic resonance (MR) images into white matter (WM), gray matter (GM), and cerebrospinal fluid (CSF). Deep learning-based methods have achieved state-of-the-art performance; however, one of the major limitations is that the learning-based methods may suffer from the multi-site issue, that is, the models trained on a dataset from one site may not be applicable to the datasets acquired from other sites with different imaging protocols/scanners. To promote methodological development in the community, the iSeg-2019 challenge (http://iseg2019.web.unc.edu) provides a set of 6-month infant subjects from multiple sites with different protocols/scanners for the participating methods. Training/validation subjects are from UNC (MAP) and testing subjects are from UNC/UMN (BCP), Stanford University, and Emory University. By the time of writing, there are 30 automatic segmentation methods participated in the iSeg-2019. In this article, 8 top-ranked methods were reviewed by detailing their pipelines/implementations, presenting experimental results, and evaluating performance across different sites in terms of whole brain, regions of interest, and gyral landmark curves. We further pointed out their limitations and possible directions for addressing the multi-site issue. We find that multi-site consistency is still an open issue. We hope that the multi-site dataset in the iSeg-2019 and this review article will attract more researchers to address the challenging and critical multi-site issue in practice.},
+author = {Sun, Yue and Gao, Kun and Wu, Zhengwang and Li, Guannan and Zong, Xiaopeng and Lei, Zhihao and Wei, Ying and Ma, Jun and Yang, Xiaoping and Feng, Xue and Zhao, Li and {Le Phan}, Trung and Shin, Jitae and Zhong, Tao and Zhang, Yu and Yu, Lequan and Li, Caizi and Basnet, Ramesh and {Omair Ahmad}, M. and Swamy, M. N.S. and Ma, Wenao and Dou, Qi and Bui, Toan Duc and Noguera, Camilo Bermudez and Landman, Bennett and Gotlib, Ian H. and Humphreys, Kathryn L. and Shultz, Sarah and Li, Longchuan and Niu, Sijie and Lin, Weili and Jewells, Valerie and Shen, Dinggang and Li, Gang and Wang, Li},
+doi = {10.1109/TMI.2021.3055428},
+issn = {1558254X},
+journal = {IEEE Transactions on Medical Imaging},
+keywords = {Brain,Image segmentation,Infant brain segmentation,Magnetic resonance imaging,Manuals,Pediatrics,Testing,Training,deep learning,domain adaption,isointense phase,low tissue contrast,multi-site issue},
+publisher = {Institute of Electrical and Electronics Engineers Inc.},
+title = {{Multi-Site Infant Brain Segmentation Algorithms: The iSeg-2019 Challenge}},
+year = {2021}
+}
 @inproceedings{Zhuang2016,
 abstract = {Cardiac segmentation is commonly a prerequisite for functional analysis of the heart,such as to identify and quantify the infarcts and edema from the normal myocardium using the late-enhanced (LE) and T2-weighted MRI. The automatic delineation of myocardium is however challenging due to the heterogeneous intensity distributions and indistinct boundaries in the images. In this work,we present a multivariate mixture model (MvMM) for text classification,which combines the complementary information from multi-sequence (MS) cardiac MRI and perform the segmentation of them simultaneously. The expectation maximization (EM) method is adopted to estimate the segmentation and model parameters from the log-likelihood (LL) of the mixture model,where a probabilistic atlas is used for initialization. Furthermore,to correct the intra- and inter-image misalignments,we formulate the MvMM with transformations,which are embedded into the LL framework and thus can be optimized by the iterative conditional mode approach. We applied MvMM for segmentation of eighteen subjects with three sequences and obtained promising results. We compared with two conventional methods,and the improvements of segmentation performance on LE and T2 MRI were evident and statistically significant by MvMM.},
 author = {Zhuang, Xiahai},
@@ -6207,6 +6266,23 @@ title = {{Multivariate Mixture Model for Myocardial Segmentation Combining Multi
 volume = {41},
 year = {2019}
 }
+@inproceedings{Tatarchenko2015a,
+abstract = {We present a convolutional network capable of inferring a 3D representation of a previously unseen object given a single image of this object. Concretely, the network can predict an RGB image and a depth map of the object as seen from an arbitrary view. Several of these depth maps fused together give a full point cloud of the object. The point cloud can in turn be transformed into a surface mesh. The network is trained on renderings of synthetic 3D models of cars and chairs. It successfully deals with objects on cluttered background and generates reasonable predictions for real images of cars.},
+archivePrefix = {arXiv},
+arxivId = {1511.06702},
+author = {Tatarchenko, Maxim and Dosovitskiy, Alexey and Brox, Thomas},
+booktitle = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+doi = {10.1007/978-3-319-46478-7_20},
+eprint = {1511.06702},
+isbn = {9783319464770},
+issn = {16113349},
+keywords = {3D from single image,Convolutional networks,Deep learning},
+pages = {322--337},
+title = {{Multi-view 3D models from single images with a convolutional network}},
+url = {http://arxiv.org/abs/1511.06702},
+volume = {9911 LNCS},
+year = {2016}
+}
 @article{Tatarchenko2015,
 abstract = {We present a convolutional network capable of inferring a 3D representation of a previously unseen object given a single image of this object. Concretely, the network can predict an RGB image and a depth map of the object as seen from an arbitrary view. Several of these depth maps fused together give a full point cloud of the object. The point cloud can in turn be transformed into a surface mesh. The network is trained on renderings of synthetic 3D models of cars and chairs. It successfully deals with objects on cluttered background and generates reasonable predictions for real images of cars.},
 annote = {{\_}eprint: 1511.06702},
@@ -6218,23 +6294,6 @@ eprint = {1511.06702},
 isbn = {9783319464770},
 issn = {16113349},
 journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
-keywords = {3D from single image,Convolutional networks,Deep learning},
-pages = {322--337},
-title = {{Multi-view 3D models from single images with a convolutional network}},
-url = {http://arxiv.org/abs/1511.06702},
-volume = {9911 LNCS},
-year = {2016}
-}
-@inproceedings{Tatarchenko2015a,
-abstract = {We present a convolutional network capable of inferring a 3D representation of a previously unseen object given a single image of this object. Concretely, the network can predict an RGB image and a depth map of the object as seen from an arbitrary view. Several of these depth maps fused together give a full point cloud of the object. The point cloud can in turn be transformed into a surface mesh. The network is trained on renderings of synthetic 3D models of cars and chairs. It successfully deals with objects on cluttered background and generates reasonable predictions for real images of cars.},
-archivePrefix = {arXiv},
-arxivId = {1511.06702},
-author = {Tatarchenko, Maxim and Dosovitskiy, Alexey and Brox, Thomas},
-booktitle = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
-doi = {10.1007/978-3-319-46478-7_20},
-eprint = {1511.06702},
-isbn = {9783319464770},
-issn = {16113349},
 keywords = {3D from single image,Convolutional networks,Deep learning},
 pages = {322--337},
 title = {{Multi-view 3D models from single images with a convolutional network}},
@@ -6288,6 +6347,24 @@ title = {{N4ITK: Improved N3 bias correction}},
 volume = {29},
 year = {2010}
 }
+@article{Kim2019,
+abstract = {Background and purpose This project assessed performance of natural language processing (NLP) and machine learning (ML) algorithms for classification of brain MRI radiology reports into acute ischemic stroke (AIS) and non-AIS phenotypes. Materials and methods All brain MRI reports from a single academic institution over a two year period were randomly divided into 2 groups for ML: Training (70{\%}) and testing (30{\%}). Using "quanteda" NLP package, all text data were parsed into tokens to create the data frequency matrix. Ten-fold cross-validation was applied for bias correction of the training set. Labeling for AIS was performed manually, identifying clinical notes. We applied binary logistic regression, na{\"{i}}ve Bayesian classification, single decision tree, and support vector machine for the binary classifiers, and we assessed performance of the algorithms by F1-measure. We also assessed how n-grams or term frequency-inverse document frequency weighting affected the performance of the algorithms. Results Of all 3,204 brain MRI documents, 432 (14.3{\%}) were labeled as AIS. AIS documents were longer in character length than those of non-AIS (median [interquartile range]; 551 [377- 681] vs. 309 [164-396]). Of all ML algorithms, single decision tree had the highest F1-measure (93.2) and accuracy (98.0{\%}). Adding bigrams to the ML model improved F1-mesaure of na{\"{i}}ve Bayesian classification, but not in others, and term frequency-inverse document frequency weighting to data frequency matrix did not show any additional performance improvements. Conclusions Supervised ML based NLP algorithms are useful for automatic classification of brain MRI reports for identification of AIS patients. Single decision tree was the best classifier to identify brain MRI reports with AIS.},
+author = {Kim, Chulho and Zhu, Vivienne and Obeid, Jihad and Lenert, Leslie},
+doi = {10.1371/journal.pone.0212778},
+editor = {Shawe-Taylor, John},
+file = {:C$\backslash$:/Users/qinka/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Kim et al. - 2019 - Natural language processing and machine learning algorithm to identify brain MRI reports with acute ischemic stroke.pdf:pdf},
+issn = {1932-6203},
+journal = {PLOS ONE},
+keywords = {Artificial intelligence,Decision trees,Ischemic stroke,Machine learning algorithms,Magnetic resonance imaging,Natural language processing,Stroke,Support vector machines},
+month = {feb},
+number = {2},
+pages = {e0212778},
+publisher = {Public Library of Science},
+title = {{Natural language processing and machine learning algorithm to identify brain MRI reports with acute ischemic stroke}},
+url = {https://dx.plos.org/10.1371/journal.pone.0212778},
+volume = {14},
+year = {2019}
+}
 @misc{TCIA-NCI-ISBI-2013,
 author = {Bloch, Nicholas and Madabhushi, Anant and Huisman, Henkjan and Freymann, John and Kirby, Justin and Grauer, Michael and Enquobahrie, Andinet and Jaffe, Carl and Clarke, Larry and Farahani, Keyvan},
 booktitle = {The Cancer Imaging Archive},
@@ -6296,6 +6373,11 @@ publisher = {The Cancer Imaging Archive},
 title = {{NCI-ISBI 2013 Challenge: Automated Segmentation of Prostate Structures}},
 url = {https://wiki.cancerimagingarchive.net/x/B4NEAQ},
 year = {2015}
+}
+@misc{NEATBrainS,
+title = {{NEATBrainS - Image Sciences Institute}},
+url = {https://www.isi.uu.nl/research/challenges/neatbrains/},
+urldate = {2021-03-11}
 }
 @book{Pan2019,
 address = {Singapore},
@@ -6642,19 +6724,11 @@ url = {http://www.mitpressjournals.org/doi/10.1162/jocn.2009.21407},
 volume = {22},
 year = {2010}
 }
-@misc{Stanford2011a,
-abstract = {A free and open platform for sharing MRI, MEG, EEG, iEEG, and ECoG data},
-author = {Stanford, Stanford Center for Reproducible Neuroscience},
-booktitle = {World Wide Web},
-title = {{OpenNEURO}},
-year = {2011}
-}
 @misc{Stanford2011,
 abstract = {A free and open platform for sharing MRI, MEG, EEG, iEEG, and ECoG data},
 author = {Stanford, Stanford Center for Reproducible Neuroscience},
 booktitle = {World Wide Web},
 title = {{OpenNEURO}},
-url = {https://openneuro.org/},
 year = {2011}
 }
 @article{Goode2013,
@@ -9124,6 +9198,24 @@ url = {http://arxiv.org/abs/2004.05405 http://dx.doi.org/10.3390/ijerph17186933}
 volume = {17},
 year = {2020}
 }
+@article{Kim2020,
+abstract = {Pathology reports contain the essential data for both clinical and research purposes. However, the extraction of meaningful, qualitative data from the original document is difficult due to the narrative and complex nature of such reports. Keyword extraction for pathology reports is necessary to summarize the informative text and reduce intensive time consumption. In this study, we employed a deep learning model for the natural language process to extract keywords from pathology reports and presented the supervised keyword extraction algorithm. We considered three types of pathological keywords, namely specimen, procedure, and pathology types. We compared the performance of the present algorithm with the conventional keyword extraction methods on the 3115 pathology reports that were manually labeled by professional pathologists. Additionally, we applied the present algorithm to 36,014 unlabeled pathology reports and analysed the extracted keywords with biomedical vocabulary sets. The results demonstrated the suitability of our model for practical application in extracting important data from pathology reports.},
+author = {Kim, Yoojoong and Lee, Jeong Hyeon and Choi, Sunho and Lee, Jeong Moon and Kim, Jong Ho and Seok, Junhee and Joo, Hyung Joon},
+doi = {10.1038/s41598-020-77258-w},
+file = {:C$\backslash$:/Users/qinka/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Kim et al. - 2020 - Validation of deep learning natural language processing algorithm for keyword extraction from pathology reports in e.pdf:pdf},
+issn = {20452322},
+journal = {Scientific Reports},
+keywords = {Biomedical engineering,Data mining,Machine learning},
+month = {dec},
+number = {1},
+pages = {20265},
+pmid = {33219276},
+publisher = {Nature Research},
+title = {{Validation of deep learning natural language processing algorithm for keyword extraction from pathology reports in electronic health records}},
+url = {https://www.nature.com/articles/s41598-020-77258-w},
+volume = {10},
+year = {2020}
+}
 @article{Setio2017,
 abstract = {Automatic detection of pulmonary nodules in thoracic computed tomography (CT) scans has been an active area of research for the last two decades. However, there have only been few studies that provide a comparative performance evaluation of different systems on a common database. We have therefore set up the LUNA16 challenge, an objective evaluation framework for automatic nodule detection algorithms using the largest publicly available reference database of chest CT scans, the LIDC-IDRI data set. In LUNA16, participants develop their algorithm and upload their predictions on 888 CT scans in one of the two tracks: 1) the complete nodule detection track where a complete CAD system should be developed, or 2) the false positive reduction track where a provided set of nodule candidates should be classified. This paper describes the setup of LUNA16 and presents the results of the challenge so far. Moreover, the impact of combining individual systems on the detection performance was also investigated. It was observed that the leading solutions employed convolutional networks and used the provided set of nodule candidates. The combination of these solutions achieved an excellent sensitivity of over 95{\%} at fewer than 1.0 false positives per scan. This highlights the potential of combining algorithms to improve the detection performance. Our observer study with four expert readers has shown that the best system detects nodules that were missed by expert readers who originally annotated the LIDC-IDRI data. We released this set of additional nodules for further development of CAD systems.},
 archivePrefix = {arXiv},
@@ -9526,4 +9618,9 @@ title = {{Zur Problematik der Massivtransfusion mit ACD-Blut.}},
 url = {http://www.ncbi.nlm.nih.gov/pubmed/4256233},
 volume = {5},
 year = {1970}
+}
+@misc{,
+title = {{可爱的 Python: 自然语言工具包入门}},
+url = {https://www.ibm.com/developerworks/cn/linux/l-cpnltk/},
+urldate = {2021-03-10}
 }
