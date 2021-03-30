@@ -1,3 +1,15 @@
+@article{Lee2021,
+author = {Lee, Gyuhyun and Oh, Jeong-Woo and Her, Nam-Gu and Jeong, Won-Ki},
+doi = {10.1016/j.media.2021.101995},
+issn = {13618415},
+journal = {Medical Image Analysis},
+month = {may},
+pages = {101995},
+title = {{ DeepHCS     + +    : Bright-Field to Fluorescence Microscopy Image Conversion using Multi-Task Learning with Adversarial Losses for Label-free High-Content Screening }},
+url = {https://linkinghub.elsevier.com/retrieve/pii/S1361841521000414},
+volume = {70},
+year = {2021}
+}
 @misc{ADNI,
 abstract = {The Alzheimer's Disease Neuroimaging Initiative (ADNI) unites researchers with study data as they work to define the progression of Alzheimer's disease (AD). ADNI researchers collect, validate and utilize data, including MRI and PET images, genetics, cognitive tests, CSF and blood biomarkers as predictors of the disease. Study resources and data from the North American ADNI study are available through this website, including Alzheimer's disease patients, mild cognitive impairment subjects, and elderly controls.},
 author = {Iwatsubo, Takeshi},
@@ -11,6 +23,27 @@ url = {http://adni.loni.usc.edu/},
 urldate = {2020-05-25},
 volume = {69 Suppl 8},
 year = {2011}
+}
+@article{GuhaRoy2020,
+abstract = {Deep neural networks enable highly accurate image segmentation, but require large amounts of manually annotated data for supervised training. Few-shot learning aims to address this shortcoming by learning a new class from a few annotated support examples. We introduce, a novel few-shot framework, for the segmentation of volumetric medical images with only a few annotated slices. Compared to other related works in computer vision, the major challenges are the absence of pre-trained networks and the volumetric nature of medical scans. We address these challenges by proposing a new architecture for few-shot segmentation that incorporates ‘squeeze {\&} excite' blocks. Our two-armed architecture consists of a conditioner arm, which processes the annotated support input and generates a task-specific representation. This representation is passed on to the segmenter arm that uses this information to segment the new query image. To facilitate efficient interaction between the conditioner and the segmenter arm, we propose to use ‘channel squeeze {\&} spatial excitation' blocks – a light-weight computational module – that enables heavy interaction between both the arms with negligible increase in model complexity. This contribution allows us to perform image segmentation without relying on a pre-trained model, which generally is unavailable for medical scans. Furthermore, we propose an efficient strategy for volumetric segmentation by optimally pairing a few slices of the support volume to all the slices of the query volume. We perform experiments for organ segmentation on whole-body contrast-enhanced CT scans from the Visceral Dataset. Our proposed model outperforms multiple baselines and existing approaches with respect to the segmentation accuracy by a significant margin. The source code is available at https://github.com/abhi4ssj/few-shot-segmentation.},
+author = {{Guha Roy}, Abhijit and Siddiqui, Shayan and P{\"{o}}lsterl, Sebastian and Navab, Nassir and Wachinger, Christian},
+doi = {10.1016/j.media.2019.101587},
+file = {:C$\backslash$:/Users/qinka/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Guha Roy et al. - 2020 - ‘Squeeze {\&} excite' guided few-shot segmentation of volumetric images.pdf:pdf},
+issn = {13618423},
+journal = {Medical Image Analysis},
+keywords = {Deep learning,Few-shot learning,Organ segmentation,Semantic segmentation,Squeeze {\&} excite},
+month = {jan},
+pages = {101587},
+pmid = {31630012},
+publisher = {Elsevier B.V.},
+title = {{‘Squeeze {\&} excite' guided few-shot segmentation of volumetric images}},
+volume = {59},
+year = {2020}
+}
+@misc{,
+title = {{【Python+中文NLP】（一） NLTK库{\_}walk{\_}power的博客-CSDN博客}},
+url = {https://blog.csdn.net/walk{\_}power/article/details/82960305},
+urldate = {2021-03-12}
 }
 @article{Klein2012,
 abstract = {We introduce the Mindboggle-101 dataset, the largest and most complete set of free, publicly accessible, manually labeled human brain images. To manually label the macroscopic anatomy in magnetic resonance images of 101 healthy participants, we created a new cortical labeling protocol that relies on robust anatomical landmarks and minimal manual edits after initialization with automated labels. The "Desikan-Killiany-Tourville" (DKT) protocol is intended to improve the ease, consistency, and accuracy of labeling human cortical areas. Given how difficult it is to label brains, the Mindboggle-101 dataset is intended to serve as brain atlases for use in labeling other brains, as a normative dataset to establish mor-phometric variation in a healthy population for comparison against clinical populations, and contribute to the development, training, testing, and evaluation of automated registration and labeling algorithms. To this end, we also introduce benchmarks for the evaluation of such algorithms by comparing our manual labels with labels automatically generated by probabilistic and multi-atlas registration-based approaches. All data and related software and updated information are available on the http://mindboggle.info/data website. Copy; 2012 Kleinand Tourville.},
@@ -125,6 +158,16 @@ month = {apr},
 pages = {228--231},
 title = {{3D fully convolutional networks for co-segmentation of tumors on PET-CT images}},
 year = {2018}
+}
+@article{Zhang2021,
+author = {Zhang, Yongtao and Li, Haimei and Du, Jie and Qin, Jing and Wang, Tianfu and Chen, Yue and Liu, Bing and Gao, Wenwen and Ma, Guolin and Lei, Baiying},
+doi = {10.1109/TMI.2021.3062902},
+issn = {0278-0062},
+journal = {IEEE Transactions on Medical Imaging},
+pages = {1--1},
+title = {{3D Multi-attention Guided Multi-task Learning Network for Automatic Gastric Tumor Segmentation and Lymph Node Classification}},
+url = {https://ieeexplore.ieee.org/document/9366506/},
+year = {2021}
 }
 @inproceedings{Kim2013,
 abstract = {Scene understanding is an important yet very challenging problem in computer vision. In the past few years, researchers have taken advantage of the recent diffusion of depth-RGB (RGB-D) cameras to help simplify the problem of inferring scene semantics. However, while the added 3D geometry is certainly useful to segment out objects with different depth values, it also adds complications in that the 3D geometry is often incorrect because of noisy depth measurements and the actual 3D extent of the objects is usually unknown because of occlusions. In this paper we propose a new method that allows us to jointly refine the 3D reconstruction of the scene (raw depth values) while accurately segmenting out the objects or scene elements from the 3D reconstruction. This is achieved by introducing a new model which we called Voxel-CRF. The Voxel-CRF model is based on the idea of constructing a conditional random field over a 3D volume of interest which captures the semantic and 3D geometric relationships among different elements (voxels) of the scene. Such model allows to jointly estimate (1) a dense voxel-based 3D reconstruction and (2) the semantic labels associated with each voxel even in presence of partial occlusions using an approximate yet efficient inference strategy. We evaluated our method on the challenging NYU Depth dataset (Version 1 and 2). Experimental results show that our method achieves competitive accuracy in inferring scene semantics and visually appealing results in improving the quality of the 3D reconstruction. We also demonstrate an interesting application of object removal and scene completion from RGB-D images. {\textcopyright} 2013 IEEE.},
@@ -259,6 +302,22 @@ journal = {arXiv},
 title = {{A computer vision pipeline for automated determination of cardiac structure and function and detection of disease by two-dimensional echocardiography}},
 url = {http://arxiv.org/abs/1706.07342},
 year = {2017}
+}
+@article{Li2020a,
+abstract = {Few-shot meta-learning has been recently reviving with expectations to mimic humanity's fast adaption to new concepts based on prior knowledge. In this short communication, we give a concise review on recent representative methods in few-shot meta-learning, which are categorized into four branches according to their technical characteristics. We conclude this review with some vital current challenges and future prospects in few-shot meta-learning.},
+archivePrefix = {arXiv},
+arxivId = {2005.10953},
+author = {Li, Xiaoxu and Sun, Zhuo and Xue, Jing Hao and Ma, Zhanyu},
+doi = {10.1016/j.neucom.2020.05.114},
+eprint = {2005.10953},
+file = {:C$\backslash$:/Users/qinka/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Li et al. - 2020 - A concise review of recent few-shot meta-learning methods.pdf:pdf},
+issn = {18728286},
+journal = {Neurocomputing},
+keywords = {Deep Neural Networks,Few-shot Learning,Image Classification,Meta Learning,Small-sample Learning},
+month = {oct},
+publisher = {Elsevier B.V.},
+title = {{A concise review of recent few-shot meta-learning methods}},
+year = {2020}
 }
 @article{Maguolo2020,
 abstract = {In this paper, we compare and evaluate different testing protocols used for automatic COVID-19 diagnosis from X-Ray images in the recent literature. We show that similar results can be obtained using X-Ray images that do not contain most of the lungs. We are able to remove the lungs from the images by turning to black the center of the X-Ray scan and training our classifiers only on the outer part of the images. Hence, we deduce that several testing protocols for the recognition are not fair and that the neural networks are learning patterns in the dataset that are not correlated to the presence of COVID-19. Finally, we show that creating a fair testing protocol is a challenging task, and we provide a method to measure how fair a specific testing protocol is. In the future research we suggest to check the fairness of a testing protocol using our tools and we encourage researchers to look for better techniques than the ones that we propose.},
@@ -662,6 +721,20 @@ title = {{A Survey : Analysis on Pre - processing and Segmentation Techniques fo
 volume = {III},
 year = {2016}
 }
+@misc{Ren2020,
+abstract = {Active learning (AL) attempts to maximize a model's performance gain while annotating the fewest samples possible. Deep learning (DL) is greedy for data and requires a large amount of data supply to optimize a massive number of parameters if the model is to learn how to extract high-quality features. In recent years, due to the rapid development of internet technology, we have entered an era of information abundance characterized by massive amounts of available data. As a result, DL has attracted significant attention from researchers and has been rapidly developed. Compared with DL, however, researchers have relatively low interest in AL. This is mainly because before the rise of DL, traditional machine learning requires relatively few labeled samples, meaning that early AL is rarely accorded the value it deserves. Although DL has made breakthroughs in various fields, most of this success is due to the large number of publicly available annotated datasets. However, the acquisition of a large number of high-quality annotated datasets consumes a lot of manpower, making it unfeasible in fields that require high levels of expertise (such as speech recognition, information extraction, medical images, etc.) Therefore, AL is gradually coming to receive the attention it is due. It is therefore natural to investigate whether AL can be used to reduce the cost of sample annotations, while retaining the powerful learning capabilities of DL. As a result of such investigations, deep active learning (DAL) has emerged. Although research on this topic is quite abundant, there has not yet been a comprehensive survey of DAL-related works; accordingly, this article aims to fill this gap. We provide a formal classification method for the existing work, along with a comprehensive and systematic overview. In addition, we also analyze and summarize the development of DAL from an application perspective. Finally, we discuss the confusion and problems associated with DAL and provide some possible development directions.},
+archivePrefix = {arXiv},
+arxivId = {2009.00236},
+author = {Ren, Pengzhen and Xiao, Yun and Chang, Xiaojun and Huang, Po Yao and Li, Zhihui and Chen, Xiaojiang and Wang, Xin},
+booktitle = {arXiv},
+eprint = {2009.00236},
+issn = {23318422},
+keywords = {Active Learning,Deep Active Learning,Deep Learning},
+month = {aug},
+publisher = {arXiv},
+title = {{A survey of deep active learning}},
+year = {2020}
+}
 @inproceedings{Lee2015,
 abstract = {A precise analysis of medical image is an important stage in the contouring phase throughout radiotherapy preparation. Medical images are mostly used as radiographic techniques in diagnosis, clinical studies and treatment planning Medical image processing tool are also similarly as important. With a medical image processing tool, it is possible to speed up and enhance the operation of the analysis of the medical image. This paper describes medical image processing software tool which attempts to secure the same kind of programmability advantage for exploring applications of the pipelined processors. These tools simulate complete systems consisting of several of the proposed processing components, in a configuration described by a graphical schematic diagram. In this paper, fifteen different medical image processing tools will be compared in several aspects. The main objective of the comparison is to gather and analysis on the tool in order to recommend users of different operating systems on what type of medical image tools to be used when analysing different types of imaging. A result table was attached and discussed in the paper.},
 author = {Lee, Lay Khoon and Liew, Siau Chuin},
@@ -820,6 +893,21 @@ isbn = {978-3-030-32609-8},
 publisher = {Springer International Publishing},
 title = {{Action Research in Software Engineering}},
 url = {http://link.springer.com/10.1007/978-3-030-32610-4},
+year = {2020}
+}
+@misc{Miller2020,
+abstract = {Supervised machine learning methods are increasingly employed in political science. Such models require costly manual labeling of documents. In this paper, we introduce active learning, a framework in which data to be labeled by human coders are not chosen at random but rather targeted in such a way that the required amount of data to train a machine learning model can be minimized. We study the benefits of active learning using text data examples. We perform simulation studies that illustrate conditions where active learning can reduce the cost of labeling text data. We perform these simulations on three corpora that vary in size, document length, and domain. We find that in cases where the document class of interest is not balanced, researchers can label a fraction of the documents one would need using random sampling (or passive learning) to achieve equally performing classifiers. We further investigate how varying levels of intercoder reliability affect the active learning procedures and find that even with low reliability, active learning performs more efficiently than does random sampling.},
+author = {Miller, Blake and Linder, Fridolin and Mebane, Walter R.},
+booktitle = {Political Analysis},
+doi = {10.1017/pan.2020.4},
+issn = {14764989},
+keywords = {Active learning,Intercoder reliability,Statistical analysis of texts,Supervised learning},
+month = {oct},
+number = {4},
+pages = {532--551},
+publisher = {Cambridge University Press},
+title = {{Active learning approaches for labeling text: Review and assessment of the performance of active learning approaches}},
+volume = {28},
 year = {2020}
 }
 @incollection{Carse2019,
@@ -1431,6 +1519,16 @@ title = {{Automatic medical image annotation in ImageCLEF 2007: Overview, result
 volume = {29},
 year = {2008}
 }
+@article{Peng2021,
+author = {Peng, Yuanyuan and Zhu, Weifang and Chen, Zhongyue and Wang, Meng and Geng, Le and Yu, Kai and Zhou, Yi and Wang, Ting and Xiang, Daoman and Chen, Feng and Chen, Xinjian},
+doi = {10.1109/TMI.2021.3065753},
+issn = {0278-0062},
+journal = {IEEE Transactions on Medical Imaging},
+pages = {1--1},
+title = {{Automatic Staging for Retinopathy of Prematurity with Deep Feature Fusion and Ordinal Classification Strategy}},
+url = {https://ieeexplore.ieee.org/document/9376907/},
+year = {2021}
+}
 @article{Peng2017,
 author = {Peng, Hanchuan and Zhou, Zhi and Meijering, Erik and Zhao, Ting and Ascoli, Giorgio A. and Hawrylycz, Michael},
 doi = {10.1038/nmeth.4233},
@@ -1838,6 +1936,18 @@ title = {{Capsules for object segmentation}},
 url = {http://arxiv.org/abs/1804.04241},
 volume = {abs/1804.0},
 year = {2018}
+}
+@article{Hussain2021,
+abstract = {Kidney volume is an essential biomarker for a number of kidney disease diagnoses, for example, chronic kidney disease. Existing total kidney volume estimation methods often rely on an intermediate kidney segmentation step. On the other hand, automatic kidney localization in volumetric medical images is a critical step that often precedes subsequent data processing and analysis. Most current approaches perform kidney localization via an intermediate classification or regression step. This paper proposes an integrated deep learning approach for (i) kidney localization in computed tomography scans and (ii) segmentation-free renal volume estimation. Our localization method uses a selection-convolutional neural network that approximates the kidney inferior-superior span along the axial direction. Cross-sectional (2D) slices from the estimated span are subsequently used in a combined sagittal-axial Mask-RCNN that detects the organ bounding boxes on the axial and sagittal slices, the combination of which produces a final 3D organ bounding box. Furthermore, we use a fully convolutional network to estimate the kidney volume that skips the segmentation procedure. We also present a mathematical expression to approximate the {\&}{\#}x2018;volume error{\&}{\#}x2019; metric from the {\&}{\#}x2018;S{\&}{\#}x00F8;rensen{\&}{\#}x2013;Dice coefficient.{\&}{\#}x2019; We accessed 100 patients{\&}{\#}x2019; CT scans from the Vancouver General Hospital records and obtained 210 patients{\&}{\#}x2019; CT scans from the 2019 Kidney Tumor Segmentation Challenge database to validate our method. Our method produces a kidney boundary wall localization error of {\&}{\#}x007E;2.4mm and a mean volume estimation error of {\&}{\#}x007E;5{\%}.},
+author = {Hussain, Mohammad Arafat and Hamarneh, Ghassan and Garbi, Rafeef},
+doi = {10.1109/TMI.2021.3060465},
+issn = {1558254X},
+journal = {IEEE Transactions on Medical Imaging},
+keywords = {CNN,Computed tomography,FCN,Image segmentation,Kidney,Location awareness,Mask-RCNN,S{\&}{\#}x00F8;rensen{\&}{\#}x2013;Dice,Three-dimensional displays,Two dimensional displays,Volume measurement,kidney localization,kidney volume},
+pmid = {33606626},
+publisher = {Institute of Electrical and Electronics Engineers Inc.},
+title = {{Cascaded Localization Regression Neural Nets for Kidney Localization and Segmentation-free Volume Estimation}},
+year = {2021}
 }
 @article{AlHajj2019,
 abstract = {Surgical tool detection is attracting increasing attention from the medical image analysis community. The goal generally is not to precisely locate tools in images, but rather to indicate which tools are being used by the surgeon at each instant. The main motivation for annotating tool usage is to design efficient solutions for surgical workflow analysis, with potential applications in report generation, surgical training and even real-time decision support. Most existing tool annotation algorithms focus on laparoscopic surgeries. However, with 19 million interventions per year, the most common surgical procedure in the world is cataract surgery. The CATARACTS challenge was organized in 2017 to evaluate tool annotation algorithms in the specific context of cataract surgery. It relies on more than nine hours of videos, from 50 cataract surgeries, in which the presence of 21 surgical tools was manually annotated by two experts. With 14 participating teams, this challenge can be considered a success. As might be expected, the submitted solutions are based on deep learning. This paper thoroughly evaluates these solutions: in particular, the quality of their annotations are compared to that of human interpretations. Next, lessons learnt from the differential analysis of these solutions are discussed. We expect that they will guide the design of efficient surgery monitoring tools in the near future.},
@@ -2315,6 +2425,41 @@ url = {http://link.springer.com/10.1007/978-3-030-00928-1{\_}48},
 volume = {11070 LNCS},
 year = {2018}
 }
+@misc{Parisi2019,
+abstract = {Humans and animals have the ability to continually acquire, fine-tune, and transfer knowledge and skills throughout their lifespan. This ability, referred to as lifelong learning, is mediated by a rich set of neurocognitive mechanisms that together contribute to the development and specialization of our sensorimotor skills as well as to long-term memory consolidation and retrieval. Consequently, lifelong learning capabilities are crucial for computational learning systems and autonomous agents interacting in the real world and processing continuous streams of information. However, lifelong learning remains a long-standing challenge for machine learning and neural network models since the continual acquisition of incrementally available information from non-stationary data distributions generally leads to catastrophic forgetting or interference. This limitation represents a major drawback for state-of-the-art deep neural network models that typically learn representations from stationary batches of training data, thus without accounting for situations in which information becomes incrementally available over time. In this review, we critically summarize the main challenges linked to lifelong learning for artificial learning systems and compare existing neural network approaches that alleviate, to different extents, catastrophic forgetting. Although significant advances have been made in domain-specific learning with neural networks, extensive research efforts are required for the development of robust lifelong learning on autonomous agents and robots. We discuss well-established and emerging research motivated by lifelong learning factors in biological systems such as structural plasticity, memory replay, curriculum and transfer learning, intrinsic motivation, and multisensory integration.},
+archivePrefix = {arXiv},
+arxivId = {1802.07569},
+author = {Parisi, German I. and Kemker, Ronald and Part, Jose L. and Kanan, Christopher and Wermter, Stefan},
+booktitle = {Neural Networks},
+doi = {10.1016/j.neunet.2019.01.012},
+eprint = {1802.07569},
+file = {:C$\backslash$:/Users/qinka/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Parisi et al. - 2019 - Continual lifelong learning with neural networks A review.pdf:pdf},
+issn = {18792782},
+keywords = {Catastrophic forgetting,Continual learning,Developmental systems,Lifelong learning,Memory consolidation},
+month = {may},
+pages = {54--71},
+pmid = {30780045},
+publisher = {Elsevier Ltd},
+title = {{Continual lifelong learning with neural networks: A review}},
+volume = {113},
+year = {2019}
+}
+@article{Sun2021a,
+abstract = {The state-of-the-art multitask multiview (MTMV) learning tackles a scenario where multiple tasks are related to each other via multiple shared feature views. However, in many real-world scenarios where a sequence of the multiview task comes, the higher storage requirement and computational cost of retraining previous tasks with MTMV models have presented a formidable challenge for this lifelong learning scenario. To address this challenge, in this article, we propose a new continual multiview task learning model that integrates deep matrix factorization and sparse subspace learning in a unified framework, which is termed deep continual multiview task learning (DCMvTL). More specifically, as a new multiview task arrives, DCMvTL first adopts a deep matrix factorization technique to capture hidden and hierarchical representations for this new coming multiview task while accumulating the fresh multiview knowledge in a layerwise manner. Then, a sparse subspace learning model is employed for the extracted factors at each layer and further reveals cross-view correlations via a self-expressive constraint. For model optimization, we derive a general multiview learning formulation when a new multiview task comes and apply an alternating minimization strategy to achieve lifelong learning. Extensive experiments on benchmark data sets demonstrate the effectiveness of our proposed DCMvTL model compared with the existing state-of-the-art MTMV and lifelong multiview task learning models.},
+author = {Sun, Gan and Cong, Yang and Zhang, Yulun and Zhao, Guoshuai and Fu, Yun},
+doi = {10.1109/TNNLS.2020.2977497},
+issn = {21622388},
+journal = {IEEE Transactions on Neural Networks and Learning Systems},
+keywords = {Deep matrix factorization,lifelong machine learning,multiview learning,sparse subspace learning},
+month = {jan},
+number = {1},
+pages = {139--150},
+pmid = {32175877},
+publisher = {Institute of Electrical and Electronics Engineers Inc.},
+title = {{Continual Multiview Task Learning via Deep Matrix Factorization}},
+volume = {32},
+year = {2021}
+}
 @inproceedings{Lillicrap2016,
 abstract = {We adapt the ideas underlying the success of Deep Q-Learning to the continuous action domain. We present an actor-critic, model-free algorithm based on the deterministic policy gradient that can operate over continuous action spaces. Using the same learning algorithm, network architecture and hyper-parameters, our algorithm robustly solves more than 20 simulated physics tasks, including classic problems such as cartpole swing-up, dexterous manipulation, legged locomotion and car driving. Our algorithm is able to find policies whose performance is competitive with those found by a planning algorithm with full access to the dynamics of the domain and its derivatives. We further demonstrate that for many of the tasks the algorithm can learn policies “end-to-end”: directly from raw pixel inputs.},
 archivePrefix = {arXiv},
@@ -2527,17 +2672,6 @@ title = {{CT-ORG: A Dataset of CT Volumes With Multiple Organ Segmentations}},
 url = {https://wiki.cancerimagingarchive.net/x/OgWkAw},
 year = {2019}
 }
-@article{Chetlur2014,
-abstract = {We present a library of efficient implementations of deep learning primitives. Deep learning workloads are computationally intensive, and optimizing their kernels is difficult and time-consuming. As parallel architectures evolve, kernels must be reoptimized, which makes maintaining codebases difficult over time. Similar issues have long been addressed in the HPC community by libraries such as the Basic Linear Algebra Subroutines (BLAS). However, there is no analogous library for deep learning. Without such a library, researchers implementing deep learning workloads on parallel processors must create and optimize their own implementations of the main computational kernels, and this work must be repeated as new parallel processors emerge. To address this problem, we have created a library similar in intent to BLAS, with optimized routines for deep learning workloads. Our implementation contains routines for GPUs, although similarly to the BLAS library, these routines could be implemented for other platforms. The library is easy to integrate into existing frameworks, and provides optimized performance and memory usage. For example, integrating cuDNN into Caffe, a popular framework for convolutional networks, improves performance by 36{\%} on a standard model while also reducing memory consumption.},
-archivePrefix = {arXiv},
-arxivId = {1410.0759},
-author = {Chetlur, Sharan and Woolley, Cliff and Vandermersch, Philippe and Cohen, Jonathan and Tran, John and Catanzaro, Bryan and Shelhamer, Evan},
-eprint = {1410.0759},
-journal = {arXiv: Neural and Evolutionary Computing},
-title = {{cuDNN: Efficient Primitives for Deep Learning}},
-url = {http://arxiv.org/abs/1410.0759},
-year = {2014}
-}
 @book{Florentina2019,
 address = {Cham},
 author = {Florentina, Laura and Eds, Stoica},
@@ -2550,6 +2684,17 @@ title = {{Dana Simian Modelling and Development of Intelligent Systems}},
 url = {http://link.springer.com/10.1007/978-3-030-39237-6},
 volume = {1126},
 year = {2019}
+}
+@article{Chetlur2014,
+abstract = {We present a library of efficient implementations of deep learning primitives. Deep learning workloads are computationally intensive, and optimizing their kernels is difficult and time-consuming. As parallel architectures evolve, kernels must be reoptimized, which makes maintaining codebases difficult over time. Similar issues have long been addressed in the HPC community by libraries such as the Basic Linear Algebra Subroutines (BLAS). However, there is no analogous library for deep learning. Without such a library, researchers implementing deep learning workloads on parallel processors must create and optimize their own implementations of the main computational kernels, and this work must be repeated as new parallel processors emerge. To address this problem, we have created a library similar in intent to BLAS, with optimized routines for deep learning workloads. Our implementation contains routines for GPUs, although similarly to the BLAS library, these routines could be implemented for other platforms. The library is easy to integrate into existing frameworks, and provides optimized performance and memory usage. For example, integrating cuDNN into Caffe, a popular framework for convolutional networks, improves performance by 36{\%} on a standard model while also reducing memory consumption.},
+archivePrefix = {arXiv},
+arxivId = {1410.0759},
+author = {Chetlur, Sharan and Woolley, Cliff and Vandermersch, Philippe and Cohen, Jonathan and Tran, John and Catanzaro, Bryan and Shelhamer, Evan},
+eprint = {1410.0759},
+journal = {arXiv: Neural and Evolutionary Computing},
+title = {{cuDNN: Efficient Primitives for Deep Learning}},
+url = {http://arxiv.org/abs/1410.0759},
+year = {2014}
 }
 @misc{Liu2018,
 abstract = {This paper addresses the scalability challenge of architecture search by formulating the task in a differentiable manner. Unlike conventional approaches of applying evolution or reinforcement learning over a discrete and non-differentiable search space, our method is based on the continuous relaxation of the architecture representation, allowing efficient search of the architecture using gradient descent. Extensive experiments on CIFAR-10, ImageNet, Penn Treebank and WikiText-2 show that our algorithm excels in discovering high-performance convolutional architectures for image classification and recurrent architectures for language modeling, while being orders of magnitude faster than state-of-the-art non-differentiable techniques. Our implementation has been made publicly available to facilitate further research on efficient architecture search algorithms.},
@@ -3108,6 +3253,20 @@ title = {{Deep Successor Reinforcement Learning}},
 url = {http://arxiv.org/abs/1606.02396},
 year = {2016}
 }
+@article{Wang2021,
+abstract = {Convolutional neural networks have achieved prominent success on a variety of medical imaging tasks when a large amount of labeled training data is available. However, the acquisition of expert annotations for medical data is usually expensive and time-consuming, which poses a great challenge for supervised learning approaches. In this work, we proposed a novel semi-supervised deep learning method, i.e., deep virtual adversarial self-training with consistency regularization, for large-scale medical image classification. To effectively exploit useful information from unlabeled data, we leverage self-training and consistency regularization to harness the underlying knowledge, which helps improve the discrimination capability of training models. More concretely, the model first uses its prediction for pseudo-labeling on the weakly-augmented input image. A pseudo-label is kept only if the corresponding class probability is of high confidence. Then the model prediction is encouraged to be consistent with the strongly-augmented version of the same input image. To improve the robustness of the network against virtual adversarial perturbed input, we incorporate virtual adversarial training (VAT) on both labeled and unlabeled data into the course of training. Hence, the network is trained by minimizing a combination of three types of losses, including a standard supervised loss on labeled data, a consistency regularization loss on unlabeled data, and a VAT loss on both labeled and labeled data. We extensively evaluate the proposed semi-supervised deep learning methods on two challenging medical image classification tasks: breast cancer screening from ultrasound images and multi-class ophthalmic disease classification from optical coherence tomography B-scan images. Experimental results demonstrate that the proposed method outperforms both supervised baseline and other state-of-the-art methods by a large margin on all tasks.},
+author = {Wang, Xi and Chen, Hao and Xiang, Huiling and Lin, Huangjing and Lin, Xi and Heng, Pheng Ann},
+doi = {10.1016/j.media.2021.102010},
+issn = {13618423},
+journal = {Medical Image Analysis},
+keywords = {Consistency regularization,Deep learning,Semi-supervised classification},
+month = {may},
+pages = {102010},
+title = {{Deep virtual adversarial self-training with consistency regularization for semi-supervised medical image classification}},
+url = {https://linkinghub.elsevier.com/retrieve/pii/S1361841521000566},
+volume = {70},
+year = {2021}
+}
 @inproceedings{Xie2016,
 abstract = {As 3D movie viewing becomes mainstream and the Virtual Reality (VR) market emerges, the demand for 3D contents is growing rapidly. Producing 3D videos, however, remains challenging. In this paper we propose to use deep neural networks to automatically convert 2Dvideos and images to a stereoscopic 3D format. In contrast to previous automatic 2D-to-3D conversion algorithms, which have separate stages and need ground truth depth map as supervision, our approach is trained endto-end directly on stereo pairs extracted from existing 3D movies. This novel training scheme makes it possible to exploit orders of magnitude more data and significantly increases performance. Indeed, Deep3D outperforms baselines in both quantitative and human subject evaluations.},
 annote = {From Duplicate 2 (Deep3D: Fully automatic 2D-to-3D video conversion with deep convolutional neural networks - Xie, Junyuan; Girshick, Ross; Farhadi, Ali)
@@ -3447,6 +3606,20 @@ url = {http://link.springer.com/10.1007/978-3-540-89985-3{\_}75},
 volume = {6 CCIS},
 year = {2008}
 }
+@article{Paul2021,
+abstract = {Few-shot learning is an almost unexplored area in the field of medical image analysis. We propose a method for few-shot diagnosis of diseases and conditions from chest x-rays using discriminative ensemble learning. Our design involves a CNN-based coarse-learner in the first step to learn the general characteristics of chest x-rays. In the second step, we introduce a saliency-based classifier to extract disease-specific salient features from the output of the coarse-learner and classify based on the salient features. We propose a novel discriminative autoencoder ensemble to design the saliency-based classifier. The classification of the diseases is performed based on the salient features. Our algorithm proceeds through meta-training and meta-testing. During the training phase of meta-training, we train the coarse-learner. However, during the training phase of meta-testing, we train only the saliency-based classifier. Thus, our method is first-of-its-kind where the training phase of meta-training and the training phase of meta-testing are architecturally disjoint, making the method modular and easily adaptable to new tasks requiring the training of only the saliency-based classifier. Experiments show as high as ∼19{\%} improvement in terms of F1 score compared to the baseline in the diagnosis of chest x-rays from publicly available datasets.},
+author = {Paul, Angshuman and Tang, Yu Xing and Shen, Thomas C. and Summers, Ronald M.},
+doi = {10.1016/j.media.2020.101911},
+issn = {13618423},
+journal = {Medical Image Analysis},
+keywords = {Autoencoder,Discriminative,Ensemble,Few-shot,X-ray},
+month = {feb},
+pmid = {33264714},
+publisher = {Elsevier B.V.},
+title = {{Discriminative ensemble learning for few-shot chest x-ray diagnosis}},
+volume = {68},
+year = {2021}
+}
 @article{Gonzlez2018DiseaseSA,
 abstract = {Rationale: Deep learning is a powerful tool that may allow for improved outcome prediction. Objectives: To determine if deep learning, specifically convolutional neural network (CNN) analysis, could detect and stage chronic obstructive pulmonary disease (COPD) and predict acute respiratory disease (ARD) events and mortality in smokers. Methods: A CNN was trained using computed tomography scans from 7, 983 COPDGene participants and evaluated using 1,000 nonoverlapping COPDGene participants and 1, 672 ECLIPSE participants. Logistic regression (C statistic and the Hosmer-Lemeshow test) was used to assess COPD diagnosis and ARD prediction. Cox regression (C index and the Greenwood-Nam-D'Agnostino test) was used to assess mortality. Measurements and Main Results: In COPDGene, the C statistic for the detection of COPD was 0.856. A total of 51.1{\%} of participants in COPDGene were accurately staged and 74.95{\%} were within one stage. In ECLIPSE, 29.4{\%} were accurately staged and 74.6{\%} were within one stage. In COPDGene and ECLIPSE, the C statistics for ARD events were 0.64 and 0.55, respectively, and the Hosmer-Lemeshow P values were 0.502 and 0.380, respectively, suggesting no evidence of poor calibration. In COPDGene and ECLIPSE, CNN predicted mortality with fair discrimination (C indices, 0.72 and 0.60, respectively), and without evidence of poor calibration (Greenwood-Nam-D'Agnostino P values, 0.307 and 0.331, respectively). Conclusions: A deep-learning approach that uses only computed tomography imaging data can identify those smokers who have COPD and predict who are most likely to have ARD events and those with the highest mortality. At a population level CNN analysis may be a powerful tool for risk assessment.},
 author = {Gonzalez, German and Ash, Samuel Y. and Vegas-S{\'{a}}nchez-Ferrero, Gonzalo and Onieva, Jorge Onieva and Rahaghi, Farbod N. and Ross, James C. and D{\'{a}}z, Alejandro and Est{\'{e}}par, Raul San Jos{\'{e}} and Washko, George R.},
@@ -3514,6 +3687,26 @@ title = {{Domain Adaptation Using Dictionaries}},
 url = {http://link.springer.com/10.1007/978-3-030-03243-2{\_}819-1},
 year = {2020}
 }
+@inproceedings{Khandelwal2020,
+abstract = {Deep learning models perform best when tested on target (test) data domains whose distribution is similar to the set of source (train) domains. However, model generalization can be hindered when there is significant difference in the underlying statistics between the target and source domains. In this work, we adapt a domain generalization method based on a model-agnostic meta-learning framework[1] to biomedical imaging. The method learns a domain-agnostic feature representation to improve generalization of models to the unseen test distribution. The method can be used for any imaging task, as it does not depend on the underlying model architecture. We validate the approach through a computed tomography (CT) vertebrae segmentation task across healthy and pathological cases on three datasets. Next, we employ few-shot learning, i.e. training the generalized model using very few examples from the unseen domain, to quickly adapt the model to new unseen data distribution. Our results suggest that the method could help generalize models across different medical centers, image acquisition protocols, anatomies, different regions in a given scan, healthy and diseased populations across varied imaging modalities.},
+archivePrefix = {arXiv},
+arxivId = {2008.07724},
+author = {Khandelwal, Pulkit and Yushkevich, Paul},
+booktitle = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+doi = {10.1007/978-3-030-60548-3_8},
+eprint = {2008.07724},
+file = {:C$\backslash$:/Users/qinka/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Khandelwal, Yushkevich - 2020 - Domain Generalizer A Few-Shot Meta Learning Framework for Domain Generalization in Medical Imaging.pdf:pdf},
+isbn = {9783030605476},
+issn = {16113349},
+keywords = {Computed tomography,Domain adaptation,Domain generalization,Meta learning,Vertebrae segmentation},
+month = {oct},
+pages = {73--84},
+publisher = {Springer Science and Business Media Deutschland GmbH},
+title = {{Domain Generalizer: A Few-Shot Meta Learning Framework for Domain Generalization in Medical Imaging}},
+url = {https://doi.org/10.1007/978-3-030-60548-3{\_}8},
+volume = {12444 LNCS},
+year = {2020}
+}
 @misc{GrandChallengeDRIVE,
 title = {{DRIVE: Digital Retinal Images for Vessel Extraction}}
 }
@@ -3528,6 +3721,17 @@ title = {{Dropout: A simple way to prevent neural networks from overfitting}},
 url = {http://jmlr.org/papers/v15/srivastava14a.html},
 volume = {15},
 year = {2014}
+}
+@article{Guo2021,
+abstract = {The purpose of active learning is to significantly reduce the cost of annotation while ensuring the good performance of the model. In this paper, we propose a novel active learning method based on the combination of pool and synthesis named dual generative adversarial active learning (DGAAL), which includes the functions of image generation and representation learning. This method includes two groups of generative adversarial network composed of a generator and two discriminators. One group is used for representation learning, and then this paper performs sampling based on the predicted value of the discriminator. The other group is used for image generation. The purpose is to generate samples which are similar to those obtained from sampling, so that samples with rich information can be fully utilized. In the sampling process, the two groups of network cooperate with each other to enable the generated samples to participate in sampling process, and to enable the discriminator for sampling to co-evolve. Thus, in the later stage of sampling, the problem of insufficient information for selecting samples based on the pool method is alleviated. In this paper, DGAAL is evaluated extensively on three data sets, and the results show that DGAAL not only has certain advantages over the existing methods in terms of model performance but can also further reduces the annotation cost.},
+author = {Guo, Jifeng and Pang, Zhiqi and Bai, Miaoyuan and Xie, Peijiao and Chen, Yu},
+doi = {10.1007/s10489-020-02121-4},
+issn = {15737497},
+journal = {Applied Intelligence},
+keywords = {Active learning,Deep learning,Generative adversarial networks,Image generation},
+publisher = {Springer},
+title = {{Dual generative adversarial active learning}},
+year = {2021}
 }
 @inproceedings{Chen2017,
 abstract = {In this work, we present a simple, highly efficient and modularized Dual Path Network (DPN) for image classification which presents a new topology of connection paths internally. By revealing the equivalence of the state-of-the-art Residual Network (ResNet) and Densely Convolutional Network (DenseNet) within the HORNN framework, we find that ResNet enables feature re-usage while DenseNet enables new features exploration which are both important for learning good representations. To enjoy the benefits from both path topologies, our proposed Dual Path Network shares common features while maintaining the flexibility to explore new features through dual path architectures. Extensive experiments on three benchmark datasets, ImagNet-1k, Places365 and PASCAL VOC, clearly demonstrate superior performance of the proposed DPN over state-of-the-arts. In particular, on the ImagNet-1k dataset, a shallow DPN surpasses the best ResNeXt-101(64 × 4d) with 26{\%} smaller model size, 25{\%} less computational cost and 8{\%} lower memory consumption, and a deeper DPN (DPN-131) further pushes the state-of-the-art single model performance with about 2 times faster training speed. Experiments on the Places365 large-scale scene dataset, PASCAL VOC detection dataset, and PASCAL VOC segmentation dataset also demonstrate its consistently better performance than DenseNet, ResNet and the latest ResNeXt model over various applications.},
@@ -3668,6 +3872,20 @@ publisher = {Springer International Publishing},
 title = {{Eigenspace Methods}},
 url = {http://link.springer.com/10.1007/978-3-030-03243-2{\_}711-1},
 year = {2020}
+}
+@article{Kuang2021,
+abstract = {Detecting early infarct (EI) plays an essential role in patient selection for reperfusion therapy in the management of acute ischemic stroke (AIS). EI volume at acute or hyper-acute stage can be measured using advanced pre-treatment imaging, such as MRI and CT perfusion. In this study, a novel multi-task learning approach, EIS-Net, is proposed to segment EI and score Alberta Stroke Program Early CT Score (ASPECTS) simultaneously on baseline non-contrast CT (NCCT) scans of AIS patients. The EIS-Net comprises of a 3D triplet convolutional neural network (T-CNN) for EI segmentation and a multi-region classification network for ASPECTS scoring. T-CNN has triple encoders with original NCCT, mirrored NCCT, and atlas as inputs, as well as one decoder. A comparison disparity block (CDB) is designed to extract and enhance image contexts. In the decoder, a multi-level attention gate module (MAGM) is developed to recalibrate the features of the decoder for both segmentation and classification tasks. Evaluations using a high-quality dataset comprising of baseline NCCT and concomitant diffusion weighted MRI (DWI) as reference standard of 260 patients with AIS show that the proposed EIS-Net can accurately segment EI. The EIS-Net segmented EI volume strongly correlates with EI volume on DWI (r=0.919), and the mean difference between the two volumes is 8.5 mL. For ASPECTS scoring, the proposed EIS-Net achieves an intraclass correlation coefficient of 0.78 for total 10-point ASPECTS and a kappa of 0.75 for dichotomized ASPECTS (≤ 4 vs. {\textgreater}4). Both EI segmentation and ASPECTS scoring tasks achieve state-of-the-art performances.},
+author = {Kuang, Hulin and Menon, Bijoy K and Sohn, Sung Il and Qiu, Wu},
+doi = {10.1016/j.media.2021.101984},
+issn = {1361-8423},
+journal = {Medical image analysis},
+month = {may},
+pages = {101984},
+pmid = {33676101},
+title = {{EIS-Net: Segmenting early infarct and scoring ASPECTS simultaneously on non-contrast CT of patients with acute ischemic stroke.}},
+url = {http://www.ncbi.nlm.nih.gov/pubmed/33676101},
+volume = {70},
+year = {2021}
 }
 @misc{docker,
 author = {Johnston, Scott},
@@ -4233,6 +4451,19 @@ url = {http://arxiv.org/abs/1902.04885},
 volume = {10},
 year = {2019}
 }
+@incollection{Kotia2021,
+abstract = {While deep learning systems have provided breakthroughs in several tasks in the medical domain, they are still limited by the problem of dependency on the availability of training data. To counter this limitation, there is active research ongoing in few shot learning. Few shot learning algorithms aim to overcome the data dependency by exploiting the information available from a very small amount of data. In medical imaging, due to the rare occurrence of some diseases, there is often a limitation on the available data, as a result, to which the success of few shot learning algorithms can prove to be a significant advancement. In this chapter, the background and working of few shot learning algorithms are explained. The problem statement for few shot classification and segmentation is described. There is then a detailed study of the problems faced in medical imaging related to the availability of limited data. After establishing context, the recent advances in the application of few shot learning to medical imaging tasks such as classification and segmentation are explored. The results of these applications are examined with a discussion on its future scope.},
+author = {Kotia, Jai and Kotwal, Adit and Bharti, Rishika and Mangrulkar, Ramchandra},
+booktitle = {Studies in Computational Intelligence},
+doi = {10.1007/978-3-030-50641-4_7},
+issn = {18609503},
+keywords = {Few Shot Learning,Image Classification,Image Segmentation,Medical Imaging,Meta Learning},
+pages = {107--132},
+publisher = {Springer},
+title = {{Few shot learning for medical imaging}},
+volume = {907},
+year = {2021}
+}
 @article{Mondal2018,
 abstract = {We address the problem of segmenting 3D multi-modal medical images in scenarios where very few labeled examples are available for training. Leveraging the recent success of adversarial learning for semi-supervised segmentation, we propose a novel method based on Generative Adversarial Networks (GANs) to train a segmentation model with both labeled and unlabeled images. The proposed method prevents over-fitting by learning to discriminate between true and fake patches obtained by a generator network. Our work extends current adversarial learning approaches, which focus on 2D single-modality images, to the more challenging context of 3D volumes of multiple modalities. The proposed method is evaluated on the problem of segmenting brain MRI from the iSEG-2017 and MRBrainS 2013 datasets. Significant performance improvement is reported, compared to state-of-art segmentation networks trained in a fully-supervised manner. In addition, our work presents a comprehensive analysis of different GAN architectures for semi-supervised segmentation, showing recent techniques like feature matching to yield a higher performance than conventional adversarial training approaches. Our code is publicly available at https://github.com/arnab39/FewShot{\_}GAN-Unet3D},
 archivePrefix = {arXiv},
@@ -4284,6 +4515,21 @@ publisher = {Springer International Publishing},
 title = {{Fisher-Rao Metric}},
 url = {http://link.springer.com/10.1007/978-3-030-03243-2{\_}657-1},
 year = {2020}
+}
+@article{Scheie2006,
+abstract = {Combined loss of heterozygosity (LOH) on 1p and 19q is reported in 50{\%} to 90{\%} of oligodendroglial tumors and has emerged as a strong and favorable prognostic factor. Fluorescence in situ hybridization (FISH) and polymerase chain reaction (PCR) are the most widely used techniques. The aim of this study was to evaluate the reliability of FISH to predict LOH at 1p and 19q when performed on touch preparations from 40 oligodendroglial tumors, even if the majority of the nuclei showed chromosomal imbalance. PCR was used as the gold standard. The presence of none or one target signal was reported as FISH-LOH, whereas all other losses were defined as FISH-imbalance. The sum of nuclei with FISH-LOH and imbalance was calculated in each case (FISH-sum) and cut-off values were defined as the mean FISH-sum value in controls plus 3 standard deviations; 27.7{\%} for 1p and 33.2{\%} for 19q. These corresponded well with the optimal cut-off values for our data, calculated using the minimum error rate classification procedure (35.6{\%} for 1p and 33.1{\%} for 19q). Concurrent FISH and PCR results were encountered in 95{\%} for 1p and 87.5{\%} for 19q. FISH-sum was the best and simplest discriminating variable for correct classification of LOH status. Under these conditions, even a dominant population of nuclei showing FISH-imbalance represented an LOH status in the tumor cells. FISH on touch preparations is a quick and reliable method for 1p/19q testing, does not require normal DNA and can be easily performed in an immunohistochemistry unit. Copyright {\textcopyright} 2006 by Lippincott Williams {\&} Wilkins.},
+author = {Scheie, David and Andresen, Per Arne and Cvancarova, Milada and B{\o}, Anne Signe and Helseth, Eirik and Skullerud, Kari and Beiske, Klaus},
+doi = {10.1097/01.pas.0000213250.44822.2e},
+issn = {01475185},
+journal = {American Journal of Surgical Pathology},
+keywords = {19q,1p,FISH,LOH,Oligodendroglioma,Touch preparations},
+month = {jul},
+number = {7},
+pages = {828--837},
+pmid = {16819324},
+title = {{Fluorescence in situ hybridization (FISH) on touch preparations: A reliable method for detecting loss of heterozygosity at 1p and 19q in oligodendroglial tumors}},
+volume = {30},
+year = {2006}
 }
 @article{Kachelrieß2006,
 abstract = {In the beginning of 2004 medical spiral-CT scanners that acquire up to 64 slices simultaneously became available. Most manufacturers use a straightforward acquisition principle, namely an x-ray focus rotating on a circular path and an opposing cylindrical detector whose rotational center coincides with the x-ray focus. The 64-slice scanner available to us, a Somatom Sensation 64 spiral cone-beam CT scanner (Siemens, Medical Solutions, Forchheim, Germany), makes use of a flying focal spot (FFS) that allows for view-by-view deflections of the focal spot in the rotation direction (aFFS) and in the z-direction (zFFS) with the goal of reducing aliasing artifacts. The FFS feature doubles the sampling density in the radial direction (channel direction, aFFS) and in the longitudinal direction (detector row direction or z-direction, zFFS). The cost of increased radial and azimuthal sampling is a two- or four-fold reduction of azimuthal sampling (angular sampling). To compensate for the potential reduction of azimuthal sampling the scanner simply increases the number of detector read-outs (readings) per rotation by a factor two or four. Then, up to four detector readings contribute to what we define as one view or one projection. A significant reduction of in-plane aliasing and of aliasing in the z -direction can be expected. Especially the latter is of importance to spiral CT scans where aliasing is known to produce so-called windmill artifacts. We have derived and analyzed the optimal focal spot deflection values da and dz as they would ideally occur in our scanner. Based upon these we show how image reconstruction can be performed in general. A simulation study showing reconstructions of mathematical phantoms further provides evidence that image quality can be significantly improved with the FFS. Aliasing artifacts, that manifest as streaks emerging from high-contrast objects, and windmill artifacts are reduced by almost an order of magnitude with the FFS compared to a simulation without FFS. Patient images acquired with our 64-slice cone-beam CT scanner support these results. {\textcopyright} 2006 IEEE.},
@@ -4449,6 +4695,24 @@ number = {3},
 title = {{Generalizing from a Few Examples: A Survey on Few-shot Learning}},
 url = {http://arxiv.org/abs/1904.05046},
 volume = {53},
+year = {2020}
+}
+@article{Liu2020,
+abstract = {Outlier detection is an important topic in machine learning and has been used in a wide range of applications. In this paper, we approach outlier detection as a binary-classification issue by sampling potential outliers from a uniform reference distribution. However, due to the sparsity of data in high-dimensional space, a limited number of potential outliers may fail to provide sufficient information to assist the classifier in describing a boundary that can separate outliers from normal data effectively. To address this, we propose a novel Single-Objective Generative Adversarial Active Learning (SO-GAAL) method for outlier detection, which can directly generate informative potential outliers based on the mini-max game between a generator and a discriminator. Moreover, to prevent the generator from falling into the mode collapsing problem, the stop node of training should be determined when SO-GAAL is able to provide sufficient information. But without any prior information, it is extremely difficult for SO-GAAL. Therefore, we expand the network structure of SO-GAAL from a single generator to multiple generators with different objectives (MO-GAAL), which can generate a reasonable reference distribution for the whole dataset. We empirically compare the proposed approach with several state-of-the-art outlier detection methods on both synthetic and real-world datasets. The results show that MO-GAAL outperforms its competitors in the majority of cases, especially for datasets with various cluster types or high irrelevant variable ratio.},
+archivePrefix = {arXiv},
+arxivId = {1809.10816},
+author = {Liu, Yezheng and Li, Zhe and Zhou, Chong and Jiang, Yuanchun and Sun, Jianshan and Wang, Meng and He, Xiangnan},
+doi = {10.1109/TKDE.2019.2905606},
+eprint = {1809.10816},
+issn = {15582191},
+journal = {IEEE Transactions on Knowledge and Data Engineering},
+keywords = {Outlier detection,curse of dimensionality,generate potential outliers,generative adversarial active learning,mode collapsing problem,multiple-objective generative adversarial active learning},
+month = {aug},
+number = {8},
+pages = {1517--1528},
+publisher = {IEEE Computer Society},
+title = {{Generative Adversarial Active Learning for Unsupervised Outlier Detection}},
+volume = {32},
 year = {2020}
 }
 @article{Yi2019,
@@ -4803,6 +5067,21 @@ title = {{Heterogeneity Loss to Handle Intersubject and Intrasubject Variability
 url = {http://arxiv.org/abs/2003.03295},
 year = {2020}
 }
+@article{Zhang2021a,
+abstract = {In lifelong machine learning (LML) systems, consecutive new tasks from changing circumstances are learned and added to the system. However, sufficiently labeled data are indispensable for extracting intertask relationships before transferring knowledge in classical supervised LML systems. Inadequate labels may deteriorate the performance due to the poor initial approximation. In order to extend the typical LML system, we propose a novel hierarchical lifelong learning algorithm (HLLA) consisting of two following layers: 1) the knowledge layer consisted of shared representations and integrated knowledge basis at the bottom and 2) parameterized hypothesis functions with features at the top. Unlabeled data is leveraged in HLLA for pretraining of the shared representations. We also have considered a selective inherited updating method to deal with intertask distribution shifting. Experiments show that our HLLA method outperforms many other recent LML algorithms, especially when dealing with higher dimensional, lower correlation, and fewer labeled data problems.},
+author = {Zhang, Tong and Su, Guoxi and Qing, Chunmei and Xu, Xiangmin and Cai, Bolun and Xing, Xiaofen},
+doi = {10.1109/TSMC.2018.2884996},
+issn = {21682232},
+journal = {IEEE Transactions on Systems, Man, and Cybernetics: Systems},
+keywords = {Deep learning,image processing,lifelong machine learning (LML),representations learning},
+month = {feb},
+number = {2},
+pages = {1004--1014},
+publisher = {Institute of Electrical and Electronics Engineers Inc.},
+title = {{Hierarchical Lifelong Learning by Sharing Representations and Integrating Hypothesis}},
+volume = {51},
+year = {2021}
+}
 @inproceedings{Liu2017,
 abstract = {We explore efficient neural architecture search methods and show that a simple yet powerful evolutionary algorithm can discover new architectures with excellent performance. Our approach combines a novel hierarchical genetic representation scheme that imitates the modularized design pattern commonly adopted by human experts, and an expressive search space that supports complex topologies. Our algorithm efficiently discovers architectures that outperform a large number of manually designed models for image classification, obtaining top-1 error of 3.6{\%} on CIFAR-10 and 20.3{\%} when transferred to ImageNet, which is competitive with the best existing neural architecture search approaches. We also present results using random search, achieving 0.3{\%} less top-1 accuracy on CIFAR-10 and 0.1{\%} less on ImageNet whilst reducing the search time from 36 hours down to 1 hour.},
 archivePrefix = {arXiv},
@@ -4882,6 +5161,20 @@ year = {2018}
 title = {{Home - LOLA11 - Grand Challenge}},
 url = {https://lola11.grand-challenge.org/Home/}
 }
+@article{Graham2019,
+abstract = {Nuclear segmentation and classification within Haematoxylin {\&} Eosin stained histology images is a fundamental prerequisite in the digital pathology work-flow. The development of automated methods for nuclear segmentation and classification enables the quantitative analysis of tens of thousands of nuclei within a whole-slide pathology image, opening up possibilities of further analysis of large-scale nuclear morphometry. However, automated nuclear segmentation and classification is faced with a major challenge in that there are several different types of nuclei, some of them exhibiting large intra-class variability such as the nuclei of tumour cells. Additionally, some of the nuclei are often clustered together. To address these challenges, we present a novel convolutional neural network for simultaneous nuclear segmentation and classification that leverages the instance-rich information encoded within the vertical and horizontal distances of nuclear pixels to their centres of mass. These distances are then utilised to separate clustered nuclei, resulting in an accurate segmentation, particularly in areas with overlapping instances. Then, for each segmented instance the network predicts the type of nucleus via a devoted up-sampling branch. We demonstrate state-of-the-art performance compared to other methods on multiple independent multi-tissue histology image datasets. As part of this work, we introduce a new dataset of Haematoxylin {\&} Eosin stained colorectal adenocarcinoma image tiles, containing 24,319 exhaustively annotated nuclei with associated class labels.},
+archivePrefix = {arXiv},
+arxivId = {1812.06499},
+author = {Graham, Simon and Vu, Quoc Dang and Raza, Shan E.Ahmed and Azam, Ayesha and Tsang, Yee Wah and Kwak, Jin Tae and Rajpoot, Nasir},
+doi = {10.1016/j.media.2019.101563},
+eprint = {1812.06499},
+issn = {13618423},
+journal = {Medical Image Analysis},
+keywords = {Computational pathology,Deep learning,Nuclear classification,Nuclear segmentation},
+title = {{Hover-Net: Simultaneous segmentation and classification of nuclei in multi-tissue histology images}},
+volume = {58},
+year = {2019}
+}
 @article{Graham2018,
 abstract = {Nuclear segmentation and classification within Haematoxylin {\&} Eosin stained histology images is a fundamental prerequisite in the digital pathology work-flow. The development of automated methods for nuclear segmentation and classification enables the quantitative analysis of tens of thousands of nuclei within a whole-slide pathology image, opening up possibilities of further analysis of large-scale nuclear morphometry. However, automated nuclear segmentation and classification is faced with a major challenge in that there are several different types of nuclei, some of them exhibiting large intra-class variability such as the nuclei of tumour cells. Additionally, some of the nuclei are often clustered together. To address these challenges, we present a novel convolutional neural network for simultaneous nuclear segmentation and classification that leverages the instance-rich information encoded within the vertical and horizontal distances of nuclear pixels to their centres of mass. These distances are then utilised to separate clustered nuclei, resulting in an accurate segmentation, particularly in areas with overlapping instances. Then, for each segmented instance the network predicts the type of nucleus via a devoted up-sampling branch. We demonstrate state-of-the-art performance compared to other methods on multiple independent multi-tissue histology image datasets. As part of this work, we introduce a new dataset of Haematoxylin {\&} Eosin stained colorectal adenocarcinoma image tiles, containing 24,319 exhaustively annotated nuclei with associated class labels.},
 annote = {{\_}eprint: 1812.06499},
@@ -4897,20 +5190,6 @@ url = {http://arxiv.org/abs/1812.06499},
 volume = {abs/1812.0},
 year = {2018}
 }
-@article{Graham2019,
-abstract = {Nuclear segmentation and classification within Haematoxylin {\&} Eosin stained histology images is a fundamental prerequisite in the digital pathology work-flow. The development of automated methods for nuclear segmentation and classification enables the quantitative analysis of tens of thousands of nuclei within a whole-slide pathology image, opening up possibilities of further analysis of large-scale nuclear morphometry. However, automated nuclear segmentation and classification is faced with a major challenge in that there are several different types of nuclei, some of them exhibiting large intra-class variability such as the nuclei of tumour cells. Additionally, some of the nuclei are often clustered together. To address these challenges, we present a novel convolutional neural network for simultaneous nuclear segmentation and classification that leverages the instance-rich information encoded within the vertical and horizontal distances of nuclear pixels to their centres of mass. These distances are then utilised to separate clustered nuclei, resulting in an accurate segmentation, particularly in areas with overlapping instances. Then, for each segmented instance the network predicts the type of nucleus via a devoted up-sampling branch. We demonstrate state-of-the-art performance compared to other methods on multiple independent multi-tissue histology image datasets. As part of this work, we introduce a new dataset of Haematoxylin {\&} Eosin stained colorectal adenocarcinoma image tiles, containing 24,319 exhaustively annotated nuclei with associated class labels.},
-archivePrefix = {arXiv},
-arxivId = {1812.06499},
-author = {Graham, Simon and Vu, Quoc Dang and Raza, Shan E.Ahmed and Azam, Ayesha and Tsang, Yee Wah and Kwak, Jin Tae and Rajpoot, Nasir},
-doi = {10.1016/j.media.2019.101563},
-eprint = {1812.06499},
-issn = {13618423},
-journal = {Medical Image Analysis},
-keywords = {Computational pathology,Deep learning,Nuclear classification,Nuclear segmentation},
-title = {{Hover-Net: Simultaneous segmentation and classification of nuclei in multi-tissue histology images}},
-volume = {58},
-year = {2019}
-}
 @book{Pequegnat2011,
 address = {Boston, MA},
 doi = {10.1007/978-1-4419-1454-5},
@@ -4920,16 +5199,6 @@ publisher = {Springer US},
 title = {{How to Write a Successful Research Grant Application}},
 url = {http://link.springer.com/10.1007/978-1-4419-1454-5},
 year = {2011}
-}
-@book{Hering2019,
-address = {Berlin, Heidelberg},
-author = {Hering, Heike},
-doi = {10.1007/978-3-662-58107-0},
-isbn = {978-3-662-58105-6},
-publisher = {Springer Berlin Heidelberg},
-title = {{How to Write Technical Reports}},
-url = {http://link.springer.com/10.1007/978-3-662-58107-0},
-year = {2019}
 }
 @book{Hering2010,
 address = {Berlin, Heidelberg},
@@ -5245,6 +5514,18 @@ title = {{Intelligent feature engineering and ontological mapping of brain tumou
 volume = {1},
 year = {2019}
 }
+@article{Feng2021,
+abstract = {Many known supervised deep learning methods for medical image segmentation suffer an expensive burden of data annotation for model training. Recently, few-shot segmentation methods were proposed to alleviate this burden, but such methods often showed poor adaptability to the target tasks. By prudently introducing interactive learning into the few-shot learning strategy, we develop a novel few-shot segmentation approach called Interactive Few-shot Learning (IFSL), which not only addresses the annotation burden of medical image segmentation models but also tackles the common issues of the known few-shot segmentation methods. First, we design a new few-shot segmentation structure, called Medical Prior-based Few-shot Learning Network (MPrNet), which uses only a few annotated samples (e.g., 10 samples) as support images to guide the segmentation of query images without any pre-training. Then, we propose an Interactive Learning-based Test Time Optimization Algorithm (IL-TTOA) to strengthen our MPrNet on the fly for the target task in an interactive fashion. To our best knowledge, our IFSL approach is the first to allow few-shot segmentation models to be optimized and strengthened on the target tasks in an interactive and controllable manner. Experiments on four few-shot segmentation tasks show that our IFSL approach outperforms the state-of-the-art methods by more than 20{\%} in the DSC metric. Specifically, the interactive optimization algorithm (IL-TTOA) further contributes {\&}{\#}x007E;10{\%} DSC improvement for the few-shot segmentation models.},
+author = {Feng, Ruiwei and Zheng, Xiangshang and Gao, Tianxiang and Chen, Jintai and Wang, Wenzhe and Chen, Danny Z. and Wu, Jian},
+doi = {10.1109/TMI.2021.3060551},
+issn = {1558254X},
+journal = {IEEE Transactions on Medical Imaging},
+keywords = {Annotations,Biomedical imaging,Deep learning,Few-shot Learning,Image segmentation,Interactive Learning,Limited Supervision,Medical Image Segmentation,Optimization,Task analysis,Training},
+pmid = {33606628},
+publisher = {Institute of Electrical and Electronics Engineers Inc.},
+title = {{Interactive Few-shot Learning: Limited Supervision, Better Medical Image Segmentation}},
+year = {2021}
+}
 @inproceedings{Pace2015,
 abstract = {We present an interactive algorithm to segment the heart chambers and epicardial surfaces, including the great vessel walls, in pediatric cardiac MRI of congenital heart disease. Accurate whole-heart segmentation is necessary to create patient-specific 3D heart models for surgical planning in the presence of complex heart defects. Anatomical variability due to congenital defects precludes fully automatic atlas-based segmentation. Our interactive segmentation method exploits expert segmentations of a small set of short-axis slice regions to automatically delineate the remaining volume using patch-based segmentation. We also investigate the potential of active learning to automatically solicit user input in areas where segmentation error is likely to be high. Validation is performed on four subjects with double outlet right ventricle, a severe congenital heart defect. We show that strategies asking the user to manually segment regions of interest within short-axis slices yield higher accuracy with less user input than those querying entire short-axis slices.},
 author = {Pace, Danielle F. and Dalca, Adrian V. and Geva, Tal and Powell, Andrew J. and Moghari, Mehdi H. and Golland, Polina},
@@ -5411,6 +5692,23 @@ url = {http://ieeexplore.ieee.org/document/7014242/},
 volume = {34},
 year = {2015}
 }
+@article{Tustison2014,
+abstract = {Many studies of the human brain have explored the relationship between cortical thickness and cognition, phenotype, or disease. Due to the subjectivity and time requirements in manual measurement of cortical thickness, scientists have relied on robust software tools for automation which facilitate the testing and refinement of neuroscientific hypotheses. The most widely used tool for cortical thickness studies is the publicly available, surface-based FreeSurfer package. Critical to the adoption of such tools is a demonstration of their reproducibility, validity, and the documentation of specific implementations that are robust across large, diverse imaging datasets. To this end, we have developed the automated, volume-based Advanced Normalization Tools (ANTs) cortical thickness pipeline comprising well-vetted components such as SyGN (multivariate template construction), SyN (image registration), N4 (bias correction), Atropos ( n-tissue segmentation), and DiReCT (cortical thickness estimation). In this work, we have conducted the largest evaluation of automated cortical thickness measures in publicly available data, comparing FreeSurfer and ANTs measures computed on 1205 images from four open data sets (IXI, MMRR, NKI, and OASIS), with parcellation based on the recently proposed Desikan-Killiany-Tourville (DKT) cortical labeling protocol. We found good scan-rescan repeatability with both FreeSurfer and ANTs measures. Given that such assessments of precision do not necessarily reflect accuracy or an ability to make statistical inferences, we further tested the neurobiological validity of these approaches by evaluating thickness-based prediction of age and gender. ANTs is shown to have a higher predictive performance than FreeSurfer for both of these measures. In promotion of open science, we make all of our scripts, data, and results publicly available which complements the use of open image data sets and the open source availability of the proposed ANTs cortical thickness pipeline. {\textcopyright} 2014 Elsevier Inc.},
+author = {Tustison, Nicholas J. and Cook, Philip A. and Klein, Arno and Song, Gang and Das, Sandhitsu R. and Duda, Jeffrey T. and Kandel, Benjamin M. and van Strien, Niels and Stone, James R. and Gee, James C. and Avants, Brian B.},
+doi = {10.1016/j.neuroimage.2014.05.044},
+file = {:C$\backslash$:/Users/qinka/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Tustison et al. - 2014 - Large-scale evaluation of ANTs and FreeSurfer cortical thickness measurements.pdf:pdf},
+issn = {10959572},
+journal = {NeuroImage},
+keywords = {Advanced Normalization Tools,Age prediction,Gender prediction,MRI,Open science,Scientific reproducibility},
+month = {oct},
+pages = {166--179},
+pmid = {24879923},
+publisher = {Academic Press Inc.},
+title = {{Large-scale evaluation of ANTs and FreeSurfer cortical thickness measurements}},
+url = {https://pubmed.ncbi.nlm.nih.gov/24879923/},
+volume = {99},
+year = {2014}
+}
 @inproceedings{Real2017,
 abstract = {Neural networks have proven effective at solving difficult problems but designing their architectures can be challenging, even for image classification problems alone. Our goal is to minimize human participation, so we employ evolutionary algorithms to discover such networks automatically. Despite significant computational requirements, we show that it is now possible to evolve models with accuracies within the range of those published in the last year. Specifically, we employ simple evolutionary techniques at unprecedented scales to discover models for the CIFAR-10 and CIFAR-100 datasets, starting from trivial initial conditions and reaching accuracies of 94.6{\%} (95.6{\%} for ensemble) and 77.0{\%}, respectively. To do this, we use novel and intuitive mutation operators that navigate large search spaces; we stress that no human participation is required once evolution starts and that the output is a fully-trained model. Throughout this work, we place special emphasis on the repeatability of results, the variability in the outcomes and the computational requirements.},
 archivePrefix = {arXiv},
@@ -5542,6 +5840,18 @@ title = {{Learning spatiotemporal features with 3D convolutional networks}},
 volume = {2015 Inter},
 year = {2015}
 }
+@misc{Na2019,
+abstract = {While tasks could come with varying number of instances in realistic settings, the existing meta-learning approaches for few-shot classfication assume even task distributions where the number of instances for each task and class are fixed. Due to such restriction, they learn to equally utilize the meta-knowledge across all the tasks, even when the number of instances per task and class largely varies. Moreover, they do not consider distributional difference in unseen tasks at the meta-test time, on which the meta-knowledge may have varying degree of usefulness depending on the task relatedness. To overcome these limitations, we propose a novel meta-learning model that adaptively balances the effect of the meta-learning and task-specific learning, and also class-specific learning within each task. Through the learning of the balancing variables, we can decide whether to obtain a solution close to the initial parameter or far from it. We formulate this objective into a Bayesian inference framework and solve it using variational inference. Our Bayesian Task-Adaptive Meta-Learning (Bayesian-TAML) significantly outperforms existing meta-learning approaches on benchmark datasets for both few-shot and realistic class- and task-imbalanced datasets, with especially higher gains on the latter.},
+archivePrefix = {arXiv},
+arxivId = {1905.12917},
+author = {Na, Donghyun and Lee, Hae Beom and Kim, Saehoon and Park, Minseop and Yang, Eunho and Hwang, Sung Ju},
+booktitle = {arXiv},
+eprint = {1905.12917},
+issn = {23318422},
+month = {sep},
+title = {{Learning to balance: Bayesian meta-learning for imbalanced and out-of-distribution tasks}},
+year = {2019}
+}
 @article{Swiderska-Chadaj2019,
 abstract = {The immune system is of critical importance in the development of cancer. The evasion of destruction by the immune system is one of the emerging hallmarks of cancer. We have built a dataset of 171,166 manually annotated CD3+ and CD8+ cells, which we used to train deep learning algorithms for automatic detection of lymphocytes in histopathology images to better quantify immune response. Moreover, we investigate the effectiveness of four deep learning based methods when different subcompartments of the whole-slide image are considered: normal tissue areas, areas with immune cell clusters, and areas containing artifacts. We have compared the proposed methods in breast, colon and prostate cancer tissue slides collected from nine different medical centers. Finally, we report the results of an observer study on lymphocyte quantification, which involved four pathologists from different medical centers, and compare their performance with the automatic detection. The results give insights on the applicability of the proposed methods for clinical use. U-Net obtained the highest performance with an F1-score of 0.78 and the highest agreement with manual evaluation ($\kappa$=0.72), whereas the average pathologists agreement with reference standard was $\kappa$=0.64. The test set and the automatic evaluation procedure are publicly available at lyon19.grand-challenge.org.},
 author = {Swiderska-Chadaj, Zaneta and Pinckaers, Hans and van Rijthoven, Mart and Balkenhol, Maschenka and Melnikova, Margarita and Geessink, Oscar and Manson, Quirine and Sherman, Mark and Polonia, Antonio and Parry, Jeremy and Abubakar, Mustapha and Litjens, Geert and van der Laak, Jeroen and Ciompi, Francesco},
@@ -5566,6 +5876,18 @@ issn = {10636919},
 pages = {8697--8710},
 title = {{Learning Transferable Architectures for Scalable Image Recognition}},
 year = {2018}
+}
+@article{Qin2021,
+abstract = {Training convolutional neural networks (CNNs) for segmentation of pulmonary airway, artery, and vein is challenging due to sparse supervisory signals caused by the severe class imbalance between tubular targets and background. We present a CNNs-based method for accurate airway and artery-vein segmentation in non-contrast computed tomography. It enjoys superior sensitivity to tenuous peripheral bronchioles, arterioles, and venules. The method first uses a feature recalibration module to make the best use of features learned from the neural networks. Spatial information of features is properly integrated to retain relative priority of activated regions, which benefits the subsequent channel-wise recalibration. Then, attention distillation module is introduced to reinforce representation learning of tubular objects. Fine-grained details in high-resolution attention maps are passing down from one layer to its previous layer recursively to enrich context. Anatomy prior of lung context map and distance transform map is designed and incorporated for better artery-vein differentiation capacity. Extensive experiments demonstrated considerable performance gains brought by these components. Compared with state-of-the-art methods, our method extracted much more branches while maintaining competitive overall segmentation performance. Codes and models are available at http://www.pami.sjtu.edu.cn/News/56.},
+author = {Qin, Yulei and Zheng, Hao and Gu, Yun and Huang, Xiaolin and Yang, Jie and Wang, Lihui and Yao, Feng and Zhu, Yue Min and Yang, Guang Zhong},
+doi = {10.1109/TMI.2021.3062280},
+issn = {1558254X},
+journal = {IEEE Transactions on Medical Imaging},
+keywords = {Arteries,Atmospheric modeling,Computed tomography,Convolution,Image segmentation,Task analysis,Veins,convolutional neural networks,image segmentation,lung},
+pages = {1--1},
+title = {{Learning Tubule-Sensitive CNNs for Pulmonary Airway and Artery-Vein Segmentation in CT}},
+url = {https://ieeexplore.ieee.org/document/9363945/},
+year = {2021}
 }
 @article{Li2018c,
 abstract = {When building a unified vision system or gradually adding new apabilities to a system, the usual assumption is that training data for all tasks is always available. However, as the number of tasks grows, storing and retraining on such data becomes infeasible. A new problem arises where we add new capabilities to a Convolutional Neural Network (CNN), but the training data for its existing capabilities are unavailable. We propose our Learning without Forgetting method, which uses only new task data to train the network while preserving the original capabilities. Our method performs favorably compared to commonly used feature extraction and fine-tuning adaption techniques and performs similarly to multitask learning that uses original task data we assume unavailable. A more surprising observation is that Learning without Forgetting may be able to replace fine-tuning with similar old and new task datasets for improved new task performance.},
@@ -5613,6 +5935,20 @@ title = {{Lie Algebra}},
 url = {http://link.springer.com/10.1007/978-3-030-03243-2{\_}871-1},
 year = {2020}
 }
+@article{Hong2020,
+abstract = {Benefiting from the rapid development of big data and high-performance computing, more data is available and more tasks could be solved by machine learning now. Even so, it is still difficult to maximum the power of big data due to each dataset is isolated with others. Although open source datasets are available, algorithms' performance is asymmetric with the data volume. Hence, the AI community wishes to raise a symmetric continuous learning architecture which can automatically learn and adapt to different tasks. Such a learning architecture also is commonly called as lifelong machine learning (LML). This learning paradigm could manage the learning process and accumulate meta-knowledge by itself during learning different tasks. The meta-knowledge is shared among all tasks symmetrically to help them to improve performance. With the growth of meta-knowledge, the performance of each task is expected to be better and better. In order to demonstrate the application of lifelong machine learning, this paper proposed a novel and symmetric lifelong learning approach for sentiment classification as an example to show how it adapts different domains and keeps efficiency meanwhile.},
+author = {Hong, Xianbin and Guan, Sheng Uei and Man, Ka Lok and Wong, Prudence W.H.},
+doi = {10.3390/SYM12050852},
+issn = {20738994},
+journal = {Symmetry},
+keywords = {Continuous learning,Lifelong machine learning,Natural language processing,Sentiment classification},
+month = {may},
+number = {5},
+publisher = {MDPI AG},
+title = {{Lifelong machine learning architecture for classification}},
+volume = {12},
+year = {2020}
+}
 @article{Dugre2019,
 abstract = {Objective: It has long been assumed that paranoid ideation may stem from an aberrant limbic response to threatening stimuli. However, results from functional neuroimaging studies using negative emotional stimuli have failed to confirm this assumption. One of the potential reasons for the lack of effect is that study participants with psychosis may display aberrant brain responses to neutral material rather than to threatening stimuli. The authors conducted a functional neuroimaging meta-analysis to test this hypothesis. Methods: A literature search was performed with PubMed, Google Scholar, and Embase to identify functional neuroimaging studies examining brain responses to neutral material in patients with psychosis. A total of 23 studies involving schizophrenia patients were retrieved. Using t-maps of peak coordinates to calculate effect sizes, a random-effects model meta-analysis was performed with the anisotropic effect-size version of Seed-based d Mapping software. Results: In schizophrenia patients relative to healthy control subjects, increased activations were observed in the left and right amygdala and parahippocampus and the left putamen, hippocampus, and insula in response to neutral stimuli. Conclusions: Given that several limbic regions were found to be more activated in schizophrenia patients than in control subjects, the results of this meta-analysis strongly suggest that these patients confer aberrant emotional significance to nonthreatening stimuli. In theory, this abnormal brain reactivity may fuel delusional thoughts. Studies are needed in individuals at risk of psychosis to determine whether aberrant limbic reactivity to neutral stimuli is an early neurofunctional marker of psychosis vulnerability.},
 author = {Dugr{\'{e}}, Jules R. and Bitar, Nathalie and Dumais, Alexandre and Potvin, St{\'{e}}phane},
@@ -5652,6 +5988,14 @@ title = {{Linear Programmingモデルの簡単な応用について}},
 url = {http://link.springer.com/10.1007/978-3-030-03243-2{\_}648-1},
 volume = {5},
 year = {1955}
+}
+@misc{Sylvain2019,
+abstract = {In this work we study locality and compositionality in the context of learning representations for Zero Shot Learning (ZSL). In order to well-isolate the importance of these properties in learned representations, we impose the additional constraint that, differently from most recent work in ZSL, no pre-training on different datasets (e.g. ImageNet) is performed. The results of our experiments show how locality, in terms of small parts of the input, and compositionality, i.e. how well can the learned representations be expressed as a function of a smaller vocabulary, are both deeply related to generalization and motivate the focus on more local-aware models in future research directions for representation learning.},
+author = {Sylvain, Tristan and Petrini, Linda and Hjelm, R. Devon},
+booktitle = {arXiv},
+issn = {23318422},
+title = {{Locality and compositionality in zero-shot learning}},
+year = {2019}
 }
 @article{Carass2017a,
 abstract = {The data presented in this article is related to the research article entitled “Longitudinal multiple sclerosis lesion segmentation: Resource and challenge” (Carass et al., 2017) [1]. In conjunction with the 2015 International Symposium on Biomedical Imaging, we organized a longitudinal multiple sclerosis (MS) lesion segmentation challenge providing training and test data to registered participants. The training data consists of five subjects with a mean of 4.4 (±0.55) time-points, and test data of fourteen subjects with a mean of 4.4 (±0.67) time-points. All 82 data sets had the white matter lesions associated with multiple sclerosis delineated by two human expert raters. The training data including multi-modal scans and manually delineated lesion masks is available for download.1 In addition, the testing data is also being made available in conjunction with a website for evaluating the automated analysis of the testing data.},
@@ -5880,6 +6224,78 @@ year = {2020}
 @article{Li,
 author = {Li, Johann},
 title = {{Medical Image Datasets and Challenges for Machine Learning: A Review}}
+}
+@article{Aljundi2018,
+abstract = {Humans can learn in a continuous manner. Old rarely utilized knowledge can be overwritten by new incoming information while important, frequently used knowledge is prevented from being erased. In artificial learning systems, lifelong learning so far has focused mainly on accumulating knowledge over tasks and overcoming catastrophic forgetting. In this paper, we argue that, given the limited model capacity and the unlimited new information to be learned, knowledge has to be preserved or erased selectively. Inspired by neuroplasticity, we propose a novel approach for lifelong learning, coined Memory Aware Synapses (MAS). It computes the importance of the parameters of a neural network in an unsupervised and online manner. Given a new sample which is fed to the network, MAS accumulates an importance measure for each parameter of the network, based on how sensitive the predicted output function is to a change in this parameter. When learning a new task, changes to important parameters can then be penalized, effectively preventing important knowledge related to previous tasks from being overwritten. Further, we show an interesting connection between a local version of our method and Hebb's rule, which is a model for the learning process in the brain. We test our method on a sequence of object recognition tasks and on the challenging problem of learning an embedding for predicting {\textless}subject, predicate, object{\textgreater} triplets. We show state-of-the-art performance and, for the first time, the ability to adapt the importance of the parameters based on unlabeled data towards what the network needs (not) to forget, which may vary depending on test conditions.},
+archivePrefix = {arXiv},
+arxivId = {1711.09601},
+author = {Aljundi, Rahaf and Babiloni, Francesca and Elhoseiny, Mohamed and Rohrbach, Marcus and Tuytelaars, Tinne},
+doi = {10.1007/978-3-030-01219-9_9},
+eprint = {1711.09601},
+file = {:C$\backslash$:/Users/qinka/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Aljundi et al. - 2017 - Memory Aware Synapses Learning what (not) to forget.pdf:pdf},
+isbn = {9783030012182},
+issn = {16113349},
+journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+month = {nov},
+pages = {144--161},
+publisher = {Springer Verlag},
+title = {{Memory Aware Synapses: Learning What (not) to Forget}},
+url = {http://arxiv.org/abs/1711.09601},
+volume = {11207 LNCS},
+year = {2018}
+}
+@misc{Alet*2019,
+author = {Alet*, Ferran and Schneider*, Martin F. and Lozano-Perez, Tomas and Kaelbling, Leslie Pack},
+month = {sep},
+title = {{Meta-learning curiosity algorithms}},
+year = {2019}
+}
+@misc{Flennerhag2019,
+author = {Flennerhag, Sebastian and Rusu, Andrei A. and Pascanu, Razvan and Visin, Francesco and Yin, Hujun and Hadsell, Raia},
+month = {sep},
+title = {{Meta-Learning with Warped Gradient Descent}},
+year = {2019}
+}
+@misc{Yin2019,
+abstract = {The ability to learn new concepts with small amounts of data is a critical aspect of intelligence that has proven challenging for deep learning methods. Meta-learning has emerged as a promising technique for leveraging data from previous tasks to enable efficient learning of new tasks. However, most meta-learning algorithms implicitly require that the meta-training tasks be mutually-exclusive, such that no single model can solve all of the tasks at once. For example, when creating tasks for few-shot image classification, prior work uses a per-task random assignment of image classes to N-way classification labels. If this is not done, the meta-learner can ignore the task training data and learn a single model that performs all of the meta-training tasks zero-shot, but does not adapt effectively to new image classes. This requirement means that the user must take great care in designing the tasks, for example by shuffling labels or removing task identifying information from the inputs. In some domains, this makes meta-learning entirely inapplicable. In this paper, we address this challenge by designing a meta-regularization objective using information theory that places precedence on data-driven adaptation. This causes the meta-learner to decide what must be learned from the task training data and what should be inferred from the task testing input. By doing so, our algorithm can successfully use data from non-mutually-exclusive tasks to efficiently adapt to novel tasks. We demonstrate its applicability to both contextual and gradient-based meta-learning algorithms, and apply it in practical settings where applying standard meta-learning has been difficult. Our approach substantially outperforms standard meta-learning algorithms in these settings.},
+archivePrefix = {arXiv},
+arxivId = {1912.03820},
+author = {Yin, Mingzhang and Tucker, George and Zhou, Mingyuan and Levine, Sergey and Finn, Chelsea},
+booktitle = {arXiv},
+eprint = {1912.03820},
+issn = {23318422},
+month = {sep},
+title = {{Meta-learning without memorization}},
+year = {2019}
+}
+@misc{Yin2019a,
+author = {Yin, Mingzhang and Tucker, George and Zhou, Mingyuan and Levine, Sergey and Finn, Chelsea},
+month = {sep},
+title = {{Meta-Learning without Memorization}},
+year = {2019}
+}
+@article{Vanschoren2018,
+abstract = {Meta-learning, or learning to learn, is the science of systematically observing how different machine learning approaches perform on a wide range of learning tasks, and then learning from this experience, or meta-data, to learn new tasks much faster than otherwise possible. Not only does this dramatically speed up and improve the design of machine learning pipelines or neural architectures, it also allows us to replace hand-engineered algorithms with novel approaches learned in a data-driven way. In this chapter, we provide an overview of the state of the art in this fascinating and continuously evolving field.},
+archivePrefix = {arXiv},
+arxivId = {1810.03548},
+author = {Vanschoren, Joaquin},
+eprint = {1810.03548},
+file = {:C$\backslash$:/Users/qinka/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Vanschoren - 2018 - Meta-Learning A Survey.pdf:pdf},
+issn = {23318422},
+journal = {arXiv},
+month = {oct},
+publisher = {arXiv},
+title = {{Meta-Learning: A Survey}},
+url = {http://arxiv.org/abs/1810.03548},
+year = {2018}
+}
+@misc{Fakoor2019,
+abstract = {This paper introduces Meta-Q-Learning (MQL), a new off-policy algorithm for meta-Reinforcement Learning (meta-RL). MQL builds upon three simple ideas. First, we show that Q-learning is competitive with state of the art meta-RL algorithms if given access to a context variable that is a representation of the past trajectory. Second, using a multi-task objective to maximize the average reward across the training tasks is an effective method to meta-train RL policies. Third, past data from the meta-training replay buffer can be recycled to adapt the policy on a new task using off-policy updates. MQL draws upon ideas in propensity estimation to do so and thereby amplifies the amount of available data for adaptation. Experiments on standard continuous-control benchmarks suggest that MQL compares favorably with state of the art meta-RL algorithms.},
+author = {Fakoor, Rasool and Chaudhari, Pratik and Soatto, Stefano and Smola, Alexander J.},
+booktitle = {arXiv},
+issn = {23318422},
+title = {{Meta-Q-learning}},
+year = {2019}
 }
 @dataset{Commowick2018a,
 author = {Commowick, Olivier and Istace, Audrey and Kain, Michael and Laurent, Baptiste and Leray, Florent and Simon, Mathieu and Camarasu-Pop, Sorina and Girard, Pascal and Ameli, Roxana and Ferr{\'{e}}, Jean-Christophe and Kerbrat, Anne and Tourdias, Thomas and Cervenansky, Fr{\'{e}}d{\'{e}}ric and Glatard, Tristan and Beaumont, J{\'{e}}r{\'{e}}my and Doyle, Senan and Forbes, Florence and Knight, Jesse and Khademi, April and Mahbod, Amirreza and Wang, Chunliang and {Mc Kinley}, Richard and Wagner, Franca and Muschelli, John and Sweeney, Elizabeth and Roura, Eloy and Llad{\`{o}}, Xavier and Santos, Michel M and Santos, Wellington P and Silva-Filho, Abel G and Tomas-Fernandez, Xavier and Urien, H{\'{e}}l{\`{e}}ne and Bloch, Isabelle and Valverde, Sergi and Cabezas, Mariano and Vera-Olmos, Francisco Javier and Malpica, Norberto and Guttmann, Charles and Vukusic, Sandra and Edan, Gilles and Dojat, Michel and Styner, Martin and Warfield, Simon K and Cotton, Fran{\c{c}}ois and Barillot, Christian},
@@ -6144,6 +6560,18 @@ url = {http://iacl.ece.jhu.edu/index.php/MSChallenge},
 urldate = {2020-05-21},
 year = {2015}
 }
+@article{Aganj2021,
+abstract = {The use of multiple atlases is common in medical image segmentation. This typically requires deformable registration of the atlases (or the average atlas) to the new image, which is computationally expensive and susceptible to entrapment in local optima. We propose to instead consider the probability of all possible atlas-to-image transformations and compute the expected label value (ELV), thereby not relying merely on the transformation deemed “optimal” by the registration method. Moreover, we do so without actually performing deformable registration, thus avoiding the associated computational costs. We evaluate our ELV computation approach by applying it to brain, liver, and pancreas segmentation on datasets of magnetic resonance and computed tomography images.},
+author = {Aganj, Iman and Fischl, Bruce},
+doi = {10.1109/TMI.2021.3064661},
+issn = {0278-0062},
+journal = {IEEE Transactions on Medical Imaging},
+keywords = {Atlas,CT,Expected label value (ELV),MRI,Soft segmentation,Supervised image segmentation},
+pages = {1--1},
+title = {{Multi-Atlas Image Soft Segmentation via Computation of the Expected Label Value}},
+url = {https://ieeexplore.ieee.org/document/9373379/},
+year = {2021}
+}
 @article{Campello2020,
 author = {Campello and V{\'{i}}ctor, M.},
 journal = {IEEE Transactions on Medical Imaging},
@@ -6210,6 +6638,18 @@ title = {{Multimodal densenet}},
 url = {http://arxiv.org/abs/1811.07407},
 year = {2018}
 }
+@article{He2021,
+abstract = {Recently, automatic diagnostic approaches have been widely used to classify ocular diseases. Most of these approaches are based on a single imaging modality (e.g., fundus photography or optical coherence tomography (OCT)), which usually only reflect the oculopathy to a certain extent, and neglect the modality-specific information among different imaging modalities. This paper proposes a novel modality-specific attention network (MSAN) for multi-modal retinal image classification, which can effectively utilize the modality-specific diagnostic features from fundus and OCT images. The MSAN comprises two attention modules to extract the modality-specific features from fundus and OCT images, respectively. Specifically, for the fundus image, ophthalmologists need to observe local and global pathologies at multiple scales (e.g., from microaneurysms at the micrometer level, optic disc at millimeter level to blood vessels through the whole eye). Therefore, we propose a multi-scale attention module to extract both the local and global features from fundus images. Moreover, large background regions exist in the OCT image, which is meaningless for diagnosis. Thus, a region-guided attention module is proposed to encode the retinal layer-related features and ignore the background in OCT images. Finally, we fuse the modality-specific features to form a multi-modal feature and train the multi-modal retinal image classification network. The fusion of modality-specific features allows the model to combine the advantages of fundus and OCT modality for a more accurate diagnosis. Experimental results on a clinically acquired multi-modal retinal image (fundus and OCT) dataset demonstrate that our MSAN outperforms other well-known single-modal and multi-modal retinal image classification methods.},
+author = {He, Xingxin and Deng, Ying and Fang, Leyuan and Peng, Qinghua},
+doi = {10.1109/TMI.2021.3059956},
+issn = {1558254X},
+journal = {IEEE Transactions on Medical Imaging},
+keywords = {Attention,Classification,Convolutional neural network,Fundus Photography,Multi-modal,Optical coherence tomography},
+pages = {1--1},
+title = {{Multi-Modal Retinal Image Classification with Modality-Specific Attention Network}},
+url = {https://ieeexplore.ieee.org/document/9363019/},
+year = {2021}
+}
 @article{Verma2020,
 author = {Verma, Ruchika and Kumar, Neeraj and Patil, Abhijeet and Kurian, Nikhil Cherian and Rane, Swapnil and Sethi, Amit},
 doi = {10.13140/RG.2.2.12290.02244},
@@ -6230,6 +6670,23 @@ title = {{Multiorgan segmentation using distance-aware adversarial networks}},
 volume = {6},
 year = {2019}
 }
+@article{Schmitz2019,
+abstract = {Histopathologic diagnosis is dependent on simultaneous information from a broad range of scales, ranging from nuclear aberrations (≈ O(0.1 µm)) over cellular structures (≈ O(10 µm)) to the global tissue architecture (' O(1 mm)). Bearing in mind which information is employed by human pathologists, we introduce and examine different strategies for the integration of multiple and widely separate spatial scales into common U-Net-based architectures. Based on this, we present a family of new, end-to-end trainable, multi-scale multi-encoder fully-convolutional neural networks for human modus operandi-inspired computer vision in histopathology.},
+archivePrefix = {arXiv},
+arxivId = {1909.10726},
+author = {Schmitz, R{\"{u}}diger and Madesta, Frederic and Nielsen, Maximilian and Werner, Ren{\'{e}} and R{\"{o}}sch, Thomas},
+doi = {10.1016/j.media.2021.101996},
+eprint = {1909.10726},
+issn = {23318422},
+journal = {arXiv},
+keywords = {Computer Vision,Deep learning,Fully-convolutional neural nets,Histology,Histopathology,Multi-scale,Segmentation},
+month = {may},
+pages = {101996},
+title = {{Multi-scale fully convolutional neural networks for histopathology image segmentation: From nuclear aberrations to the global tissue architecture}},
+url = {https://linkinghub.elsevier.com/retrieve/pii/S1361841521000426},
+volume = {70},
+year = {2019}
+}
 @article{Sun2021,
 abstract = {To better understand early brain development in health and disorder, it is critical to accurately segment infant brain magnetic resonance (MR) images into white matter (WM), gray matter (GM), and cerebrospinal fluid (CSF). Deep learning-based methods have achieved state-of-the-art performance; however, one of the major limitations is that the learning-based methods may suffer from the multi-site issue, that is, the models trained on a dataset from one site may not be applicable to the datasets acquired from other sites with different imaging protocols/scanners. To promote methodological development in the community, the iSeg-2019 challenge (http://iseg2019.web.unc.edu) provides a set of 6-month infant subjects from multiple sites with different protocols/scanners for the participating methods. Training/validation subjects are from UNC (MAP) and testing subjects are from UNC/UMN (BCP), Stanford University, and Emory University. By the time of writing, there are 30 automatic segmentation methods participated in the iSeg-2019. In this article, 8 top-ranked methods were reviewed by detailing their pipelines/implementations, presenting experimental results, and evaluating performance across different sites in terms of whole brain, regions of interest, and gyral landmark curves. We further pointed out their limitations and possible directions for addressing the multi-site issue. We find that multi-site consistency is still an open issue. We hope that the multi-site dataset in the iSeg-2019 and this review article will attract more researchers to address the challenging and critical multi-site issue in practice.},
 author = {Sun, Yue and Gao, Kun and Wu, Zhengwang and Li, Guannan and Zong, Xiaopeng and Lei, Zhihao and Wei, Ying and Ma, Jun and Yang, Xiaoping and Feng, Xue and Zhao, Li and {Le Phan}, Trung and Shin, Jitae and Zhong, Tao and Zhang, Yu and Yu, Lequan and Li, Caizi and Basnet, Ramesh and {Omair Ahmad}, M. and Swamy, M. N.S. and Ma, Wenao and Dou, Qi and Bui, Toan Duc and Noguera, Camilo Bermudez and Landman, Bennett and Gotlib, Ian H. and Humphreys, Kathryn L. and Shultz, Sarah and Li, Longchuan and Niu, Sijie and Lin, Weili and Jewells, Valerie and Shen, Dinggang and Li, Gang and Wang, Li},
@@ -6240,6 +6697,19 @@ keywords = {Brain,Image segmentation,Infant brain segmentation,Magnetic resonanc
 publisher = {Institute of Electrical and Electronics Engineers Inc.},
 title = {{Multi-Site Infant Brain Segmentation Algorithms: The iSeg-2019 Challenge}},
 year = {2021}
+}
+@article{Zhou2020a,
+abstract = {Tumor classification and segmentation are two important tasks for computer-aided diagnosis (CAD) using 3D automated breast ultrasound (ABUS) images. However, they are challenging due to the significant shape variation of breast tumors and the fuzzy nature of ultrasound images (e.g., low contrast and signal to noise ratio). Considering the correlation between tumor classification and segmentation, we argue that learning these two tasks jointly is able to improve the outcomes of both tasks. In this paper, we propose a novel multi-task learning framework for joint segmentation and classification of tumors in ABUS images. The proposed framework consists of two sub-networks: an encoder-decoder network for segmentation and a light-weight multi-scale network for classification. To account for the fuzzy boundaries of tumors in ABUS images, our framework uses an iterative training strategy to refine feature maps with the help of probability maps obtained from previous iterations. Experimental results based on a clinical dataset of 170 3D ABUS volumes collected from 107 patients indicate that the proposed multi-task framework improves tumor segmentation and classification over the single-task learning counterparts.},
+author = {Zhou, Yue and Chen, Houjin and Li, Yanfeng and Liu, Qin and Xu, Xuanang and Wang, Shu and Shen, Dinggang and Yap, Pew-Thian},
+doi = {10.1016/j.media.2020.101918},
+issn = {13618415},
+journal = {Medical Image Analysis},
+month = {may},
+pages = {101918},
+title = {{Multi-Task Learning for Segmentation and Classification of Tumors in 3D Automated Breast Ultrasound Images}},
+url = {https://linkinghub.elsevier.com/retrieve/pii/S1361841520302826},
+volume = {70},
+year = {2020}
 }
 @inproceedings{Zhuang2016,
 abstract = {Cardiac segmentation is commonly a prerequisite for functional analysis of the heart,such as to identify and quantify the infarcts and edema from the normal myocardium using the late-enhanced (LE) and T2-weighted MRI. The automatic delineation of myocardium is however challenging due to the heterogeneous intensity distributions and indistinct boundaries in the images. In this work,we present a multivariate mixture model (MvMM) for text classification,which combines the complementary information from multi-sequence (MS) cardiac MRI and perform the segmentation of them simultaneously. The expectation maximization (EM) method is adopted to estimate the segmentation and model parameters from the log-likelihood (LL) of the mixture model,where a probabilistic atlas is used for initialization. Furthermore,to correct the intra- and inter-image misalignments,we formulate the MvMM with transformations,which are embedded into the LL framework and thus can be optimized by the iterative conditional mode approach. We applied MvMM for segmentation of eighteen subjects with three sequences and obtained promising results. We compared with two conventional methods,and the improvements of segmentation performance on LE and T2 MRI were evident and statistically significant by MvMM.},
@@ -6266,23 +6736,6 @@ title = {{Multivariate Mixture Model for Myocardial Segmentation Combining Multi
 volume = {41},
 year = {2019}
 }
-@inproceedings{Tatarchenko2015a,
-abstract = {We present a convolutional network capable of inferring a 3D representation of a previously unseen object given a single image of this object. Concretely, the network can predict an RGB image and a depth map of the object as seen from an arbitrary view. Several of these depth maps fused together give a full point cloud of the object. The point cloud can in turn be transformed into a surface mesh. The network is trained on renderings of synthetic 3D models of cars and chairs. It successfully deals with objects on cluttered background and generates reasonable predictions for real images of cars.},
-archivePrefix = {arXiv},
-arxivId = {1511.06702},
-author = {Tatarchenko, Maxim and Dosovitskiy, Alexey and Brox, Thomas},
-booktitle = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
-doi = {10.1007/978-3-319-46478-7_20},
-eprint = {1511.06702},
-isbn = {9783319464770},
-issn = {16113349},
-keywords = {3D from single image,Convolutional networks,Deep learning},
-pages = {322--337},
-title = {{Multi-view 3D models from single images with a convolutional network}},
-url = {http://arxiv.org/abs/1511.06702},
-volume = {9911 LNCS},
-year = {2016}
-}
 @article{Tatarchenko2015,
 abstract = {We present a convolutional network capable of inferring a 3D representation of a previously unseen object given a single image of this object. Concretely, the network can predict an RGB image and a depth map of the object as seen from an arbitrary view. Several of these depth maps fused together give a full point cloud of the object. The point cloud can in turn be transformed into a surface mesh. The network is trained on renderings of synthetic 3D models of cars and chairs. It successfully deals with objects on cluttered background and generates reasonable predictions for real images of cars.},
 annote = {{\_}eprint: 1511.06702},
@@ -6294,6 +6747,23 @@ eprint = {1511.06702},
 isbn = {9783319464770},
 issn = {16113349},
 journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+keywords = {3D from single image,Convolutional networks,Deep learning},
+pages = {322--337},
+title = {{Multi-view 3D models from single images with a convolutional network}},
+url = {http://arxiv.org/abs/1511.06702},
+volume = {9911 LNCS},
+year = {2016}
+}
+@inproceedings{Tatarchenko2015a,
+abstract = {We present a convolutional network capable of inferring a 3D representation of a previously unseen object given a single image of this object. Concretely, the network can predict an RGB image and a depth map of the object as seen from an arbitrary view. Several of these depth maps fused together give a full point cloud of the object. The point cloud can in turn be transformed into a surface mesh. The network is trained on renderings of synthetic 3D models of cars and chairs. It successfully deals with objects on cluttered background and generates reasonable predictions for real images of cars.},
+archivePrefix = {arXiv},
+arxivId = {1511.06702},
+author = {Tatarchenko, Maxim and Dosovitskiy, Alexey and Brox, Thomas},
+booktitle = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+doi = {10.1007/978-3-319-46478-7_20},
+eprint = {1511.06702},
+isbn = {9783319464770},
+issn = {16113349},
 keywords = {3D from single image,Convolutional networks,Deep learning},
 pages = {322--337},
 title = {{Multi-view 3D models from single images with a convolutional network}},
@@ -6331,6 +6801,23 @@ month = {dec},
 title = {{MURA: Large dataset for abnormality detection in musculoskeletal radiographs}},
 url = {http://arxiv.org/abs/1712.06957},
 year = {2017}
+}
+@article{Yurt2019,
+abstract = {Multi-contrast MRI protocols increase the level of morphological information available for diagnosis. Yet, the number and quality of contrasts is limited in practice by various factors including scan time and patient motion. Synthesis of missing or corrupted contrasts can alleviate this limitation to improve clinical utility. Common approaches for multi-contrast MRI involve either one-to-one and many-to-one synthesis methods. One-to-one methods take as input a single source contrast, and they learn a latent representation sensitive to unique features of the source. Meanwhile, many-to-one methods receive multiple distinct sources, and they learn a shared latent representation more sensitive to common features across sources. For enhanced image synthesis, here we propose a multi-stream approach that aggregates information across multiple source images via a mixture of multiple one-to-one streams and a joint many-to-one stream. The shared feature maps generated in the many-to-one stream and the complementary feature maps generated in the one-to-one streams are combined with a fusion block. The location of the fusion block is adaptively modified to maximize task-specific performance. Qualitative and quantitative assessments on T1-, T2-, PD-weighted and FLAIR images clearly demonstrate the superior performance of the proposed method compared to previous state-of-the-art one-to-one and many-to-one methods.},
+archivePrefix = {arXiv},
+arxivId = {1909.11504},
+author = {Yurt, Mahmut and Dar, Salman U.H. and Erdem, Aykut and Erdem, Erkut and {\c{C}}ukur, Tolga},
+doi = {10.1016/j.media.2020.101944},
+eprint = {1909.11504},
+issn = {23318422},
+journal = {arXiv},
+keywords = {Generative adversarial network,Image synthesis,Magnetic resonance imaging (MRI),Multi-contrast,Multi-stream},
+month = {may},
+pages = {101944},
+title = {{MustGAN: Multi-stream generative adversarial networks for MR image synthesis}},
+url = {https://linkinghub.elsevier.com/retrieve/pii/S136184152030308X},
+volume = {70},
+year = {2019}
 }
 @article{Tustison2010,
 abstract = {A variant of the popular nonparametric nonuniform intensity normalization (N3) algorithm is proposed for bias field correction. Given the superb performance of N3 and its public availability, it has been the subject of several evaluation studies. These studies have demonstrated the importance of certain parameters associated with the B-spline least-squares fitting. We propose the substitution of a recently developed fast and robust B-spline approximation routine and a modified hierarchical optimization scheme for improved bias field correction over the original N3 algorithm. Similar to the N3 algorithm, we also make the source code, testing, and technical documentation of our contribution, which we denote as N4ITK, available to the public through the Insight Toolkit of the National Institutes of Health. Performance assessment is demonstrated using simulated data from the publicly available Brainweb database, hyperpolarized 3He lung image data, and 9.4T postmortem hippocampus data. {\textcopyright} 2006 IEEE.},
@@ -6694,6 +7181,35 @@ title = {{One Pixel Attack for Fooling Deep Neural Networks}},
 url = {http://arxiv.org/abs/1710.08864 http://dx.doi.org/10.1109/TEVC.2019.2890858},
 volume = {23},
 year = {2019}
+}
+@article{Shaban2017,
+abstract = {Low-shot learning methods for image classification support learning from sparse data. We extend these techniques to support dense semantic image segmentation. Specifically, we train a network that, given a small set of annotated images, produces parameters for a Fully Convolutional Network (FCN). We use this FCN to perform dense pixel-level prediction on a test image for the new semantic class. Our architecture shows a 25{\%} relative meanIoU improvement compared to the best baseline methods for one-shot segmentation on unseen classes in the PASCAL VOC 2012 dataset and is at least 3× faster. The code is publicly available at: https://github.com/lzzcd001/OSLSM.},
+archivePrefix = {arXiv},
+arxivId = {1709.03410},
+author = {Shaban, Amirreza and Bansal, Shray and Liu, Zhen and Essa, Irfan and Boots, Byron},
+eprint = {1709.03410},
+issn = {23318422},
+journal = {arXiv},
+month = {sep},
+title = {{One-shot learning for semantic segmentation}},
+url = {http://arxiv.org/abs/1709.03410},
+year = {2017}
+}
+@article{Fei-Fei2006,
+abstract = {Learning visual models of object categories notoriously requires hundreds or thousands of training examples. We show that it is possible to learn much information about a category from just one, or a handful, of images. The key insight is that, rather than learning from scratch, one can take advantage of knowledge coming from previously learned categories, no matter how different these categories might be. We explore a Bayesian implementation of this idea. Object categories are represented by probabilistic models. Prior knowledge is represented as a probability density function on the parameters of these models. The posterior model for an object category is obtained by updating the prior in the light of one or more observations. We test a simple implementation of our algorithm on a database of 101 diverse object categories. We compare category models learned by an implementation of our Bayesian approach to models learned from by Maximum Likelihood (ML) and Maximum A Posteriori (MAP) methods. We find that on a database of more than 100 categories, the Bayesian approach produces informative models when the number of training examples is too small for other methods to operate successfully. {\textcopyright} 2006 IEEE.},
+author = {Fei-Fei, Li and Fergus, Rob and Perona, Pietro},
+doi = {10.1109/TPAMI.2006.79},
+issn = {01628828},
+journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+keywords = {Few images,Learning,Object categories,Priors,Recognition,Unsupervised,Variational inference},
+month = {apr},
+number = {4},
+pages = {594--611},
+pmid = {16566508},
+title = {{One-shot learning of object categories}},
+url = {http://ieeexplore.ieee.org/document/1597116/},
+volume = {28},
+year = {2006}
 }
 @article{Marcus2007,
 abstract = {The Open Access Series of Imaging Studies is a series of magnetic resonance imaging data sets that is publicly available for study and analysis. The initial data set consists of a cross-sectional collection of 416 subjects aged 18 to 96 years. One hundred of the included subjects older than 60 years have been clinically diagnosed with very mild to moderate Alzheimer's disease. The subjects are all right-handed and include both men and women. For each subject, three or four individual T1-weighted magnetic resonance imaging scans obtained in single imaging sessions are included. Multiple within-session acquisitions provide extremely high contrast-to-noise ratio, making the data amenable to a wide range of analytic approaches including automated computational analysis. Additionally, a reliability data set is included containing 20 subjects without dementia imaged on a subsequent visit within 90 days of their initial session. Automated calculation of whole-brain volume and estimated total intracranial volume are presented to demonstrate use of the data for measuring differences associated with normal aging and Alzheimer's disease. {\textcopyright} 2007 Massachusetts Institute of Technology.},
@@ -7192,6 +7708,17 @@ url = {http://link.springer.com/10.1007/s10278-017-9984-3},
 volume = {30},
 year = {2017}
 }
+@article{An2021,
+abstract = {Predicting treatment medicines is a key aspect of many intelligent healthcare systems. It's a very challenging task due to the following reasons: (1) heterogeneous nature of EHR data that typically include laboratory results, treatment medicines, disease conditions, and demographic details collected from disparate sources; (2) complex correlations among medical sequences, including inter-correlations between sequences and temporal intra-correlations within each sequence; (3) temporal diversity of these correlations, which is highly affected by changing disease progression. We proposes a dual adaptive sequential network, entitled DASNet, to dynamically predict treatment medicines for patients. Specifically, DASNet comprises the following three components. Decomposed Adaptive Long Short-Term Memory network (DA-LSTM) is designed to capture the intra- and inter-correlations in multiple heterogeneous temporal sequences. Then, we develop an Attentive Meta learning Network (AT-MetaNet), which produces location- and context-specific dynamic weight parameters for DA-LSTM, thus enabling it to model the time-varying multi-level correlations. Finally, we employ an ATtentive Fusion Network (AT-FuNet) to retrieve historical information and collectively fuse heterogeneous data representation embeddings to predict treatment medicines. The results of extensive experiments on the public MIMIC-III dataset covering 11 medical conditions demonstrate that the proposed end-to-end model can achieve the state-of-the-art prediction performance while providing clinically useful insights.},
+author = {An, Yang and Zhang, Liang and Yang, Haoyu and Sun, Leilei and Jin, Bo and Liu, Chuanren and Yu, Ruiyun and Wei, Xiaopeng},
+doi = {10.1109/TKDE.2021.3052992},
+issn = {15582191},
+journal = {IEEE Transactions on Knowledge and Data Engineering},
+keywords = {Adaptive systems,Correlation,Diseases,Electronic Health Records,Medical diagnostic imaging,Medical services,Predictive models,Sequential Network,Task analysis,Temporal Correlations,Treatment Prediction},
+publisher = {IEEE Computer Society},
+title = {{Prediction of Treatment Medicines with Dual Adaptive Sequential Networks}},
+year = {2021}
+}
 @book{Kainz2017,
 address = {Cham},
 author = {Kainz, Bernhard and Bhatia, Kanwal and Vaillant, Ghislain and Zuluaga, Maria A.},
@@ -7252,6 +7779,17 @@ pages = {2047--2058},
 pmid = {30703016},
 title = {{Prior Information Guided Regularized Deep Learning for Cell Nucleus Detection}},
 volume = {38},
+year = {2019}
+}
+@article{Kim2019a,
+abstract = {This paper presents a privacy-preserving network oriented towards medical image analysis. Our approach is based on adversarial learning which encodes images to obfuscate the patient identity while preserving enough information for a target task. Our novel architecture is composed of three components: 1) an encoder network which removes identity-specific features from input medical images, 2) a discriminator network that attempts to identify the subject from the encoded images, 3) a medical image analysis network which analyzes the content of the encoded images (segmentation in our case). By simultaneously fooling the discriminator and optimizing the medical analysis network, the encoder learns to remove privacy-specific features while keeping those essentials for the target task. Our approach is illustrated on the problem of segmenting brain MRI from the large-scale Parkinson Progression Marker Initiative (PPMI) dataset. Using longitudinal data from PPMI, we show that the discriminator learns to heavily distort input images while allowing for highly accurate segmentation results.},
+author = {Kim, Bach Ngoc and Dolz, Jose and Jodoin, Pierre Marc and Desrosiers, Christian},
+doi = {10.1109/TMI.2021.3065727},
+issn = {23318422},
+journal = {arXiv},
+pages = {1--1},
+title = {{Privacy-Net: An adversarial approach for identity-obfuscated segmentation}},
+url = {https://ieeexplore.ieee.org/document/9376890/},
 year = {2019}
 }
 @book{Reinkemeyer2020,
@@ -7376,6 +7914,11 @@ publisher = {Apress},
 title = {{Python Projects for Beginners}},
 url = {http://link.springer.com/10.1007/978-1-4842-5355-7},
 year = {2020}
+}
+@misc{,
+title = {{python的nltk中文使用和学习资料汇总帮你入门提高{\_}糯米糊糊的专栏-CSDN博客{\_}nltk支持中文吗}},
+url = {https://blog.csdn.net/huyoo/article/details/12188573},
+urldate = {2021-03-12}
 }
 @article{Steiner2019,
 abstract = {Deep learning frameworks have often focused on either usability or speed, but not both. PyTorch is a machine learning library that shows that these two goals are in fact compatible: it provides an imperative and Pythonic programming style that supports code as a model, makes debugging easy and is consistent with other popular scientific computing libraries, while remaining efficient and supporting hardware accelerators such as GPUs. In this paper, we detail the principles that drove the implementation of PyTorch and how they are reflected in its architecture. We emphasize that every aspect of PyTorch is a regular Python program under the full control of its user. We also explain how the careful and pragmatic implementation of the key components of its runtime enables them to work together to achieve compelling performance. We demonstrate the efficiency of individual subsystems, as well as the overall speed of PyTorch on several common benchmarks.},
@@ -7516,6 +8059,20 @@ title = {{Real VR – Immersive Digital Reality}},
 url = {http://link.springer.com/10.1007/978-3-030-41816-8},
 volume = {11900},
 year = {2020}
+}
+@article{Zhou2021,
+abstract = {The ability to extend the field of view of laparoscopy images can help the surgeons to obtain a better understanding of the anatomical context. However, due to tissue deformation, complex camera motion and significant three-dimensional (3D) anatomical surface, image pixels may have non-rigid deformation and traditional mosaicking methods cannot work robustly for laparoscopy images in real-time. To solve this problem, a novel two-dimensional (2D) non-rigid simultaneous localization and mapping (SLAM) system is proposed in this paper, which is able to compensate for the deformation of pixels and perform image mosaicking in real-time. The key algorithm of this 2D non-rigid SLAM system is the expectation maximization and dual quaternion (EMDQ) algorithm, which can generate smooth and dense deformation field from sparse and noisy image feature matches in real-time. An uncertainty-based loop closing method has been proposed to reduce the accumulative errors. To achieve real-time performance, both CPU and GPU parallel computation technologies are used for dense mosaicking of all pixels. Experimental results on $\backslash$textit{\{}in vivo{\}} and synthetic data demonstrate the feasibility and accuracy of our non-rigid mosaicking method.},
+archivePrefix = {arXiv},
+arxivId = {2103.07414},
+author = {Zhou, Haoyin and Jayender, Jagadeesan},
+doi = {10.1109/TMI.2021.3065030},
+eprint = {2103.07414},
+issn = {0278-0062},
+journal = {IEEE Transactions on Medical Imaging},
+pages = {1--1},
+title = {{Real-time Nonrigid Mosaicking of Laparoscopy Images}},
+url = {http://arxiv.org/abs/2103.07414{\%}0Ahttp://dx.doi.org/10.1109/TMI.2021.3065030},
+year = {2021}
 }
 @article{VanRullen2018,
 abstract = {Although distinct categories are reliably decoded from fMRI brain responses, it has proved more difficult to distinguish visually similar inputs, such as different faces. Here, we apply a recently developed deep learning system to reconstruct face images from human fMRI. We trained a variational auto-encoder (VAE) neural network using a GAN (Generative Adversarial Network) unsupervised procedure over a large data set of celebrity faces. The auto-encoder latent space provides a meaningful, topologically organized 1024-dimensional description of each image. We then presented several thousand faces to human subjects, and learned a simple linear mapping between the multi-voxel fMRI activation patterns and the 1024 latent dimensions. Finally, we applied this mapping to novel test images, translating fMRI patterns into VAE latent codes, and codes into face reconstructions. The system not only performed robust pairwise decoding ({\textgreater}95{\%} correct), but also accurate gender classification, and even decoded which face was imagined, rather than seen.},
@@ -7825,6 +8382,19 @@ title = {{Scene Classification}},
 url = {http://link.springer.com/10.1007/978-3-030-03243-2{\_}799-1},
 year = {2020}
 }
+@article{Wu2021,
+author = {Wu, Huisi and Wang, Wei and Zhong, Jiafu and Lei, Baiying and Wen, Zhenkun and Qin, Jing},
+doi = {10.1016/j.media.2021.102025},
+issn = {13618415},
+journal = {Medical Image Analysis},
+month = {may},
+pages = {102025},
+publisher = {Elsevier},
+title = {{SCS-Net: A Scale and Context Sensitive Network for Retinal Vessel Segmentation}},
+url = {https://linkinghub.elsevier.com/retrieve/pii/S1361841521000712},
+volume = {70},
+year = {2021}
+}
 @article{Gehlot2020,
 abstract = {Acute lymphoblastic leukemia (ALL) is a pervasive pediatric white blood cell cancer across the globe. With the popularity of convolutional neural networks (CNNs), computer-aided diagnosis of cancer has attracted considerable attention. Such tools are easily deployable and are cost-effective. Hence, these can enable extensive coverage of cancer diagnostic facilities. However, the development of such a tool for ALL cancer was challenging so far due to the non-availability of a large training dataset. The visual similarity between the malignant and normal cells adds to the complexity of the problem. This paper discusses the recent release of a large dataset and presents a novel deep learning architecture for the classification of cell images of ALL cancer. The proposed architecture, namely, SDCT-AuxNet$\theta$ is a 2-module framework that utilizes a compact CNN as the main classifier in one module and a Kernel SVM as the auxiliary classifier in the other one. While CNN classifier uses features through bilinear-pooling, spectral-averaged features are used by the auxiliary classifier. Further, this CNN is trained on the stain deconvolved quantity images in the optical density domain instead of the conventional RGB images. A novel test strategy is proposed that exploits both the classifiers for decision making using the confidence scores of their predicted class labels. Elaborate experiments have been carried out on our recently released public dataset of 15114 images of ALL cancer and healthy cells to establish the validity of the proposed methodology that is also robust to subject-level variability. A weighted F1 score of 94.8{\%} is obtained that is best so far on this challenging dataset.},
 author = {Gehlot, Shiv and Gupta, Anubha and Gupta, Ritu},
@@ -8045,6 +8615,24 @@ pages = {1224--1244},
 publisher = {IEEE Computer Society},
 title = {{SIFT Meets CNN: A Decade Survey of Instance Retrieval}},
 volume = {40},
+year = {2018}
+}
+@article{Hsu2018,
+abstract = {Despite generative adversarial networks (GANs) can hallucinate photo-realistic high-resolution (HR) faces from low-resolution (LR) faces, they cannot guarantee preserving the identities of hallucinated HR faces, making the HR faces poorly recognizable. To address this problem, we propose a Siamese GAN (SiGAN) to reconstruct HR faces that visually resemble their corresponding identities. On top of a Siamese network, the proposed SiGAN consists of a pair of two identical generators and one discriminator. We incorporate reconstruction error and identity label information in the loss function of SiGAN in a pairwise manner. By iteratively optimizing the loss functions of the generator pair and discriminator of SiGAN, we cannot only achieve photo-realistic face reconstruction, but also ensures the reconstructed information is useful for identity recognition. Experimental results demonstrate that SiGAN significantly outperforms existing face hallucination GANs in objective face verification performance, while achieving photo-realistic reconstruction. Moreover, for input LR faces from unknown identities who are not included in training, SiGAN can still do a good job.},
+archivePrefix = {arXiv},
+arxivId = {1807.08370},
+author = {Hsu, Chih-Chung and Lin, Chia-Wen and Su, Weng-Tai and Cheung, Gene},
+doi = {10.1109/TIP.2019.2924554},
+eprint = {1807.08370},
+journal = {IEEE Transactions on Image Processing},
+keywords = {Face hallucination,convolutional neural networks,generative adversarial networks,generative model,super-resolution},
+month = {jul},
+number = {12},
+pages = {6225--6236},
+publisher = {Institute of Electrical and Electronics Engineers Inc.},
+title = {{SiGAN: Siamese Generative Adversarial Network for Identity-Preserving Face Hallucination}},
+url = {http://arxiv.org/abs/1807.08370 http://dx.doi.org/10.1109/TIP.2019.2924554},
+volume = {28},
 year = {2018}
 }
 @article{Li2019a,
@@ -8495,6 +9083,16 @@ publisher = {Springer International Publishing},
 title = {{Subspace Methods}},
 url = {http://link.springer.com/10.1007/978-3-030-03243-2{\_}708-1},
 year = {2020}
+}
+@book{Hering2019,
+address = {Berlin, Heidelberg},
+author = {Hering, Heike},
+doi = {10.1007/978-3-662-58107-0},
+isbn = {978-3-662-58105-6},
+publisher = {Springer Berlin Heidelberg},
+title = {{How to Write Technical Reports}},
+url = {http://link.springer.com/10.1007/978-3-662-58107-0},
+year = {2019}
 }
 @article{Cortes1995,
 abstract = {In this paper, the optimal margin algorithm is generalized$\backslash$nto non-separable problems by the introduction of slack$\backslash$nvariables in the statement of the optimization problem.},
@@ -9027,6 +9625,19 @@ pages = {135--149},
 title = {{Towards Automatically-Tuned Deep Neural Networks}},
 year = {2019}
 }
+@article{Kim2020a,
+abstract = {In order to achieve database-free (DB-free) vision-based monitoring on construction sites, this paper proposes a deep active learning approach that automatically evaluates the uncertainty of unlabeled training data, selects the most meaningful-to-learn instances, and eventually trains a deep learning model with the selected data. The proposed approach thus involves three sequential processes: (1) uncertainty evaluation of unlabeled data, (2) training data sampling and user-interactive labeling, and (3) model design and training. Two experiments were performed to validate the proposed method and confirm the positive effects of active learning: one experiment with active learning and the other without active learning (i.e., with random learning). In the experiments, the research team used a total of 17,000 images collected from actual construction sites. To achieve 80{\%} mean Average Precision (mAP) for construction object detection, the random learning method required 720 training images, whereas only 180 images were sufficient when exploiting active learning. Moreover, the active learning could build a deep learning model with the mAP of 93.0{\%}, while that of the random learning approach was limited to 89.1{\%}. These results demonstrate the potential of the proposed method and highlight the considerable positive impacts of uncertainty-based data sampling on the model's performance. This research can improve the practicality of vision-based monitoring on construction sites, and the findings of this study can provide valuable insights and new research directions for construction researchers.},
+author = {Kim, Jinwoo and Hwang, Jeongbin and Chi, Seokho and Seo, Joon Oh},
+doi = {10.1016/j.autcon.2020.103376},
+issn = {09265805},
+journal = {Automation in Construction},
+keywords = {Active learning,Construction site,Database-free,Deep learning,Object detection,Vision-based monitoring},
+month = {dec},
+publisher = {Elsevier B.V.},
+title = {{Towards database-free vision-based monitoring on construction sites: A deep active learning approach}},
+volume = {120},
+year = {2020}
+}
 @article{Choi2016,
 abstract = {Network quantization is one of network compression techniques to reduce the redundancy of deep neural networks. It reduces the number of distinct network parameter values by quantization in order to save the storage for them. In this paper, we design network quantization schemes that minimize the performance loss due to quantization given a compression ratio constraint. We analyze the quantitative relation of quantization errors to the neural network loss function and identify that the Hessian-weighted distortion measure is locally the right objective function for the optimization of network quantization. As a result, Hessian-weighted k-means clustering is proposed for clustering network parameters to quantize. When optimal variable-length binary codes, e.g., Huffman codes, are employed for further compression, we derive that the network quantization problem can be related to the entropy-constrained scalar quantization (ECSQ) problem in information theory and consequently propose two solutions of ECSQ for network quantization, i.e., uniform quantization and an iterative solution similar to Lloyd's algorithm. Finally, using the simple uniform quantization followed by Huffman coding, we show from our experiments that the compression ratios of 51.25, 22.17 and 40.65 are achievable for LeNet, 32-layer ResNet and AlexNet, respectively.},
 archivePrefix = {arXiv},
@@ -9152,6 +9763,20 @@ title = {{U-net: Convolutional networks for biomedical image segmentation}},
 url = {http://link.springer.com/10.1007/978-3-319-24574-4{\_}28},
 volume = {9351},
 year = {2015}
+}
+@article{Han2021,
+abstract = {Automated medical report generation in spine radiology, i.e., given spinal medical images and directly create radiologist-level diagnosis reports to support clinical decision making, is a novel yet fundamental study in the domain of artificial intelligence in healthcare. However, it is incredibly challenging because it is an extremely complicated task that involves visual perception and high-level reasoning processes. In this paper, we propose the neural-symbolic learning (NSL) framework that performs human-like learning by unifying deep neural learning and symbolic logical reasoning for the spinal medical report generation. Generally speaking, the NSL framework firstly employs deep neural learning to imitate human visual perception for detecting abnormalities of target spinal structures. Concretely, we design an adversarial graph network that interpolates a symbolic graph reasoning module into a generative adversarial network through embedding prior domain knowledge, achieving semantic segmentation of spinal structures with high complexity and variability. NSL secondly conducts human-like symbolic logical reasoning that realizes unsupervised causal effect analysis of detected entities of abnormalities through meta-interpretive learning. NSL finally fills these discoveries of target diseases into a unified template, successfully achieving a comprehensive medical report generation. When employed in a real-world clinical dataset, a series of empirical studies demonstrate its capacity on spinal medical report generation and show that our algorithm remarkably exceeds existing methods in the detection of spinal structures. These indicate its potential as a clinical tool that contributes to computer-aided diagnosis.},
+author = {Han, Zhongyi and Wei, Benzheng and Xi, Xiaoming and Chen, Bo and Yin, Yilong and Li, Shuo},
+doi = {10.1016/j.media.2020.101872},
+issn = {13618423},
+journal = {Medical Image Analysis},
+keywords = {Adversarial training,Graph neural network,Logical reasoning,Medical image analysis,Medical report generation},
+month = {jan},
+pmid = {33142134},
+publisher = {Elsevier B.V.},
+title = {{Unifying neural learning and symbolic reasoning for spinal medical report generation}},
+volume = {67},
+year = {2021}
 }
 @inproceedings{Boulch2017,
 abstract = {In this work, we describe a new, general, and efficient method for unstructured point cloud labeling. As the question of efficiently using deep Convolutional Neural Networks (CNNs) on 3D data is still a pending issue, we propose a framework which applies CNNs on multiple 2D image views (or snapshots) of the point cloud. The approach consists in three core ideas. (i) We pick many suitable snapshots of the point cloud. We generate two types of images: a Red-Green-Blue (RGB) view and a depth composite view containing geometric features. (ii) We then perform a pixel-wise labeling of each pair of 2D snapshots using fully convolutional networks. Different architectures are tested to achieve a profitable fusion of our heterogeneous inputs. (iii) Finally, we perform fast back-projection of the label predictions in the 3D space using efficient buffering to label every 3D point. Experiments show that our method is suitable for various types of point clouds such as Lidar or photogrammetric data.},
@@ -9426,6 +10051,15 @@ url = {https://doi.org/10.1109/IROS.2015.7353481},
 volume = {2015-Decem},
 year = {2015}
 }
+@techreport{Zhou2019,
+abstract = {Imitation learning allows agents to learn complex behaviors from demonstrations. However, learning a complex vision-based task may require an impractical number of demonstrations. Meta-imitation learning is a promising approach towards enabling agents to learn a new task from one or a few demonstrations by lever-aging experience from learning similar tasks. In the presence of task ambiguity or unobserved dynamics, demonstrations alone may not provide enough information ; an agent must also try the task to successfully infer a policy. In this work, we propose a method that can learn to learn from both demonstrations and trial-and-error experience with sparse reward feedback. In comparison to meta-imitation, this approach enables the agent to effectively and efficiently improve itself autonomously beyond the demonstration data. In comparison to meta-reinforcement learning, we can scale to substantially broader distributions of tasks, as the demonstration reduces the burden of exploration. Our experiments show that our method significantly outperforms prior approaches on a set of challenging, vision-based control tasks.},
+author = {Zhou, Allan and {Jang Google Brain}, Eric and Kappler, Daniel and Herzog, Alex X and Khansari, Mohi and Wohlart, Paul and Bai, Yunfei and Kalakrishnan, Mrinal X and Levine, Sergey and {Finn Google Brain}, Chelsea},
+file = {:C$\backslash$:/Users/qinka/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Zhou et al. - 2019 - WATCH, TRY, LEARN META-LEARNING FROM DEMONSTRATIONS AND REWARDS.pdf:pdf},
+month = {sep},
+title = {{WATCH, TRY, LEARN: META-LEARNING FROM DEMONSTRATIONS AND REWARDS}},
+url = {https://sites.google.com/view/watch-try-learn-project},
+year = {2019}
+}
 @inproceedings{Wang2018WeaklySL,
 abstract = {Histopathology image analysis serves as the gold standard for cancer diagnosis. Efficient and precise diagnosis is quite critical for the subsequent therapeutic treatment of patients. So far, computer-aided diagnosis has not been widely applied in pathological field yet as currently well-addressed tasks are only the tip of the iceberg. Whole slide image (WSI) classification is a quite challenging problem. First, the scarcity of annotations heavily impedes the pace of developing effective approaches. Pixelwise delineated annotations on WSIs are time consuming and tedious, which poses difficulties in building a large-scale training dataset. In addition, a variety of heterogeneous patterns of tumor existing in high magnification field are actually the major obstacle. Furthermore, a gigapixel scale WSI cannot be directly analyzed due to the immeasurable computational cost. How to design the weakly supervised learning methods to maximize the use of available WSI-level labels that can be readily obtained in clinical practice is quite appealing. To overcome these challenges, we present a weakly supervised approach in this article for fast and effective classification on the whole slide lung cancer images. Our method first takes advantage of a patch-based fully convolutional network (FCN) to retrieve discriminative blocks and provides representative deep features with high efficiency. Then, different context-aware block selection and feature aggregation strategies are explored to generate globally holistic WSI descriptor which is ultimately fed into a random forest (RF) classifier for the image-level prediction. To the best of our knowledge, this is the first study to exploit the potential of image-level labels along with some coarse annotations for weakly supervised learning. A large-scale lung cancer WSI dataset is constructed in this article for evaluation, which validates the effectiveness and feasibility of the proposed method. Extensive experiments demonstrate the superior performance of our method that surpasses the state-of-the-art approaches by a significant margin with an accuracy of 97.3{\%}. In addition, our method also achieves the best performance on the public lung cancer WSIs dataset from The Cancer Genome Atlas (TCGA). We highlight that a small number of coarse annotations can contribute to further accuracy improvement. We believe that weakly supervised learning methods have great potential to assist pathologists in histology image diagnosis in the near future.},
 author = {Wang, Xi and Chen, Hao and Gan, Caixia and Lin, Huangjing and Dou, Qi and Tsougenis, Efstratios and Huang, Qitao and Cai, Muyan and Heng, Pheng Ann},
@@ -9454,6 +10088,20 @@ pmid = {30798116},
 title = {{Weakly supervised mitosis detection in breast histopathology images using concentric loss}},
 volume = {53},
 year = {2019}
+}
+@article{Zhang2021b,
+abstract = {Accurate liver tumor segmentation without contrast agents (non-enhanced images) avoids the contrast-agent-associated time-consuming and high risk, which offers radiologists quick and safe assistance to diagnose and treat the liver tumor. However, without contrast agents enhancing, the tumor in liver images presents low contrast and even invisible to naked eyes. Thus the liver tumor segmentation from non-enhanced images is quite challenging. We propose a Weakly-Supervised Teacher-Student network (WSTS) to address the liver tumor segmentation in non-enhanced images by leveraging additional box-level-labeled data (labeled with a tumor bounding-box). WSTS deploys a weakly-supervised teacher-student framework (TCH-ST), namely, a Teacher Module learns to detect and segment the tumor in enhanced images during training, which facilitates a Student Module to detect and segment the tumor in non-enhanced images independently during testing. To detect the tumor accurately, the WSTS proposes a Dual-strategy DRL (DDRL), which develops two tumor detection strategies by creatively introducing a relative-entropy bias in the DRL. To accurately predict a tumor mask for the box-level-labeled enhanced image and thus improve tumor segmentation in non-enhanced images, the WSTS proposes an Uncertainty-Sifting Self-Ensembling (USSE). The USSE exploits the weakly-labeled data with self-ensembling and evaluates the prediction reliability with a newly-designed Multi-scale Uncertainty-estimation. WSTS is validated with a 2D MRI dataset, where the experiment achieves 83.11{\%} of Dice and 85.12{\%} of Recall in 50 patient testing data after training by 200 patient data (half amount data is box-level-labeled). Such a great result illustrates the competence of WSTS to segment the liver tumor from non-enhanced images. Thus, WSTS has excellent potential to assist radiologists by liver tumor segmentation without contrast-agents.},
+author = {Zhang, Dong and Chen, Bo and Chong, Jaron and Li, Shuo},
+doi = {10.1016/j.media.2021.102005},
+issn = {13618423},
+journal = {Medical Image Analysis},
+keywords = {Deep reinforcement learning,Liver tumor segmentation,Self-ensembling,Teacher-student,Uncertainty-estimation},
+month = {may},
+pages = {102005},
+title = {{Weakly-Supervised teacher-Student network for liver tumor segmentation from non-enhanced images}},
+url = {https://linkinghub.elsevier.com/retrieve/pii/S1361841521000517},
+volume = {70},
+year = {2021}
 }
 @book{Mardan2019,
 address = {Berkeley, CA},
@@ -9623,4 +10271,9 @@ year = {1970}
 title = {{可爱的 Python: 自然语言工具包入门}},
 url = {https://www.ibm.com/developerworks/cn/linux/l-cpnltk/},
 urldate = {2021-03-10}
+}
+@misc{,
+title = {{使用nltk处理中文语料（1）- 统计相关{\_}amao1998的博客-CSDN博客{\_}nltk 中文}},
+url = {https://blog.csdn.net/amao1998/article/details/81562223},
+urldate = {2021-03-12}
 }
