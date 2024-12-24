@@ -227,3 +227,5 @@ TSWLatexianTemp*
 
 .vscode
 export
+
+*.pdf
