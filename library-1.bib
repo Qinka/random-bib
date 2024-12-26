@@ -11830,6 +11830,77 @@ MSC Codes 68U10},
   publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
 }
 
+@Article{art/BadrinarayananV_201712,
+  author    = {Badrinarayanan, Vijay and Kendall, Alex and Cipolla, Roberto},
+  journal   = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  title     = {SegNet: A Deep Convolutional Encoder-Decoder Architecture for Image Segmentation},
+  year      = {2017},
+  issn      = {1939-3539},
+  month     = dec,
+  number    = {12},
+  pages     = {2481--2495},
+  volume    = {39},
+  doi       = {10.1109/tpami.2016.2644615},
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+}
+
+@Article{art/ChenW_201807,
+  author        = {Chen, Wanli and Zhang, Yue and He, Junjun and Qiao, Yu and Chen, Yifan and Shi, Hongjian and Tang, Xiaoying},
+  title         = {Prostate Segmentation using 2D Bridged U-net},
+  year          = {2018},
+  month         = jul,
+  abstract      = {In this paper, we focus on three problems in deep learning based medical image segmentation. Firstly, U-net, as a popular model for medical image segmentation, is difficult to train when convolutional layers increase even though a deeper network usually has a better generalization ability because of more learnable parameters. Secondly, the exponential ReLU (ELU), as an alternative of ReLU, is not much different from ReLU when the network of interest gets deep. Thirdly, the Dice loss, as one of the pervasive loss functions for medical image segmentation, is not effective when the prediction is close to ground truth and will cause oscillation during training. To address the aforementioned three problems, we propose and validate a deeper network that can fit medical image datasets that are usually small in the sample size. Meanwhile, we propose a new loss function to accelerate the learning process and a combination of different activation functions to improve the network performance. Our experimental results suggest that our network is comparable or superior to state-of-the-art methods.},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.1807.04459},
+  eprint        = {1807.04459},
+  file          = {:art_ChenW_201807 - Prostate Segmentation Using 2D Bridged U Net.pdf:PDF},
+  keywords      = {Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences},
+  primaryclass  = {cs.CV},
+  publisher     = {arXiv},
+}
+
+@InBook{art/ZhouZ_2018,
+  author    = {Zhou, Zongwei and Rahman Siddiquee, Md Mahfuzur and Tajbakhsh, Nima and Liang, Jianming},
+  pages     = {3--11},
+  publisher = {Springer International Publishing},
+  title     = {UNet++: A Nested U-Net Architecture for Medical Image Segmentation},
+  year      = {2018},
+  isbn      = {9783030008895},
+  booktitle = {Deep Learning in Medical Image Analysis and Multimodal Learning for Clinical Decision Support},
+  doi       = {10.1007/978-3-030-00889-5_1},
+  issn      = {1611-3349},
+}
+
+@Article{art/McConnellN_202312,
+  author    = {McConnell, Niccolò and Ndipenoch, Nchongmaje and Cao, Yu and Miron, Alina and Li, Yongmin},
+  journal   = {Neurocomputing},
+  title     = {Exploring advanced architectural variations of nnUNet},
+  year      = {2023},
+  issn      = {0925-2312},
+  month     = dec,
+  pages     = {126837},
+  volume    = {560},
+  doi       = {10.1016/j.neucom.2023.126837},
+  publisher = {Elsevier BV},
+}
+
+@Article{art/ChenJ_202102,
+  author        = {Chen, Jieneng and Lu, Yongyi and Yu, Qihang and Luo, Xiangde and Adeli, Ehsan and Wang, Yan and Lu, Le and Yuille, Alan L. and Zhou, Yuyin},
+  title         = {TransUNet: Transformers Make Strong Encoders for Medical Image Segmentation},
+  year          = {2021},
+  month         = feb,
+  abstract      = {Medical image segmentation is an essential prerequisite for developing healthcare systems, especially for disease diagnosis and treatment planning. On various medical image segmentation tasks, the u-shaped architecture, also known as U-Net, has become the de-facto standard and achieved tremendous success. However, due to the intrinsic locality of convolution operations, U-Net generally demonstrates limitations in explicitly modeling long-range dependency. Transformers, designed for sequence-to-sequence prediction, have emerged as alternative architectures with innate global self-attention mechanisms, but can result in limited localization abilities due to insufficient low-level details. In this paper, we propose TransUNet, which merits both Transformers and U-Net, as a strong alternative for medical image segmentation. On one hand, the Transformer encodes tokenized image patches from a convolution neural network (CNN) feature map as the input sequence for extracting global contexts. On the other hand, the decoder upsamples the encoded features which are then combined with the high-resolution CNN feature maps to enable precise localization. We argue that Transformers can serve as strong encoders for medical image segmentation tasks, with the combination of U-Net to enhance finer details by recovering localized spatial information. TransUNet achieves superior performances to various competing methods on different medical applications including multi-organ segmentation and cardiac segmentation. Code and models are available at https://github.com/Beckschen/TransUNet.},
+  archiveprefix = {arXiv},
+  copyright     = {Creative Commons Attribution 4.0 International},
+  doi           = {10.48550/ARXIV.2102.04306},
+  eprint        = {2102.04306},
+  file          = {:art_ChenJ_202102 - TransUNet_ Transformers Make Strong Encoders for Medical Image Segmentation.pdf:PDF},
+  keywords      = {Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences},
+  primaryclass  = {cs.CV},
+  publisher     = {arXiv},
+}
+
 @Comment{jabref-meta: VersionDBStructure:1;}
 
 @Comment{jabref-meta: databaseType:bibtex;}
