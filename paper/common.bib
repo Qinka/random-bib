@@ -1,5 +1,3 @@
-% DBID: 75npbmptgok89pp2ib108mp6au
-
 @Article{art/GuiJ_201309,
   author    = {Gui, Jie and Hu, Rongxiang and Zhao, Zhongqiu and Jia, Wei},
   journal   = {International Journal of Computer Mathematics},
@@ -787,18 +785,6 @@
   pmid     = {31841950},
 }
 
-@Article{art/RedmonJ_201804,
-  author        = {Redmon, Joseph and Farhadi, Ali},
-  title         = {{YOLOv3: An Incremental Improvement}},
-  year          = {2018},
-  month         = {apr},
-  abstract      = {We present some updates to YOLO! We made a bunch of little design changes to make it better. We also trained this new network that's pretty swell. It's a little bigger than last time but more accurate. It's still fast though, don't worry. At 320x320 YOLOv3 runs in 22 ms at 28.2 mAP, as accurate as SSD but three times faster. When we look at the old .5 IOU mAP detection metric YOLOv3 is quite good. It achieves 57.9 mAP@50 in 51 ms on a Titan X, compared to 57.5 mAP@50 in 198 ms by RetinaNet, similar performance but 3.8x faster. As always, all the code is online at https://pjreddie.com/yolo/},
-  archiveprefix = {arXiv},
-  arxivid       = {1804.02767},
-  eprint        = {1804.02767},
-  url           = {http://arxiv.org/abs/1804.02767},
-}
-
 @Article{art/CholletF_201710,
   author        = {Chollet, Fran{\c{c}}ois},
   journal       = {Proceedings - 30th IEEE Conference on Computer Vision and Pattern Recognition, CVPR 2017},
@@ -898,25 +884,6 @@
   eprint        = {1612.01105},
   isbn          = {9781538604571},
   url           = {http://arxiv.org/abs/1612.01105},
-}
-
-@Article{art/ChenL_201802,
-  author        = {Chen, Liang Chieh and Zhu, Yukun and Papandreou, George and Schroff, Florian and Adam, Hartwig},
-  journal       = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
-  title         = {{Encoder-decoder with atrous separable convolution for semantic image segmentation}},
-  year          = {2018},
-  issn          = {16113349},
-  month         = {feb},
-  pages         = {833--851},
-  volume        = {11211 LNCS},
-  abstract      = {Spatial pyramid pooling module or encode-decoder structure are used in deep neural networks for semantic segmentation task. The former networks are able to encode multi-scale contextual information by probing the incoming features with filters or pooling operations at multiple rates and multiple effective fields-of-view, while the latter networks can capture sharper object boundaries by gradually recovering the spatial information. In this work, we propose to combine the advantages from both methods. Specifically, our proposed model, DeepLabv3+, extends DeepLabv3 by adding a simple yet effective decoder module to refine the segmentation results especially along object boundaries. We further explore the Xception model and apply the depthwise separable convolution to both Atrous Spatial Pyramid Pooling and decoder modules, resulting in a faster and stronger encoder-decoder network. We demonstrate the effectiveness of the proposed model on PASCAL VOC 2012 and Cityscapes datasets, achieving the test set performance of 89% and 82.1% without any post-processing. Our paper is accompanied with a publicly available reference implementation of the proposed models in Tensorflow at https://github.com/tensorflow/models/tree/master/research/deeplab.},
-  archiveprefix = {arXiv},
-  arxivid       = {1802.02611},
-  doi           = {10.1007/978-3-030-01234-2_49},
-  eprint        = {1802.02611},
-  isbn          = {9783030012335},
-  keywords      = {Depthwise separable convolution,Encoder-decoder,Semantic image segmentation,Spatial pyramid pooling},
-  url           = {http://arxiv.org/abs/1802.02611},
 }
 
 @InProceedings{art/IslamJ_2018,
@@ -11525,6 +11492,69 @@ MSC Codes 68U10},
   keywords      = {Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences},
   primaryclass  = {cs.CV},
   publisher     = {arXiv},
+}
+
+@Article{art/LiR_2022,
+  author    = {Li, Rui and Zheng, Shunyi and Zhang, Ce and Duan, Chenxi and Su, Jianlin and Wang, Libo and Atkinson, Peter M.},
+  journal   = {IEEE Transactions on Geoscience and Remote Sensing},
+  title     = {Multiattention Network for Semantic Segmentation of Fine-Resolution Remote Sensing Images},
+  year      = {2022},
+  issn      = {1558-0644},
+  pages     = {1--13},
+  volume    = {60},
+  doi       = {10.1109/tgrs.2021.3093977},
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+}
+
+@Article{art/XiaoT_201807,
+  author        = {Xiao, Tete and Liu, Yingcheng and Zhou, Bolei and Jiang, Yuning and Sun, Jian},
+  title         = {Unified Perceptual Parsing for Scene Understanding},
+  year          = {2018},
+  month         = jul,
+  abstract      = {Humans recognize the visual world at multiple levels: we effortlessly categorize scenes and detect objects inside, while also identifying the textures and surfaces of the objects along with their different compositional parts. In this paper, we study a new task called Unified Perceptual Parsing, which requires the machine vision systems to recognize as many visual concepts as possible from a given image. A multi-task framework called UPerNet and a training strategy are developed to learn from heterogeneous image annotations. We benchmark our framework on Unified Perceptual Parsing and show that it is able to effectively segment a wide range of concepts from images. The trained networks are further applied to discover visual knowledge in natural scenes. Models are available at \url{https://github.com/CSAILVision/unifiedparsing}.},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.1807.10221},
+  eprint        = {1807.10221},
+  file          = {:art_XiaoT_201807 - Unified Perceptual Parsing for Scene Understanding.pdf:PDF:http\://arxiv.org/pdf/1807.10221v1},
+  keywords      = {Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences},
+  primaryclass  = {cs.CV},
+  publisher     = {arXiv},
+}
+
+@Article{art/XieE_202105,
+  author        = {Xie, Enze and Wang, Wenhai and Yu, Zhiding and Anandkumar, Anima and Alvarez, Jose M. and Luo, Ping},
+  title         = {SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers},
+  year          = {2021},
+  month         = may,
+  abstract      = {We present SegFormer, a simple, efficient yet powerful semantic segmentation framework which unifies Transformers with lightweight multilayer perception (MLP) decoders. SegFormer has two appealing features: 1) SegFormer comprises a novel hierarchically structured Transformer encoder which outputs multiscale features. It does not need positional encoding, thereby avoiding the interpolation of positional codes which leads to decreased performance when the testing resolution differs from training. 2) SegFormer avoids complex decoders. The proposed MLP decoder aggregates information from different layers, and thus combining both local attention and global attention to render powerful representations. We show that this simple and lightweight design is the key to efficient segmentation on Transformers. We scale our approach up to obtain a series of models from SegFormer-B0 to SegFormer-B5, reaching significantly better performance and efficiency than previous counterparts. For example, SegFormer-B4 achieves 50.3% mIoU on ADE20K with 64M parameters, being 5x smaller and 2.2% better than the previous best method. Our best model, SegFormer-B5, achieves 84.0% mIoU on Cityscapes validation set and shows excellent zero-shot robustness on Cityscapes-C. Code will be released at: github.com/NVlabs/SegFormer.},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.2105.15203},
+  eprint        = {2105.15203},
+  file          = {:art_XieE_202105 - SegFormer_ Simple and Efficient Design for Semantic Segmentation with Transformers.pdf:PDF:http\://arxiv.org/pdf/2105.15203v3},
+  keywords      = {Computer Vision and Pattern Recognition (cs.CV), Machine Learning (cs.LG), FOS: Computer and information sciences},
+  primaryclass  = {cs.CV},
+  publisher     = {arXiv},
+}
+
+@Article{art/ChenL_201802,
+  author        = {Chen, Liang Chieh and Zhu, Yukun and Papandreou, George and Schroff, Florian and Adam, Hartwig},
+  journal       = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+  title         = {Encoder-decoder with atrous separable convolution for semantic image segmentation},
+  year          = {2018},
+  issn          = {16113349},
+  month         = {feb},
+  pages         = {833--851},
+  volume        = {11211 LNCS},
+  abstract      = {Spatial pyramid pooling module or encode-decoder structure are used in deep neural networks for semantic segmentation task. The former networks are able to encode multi-scale contextual information by probing the incoming features with filters or pooling operations at multiple rates and multiple effective fields-of-view, while the latter networks can capture sharper object boundaries by gradually recovering the spatial information. In this work, we propose to combine the advantages from both methods. Specifically, our proposed model, DeepLabv3+, extends DeepLabv3 by adding a simple yet effective decoder module to refine the segmentation results especially along object boundaries. We further explore the Xception model and apply the depthwise separable convolution to both Atrous Spatial Pyramid Pooling and decoder modules, resulting in a faster and stronger encoder-decoder network. We demonstrate the effectiveness of the proposed model on PASCAL VOC 2012 and Cityscapes datasets, achieving the test set performance of 89% and 82.1% without any post-processing. Our paper is accompanied with a publicly available reference implementation of the proposed models in Tensorflow at https://github.com/tensorflow/models/tree/master/research/deeplab.},
+  archiveprefix = {arXiv},
+  arxivid       = {1802.02611},
+  doi           = {10.1007/978-3-030-01234-2_49},
+  eprint        = {1802.02611},
+  isbn          = {9783030012335},
+  keywords      = {Depthwise separable convolution,Encoder-decoder,Semantic image segmentation,Spatial pyramid pooling},
+  url           = {http://arxiv.org/abs/1802.02611},
 }
 
 @Comment{jabref-meta: VersionDBStructure:1;}
