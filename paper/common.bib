@@ -11557,6 +11557,58 @@ MSC Codes 68U10},
   url           = {http://arxiv.org/abs/1802.02611},
 }
 
+@Article{art/SudreC_201707,
+  author        = {Sudre, Carole H and Li, Wenqi and Vercauteren, Tom and Ourselin, Sébastien and Cardoso, M. Jorge},
+  title         = {Generalised Dice overlap as a deep learning loss function for highly unbalanced segmentations},
+  year          = {2017},
+  issn          = {1611-3349},
+  month         = jul,
+  pages         = {240--248},
+  abstract      = {Deep-learning has proved in recent years to be a powerful tool for image analysis and is now widely used to segment both 2D and 3D medical images. Deep-learning segmentation frameworks rely not only on the choice of network architecture but also on the choice of loss function. When the segmentation process targets rare observations, a severe class imbalance is likely to occur between candidate labels, thus resulting in sub-optimal performance. In order to mitigate this issue, strategies such as the weighted cross-entropy function, the sensitivity function or the Dice loss function, have been proposed. In this work, we investigate the behavior of these loss functions and their sensitivity to learning rate tuning in the presence of different rates of label imbalance across 2D and 3D segmentation tasks. We also propose to use the class re-balancing properties of the Generalized Dice overlap, a known metric for segmentation assessment, as a robust and accurate deep-learning loss function for unbalanced tasks.},
+  archiveprefix = {arXiv},
+  booktitle     = {Deep Learning in Medical Image Analysis and Multimodal Learning for Clinical Decision Support},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.1007/978-3-319-67558-9_28},
+  eprint        = {1707.03237},
+  file          = {:art_SudreC_201707 - Generalised Dice Overlap As a Deep Learning Loss Function for Highly Unbalanced Segmentations.pdf:PDF},
+  isbn          = {9783319675589},
+  keywords      = {Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences},
+  primaryclass  = {cs.CV},
+  publisher     = {Springer International Publishing},
+}
+
+@Article{art/SalehiS_201706,
+  author        = {Salehi, Seyed Sadegh Mohseni and Erdogmus, Deniz and Gholipour, Ali},
+  title         = {Tversky loss function for image segmentation using 3D fully convolutional deep networks},
+  year          = {2017},
+  month         = jun,
+  abstract      = {Fully convolutional deep neural networks carry out excellent potential for fast and accurate image segmentation. One of the main challenges in training these networks is data imbalance, which is particularly problematic in medical imaging applications such as lesion segmentation where the number of lesion voxels is often much lower than the number of non-lesion voxels. Training with unbalanced data can lead to predictions that are severely biased towards high precision but low recall (sensitivity), which is undesired especially in medical applications where false negatives are much less tolerable than false positives. Several methods have been proposed to deal with this problem including balanced sampling, two step training, sample re-weighting, and similarity loss functions. In this paper, we propose a generalized loss function based on the Tversky index to address the issue of data imbalance and achieve much better trade-off between precision and recall in training 3D fully convolutional deep neural networks. Experimental results in multiple sclerosis lesion segmentation on magnetic resonance images show improved F2 score, Dice coefficient, and the area under the precision-recall curve in test data. Based on these results we suggest Tversky loss function as a generalized framework to effectively train deep neural networks.},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.1706.05721},
+  eprint        = {1706.05721},
+  file          = {:art_SalehiS_201706 - Tversky Loss Function for Image Segmentation Using 3D Fully Convolutional Deep Networks.pdf:PDF},
+  keywords      = {Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences},
+  primaryclass  = {cs.CV},
+  publisher     = {arXiv},
+}
+
+@Article{art/LinT_201708,
+  author        = {Lin, Tsung-Yi and Goyal, Priya and Girshick, Ross and He, Kaiming and Dollár, Piotr},
+  title         = {Focal Loss for Dense Object Detection},
+  year          = {2017},
+  month         = aug,
+  abstract      = {The highest accuracy object detectors to date are based on a two-stage approach popularized by R-CNN, where a classifier is applied to a sparse set of candidate object locations. In contrast, one-stage detectors that are applied over a regular, dense sampling of possible object locations have the potential to be faster and simpler, but have trailed the accuracy of two-stage detectors thus far. In this paper, we investigate why this is the case. We discover that the extreme foreground-background class imbalance encountered during training of dense detectors is the central cause. We propose to address this class imbalance by reshaping the standard cross entropy loss such that it down-weights the loss assigned to well-classified examples. Our novel Focal Loss focuses training on a sparse set of hard examples and prevents the vast number of easy negatives from overwhelming the detector during training. To evaluate the effectiveness of our loss, we design and train a simple dense detector we call RetinaNet. Our results show that when trained with the focal loss, RetinaNet is able to match the speed of previous one-stage detectors while surpassing the accuracy of all existing state-of-the-art two-stage detectors. Code is at: https://github.com/facebookresearch/Detectron.},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.1708.02002},
+  eprint        = {1708.02002},
+  file          = {:art_LinT_201708 - Focal Loss for Dense Object Detection.pdf:PDF},
+  keywords      = {Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences},
+  primaryclass  = {cs.CV},
+  publisher     = {arXiv},
+}
+
 @Comment{jabref-meta: VersionDBStructure:1;}
 
 @Comment{jabref-meta: databaseType:bibtex;}
