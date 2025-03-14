@@ -1504,6 +1504,34 @@ discriminate classes with only a small number of labelled examples. Most of the 
   publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
 }
 
+@Article{art/RajeswaranA_201909,
+  author        = {Rajeswaran, Aravind and Finn, Chelsea and Kakade, Sham and Levine, Sergey},
+  title         = {Meta-Learning with Implicit Gradients},
+  year          = {2019},
+  month         = sep,
+  abstract      = {A core capability of intelligent systems is the ability to quickly learn new tasks by drawing on prior experience. Gradient (or optimization) based meta-learning has recently emerged as an effective approach for few-shot learning. In this formulation, meta-parameters are learned in the outer loop, while task-specific models are learned in the inner-loop, by using only a small amount of data from the current task. A key challenge in scaling these approaches is the need to differentiate through the inner loop learning process, which can impose considerable computational and memory burdens. By drawing upon implicit differentiation, we develop the implicit MAML algorithm, which depends only on the solution to the inner level optimization and not the path taken by the inner loop optimizer. This effectively decouples the meta-gradient computation from the choice of inner loop optimizer. As a result, our approach is agnostic to the choice of inner loop optimizer and can gracefully handle many gradient steps without vanishing gradients or memory constraints. Theoretically, we prove that implicit MAML can compute accurate meta-gradients with a memory footprint that is, up to small constant factors, no more than that which is required to compute a single inner loop gradient and at no overall increase in the total computational cost. Experimentally, we show that these benefits of implicit MAML translate into empirical gains on few-shot image recognition benchmarks.},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.1909.04630},
+  eprint        = {1909.04630},
+  file          = {:art_RajeswaranA_201909 - Meta Learning with Implicit Gradients.pdf:PDF},
+  keywords      = {Machine Learning (cs.LG), Artificial Intelligence (cs.AI), Optimization and Control (math.OC), Machine Learning (stat.ML), FOS: Computer and information sciences, FOS: Mathematics},
+  primaryclass  = {cs.LG},
+  publisher     = {arXiv},
+}
+
+@InBook{art/ZhouP_2019,
+  author    = {Zhou, Pan and Yuan, Xiao-Tong and Xu, Huan and Yan, Shuicheng and Feng, Jiashi},
+  publisher = {Curran Associates Inc.},
+  title     = {Efficient meta learning via minibatch proximal update},
+  year      = {2019},
+  address   = {Red Hook, NY, USA},
+  abstract  = {We address the problem of meta-learning which learns a prior over hypothesis from a sample of meta-training tasks for fast adaptation on meta-testing tasks. A particularly simple yet successful paradigm for this research is model-agnostic meta-learning (MAML). Implementation and analysis of MAML, however, can be tricky; first-order approximation is usually adopted to avoid directly computing Hessian matrix but as a result the convergence and generalization guarantees remain largely mysterious for MAML. To remedy this deficiency, in this paper we propose a minibatch proximal update based meta-learning approach for learning to efficient hypothesis transfer. The principle is to learn a prior hypothesis shared across tasks such that the minibatch risk minimization biased regularized by this prior can quickly converge to the optimal hypothesis in each training task. The prior hypothesis training model can be efficiently optimized via SGD with provable convergence guarantees for both convex and non-convex problems. Moreover, we theoretically justify the benefit of the learnt prior hypothesis for fast adaptation to new few-shot learning tasks via minibatch proximal update. Experimental results on several few-shot regression and classification tasks demonstrate the advantages of our method over state-of-the-arts.},
+  articleno = {137},
+  booktitle = {Proceedings of the 33rd International Conference on Neural Information Processing Systems},
+  numpages  = {11},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: keypattern_book:book/[auth][authForeIni:upper]_[date:regex("-".""):truncate6];}
