@@ -1532,6 +1532,66 @@ discriminate classes with only a small number of labelled examples. Most of the 
   numpages  = {11},
 }
 
+@Article{art/ZhuH_202205,
+  author        = {Zhu, Haowei and Ke, Wenjing and Li, Dong and Liu, Ji and Tian, Lu and Shan, Yi},
+  title         = {Dual Cross-Attention Learning for Fine-Grained Visual Categorization and Object Re-Identification},
+  year          = {2022},
+  month         = may,
+  abstract      = {Recently, self-attention mechanisms have shown impressive performance in various NLP and CV tasks, which can help capture sequential characteristics and derive global information. In this work, we explore how to extend self-attention modules to better learn subtle feature embeddings for recognizing fine-grained objects, e.g., different bird species or person identities. To this end, we propose a dual cross-attention learning (DCAL) algorithm to coordinate with self-attention learning. First, we propose global-local cross-attention (GLCA) to enhance the interactions between global images and local high-response regions, which can help reinforce the spatial-wise discriminative clues for recognition. Second, we propose pair-wise cross-attention (PWCA) to establish the interactions between image pairs. PWCA can regularize the attention learning of an image by treating another image as distractor and will be removed during inference. We observe that DCAL can reduce misleading attentions and diffuse the attention response to discover more complementary parts for recognition. We conduct extensive evaluations on fine-grained visual categorization and object re-identification. Experiments demonstrate that DCAL performs on par with state-of-the-art methods and consistently improves multiple self-attention baselines, e.g., surpassing DeiT-Tiny and ViT-Base by 2.8% and 2.4% mAP on MSMT17, respectively.},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.2205.02151},
+  eprint        = {2205.02151},
+  file          = {:http\://arxiv.org/pdf/2205.02151v1:PDF},
+  keywords      = {Computer Vision and Pattern Recognition (cs.CV), Artificial Intelligence (cs.AI), Machine Learning (cs.LG), FOS: Computer and information sciences},
+  primaryclass  = {cs.CV},
+  publisher     = {arXiv},
+}
+
+@InBook{art/LiuJ_2024,
+  author    = {Liu, Jiashuai and Mao, Anyu and Niu, Yi and Zhang, Xianli and Gong, Tieliang and Li, Chen and Gao, Zeyu},
+  pages     = {362--372},
+  publisher = {Springer Nature Switzerland},
+  title     = {PAMIL: Prototype Attention-Based Multiple Instance Learning for Whole Slide Image Classification},
+  year      = {2024},
+  isbn      = {9783031720833},
+  booktitle = {Medical Image Computing and Computer Assisted Intervention – MICCAI 2024},
+  doi       = {10.1007/978-3-031-72083-3_34},
+  issn      = {1611-3349},
+}
+
+@Article{art/LongM_201705,
+  author        = {Long, Mingsheng and Cao, Zhangjie and Wang, Jianmin and Jordan, Michael I.},
+  title         = {Conditional Adversarial Domain Adaptation},
+  year          = {2017},
+  month         = may,
+  abstract      = {Adversarial learning has been embedded into deep networks to learn disentangled and transferable representations for domain adaptation. Existing adversarial domain adaptation methods may not effectively align different domains of multimodal distributions native in classification problems. In this paper, we present conditional adversarial domain adaptation, a principled framework that conditions the adversarial adaptation models on discriminative information conveyed in the classifier predictions. Conditional domain adversarial networks (CDANs) are designed with two novel conditioning strategies: multilinear conditioning that captures the cross-covariance between feature representations and classifier predictions to improve the discriminability, and entropy conditioning that controls the uncertainty of classifier predictions to guarantee the transferability. With theoretical guarantees and a few lines of codes, the approach has exceeded state-of-the-art results on five datasets.},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.1705.10667},
+  eprint        = {1705.10667},
+  file          = {:http\://arxiv.org/pdf/1705.10667v4:PDF},
+  keywords      = {Machine Learning (cs.LG), FOS: Computer and information sciences},
+  primaryclass  = {cs.LG},
+  publisher     = {arXiv},
+}
+
+@Article{art/LinY_202303,
+  author        = {Lin, Yi and Chen, Yufan and Cheng, Kwang-Ting and Chen, Hao},
+  title         = {Few Shot Medical Image Segmentation with Cross Attention Transformer},
+  year          = {2023},
+  month         = mar,
+  abstract      = {Medical image segmentation has made significant progress in recent years. Deep learning-based methods are recognized as data-hungry techniques, requiring large amounts of data with manual annotations. However, manual annotation is expensive in the field of medical image analysis, which requires domain-specific expertise. To address this challenge, few-shot learning has the potential to learn new classes from only a few examples. In this work, we propose a novel framework for few-shot medical image segmentation, termed CAT-Net, based on cross masked attention Transformer. Our proposed network mines the correlations between the support image and query image, limiting them to focus only on useful foreground information and boosting the representation capacity of both the support prototype and query features. We further design an iterative refinement framework that refines the query image segmentation iteratively and promotes the support feature in turn. We validated the proposed method on three public datasets: Abd-CT, Abd-MRI, and Card-MRI. Experimental results demonstrate the superior performance of our method compared to state-of-the-art methods and the effectiveness of each component. Code: https://github.com/hust-linyi/CAT-Net.},
+  archiveprefix = {arXiv},
+  copyright     = {Creative Commons Attribution 4.0 International},
+  doi           = {10.48550/ARXIV.2303.13867},
+  eprint        = {2303.13867},
+  file          = {:http\://arxiv.org/pdf/2303.13867v3:PDF},
+  keywords      = {Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences},
+  primaryclass  = {cs.CV},
+  publisher     = {arXiv},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: keypattern_book:book/[auth][authForeIni:upper]_[date:regex("-".""):truncate6];}
