@@ -11266,22 +11266,6 @@ MSC Codes 68U10},
   publisher = {Elsevier BV},
 }
 
-@Article{art/ChenJ_202102,
-  author        = {Chen, Jieneng and Lu, Yongyi and Yu, Qihang and Luo, Xiangde and Adeli, Ehsan and Wang, Yan and Lu, Le and Yuille, Alan L. and Zhou, Yuyin},
-  title         = {TransUNet: Transformers Make Strong Encoders for Medical Image Segmentation},
-  year          = {2021},
-  month         = feb,
-  abstract      = {Medical image segmentation is an essential prerequisite for developing healthcare systems, especially for disease diagnosis and treatment planning. On various medical image segmentation tasks, the u-shaped architecture, also known as U-Net, has become the de-facto standard and achieved tremendous success. However, due to the intrinsic locality of convolution operations, U-Net generally demonstrates limitations in explicitly modeling long-range dependency. Transformers, designed for sequence-to-sequence prediction, have emerged as alternative architectures with innate global self-attention mechanisms, but can result in limited localization abilities due to insufficient low-level details. In this paper, we propose TransUNet, which merits both Transformers and U-Net, as a strong alternative for medical image segmentation. On one hand, the Transformer encodes tokenized image patches from a convolution neural network (CNN) feature map as the input sequence for extracting global contexts. On the other hand, the decoder upsamples the encoded features which are then combined with the high-resolution CNN feature maps to enable precise localization. We argue that Transformers can serve as strong encoders for medical image segmentation tasks, with the combination of U-Net to enhance finer details by recovering localized spatial information. TransUNet achieves superior performances to various competing methods on different medical applications including multi-organ segmentation and cardiac segmentation. Code and models are available at https://github.com/Beckschen/TransUNet.},
-  archiveprefix = {arXiv},
-  copyright     = {Creative Commons Attribution 4.0 International},
-  doi           = {10.48550/ARXIV.2102.04306},
-  eprint        = {2102.04306},
-  file          = {:art_ChenJ_202102 - TransUNet_ Transformers Make Strong Encoders for Medical Image Segmentation.pdf:PDF},
-  keywords      = {Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences},
-  primaryclass  = {cs.CV},
-  publisher     = {arXiv},
-}
-
 @Article{art/ChenL_201412,
   author        = {Chen, Liang-Chieh and Papandreou, George and Kokkinos, Iasonas and Murphy, Kevin and Yuille, Alan L.},
   title         = {Semantic Image Segmentation with Deep Convolutional Nets and Fully Connected CRFs},
@@ -11426,22 +11410,6 @@ MSC Codes 68U10},
   eprint        = {1807.10221},
   file          = {:art_XiaoT_201807 - Unified Perceptual Parsing for Scene Understanding.pdf:PDF:http\://arxiv.org/pdf/1807.10221v1},
   keywords      = {Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences},
-  primaryclass  = {cs.CV},
-  publisher     = {arXiv},
-}
-
-@Article{art/XieE_202105,
-  author        = {Xie, Enze and Wang, Wenhai and Yu, Zhiding and Anandkumar, Anima and Alvarez, Jose M. and Luo, Ping},
-  title         = {SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers},
-  year          = {2021},
-  month         = may,
-  abstract      = {We present SegFormer, a simple, efficient yet powerful semantic segmentation framework which unifies Transformers with lightweight multilayer perception (MLP) decoders. SegFormer has two appealing features: 1) SegFormer comprises a novel hierarchically structured Transformer encoder which outputs multiscale features. It does not need positional encoding, thereby avoiding the interpolation of positional codes which leads to decreased performance when the testing resolution differs from training. 2) SegFormer avoids complex decoders. The proposed MLP decoder aggregates information from different layers, and thus combining both local attention and global attention to render powerful representations. We show that this simple and lightweight design is the key to efficient segmentation on Transformers. We scale our approach up to obtain a series of models from SegFormer-B0 to SegFormer-B5, reaching significantly better performance and efficiency than previous counterparts. For example, SegFormer-B4 achieves 50.3% mIoU on ADE20K with 64M parameters, being 5x smaller and 2.2% better than the previous best method. Our best model, SegFormer-B5, achieves 84.0% mIoU on Cityscapes validation set and shows excellent zero-shot robustness on Cityscapes-C. Code will be released at: github.com/NVlabs/SegFormer.},
-  archiveprefix = {arXiv},
-  copyright     = {arXiv.org perpetual, non-exclusive license},
-  doi           = {10.48550/ARXIV.2105.15203},
-  eprint        = {2105.15203},
-  file          = {:art_XieE_202105 - SegFormer_ Simple and Efficient Design for Semantic Segmentation with Transformers.pdf:PDF:http\://arxiv.org/pdf/2105.15203v3},
-  keywords      = {Computer Vision and Pattern Recognition (cs.CV), Machine Learning (cs.LG), FOS: Computer and information sciences},
   primaryclass  = {cs.CV},
   publisher     = {arXiv},
 }
@@ -11629,6 +11597,16 @@ MSC Codes 68U10},
   keywords  = {Alzheimer's disease,Neuroimaging,Neuropathology,Neuropsychological testing,Pharmacotherapy},
   pmid      = {19116299},
   publisher = {SAGE Publications},
+}
+
+@InProceedings{art/LinT_201707,
+  author    = {Lin, Tsung-Yi and Dollar, Piotr and Girshick, Ross and He, Kaiming and Hariharan, Bharath and Belongie, Serge},
+  booktitle = {2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  title     = {Feature Pyramid Networks for Object Detection},
+  year      = {2017},
+  month     = jul,
+  publisher = {IEEE},
+  doi       = {10.1109/cvpr.2017.106},
 }
 
 @Comment{jabref-meta: VersionDBStructure:1;}
