@@ -163,6 +163,38 @@
   publisher     = {arXiv},
 }
 
+@Article{art/JampaniV_201807,
+  author        = {Jampani, Varun and Sun, Deqing and Liu, Ming-Yu and Yang, Ming-Hsuan and Kautz, Jan},
+  title         = {Superpixel Sampling Networks},
+  year          = {2018},
+  month         = jul,
+  abstract      = {Superpixels provide an efficient low/mid-level representation of image data, which greatly reduces the number of image primitives for subsequent vision tasks. Existing superpixel algorithms are not differentiable, making them difficult to integrate into otherwise end-to-end trainable deep neural networks. We develop a new differentiable model for superpixel sampling that leverages deep networks for learning superpixel segmentation. The resulting "Superpixel Sampling Network" (SSN) is end-to-end trainable, which allows learning task-specific superpixels with flexible loss functions and has fast runtime. Extensive experimental analysis indicates that SSNs not only outperform existing superpixel algorithms on traditional segmentation benchmarks, but can also learn superpixels for other tasks. In addition, SSNs can be easily integrated into downstream deep networks resulting in performance improvements.},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.1807.10174},
+  eprint        = {1807.10174},
+  file          = {:art_JampaniV_201807 - Superpixel Sampling Networks.pdf:PDF},
+  keywords      = {Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences},
+  primaryclass  = {cs.CV},
+  publisher     = {arXiv},
+}
+
+@Article{art/YangF_202003,
+  author        = {Yang, Fengting and Sun, Qian and Jin, Hailin and Zhou, Zihan},
+  title         = {Superpixel Segmentation with Fully Convolutional Networks},
+  year          = {2020},
+  month         = mar,
+  abstract      = {In computer vision, superpixels have been widely used as an effective way to reduce the number of image primitives for subsequent processing. But only a few attempts have been made to incorporate them into deep neural networks. One main reason is that the standard convolution operation is defined on regular grids and becomes inefficient when applied to superpixels. Inspired by an initialization strategy commonly adopted by traditional superpixel algorithms, we present a novel method that employs a simple fully convolutional network to predict superpixels on a regular image grid. Experimental results on benchmark datasets show that our method achieves state-of-the-art superpixel segmentation performance while running at about 50fps. Based on the predicted superpixels, we further develop a downsampling/upsampling scheme for deep networks with the goal of generating high-resolution outputs for dense prediction tasks. Specifically, we modify a popular network architecture for stereo matching to simultaneously predict superpixels and disparities. We show that improved disparity estimation accuracy can be obtained on public datasets.},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.2003.12929},
+  eprint        = {2003.12929},
+  file          = {:art_YangF_202003 - Superpixel Segmentation with Fully Convolutional Networks.pdf:PDF},
+  keywords      = {Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences},
+  primaryclass  = {cs.CV},
+  publisher     = {arXiv},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: keypattern_book:book/[auth][authForeIni:upper]_[date:regex("-".""):truncate6];}
